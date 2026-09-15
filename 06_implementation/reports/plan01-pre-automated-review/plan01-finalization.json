@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-13T02:21:52.885292+00:00",
+  "plan_id": "./260913-0204-2",
+  "plan_status": "in-progress",
+  "human_gate_status": "awaiting_human_review",
+  "fully_accepted_tasks": 0,
+  "mapped_source_tasks": 12,
+  "source_phase_files": [
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-01-start.md",
+      "original_acceptance_checked": 0,
+      "original_acceptance_unchecked": 10,
+      "execution_evidence_present": true
+    },
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-02-build.md",
+      "original_acceptance_checked": 0,
+      "original_acceptance_unchecked": 10,
+      "execution_evidence_present": true
+    },
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-03-validate-and-handoff.md",
+      "original_acceptance_checked": 0,
+      "original_acceptance_unchecked": 10,
+      "execution_evidence_present": true
+    }
+  ],
+  "index_phases": [
+    {
+      "n": 1,
+      "title": "Đọc ràng buộc và lập sổ quyết định",
+      "status": "todo",
+      "notes": "Technical artifacts ready; G01-A pending actual A/B/C review. Original acceptance checkboxes preserved.",
+      "evidence": "06_implementation/docs/project-charter.md;06_implementation/configs/decisions.json;06_implementation/validation/source-inventory.json;06_implementation/docs/instructor-questions-draft.md"
+    },
+    {
+      "n": 2,
+      "title": "Soạn protocol, ma trận bài lõi và phân công",
+      "status": "todo",
+      "notes": "Protocol, 10-paper matrix, team agreement and fallback drafted; G01-B pending human reading, assignments and review. No model runs.",
+      "evidence": "06_implementation/docs/research-protocol.md;06_implementation/configs/protocol.yaml;06_implementation/docs/literature-matrix.tsv;06_implementation/docs/team-working-agreement.md"
+    },
+    {
+      "n": 3,
+      "title": "Review hợp đồng và bàn giao gate G0",
+      "status": "todo",
+      "notes": "Technical review, validator/tests and candidate-manifest builder ready; G0 awaiting_human_review. No signatures or receiver acknowledgments supplied.",
+      "evidence": "06_implementation/docs/protocol-review.md;06_implementation/scripts/validate_protocol.py;06_implementation/scripts/build_g0_manifest.py;06_implementation/reports/plan01-progress.md"
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "ak",
+        "plan",
+        "validate",
+        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "schema_version": 1,
+        "kind": "plan.validate",
+        "data": {
+          "valid": true,
+          "dir": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+          "errors": null
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "ak",
+        "plan",
+        "status",
+        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "schema_version": 1,
+        "kind": "plan.status",
+        "data": {
+          "name": "260913-0057-cs221-01-scope-and-protocol",
+          "title": "01 — Phạm vi, protocol và thỏa thuận nhóm",
+          "status": "in-progress",
+          "phases_total": 3,
+          "phases_done": 0,
+          "total_tasks": 30,
+          "done_tasks": 0,
+          "progress_pct": 0
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "ak",
+        "journal",
+        "validate",
+        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "schema_version": 1,
+        "kind": "journal.validate",
+        "data": {
+          "path": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
+          "ok": true,
+          "title": "CS221 plan01 protocol review handoff",
+          "date": "2026-09-13"
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "journal": {
+    "path": "plans/journals/2026-09-13-cs221-plan01-protocol-review-handoff.md",
+    "sha256": "f006ed6e28e055c40a35fdc49cbec7b9af10a66fe5c9b2879a1664218e09e38a",
+    "created_by": "ak journal create --stdin --date 2026-09-13 --json",
+    "published": false
+  },
+  "limitations": [
+    "Phase status mutation is checkbox-based; blanket completion would falsely satisfy human acceptance.",
+    "No Git repository: current-plan Git pointer and commit are not applicable.",
+    "AgentWiki publish skipped."
+  ],
+  "finalization_checks_passed": true
+}

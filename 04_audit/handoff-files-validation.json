@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-12T17:29:02.313839+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "check": "authored_markdown_local_links",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "html_static_links",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "html_embedded_data_counts",
+      "passed": true
+    },
+    {
+      "check": "html_javascript_syntax_only",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "preview_refuses_overwrite_without_mutating_either_form",
+      "passed": true
+    }
+  ],
+  "browser_visual_validation": "not_performed_local_file_URL_blocked_by_browser_policy; no workaround attempted",
+  "script_sha256": "0235ed321f0d1d5a58978c23cb8e18348c077199c8abc7e4c3296bfe7f775ded"
+}

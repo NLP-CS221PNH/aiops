@@ -1,0 +1,75 @@
+{
+  "schema_version": "cs221-representation-config-v1",
+  "code_version": "whole-evidence-representations-v1",
+  "representation_version": "candidate-v1",
+  "selection_version": "service-round-robin-v1",
+  "normalization_version": "whitespace-only-v1",
+  "default_candidate": "R2",
+  "selected_winner": null,
+  "selection": {
+    "algorithm": "service-round-robin-v1",
+    "logs_per_service": 2,
+    "max_logs": 24,
+    "max_metrics": 2,
+    "max_traces": 2
+  },
+  "budget": {
+    "algorithm": "whole-block-joint-v1",
+    "max_query_tokens": 512,
+    "r3_priority": "first metric, first trace, shared retained logs, remaining metrics/traces",
+    "partial_evidence": false
+  },
+  "tokenizer": {
+    "model_id": "intfloat/e5-small-v2",
+    "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "selection_state": "local_candidate_only_final_choice_at_F1",
+    "path": "vendor/e5-small-v2/tokenizer.json",
+    "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "library_version": "0.21.4",
+    "max_length": 512,
+    "prefix": "query: ",
+    "special_tokens": 2,
+    "truncation": false,
+    "padding": false,
+    "assets": [
+      {
+        "path": "vendor/e5-small-v2/tokenizer.json",
+        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+      },
+      {
+        "path": "vendor/e5-small-v2/tokenizer_config.json",
+        "sha256": "ae83fa6ca0333117ff12606020af925d648667ef70d92ff7f27d781ba0ca4544"
+      },
+      {
+        "path": "vendor/e5-small-v2/special_tokens_map.json",
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"
+      },
+      {
+        "path": "vendor/e5-small-v2/vocab.txt",
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    ]
+  },
+  "bundle": {
+    "version": "common-observations-v1",
+    "max_tokens": 2048,
+    "max_metrics": 6,
+    "max_traces": 4,
+    "actual_generator_tokenizer": "pending_plan07"
+  },
+  "non_goals": [
+    "retrieval",
+    "qrels",
+    "generation",
+    "test materialization",
+    "winner selection"
+  ],
+  "policy": {
+    "source": "safe-export-only",
+    "normalization": "whitespace-only; preserve all non-whitespace literals; no translation",
+    "upstream_loss": "unknown beyond exported candidates",
+    "query_prefix_added_by_dense_encoder": true,
+    "same_query_text_for_all_retrievers": true,
+    "external_calls": false
+  }
+}

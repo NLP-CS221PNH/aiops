@@ -1,0 +1,142 @@
+{
+  "schema_version": "cs221-retrieval-dependency-provisioning-v1",
+  "status": "pass",
+  "created_at_utc": "2026-09-13T04:56:25.735933+00:00",
+  "scope": "Synthetic retrieval tooling only; no real indexing, model execution, model weights, private data transfer or upstream environment edits.",
+  "python": "3.11.9",
+  "executable": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\06_implementation\\.venv\\Scripts\\python.exe",
+  "install_target": ".retrieval-deps",
+  "wheelhouse": ".retrieval-wheelhouse",
+  "lock_path": "configs/retrieval-requirements-lock.txt",
+  "lock_sha256": "7744dd805a970f964b50f4e03408ee1d26c3a80305aff786295dbd6887720466",
+  "installation_policy": "offline --no-index --no-deps --require-hashes from downloaded wheelhouse; pip --target only",
+  "download_source": "https://pypi.org/simple",
+  "network_note": "Default sandbox proxy unavailable; auto-reviewed escalation approved public wheel download. No automatic approval rejection occurred.",
+  "wheels": [
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "path": ".retrieval-wheelhouse/attrs-26.1.0-py3-none-any.whl",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "path": ".retrieval-wheelhouse/colorama-0.4.6-py2.py3-none-any.whl",
+      "bytes": 25335,
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "path": ".retrieval-wheelhouse/iniconfig-2.3.0-py3-none-any.whl",
+      "bytes": 7484,
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.25.1",
+      "path": ".retrieval-wheelhouse/jsonschema-4.25.1-py3-none-any.whl",
+      "bytes": 90040,
+      "sha256": "3fba0169e345c7175110351d456342c364814cfcf3b964ba4587f22915230a63"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "path": ".retrieval-wheelhouse/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "bytes": 18437,
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+    },
+    {
+      "name": "numpy",
+      "version": "2.3.3",
+      "path": ".retrieval-wheelhouse/numpy-2.3.3-cp311-cp311-win_amd64.whl",
+      "bytes": 13088104,
+      "sha256": "ec9d249840f6a565f58d8f913bccac2444235025bbb13e9a4681783572ee3caa"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "path": ".retrieval-wheelhouse/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "path": ".retrieval-wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+      "bytes": 20538,
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "path": ".retrieval-wheelhouse/pygments-2.21.0-py3-none-any.whl",
+      "bytes": 1250147,
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2",
+      "path": ".retrieval-wheelhouse/pytest-8.4.2-py3-none-any.whl",
+      "bytes": 365750,
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "path": ".retrieval-wheelhouse/referencing-0.37.0-py3-none-any.whl",
+      "bytes": 26766,
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3",
+      "path": ".retrieval-wheelhouse/rpds_py-2026.6.3-cp311-cp311-win_amd64.whl",
+      "bytes": 223219,
+      "sha256": "2c54a076ca4d370980ab57bc0e31df57bbe8d41340436a90ef8b1219a3cbb127"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "path": ".retrieval-wheelhouse/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    }
+  ],
+  "packages": {
+    "attrs": "26.1.0",
+    "colorama": "0.4.6",
+    "iniconfig": "2.3.0",
+    "jsonschema": "4.25.1",
+    "jsonschema-specifications": "2025.9.1",
+    "numpy": "2.3.3",
+    "packaging": "26.3",
+    "pluggy": "1.6.0",
+    "Pygments": "2.21.0",
+    "pytest": "8.4.2",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.6.3",
+    "typing_extensions": "4.16.0"
+  },
+  "upstream_lock_hashes": {
+    "configs/requirements-lock.txt": "94e3a9d8aaa380c7c2ea90cb227614cb4435455a8fdc5176d2fefa50deb9bd9c",
+    "configs/corpus-requirements-lock.txt": "16b6aab5c550cee06003bef3eb987906934fbee62a02db2e9e221d0d48cd2f9c"
+  },
+  "smoke": {
+    "numpy_float64_normalization": true,
+    "jsonschema_valid_object": true,
+    "pytest_import": "8.4.2"
+  },
+  "model_weights_downloaded": false,
+  "model_inference_executed": false,
+  "real_corpus_indexed": false,
+  "gpu_probed": false,
+  "missing_model_backend": [
+    "torch",
+    "transformers",
+    "sentence-transformers",
+    "onnxruntime"
+  ]
+}

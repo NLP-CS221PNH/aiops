@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-13T00:28:56+07:00",
+  "paper_records": 1009,
+  "paper_identity_statuses": {
+    "matched": 1005,
+    "unresolved": 3,
+    "title_mismatch_review_required": 1
+  },
+  "paper_read_depths": {
+    "fulltext_selected_sections": 25,
+    "abstract_available_not_read": 669,
+    "metadata_only": 290,
+    "abstract_and_primary_pdf_first_page": 1,
+    "abstract_only": 24
+  },
+  "priority_notes": 50,
+  "raw_selected_bytes": 922484805,
+  "incidents": 90,
+  "historical_documents": 74,
+  "historical_chunks": 580,
+  "current_documents": 73,
+  "current_chunks": 598,
+  "human_qrels_completed": 0,
+  "experiments_run": 0,
+  "artifact_validation_passed": true,
+  "bibliography_entries": 1003,
+  "unresolved_bibliography_rows": 6,
+  "publication_venue_year_verified": 366,
+  "priority_fulltext_local": 49
+}

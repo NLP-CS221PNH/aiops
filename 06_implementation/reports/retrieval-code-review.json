@@ -1,0 +1,134 @@
+{
+  "schema_version": "cs221-retrieval-code-review-v1",
+  "status": "pass",
+  "acceptance_scope": "user-authorized build/test retrieval tooling; real pilot waits for reviewed corpus",
+  "score": 9.3,
+  "score_out_of": 10,
+  "actor_kind": "codex_agent",
+  "reviewer": "/root/audit_inputs",
+  "role": "code-reviewer",
+  "created_at_utc": "2026-09-13T05:18:11.035410+00:00",
+  "open_critical_findings": 0,
+  "open_material_findings": 0,
+  "implementation_hashes": {
+    "__init__.py": "a418cf9caecd6ade4df27790cff4565a44a699f7afca98d5527284163989314b",
+    "__main__.py": "9a5296b72d119c0255e0b50dad3c825e259e32b587974c07223b3132bde86e8f",
+    "bm25.py": "a953f92103aa03a950de9959d651dab117cd431ae9dddb915e220fbff0d17661",
+    "cache.py": "e35e723194be204a02cdae2f2063d9addb43e702cfd565ed3fa4d2bc293425bb",
+    "common.py": "0277b3b3d95efceef6c010e971ff983c0421fb80c309148566ec85fee6dce063",
+    "consumer.py": "a7a2c20b18106ef50f186283c7283e676e3fb36ea795833a23b616b8e8013174",
+    "dense.py": "ef3ddd449fb33b70230fe7e97c5bd850df8416470b5493cd9d81c8df740ec14b",
+    "fusion.py": "07219378ad3ae97364c637c41eb3d40e85d2cc560c7c18cacd73b0364b10c600",
+    "inputs.py": "19ec3a2293ee80b43bf9fc9b9793d97654aafb3e871c0d17c1cc8179c963aa1e",
+    "rerank.py": "7df4f3463e50bfb24f733a2424607b261f1e2a3858507583eb37493961750428",
+    "runner.py": "5a517ba47bb8afd133663a06f1df1f0a4a826c8842a4d70b80fd9f6a9614b7ef"
+  },
+  "reviewed_file_hashes": {
+    "configs/retrieval.yaml": "db013ba9eacf26938b5a4ac4aaea5ff724fcf6d29198dd9dc3d5710e96fe8b51",
+    "schemas/retrieval-run.schema.json": "4fdf41e284b79743442d523d196109cf52131eb1386bfe4068dca6cd921d9851",
+    "src/retrieval/__init__.py": "a418cf9caecd6ade4df27790cff4565a44a699f7afca98d5527284163989314b",
+    "src/retrieval/__main__.py": "9a5296b72d119c0255e0b50dad3c825e259e32b587974c07223b3132bde86e8f",
+    "src/retrieval/bm25.py": "a953f92103aa03a950de9959d651dab117cd431ae9dddb915e220fbff0d17661",
+    "src/retrieval/cache.py": "e35e723194be204a02cdae2f2063d9addb43e702cfd565ed3fa4d2bc293425bb",
+    "src/retrieval/common.py": "0277b3b3d95efceef6c010e971ff983c0421fb80c309148566ec85fee6dce063",
+    "src/retrieval/consumer.py": "a7a2c20b18106ef50f186283c7283e676e3fb36ea795833a23b616b8e8013174",
+    "src/retrieval/dense.py": "ef3ddd449fb33b70230fe7e97c5bd850df8416470b5493cd9d81c8df740ec14b",
+    "src/retrieval/fusion.py": "07219378ad3ae97364c637c41eb3d40e85d2cc560c7c18cacd73b0364b10c600",
+    "src/retrieval/inputs.py": "19ec3a2293ee80b43bf9fc9b9793d97654aafb3e871c0d17c1cc8179c963aa1e",
+    "src/retrieval/rerank.py": "7df4f3463e50bfb24f733a2424607b261f1e2a3858507583eb37493961750428",
+    "src/retrieval/runner.py": "5a517ba47bb8afd133663a06f1df1f0a4a826c8842a4d70b80fd9f6a9614b7ef",
+    "tests/fixtures/retrieval/bm25-hand.json": "9603f5d1d3140f3724c2e0f043fd2967226cfd85eddb6eaa298b80762f4ef7ef",
+    "tests/fixtures/retrieval/build_fixture.py": "d6c54b05d2a3103ebc3997b26ed518694d1f2cf78cb53b5e878e40a9a2fe987a",
+    "tests/fixtures/retrieval/README.md": "98e7b6b6c996e1c16426e90bff10ca537f90f1ed094d29048635a58e4ae702f8",
+    "tests/fixtures/retrieval/rrf-hand.json": "e1d52ed0d495f4dbdfea8487e85a6bfe66f8591de4b834df1efcbc53f73349fb",
+    "tests/test_retrieval_contract.py": "9b7c9900b4686f1a414cf90e1d73c6c96fe609a5ceae95add0b9bb9ca130d5a9",
+    "tests/test_retrieval_engines.py": "51e516ff55d027e9443ca4e762285908140e13d529059363e620b4dd45921438"
+  },
+  "evidence": [
+    {
+      "path": "reports/retrieval-tests.json",
+      "sha256": "8ddf1e3438b06aa2b2afa88a0ab86db2c9b0dc8115ce0316d36d3ec5dc0de1e5"
+    },
+    {
+      "path": "reports/retrieval-tests.md",
+      "sha256": "d97be519243758febfc3406f54d9d223e5120de994c5ec77ba92a02728b36232"
+    },
+    {
+      "path": "reports/retrieval-reproducibility.json",
+      "sha256": "c675fe031ad825e9492669cd71ff33bbd4685dfab81ac66da7aa4b319b778f4f"
+    },
+    {
+      "path": "reports/retrieval-independent-review-checks.json",
+      "sha256": "ca1f316628b4c7b28e5c820c5cb2f55101d27993e1e9b84720a8dd32da413a6e"
+    },
+    {
+      "path": "reports/retrieval-debugger-preflight.md",
+      "sha256": "b9f057ceafee6e043aa020b693995ae37131eb05765b53e72c4b172be86f9b30"
+    },
+    {
+      "path": "reports/retrieval-preflight-inputs.json",
+      "sha256": "2b26e1c832504087821edf310585fde42007f90137384d95797e5a06fc9a0c1d"
+    },
+    {
+      "path": "docs/retrieval-runbook.md",
+      "sha256": "f6655cef1f8b2daa9c9b7e72ece05b9091832076261872282527f087cc03ce61"
+    },
+    {
+      "path": "scripts/verify_retrieval_delivery.py",
+      "sha256": "7a54de7e9249f0493caf5d77f45e4a6ad5ef2a171128334162d67bf49ec3b55e"
+    },
+    {
+      "path": "notebooks/02_retrieval.ipynb",
+      "sha256": "8fc3b0a279637b6bf3ce86f36771a4398106d6ba6863f0964042016ebb340f30"
+    },
+    {
+      "path": "schemas/retrieval-run.schema.json",
+      "sha256": "4fdf41e284b79743442d523d196109cf52131eb1386bfe4068dca6cd921d9851"
+    },
+    {
+      "path": "configs/retrieval.yaml",
+      "sha256": "db013ba9eacf26938b5a4ac4aaea5ff724fcf6d29198dd9dc3d5710e96fe8b51"
+    },
+    {
+      "path": "configs/retrieval-requirements-lock.txt",
+      "sha256": "7744dd805a970f964b50f4e03408ee1d26c3a80305aff786295dbd6887720466"
+    },
+    {
+      "path": "reports/retrieval-code-review.md",
+      "sha256": "b5e99d1d914391d9b26eac19a5e025ea0f8db717a620b9d68e2b78977a9bc49f"
+    }
+  ],
+  "verification": {
+    "retrieval_tests": 66,
+    "full_suite_tests": 269,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reproduction_commands": 15,
+    "reproduction_artifacts_verified": 28,
+    "current_retrieval_source_hashes_verified": 11,
+    "upstream_file_hashes_verified_unchanged": 225,
+    "independent_post_fix_checks": 7,
+    "trusted_hash_consumer_run_reads": 4,
+    "source_unchanged_after_tests": true,
+    "private_paths_read_by_reviewer": false
+  },
+  "acceptance_criteria": {
+    "strict_safe_inputs": "pass",
+    "scoring_and_id_contracts": "pass_synthetic_fixtures",
+    "token_budget_accounting": "pass_actual_e5_tokenizer_no_model",
+    "cache_and_failed_retry_crash_consistency": "pass",
+    "consumer_completeness_and_provenance": "pass",
+    "cli_notebook_and_documentation": "pass_synthetic_only",
+    "upstream_regression": "pass",
+    "reviewed_corpus_real_pilot": "pending_owner_A_B",
+    "neural_inference": "not_performed_missing_runtime_and_weights",
+    "full_05_runners": "pending_real_pilot_and_consumers"
+  },
+  "human_signatures": [],
+  "real_pilot_accepted": false,
+  "neural_model_execution": false,
+  "full_05_runners_accepted": false,
+  "frozen_test_execution": false,
+  "future_handshakes": "Owner03 released-manifest and owner08 authenticated freeze/test-input interfaces are proposals pending actual consumer acceptance."
+}

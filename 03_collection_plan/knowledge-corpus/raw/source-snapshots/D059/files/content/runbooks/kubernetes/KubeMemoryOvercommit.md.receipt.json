@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/prometheus-operator/runbooks/a685d14cf5128bb30e2bf935c3983decd772d885/content/runbooks/kubernetes/KubeMemoryOvercommit.md",
+  "retrieved_at": "2026-09-12T16:49:14.968624Z",
+  "sha256": "d441f56b3548f015ebd9e2ad4483cd714322e67f25aee58a036159d8a6bc2ed1",
+  "bytes": 1473,
+  "http_status": 200,
+  "etag": "\"cd8a0ac6cabecb2bc0ff1338070dbdf3ce1283e13c5f9c16b63ea78feb1e8802\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

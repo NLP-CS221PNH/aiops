@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "gate_id": "G0",
+  "gate_kind": "project_start",
+  "gate_status": "accepted",
+  "protocol_id": "cs221-aiops-rag-protocol-v1",
+  "version": "1.0.0-reviewed.1",
+  "created_at_utc": "2026-09-13T02:54:39.087690Z",
+  "artifacts": [
+    {
+      "path": "06_implementation/README.md",
+      "sha256": "221e6a32b58258034bb2e1fb3853c6a45456891c562a906c16a4f11f48a7492e",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/requirements-validation.txt",
+      "sha256": "01e08410080741c1f164e3b7459ea15db5966cef6629bfeb2691175f269efd00",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/configs/protocol.yaml",
+      "sha256": "5c9a4149b90557e1d97f364cf7c8749f826ee3fbd5dbd47c8493dabf7e446d36",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/configs/decisions.json",
+      "sha256": "cb011a48f062244ddc1f266bb24b33b9961fa5d59ab678e9e54fc46c8fb76fe1",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/project-charter.md",
+      "sha256": "ce5047d14e899b6ece675bb0effae44f185d6dbf68e96ec83480b973d4cc2e54",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/research-protocol.md",
+      "sha256": "0607e2c8a4a64d175f09ea1be902f9c6a75fe64596833b6b2c784b1c665cb840",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/decision-log.md",
+      "sha256": "a4f78798bd6c4d593e6ccc48353aa8502070bafc015f4700ca3af810837b33c2",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/team-working-agreement.md",
+      "sha256": "43e0cce33e24157d3a3e8d421e61d0cd83e23393f16841d3e8669f5ae8d9fff2",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/instructor-questions-draft.md",
+      "sha256": "d7d21bdc6dd17ba5c879bfd4d0726caf313e4666290e56a56377f3ae82d62fca",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/literature-matrix.tsv",
+      "sha256": "3ffe978b85fb9deb1ceea92e4907a8b103b42ab7a7a02cd13354a8da845e4fb9",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/literature-reading-notes.md",
+      "sha256": "075e063f8a74bd4929843157305cac09704375c5c0ad423be93d60ab6ce9f4ed",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/protocol-review.md",
+      "sha256": "56c490b5657b6bd7c063223e79d5822c5a72424476d2fe8bbca3f79dc748e35c",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/scripts/validate_protocol.py",
+      "sha256": "f836220e14b4a2f22085ad338f07ea9ee742a600b4efe63454b9f56b95ca3e29",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/scripts/build_g0_manifest.py",
+      "sha256": "9871866f63b780a95aa5229f691adc769930611dc954a6947d447eb1db58edd3",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/tests/test_validate_protocol.py",
+      "sha256": "c107c4ea772f1ea8b1fcc703c2689a36b8eb9b2e9cc11b956d8b009619714cf2",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/validation/source-inventory.py",
+      "sha256": "139161042972955e981c090966c96749a837ef0e5612af246fc84874560b2d5a",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/validation/source-inventory.json",
+      "sha256": "23b658d3338edc136d70d65386207a8eb082afb714a9fdfd1e0b23bc2d8c794b",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/configs/acceptance-authorization.json",
+      "sha256": "ec83f19b691c136668025be95a9841223bf878a3717e1af0740965d4a241e050",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/reports/plan01-autonomous-review.json",
+      "sha256": "dff177b8618f23aec5e7976d7fa20dad38168a534f994d0fc74a44931d69063d",
+      "version": "1.0.0-reviewed.1"
+    },
+    {
+      "path": "06_implementation/docs/acceptance-amendment.md",
+      "sha256": "2846c5a9d6fe5f4a06494537e8a2446f98c18cf49eab2facccb0812493b2f39d",
+      "version": "1.0.0-reviewed.1"
+    }
+  ],
+  "sources": [
+    {
+      "path": "00_plan/experiments_and_evaluation.md",
+      "sha256": "b5cac2df3b098da6dca109754a82222884310dd77833b13f61e96610f9df429e"
+    },
+    {
+      "path": "00_plan/project_proposal.md",
+      "sha256": "568041fff300d99edd5b88e915e80224b32e7f54ad907d9edfef50071c226455"
+    },
+    {
+      "path": "00_plan/timeline_and_scope.md",
+      "sha256": "6144b26b3ed326399f623acabb0bdafe4c97c17d1e65945941911edd80aaa05a"
+    },
+    {
+      "path": "02_datasets/acquired/inventory.tsv",
+      "sha256": "7af2a2829ca2c62f0da743b88b9c80f6655475d414807e8eb39e1dae74d8129a"
+    },
+    {
+      "path": "02_datasets/processed/labels/ground_truth.jsonl",
+      "sha256": "bd02f4e8393e9ccfab3dd8b9bb1e016abee79bacb58aa9a8888c05240b8ee893"
+    },
+    {
+      "path": "02_datasets/processed/observations.jsonl",
+      "sha256": "10f858579442a17ffbb254f10439be310276a114b780bc4049bf2b003dbfd641"
+    },
+    {
+      "path": "02_datasets/processed/split-map.tsv",
+      "sha256": "d7941d1487d4ec7e3943692b2911ea422bf6b14d620fd8e150324161fc17b8c7"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/qrels-adjudication.tsv",
+      "sha256": "b0cecc08c1d5494d539c7f97680b77024c5558fec31af7fc320313cdcfc348b3"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/qrels-annotator-A.tsv",
+      "sha256": "65de1b4ac1f07d8199ea423985021e6ea27de81fa92c7329dc26bc08b49cfa91"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/qrels-annotator-B.tsv",
+      "sha256": "65de1b4ac1f07d8199ea423985021e6ea27de81fa92c7329dc26bc08b49cfa91"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/reference-answers.tsv",
+      "sha256": "ef4fb7cf35ad5cdfd746bd9218061dca95f79c37a20a695bd0582ac76b34748a"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/status.json",
+      "sha256": "b13d82ecc0c2e0bac2c8500436ac82fc8ec05f867962ab3954d2d45ed68baeb7"
+    },
+    {
+      "path": "03_collection_plan/annotation-kit/task-index.tsv",
+      "sha256": "e9f0dc566eadc260e44ab5b1e3998d90449b70559731036ad63a7c4f1ec5bc2a"
+    },
+    {
+      "path": "03_collection_plan/knowledge-corpus-historical/chunks.jsonl",
+      "sha256": "1f6c1c28f5f7bcab926509595dda5d5400600c0ea773fdb23eb09d1849a6d8ca"
+    },
+    {
+      "path": "03_collection_plan/knowledge-corpus-historical/documents.jsonl",
+      "sha256": "b8373b3087de3933b6dfee2ab0aa28db6df14485f7bda913360be3a19d409ab3"
+    },
+    {
+      "path": "03_collection_plan/knowledge-corpus/chunks.jsonl",
+      "sha256": "b3a567eaef9ad13cecee15dea79be158a4268899c7ca94b226d034fa843116be"
+    },
+    {
+      "path": "03_collection_plan/knowledge-corpus/documents.jsonl",
+      "sha256": "1dbc5eb23e211ce3cbcab3301a0831abf689dbdb6bb4284cad82098987980fce"
+    },
+    {
+      "path": "04_audit/data-runtime.json",
+      "sha256": "0978e307b112da0f9c5a7293b87bd21180956b882ee14b15ea865b2474366cb5"
+    },
+    {
+      "path": "05_research/experiment-proposal.json",
+      "sha256": "3fbb00f57714e55fe084638584673274d0d90258e4828c50d3ba92aa7f8b90fe"
+    },
+    {
+      "path": "05_research/method-and-experiment-design.md",
+      "sha256": "33bb0cdafbaa1bd12539c2843812575a305617cdbdf14e66ed49684dbd81bdb5"
+    },
+    {
+      "path": "05_research/retrieval-preview/annotator-a.tsv",
+      "sha256": "d4458a307ff6744fcb7ae57bb1344fde7c874807120af82db0aefaefe4114f28"
+    },
+    {
+      "path": "05_research/retrieval-preview/annotator-b.tsv",
+      "sha256": "d4458a307ff6744fcb7ae57bb1344fde7c874807120af82db0aefaefe4114f28"
+    },
+    {
+      "path": "05_research/retrieval-preview/candidate-diagnostics.jsonl",
+      "sha256": "1d779182f145d95a02c938eab7802007818045c2a94f2dd1727910179d069dcd"
+    },
+    {
+      "path": "05_research/retrieval-preview/pilot-pool-status.json",
+      "sha256": "eda07bd52d27f5a14ba11001aac273456779d17d736aa965cf4b5cef51b233f2"
+    },
+    {
+      "path": "06_implementation/freezes/G0/plan-source/phase-01-start.md",
+      "sha256": "9584e73155780b452dd891d5b1f38ea201e240f0715171e1680745fb136b5854"
+    },
+    {
+      "path": "06_implementation/freezes/G0/plan-source/phase-02-build.md",
+      "sha256": "5fd6be3e5d6e0bf556bffe923175788667b84da13a44847bf00817f1ab498a53"
+    },
+    {
+      "path": "06_implementation/freezes/G0/plan-source/phase-03-validate-and-handoff.md",
+      "sha256": "3e74634ef0a7f6e2d0202a5afb88895648c4dac533ee27c4ac810e7c7f848d70"
+    },
+    {
+      "path": "06_implementation/freezes/G0/plan-source/plan.md",
+      "sha256": "616edca2c03979c8bbb28bc713941789de7eb535c0014765e4282abfcc0649ed"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "11bb58c6726e233fa8b761ceff47241b8a9a4bb7a68bd39b79bb54118742bd5a"
+    },
+    {
+      "path": "plans/reports/260913-independent-plans-contracts.md",
+      "sha256": "10fd147a2ac5b4456518c85997022bcae80f6505d0d88ecb67a1f12a07bd96a8"
+    },
+    {
+      "path": "scripts/check-handoff-files.py",
+      "sha256": "2b548ab1353c0320753e4bc2700ed9566748df5028ec9b0a79cbd46e4799880e"
+    },
+    {
+      "path": "scripts/validate-research-pack.py",
+      "sha256": "4c3bab4335fe286ef411e1b15df54fc93b1dccb8d9828d5726a4cd63bb5abbd8"
+    }
+  ],
+  "reviewers": [],
+  "pending_reviews": [],
+  "permissions": {
+    "api": "pending",
+    "api_payload": "pending",
+    "local_model": "pending",
+    "data_sharing": "pending",
+    "budget_usd": null
+  },
+  "open_decisions": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15"
+  ],
+  "allowed_work": [
+    "data",
+    "corpus",
+    "representation",
+    "retrieval",
+    "annotation_preparation"
+  ],
+  "allowed_work_mode": "accepted_under_explicit_user_authorization",
+  "communication": {
+    "status": "pending",
+    "sent_at_utc": null,
+    "response_ref": null
+  },
+  "notes": "Local audit metadata only; not an inference payload, F1, F2, or evidence of human approval.",
+  "review_mode": "automated",
+  "authorization_ref": "06_implementation/configs/acceptance-authorization.json",
+  "automated_reviews": [
+    {
+      "reviewer": "Codex /root/literature",
+      "scope": [
+        "data_boundary",
+        "design_metrics",
+        "resources_handoff",
+        "literature"
+      ],
+      "reviewed_at": "2026-09-13T02:54:04.6999859Z",
+      "evidence_ref": "06_implementation/reports/plan01-autonomous-review.json"
+    }
+  ],
+  "supersedes": {
+    "path": "06_implementation/freezes/G0/manifest-1.0.0-draft.2-67d644d1ef8c.json",
+    "sha256": "67d644d1ef8cc484636761ba4fe1863d9095a74810b06f7198d6ebc264d5f60c"
+  }
+}

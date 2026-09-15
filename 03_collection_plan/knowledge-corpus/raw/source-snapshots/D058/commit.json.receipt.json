@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/kubernetes/website/commits/76a0e90f253e924a7b55f01f92a37555bd89be68",
+  "retrieved_at": "2026-09-12T16:49:05.067040Z",
+  "sha256": "a83bfbbf7567ec9465a436722b3fbe3cf0f308a4d220f2e30e843650e909da89",
+  "bytes": 107579,
+  "http_status": 200,
+  "etag": "W/\"af45cc03a07cb05e504c00306f90229fff6b429a0eb476c8dc7807a0bc3e5432\"",
+  "last_modified_http": "Sat, 12 Sep 2026 03:59:12 GMT",
+  "http_last_modified_is_content_publication_time": false
+}

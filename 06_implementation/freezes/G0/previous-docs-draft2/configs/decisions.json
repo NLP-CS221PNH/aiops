@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "protocol_id": "cs221-aiops-rag-protocol-v1",
+  "version": "1.0.0-draft.2",
+  "decisions": [
+    {
+      "decision_id": "D01",
+      "topic": "Rubric chính thức",
+      "options": [
+        "Nhận rubric có nguồn của giảng viên",
+        "Ghi thiếu và theo dõi"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Nguồn rubric và tiêu chí NLP; ảnh hưởng scope/report."
+    },
+    {
+      "decision_id": "D02",
+      "topic": "Ngày bắt đầu và hạn nộp",
+      "options": [
+        "Xác nhận ngày/hạn thật",
+        "Tiếp tục lịch tuần tương đối"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "A",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Không tự đặt deadline lịch; nhóm cung cấp nguồn."
+    },
+    {
+      "decision_id": "D03",
+      "topic": "Tên A/B/C và trách nhiệm",
+      "options": [
+        "Nhóm xác nhận phân vai đề xuất",
+        "Nhóm đổi phân vai và review"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "A",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Tên người và trách nhiệm được từng người xác nhận; B review bổ sung."
+    },
+    {
+      "decision_id": "D04",
+      "topic": "Giờ cam kết mỗi người",
+      "options": [
+        "Cam kết theo dự toán",
+        "Đổi lịch/cắt optional có review"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "15,4–18,7 giờ/người/tuần là nhu cầu tính toán, không cam kết."
+    },
+    {
+      "decision_id": "D05",
+      "topic": "Quyền sử dụng hosted API",
+      "options": [
+        "approved",
+        "rejected",
+        "pending"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "C lưu phản hồi giảng viên; thiếu phản hồi không là đồng ý.",
+      "permission_key": "api"
+    },
+    {
+      "decision_id": "D06",
+      "topic": "Quyền gửi API payload",
+      "options": [
+        "approved",
+        "rejected",
+        "pending"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "A",
+      "reviewer": "C",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Phản hồi theo phạm vi payload; mẫu export sẽ được plan02 kiểm, không gửi raw/gold.",
+      "permission_key": "api_payload"
+    },
+    {
+      "decision_id": "D07",
+      "topic": "Quyền dùng local/open-weight model",
+      "options": [
+        "approved",
+        "rejected",
+        "pending"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "A",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Giảng viên xác nhận riêng; từ chối API không tự cấp quyền local.",
+      "permission_key": "local_model"
+    },
+    {
+      "decision_id": "D08",
+      "topic": "Quyền data sharing/Kaggle/derivatives",
+      "options": [
+        "approved",
+        "rejected",
+        "pending"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "A",
+      "reviewer": "C",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Xác định recipients/artifact/license/phạm vi; chưa upload gì.",
+      "permission_key": "data_sharing"
+    },
+    {
+      "decision_id": "D09",
+      "topic": "Trần chi API thực tế",
+      "options": [
+        "Nhóm xác nhận trần USD cụ thể",
+        "Không cấp ngân sách"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "$10–15 là đề xuất; approved budget=null. Người có quyền chi cung cấp chứng cứ.",
+      "permission_key": "budget_usd"
+    },
+    {
+      "decision_id": "D10",
+      "topic": "Generator và nhánh fallback",
+      "options": [
+        "API đủ quyền/payload/budget",
+        "Local đủ quyền và pilot khả thi",
+        "Xin amendment retrieval/extractive"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Chọn trước pilot thực; nếu mọi model bị cấm thì RQ3 chưa chạy, xin đổi scope."
+    },
+    {
+      "decision_id": "D11",
+      "topic": "Ngôn ngữ output đánh giá",
+      "options": [
+        "English",
+        "Vietnamese"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "B",
+      "reviewer": "C",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Khóa một ngôn ngữ cho các conditions; báo cáo/demo có thể khác nhưng phải ghi."
+    },
+    {
+      "decision_id": "D12",
+      "topic": "Khai báo sử dụng AI",
+      "options": [
+        "Theo quy định được giảng viên cung cấp",
+        "Chờ phản hồi và lưu AI contribution log"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Không gọi AI readings/judgments là công đọc/chấm người."
+    },
+    {
+      "decision_id": "D13",
+      "topic": "Kaggle quota/GPU và runtime",
+      "options": [
+        "Đo quota/CPU/GPU thật được phép",
+        "Dùng CPU/cached workflow phù hợp"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "A",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Không bảo đảm quota ba tài khoản; model/data upload theo quyền riêng."
+    },
+    {
+      "decision_id": "D14",
+      "topic": "GR/reranker optional trước F1",
+      "options": [
+        "Bỏ GR để bảo vệ MVP",
+        "Giữ GR khi dev evidence và công đủ"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "B",
+      "reviewer": "C",
+      "due_relative_week": 5,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Mặc định chưa chọn; khóa trước test, không quyết theo điểm test."
+    },
+    {
+      "decision_id": "D15",
+      "topic": "Năng suất annotation và phạm vi evidence",
+      "options": [
+        "Giữ lịch sau calibration5ca",
+        "Cắt optional hoặc amendment có review"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "A",
+      "reviewer": "B",
+      "due_relative_week": 2,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "Đo phút/pair, đọc ca và adjudication; không giảm core56/test18 mặc định."
+    },
+    {
+      "decision_id": "D16",
+      "topic": "Human review G0 và xác nhận handoff",
+      "options": [
+        "Nhóm review/ký cùng phiên bản",
+        "Trả issues về owner rồi review lại"
+      ],
+      "chosen": null,
+      "status": "pending",
+      "owner": "C",
+      "reviewer": "B",
+      "due_relative_week": 1,
+      "source_ref": null,
+      "decided_at_utc": null,
+      "follow_up": "A/B/C ký phạm vi tương ứng; không dùng automated PASS làm chữ ký người."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Local AI / editor tooling (plans/*.md and plan folders stay tracked)
+.claude/
+.cursor/
+.runtime-python/
+plans/.agentkit-runtime/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.venv/
+venv/
+ENV/
+
+# Regeneratable implementation caches and deps
+06_implementation/.agentkit/
+06_implementation/.agentkit-*/
+06_implementation/.corpus-deps/
+06_implementation/.corpus-wheelhouse/
+06_implementation/.representation-check/
+06_implementation/.retrieval-deps/
+06_implementation/.retrieval-wheelhouse/
+06_implementation/.test-work/
+06_implementation/.wheelhouse/
+06_implementation/.work/
+06_implementation/runs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local scratch (do not commit)
+_remote_check/

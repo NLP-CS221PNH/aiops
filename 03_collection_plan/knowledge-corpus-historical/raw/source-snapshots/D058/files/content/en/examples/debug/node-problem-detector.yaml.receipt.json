@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/examples/debug/node-problem-detector.yaml",
+  "retrieved_at": "2026-09-12T16:58:11.219101Z",
+  "sha256": "0dc124cc6875df9f6197138c8071bdf4018a0f75afa6638a4350312ff8a5b0b8",
+  "bytes": 1022,
+  "http_status": 200,
+  "etag": "\"3603d34476f883a95b106810764a745ee832ed703ccf9676aa132d2bcaae0187\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

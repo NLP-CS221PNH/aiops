@@ -1,0 +1,55 @@
+{
+  "schema_version": "cs221-retrieval-config-v1",
+  "code_version": "retrieval-v1",
+  "content_policy": "section_heading + newline + text",
+  "task_version": "offline-evidence-assistance-retrospective-v1",
+  "corpus_manifest": "data/knowledge/corpus-manifest.json",
+  "corpus_manifest_sha256": "ffbe1715e4bd5387843d083fb0daf27f12dd3b2eea1a8c1f9619c4725c6153f7",
+  "query_manifest": "queries/query-manifest.json",
+  "query_manifest_sha256": "013b41243616224fe39069d0fa27912689536095d1ca3db425b09ab513f40a28",
+  "query_file": "variants.train-dev.jsonl",
+  "query_schema": "queries/representation-schema.json",
+  "query_schema_sha256": "c86745c9dec0b067b7744951a3f974bf5615978cb0eb266097ed917cf8c3c365",
+  "input_manifest": "data/inference/input-manifest.json",
+  "input_manifest_sha256": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+  "representation": "R2",
+  "depth": 50,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenizer_version": "technical-preview-v1-sorted-query-terms"
+  },
+  "dense": {
+    "model_id": "intfloat/e5-small-v2",
+    "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "model_dir": "vendor/e5-small-v2",
+    "assets": {},
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "normalize_embeddings": true,
+    "max_tokens": 512,
+    "batch_size": 2,
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "rrf": {
+    "constant": 60,
+    "weights": [
+      1.0,
+      1.0
+    ]
+  },
+  "reranker": {
+    "enabled": false,
+    "model_id": "BAAI/bge-reranker-base",
+    "revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+    "model_dir": "vendor/bge-reranker-base",
+    "assets": {},
+    "max_tokens": 512,
+    "batch_size": 2,
+    "device": "cpu"
+  },
+  "cache_dir": "cache/retrieval",
+  "run_root": "runs/retrieval",
+  "fixture": false
+}

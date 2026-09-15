@@ -1,0 +1,6 @@
+# Measured local runtime: CPython 3.11.9, Windows AMD64, wheel ABI cp311-cp311-win_amd64.
+# Runtime dependency only; no model, tokenizer, notebook-server, GPU or API packages.
+# Fresh venv bootstrap measured separately: pip 24.0, setuptools 65.5.0.
+# SHA256 is of the actual cached wheel used for the clean local installation.
+# This artifact hash is Windows-specific. Do not reuse this wheel/lock on Linux.
+pyarrow==21.0.0 --hash=sha256:555ca6935b2cbca2c0e932bedd853e9bc523098c39636de9ad4693b5b1df86d6

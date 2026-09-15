@@ -1,0 +1,22 @@
+{
+  "compatibility": "unknown",
+  "corpus_hash": "5c038293ce2ee69a42277170e18dd9c88417aff7e5c0aa127f034438803e23f3",
+  "counts": {
+    "candidate_chunks": 440,
+    "candidate_documents": 67,
+    "excluded_documents": 7,
+    "indexed_chunks": 0,
+    "indexed_documents": 0,
+    "max_tokens": 511,
+    "old_chunks": 580,
+    "source_documents": 74,
+    "unknown_documents": 67
+  },
+  "coverage": "unjudged",
+  "human_review": "pending",
+  "release_ready": false,
+  "schema_version": "cs221-corpus-validation-v1",
+  "status": "pass",
+  "technical_valid": true,
+  "validation_scope": "all source and derivative hashes, spans, token counts, citations, lineage, candidate boundary"
+}

@@ -1,0 +1,237 @@
+schema_version: 1
+protocol_id: cs221-aiops-rag-protocol-v1
+version: 1.0.0-reviewed.1
+status: reviewed
+dataset_id: RCAEval-RE2-OB
+split_version: cs221-family-split-20260912-v1
+split_source: 02_datasets/processed/split-map.tsv
+split_sha256: d7941d1487d4ec7e3943692b2911ea422bf6b14d620fd8e150324161fc17b8c7
+annotation_status_source: 03_collection_plan/annotation-kit/status.json
+dataset:
+  incidents: 90
+  families: 30
+  split:
+    train: 54
+    dev: 18
+    test: 18
+  family_split:
+    train: 18
+    dev: 6
+    test: 6
+  repetitions_per_family: 3
+  source_revision: afeacb11bcc94dadfd1c8f483ee4377b2b8b614e
+  inference_export_status: pending_plan_02
+  legacy_observations_contain_private_fields:
+  - scenario_family_id
+  - split
+primary_metric: passage_ndcg_at_5
+primary_selection: stronger_dev_single
+tie_break: BM25
+selected_single: null
+required_conditions:
+- G0
+- GB
+- GD
+- GH
+optional_conditions:
+- GR
+required_retrievers:
+- IR-B
+- IR-D
+- IR-H
+optional_retrievers:
+- IR-R
+test_tuning: false
+qrels_core:
+  train: 20
+  dev: 18
+  test: 18
+human_judgments_current: 0
+unjudged_is_zero: false
+no_relevant_policy: undefined_report_separately
+freeze_sequence:
+- F1
+- test_input
+- test_pool
+- F2
+- test_scoring
+research_questions:
+  RQ1:
+    purpose: representation_ablation
+    splits:
+    - train
+    - dev
+    priority: secondary
+  RQ2:
+    purpose: hybrid_vs_selected_single
+    priority: primary
+  RQ3:
+    purpose: localization_grounding_abstention
+    status: not_run_permission_pending
+corpus:
+  proposed_snapshot_id: cs221-knowledge-pre2024-v1
+  source_documents: 74
+  source_chunks: 580
+  derivative_hash: null
+  applicability: human_review_pending
+  content_field: section_heading_plus_text
+  bibliography_in_index: false
+representation:
+  candidates:
+  - R1
+  - R2
+  - R3
+  selected: null
+  r1_r2_shared_evidence_after_budgeting: true
+  r2_saved_tokens_add_evidence: false
+  test_inputs_created_after_F1: true
+  test_inputs_separate_from_train_dev: true
+retrieval:
+  pilot_only: true
+  dense_candidate: intfloat/e5-small-v2
+  dense_revision: null
+  tokenizer_revision: null
+  candidate_depth: 50
+  rrf_constant: 60
+  max_context_chunks: 5
+  pad_short_rankings: false
+  reranker_selected: null
+annotation:
+  grade_values:
+  - 0
+  - 1
+  - 2
+  relevant_grade_minimum: 1
+  independent_human_judges_per_core_pair: 2
+  adjudicator: third_human
+  preserve_original_judgments: true
+  pool: top_10_union_all_evaluated_methods_and_configs
+  final_top_5_judged_required: true
+  document_relevance: separate_human_judgment
+  agreement: before_adjudication
+metrics:
+  gain: 2^rel-1
+  discount: log2(rank+1)
+  aggregation: macro_same_eligible_incidents
+  contrast: mean_paired_incident_deltas
+  no_eligible_dev: selection_pending
+  empty_ranking_with_relevant_qrels: 0
+  missing_top_5_judgments: block_headline_scoring
+  document_collapse: first_chunk_rank_per_document
+  document_without_own_qrels: unavailable
+  mrr_at_10: requires_judged_actual_top_10_and_relevant_qrels
+  pooled_recall:
+    cutoffs:
+    - 20
+    - 50
+    purpose: diagnostic
+    report_judged_at_k: true
+  judged_coverage_denominator: actual_returned_results
+  empty_ranking_judged_coverage: undefined
+  service_accuracy_denominator: 18
+  service_top_k:
+  - 1
+  - 3
+  failed_invalid_abstained_localization: incorrect
+  zero_coverage_conditional_accuracy: undefined
+  zero_claims_or_citations_rate: undefined
+  family_deltas:
+    count: 6
+    no_eligible_incident: undefined
+  uncertainty: family_clustered_exploratory
+  leave_one_family_out: recompute_same_primary_statistic
+  bootstrap:
+    unit: family
+    keep_pairing: true
+    seed: null
+    resamples: null
+generation:
+  model: null
+  revision: null
+  prompt_hash: null
+  decoding: null
+  same_generator_context_policy: true
+  no_rag_keeps_observations: true
+  citations_must_be_in_actual_context: true
+  pilot_token_budgets:
+    observations: 2048
+    knowledge: 4096
+    output: 768
+  system_prompt_tokens_counted_separately: true
+  final_records:
+    required: 72
+    with_optional_GR: 90
+  human_review:
+    all_outputs_once: true
+    double_review_incidents: 6
+    subset_seed: null
+    select_before_F1: true
+    additional_reviews: 24
+    additional_with_GR: 30
+  retry_based_on_correctness: false
+  keep_failed_records: true
+  output_language: null
+permissions:
+  api: pending
+  api_payload: pending
+  local_model: pending
+  data_sharing: pending
+  budget_usd: null
+resources:
+  weeks: 8
+  members: 3
+  start_date: null
+  submission_deadline: null
+  rubric_source: null
+  direct_hours:
+    min: 308
+    max: 374
+  contingency_fraction: 0.2
+  total_hours_rounded:
+    min: 370
+    max: 449
+  annotation_hours:
+    min: 84
+    max: 150
+  calibration_incidents: 5
+  calibration_due_week: 2
+  generator_decision_due_week: 2
+  proposed_budget_usd:
+    min: 10
+    max: 15
+  actual_spend_usd: null
+  api_prices_verified_for_execution: false
+  kaggle_quota_verified: false
+team:
+- role: A
+  person: null
+  reviewer: B
+  weekly_hours: null
+- role: B
+  person: null
+  reviewer: C
+  weekly_hours: null
+- role: C
+  person: null
+  reviewer: A
+  weekly_hours: null
+communication:
+  status: pending
+  sent_at_utc: null
+  response_ref: null
+gate:
+  gate_id: G0
+  gate_kind: project_start
+  status: accepted
+  api_permission_independent: true
+  permitted_preparation:
+  - data
+  - corpus
+  - representation
+  - retrieval
+  - annotation_preparation
+  downstream_plans_executed_in_this_delivery: false
+  review_mode: automated
+  authorization_ref: 06_implementation/configs/acceptance-authorization.json
+  review_receipt_ref: 06_implementation/reports/plan01-autonomous-review.json
+  human_review_required: false

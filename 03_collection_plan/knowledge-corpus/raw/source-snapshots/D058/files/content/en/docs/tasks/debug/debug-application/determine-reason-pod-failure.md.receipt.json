@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/76a0e90f253e924a7b55f01f92a37555bd89be68/content/en/docs/tasks/debug/debug-application/determine-reason-pod-failure.md",
+  "retrieved_at": "2026-09-12T16:49:11.654180Z",
+  "sha256": "b43a3dad47d2428042e5a5d2b32c586fa1b0504cdcdfd9513874b8bfce35f57d",
+  "bytes": 4998,
+  "http_status": 200,
+  "etag": "\"b5121a4095cd7800747863fd269cdb9ad084f95f1c43524f0504b83876abfab3\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

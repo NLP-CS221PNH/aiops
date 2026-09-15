@@ -1,0 +1,110 @@
+{
+  "schema_version": "cs221-retrieval-handoff-v1",
+  "version": "1.0.0-tooling",
+  "timestamp": "2026-09-13T05:19:10.451811+00:00",
+  "status": "technical_delivery_complete_pilot_pending",
+  "authorized_scope": "Build and test runners now; wait for a reviewed corpus before the pilot.",
+  "milestone": "05.runners",
+  "milestone_accepted": false,
+  "technical_contract_ready": true,
+  "real_pilot_status": "not_run_waiting_for_reviewed_corpus",
+  "real_pilot_rankings": 0,
+  "real_test_rankings": 0,
+  "quality_metrics": null,
+  "winner": null,
+  "methods": {
+    "IR-B": "implemented_and_synthetic_cli_verified",
+    "IR-D": "exact_cosine_and_actual_E5_tokenizer_verified_neural_execution_unverified",
+    "IR-H": "independent_RRF_verified_real_hybrid_pilot_pending",
+    "IR-R": "optional_adapter_implemented_unavailable_weights_runtime_actual_BGE_tokenizer_not_verified"
+  },
+  "checks": {
+    "full_suite_tests": 269,
+    "retrieval_tests_included": 66,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "reproduction_commands": 15,
+    "synthetic_artifact_hashes": 28,
+    "independent_review": "pass_with_deferred_acceptance_limits",
+    "review_score": 9.3,
+    "open_material_findings": 0,
+    "upstream_hashes_unchanged": 225
+  },
+  "artifacts": {
+    "configs/retrieval-requirements-lock.txt": "7744dd805a970f964b50f4e03408ee1d26c3a80305aff786295dbd6887720466",
+    "configs/retrieval.yaml": "db013ba9eacf26938b5a4ac4aaea5ff724fcf6d29198dd9dc3d5710e96fe8b51",
+    "docs/retrieval-runbook.md": "f6655cef1f8b2daa9c9b7e72ece05b9091832076261872282527f087cc03ce61",
+    "notebooks/02_retrieval.ipynb": "8fc3b0a279637b6bf3ce86f36771a4398106d6ba6863f0964042016ebb340f30",
+    "reports/retrieval-code-review.json": "faeef684f58ec51e8098cf0af1ba08eabf5fdcad0f4f1833c0cbea3333c31bd9",
+    "reports/retrieval-code-review.md": "b5e99d1d914391d9b26eac19a5e025ea0f8db717a620b9d68e2b78977a9bc49f",
+    "reports/retrieval-debugger-preflight.md": "b9f057ceafee6e043aa020b693995ae37131eb05765b53e72c4b172be86f9b30",
+    "reports/retrieval-dependency-provisioning.json": "eeb83dfe09a5e4873d9f2702f898a723b36c2efaff5faac2ba3fc60507263c2c",
+    "reports/retrieval-goal-contract.md": "91694102f2dcc8298b8b70b10edc9a2b150df1b069d30b625864fd9f59231d4d",
+    "reports/retrieval-independent-review-checks.json": "ca1f316628b4c7b28e5c820c5cb2f55101d27993e1e9b84720a8dd32da413a6e",
+    "reports/retrieval-input-audit.md": "d86bd53c855fa3e517cf10df17fbfe30980d053d2fbab23a64af7ad9b58c0294",
+    "reports/retrieval-pilot-audit.md": "ff49a43afb1cacc85ff3510d4b36a4b0e6d8be165bc842d789202b20e1a90544",
+    "reports/retrieval-preflight-inputs.json": "2b26e1c832504087821edf310585fde42007f90137384d95797e5a06fc9a0c1d",
+    "reports/retrieval-reproducibility.json": "c675fe031ad825e9492669cd71ff33bbd4685dfab81ac66da7aa4b319b778f4f",
+    "reports/retrieval-tests.json": "8ddf1e3438b06aa2b2afa88a0ab86db2c9b0dc8115ce0316d36d3ec5dc0de1e5",
+    "reports/retrieval-tests.md": "d97be519243758febfc3406f54d9d223e5120de994c5ec77ba92a02728b36232",
+    "schemas/retrieval-run.schema.json": "4fdf41e284b79743442d523d196109cf52131eb1386bfe4068dca6cd921d9851",
+    "scripts/verify_retrieval_delivery.py": "7a54de7e9249f0493caf5d77f45e4a6ad5ef2a171128334162d67bf49ec3b55e",
+    "src/retrieval/__init__.py": "a418cf9caecd6ade4df27790cff4565a44a699f7afca98d5527284163989314b",
+    "src/retrieval/__main__.py": "9a5296b72d119c0255e0b50dad3c825e259e32b587974c07223b3132bde86e8f",
+    "src/retrieval/bm25.py": "a953f92103aa03a950de9959d651dab117cd431ae9dddb915e220fbff0d17661",
+    "src/retrieval/cache.py": "e35e723194be204a02cdae2f2063d9addb43e702cfd565ed3fa4d2bc293425bb",
+    "src/retrieval/common.py": "0277b3b3d95efceef6c010e971ff983c0421fb80c309148566ec85fee6dce063",
+    "src/retrieval/consumer.py": "a7a2c20b18106ef50f186283c7283e676e3fb36ea795833a23b616b8e8013174",
+    "src/retrieval/dense.py": "ef3ddd449fb33b70230fe7e97c5bd850df8416470b5493cd9d81c8df740ec14b",
+    "src/retrieval/fusion.py": "07219378ad3ae97364c637c41eb3d40e85d2cc560c7c18cacd73b0364b10c600",
+    "src/retrieval/inputs.py": "19ec3a2293ee80b43bf9fc9b9793d97654aafb3e871c0d17c1cc8179c963aa1e",
+    "src/retrieval/rerank.py": "7df4f3463e50bfb24f733a2424607b261f1e2a3858507583eb37493961750428",
+    "src/retrieval/runner.py": "5a517ba47bb8afd133663a06f1df1f0a4a826c8842a4d70b80fd9f6a9614b7ef",
+    "tests/fixtures/retrieval/README.md": "98e7b6b6c996e1c16426e90bff10ca537f90f1ed094d29048635a58e4ae702f8",
+    "tests/fixtures/retrieval/bm25-hand.json": "9603f5d1d3140f3724c2e0f043fd2967226cfd85eddb6eaa298b80762f4ef7ef",
+    "tests/fixtures/retrieval/build_fixture.py": "d6c54b05d2a3103ebc3997b26ed518694d1f2cf78cb53b5e878e40a9a2fe987a",
+    "tests/fixtures/retrieval/rrf-hand.json": "e1d52ed0d495f4dbdfea8487e85a6bfe66f8591de4b834df1efcbc53f73349fb",
+    "tests/test_retrieval_contract.py": "9b7c9900b4686f1a414cf90e1d73c6c96fe609a5ceae95add0b9bb9ca130d5a9",
+    "tests/test_retrieval_engines.py": "51e516ff55d027e9443ca4e762285908140e13d529059363e620b4dd45921438"
+  },
+  "synthetic_run_manifests": {
+    "fresh": "runs/retrieval/fixture/fresh-verification-1a454b48672b/run-manifest.json",
+    "repeat": "runs/retrieval/fixture/repeat-verification-1a454b48672b/run-manifest.json",
+    "resume": "runs/retrieval/fixture/resume-verification-1a454b48672b/run-manifest.json",
+    "unavailable": "runs/retrieval/fixture/unavailable-verification-1a454b48672b/run-manifest.json"
+  },
+  "consumer_interfaces": {
+    "06": "consumer.read_run and comparable_runs; top-10 pooling is manager work; actual pilot pool pending",
+    "07": "consumer.read_hits(limit=5); resolve citations via unchanged owner03 registry; no padded evidence",
+    "08": "CLI run --mode frozen requires independently authenticated F1 and later test-input manifest hashes; handshake acceptance and real execution pending"
+  },
+  "owner_reviews": {
+    "A": "pending_human_corpus_applicability_release",
+    "B": "pending_human_retrieval_acceptance_and_model_provisioning",
+    "C": "pending_human_runtime_and_consumer_acceptance",
+    "06": "pending_actual_pilot_allowlists_rankings_and_pool_acceptance",
+    "07": "pending_actual_hits_acceptance",
+    "08": "pending_freeze_handshake_and_selection"
+  },
+  "blockers": [
+    {
+      "id": "reviewed_corpus",
+      "owner": "A/B, plan03",
+      "required": "Versioned reviewed corpus release with nonempty approved index whitelist; update retrieval input pins after acceptance."
+    },
+    {
+      "id": "dense_resources",
+      "owner": "B/C, plans02/05",
+      "required": "Pinned Torch/Transformers runtime and E5 model/tokenizer asset hashes; verify real encoding before pilot."
+    },
+    {
+      "id": "pilot_and_consumers",
+      "owner": "B,06/07/08",
+      "required": "Approved train/dev allowlists, actual5-train smoke/20-train pilot/18-dev run evidence, measured repeat/resume and consumer acceptance."
+    }
+  ],
+  "invalidation_policy": "Change input text/model/tokenizer/prefix/budget/config/code/runtime -> new fingerprint and run; changed evidence/task/window needs downstream judgment impact review. Preserve committed attempts and previous receipts.",
+  "human_signatures": [],
+  "external_sharing_performed": false
+}

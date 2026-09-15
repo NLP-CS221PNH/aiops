@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/recommendationservice.yaml",
+  "retrieved_at": "2026-09-12T16:49:10.503833Z",
+  "sha256": "ecdf5496ecd9b4543b6aaced38287be7ab1a019e3cb3e929a982c1dc9aa2179a",
+  "bytes": 2228,
+  "http_status": 200,
+  "etag": "\"e5caff414ef472832f83b69ec7567943d823509536db0297d1b164fbf64ad3d4\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

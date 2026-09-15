@@ -1,0 +1,653 @@
+
+ 
+	 
+		 
+		 
+
+		 
+			 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+			 
+
+	 
+	 Pinpoint: Problem Determination in Large, Dynamic, Internet Services - Microsoft Research 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	 
+	 
+
+	
+	 
+	 
+	 
+
+	
+	 
+	 
+	 
+
+	 
+ 
+     	 
+
+	 
+
+		
+
+		 
+							 
+     Skip to main content 
+
+ 
+    
+ 
+         
+             
+         
+             
+  Research               
+ 
+
+
+ 
+
+
+
+ 
+    
+
+         
+                     Publications 
+                     Code, datasets and models 
+         
+         
+                     Artificial intelligence 
+                     Audio & acoustics 
+                     Computer vision 
+                     Graphics & multimedia 
+                     Human-computer interaction 
+                     Human language technologies 
+                     Search & information retrieval 
+         
+         
+                     Data platforms and analytics 
+                     Hardware & devices 
+                     Programming languages & software engineering 
+                     Quantum computing 
+                     Security, privacy & cryptography 
+                     Systems & networking 
+         
+         
+                     Algorithms 
+                     Mathematics 
+         
+         
+                     Ecology & environment 
+                     Economics 
+                     Medical, health & genomics 
+                     Social sciences 
+                     Technology for emerging markets 
+         
+
+
+ 
+
+
+ 
+    
+
+             Academic programs 
+             Events & academic conferences 
+             Microsoft Research Forum 
+
+
+ 
+
+
+ 
+    
+
+             Microsoft Research Blog 
+             Microsoft Research Podcast 
+             Microsoft Research Stories 
+
+
+ 
+
+
+ 
+    
+
+         
+                     About Microsoft Research 
+                     Careers & internships 
+                     People 
+                     Emeritus program 
+                     News & awards 
+                     Microsoft Research newsletter 
+         
+         
+                     Africa 
+                     AI for Science 
+                     AI Frontiers 
+                     Asia-Pacific 
+                     Cambridge 
+                     Catalyst 
+                     Health Futures 
+                     India 
+                     Montreal 
+                     New England 
+                     New York City 
+                     Redmond 
+         
+         
+                     Applied Sciences 
+                     Mixed Reality & AI - Cambridge 
+                     Mixed Reality & AI - Zurich 
+         
+
+
+              
+                Register: Research Forum
+             
+      
+        
+ 
+    
+     
+             Microsoft Security 
+             Azure 
+             Dynamics 365 
+             Microsoft 365 
+             Microsoft Teams 
+             Windows 365 
+     
+
+         
+                     Microsoft AI 
+                     Azure Space 
+                     Mixed reality 
+                     Microsoft HoloLens 
+                     Microsoft Viva 
+                     Quantum computing 
+                     Sustainability 
+         
+         
+                     Education 
+                     Automotive 
+                     Financial services 
+                     Government 
+                     Healthcare 
+                     Manufacturing 
+                     Retail 
+         
+         
+                     Find a partner 
+                     Become a partner 
+                     Partner Network 
+                     Microsoft Marketplace 
+                     Software companies 
+         
+         
+                     Blog 
+                     Microsoft Advertising 
+                     Developer Center 
+                     Documentation 
+                     Events 
+                     Licensing 
+                     Microsoft Learn 
+                     Microsoft Research 
+         
+
+     
+         View Sitemap 
+     
+
+ 
+
+
+             
+             
+     
+ 
+					 
+
+		
+ 
+
+	 
+		 
+ Pinpoint: Problem Determination in Large, Dynamic, Internet Services 
+
+		 
+			 
+				 
+					
+			 
+			 
+ 
+							 Mike Chen 
+						,		 
+			 
+ 
+							 
+					 Emre Kiciman 
+				 
+						,		 
+			 
+ 
+							 Eugene Fratkin 
+						,		 
+			 
+ 
+							 Armando Fox 
+						,		 
+			 
+ 
+							 Eric Brewer 
+								 
+	 
+	
+ 
+ 
+	 
+		 
+			
+			The International Conference on Dependable Systems and Networks (IPDS Track)
+					 
+	 
+
+	 |  January 2002 
+
+
+
+
+				 
+			 
+							 
+																 Download BibTex 
+									 
+					 
+		 
+			 
+				 
+					
+					 
+						
+
+
+ 
+ Traditional problem determination techniques rely on static dependency models that are difficult to generate accurately in today’s large, distributed, and dynamic application environments such as e-commerce systems. In this paper, we present a dynamic analysis methodology that automates problem determination in these environments by 1) coarse-grained tagging of numerous real client requests as they travel through the system and 2) using data mining techniques to correlate the believed failures and successes of these requests to determine which components are most likely to be at fault. To validate our methodology, we have implemented Pinpoint, a framework for root cause analysis on the J2EE platform that requires no knowledge of the application components. Pinpoint consists of three parts: a communications layer that traces client requests, a failure detector that uses traffic-sniffing and middleware instrumentation, and a data analysis engine. We evaluate Pinpoint by injecting faults into various application components and show that Pinpoint identifies the faulty components with high accuracy and produces few false-positives. 
+ Opens in a new tab 					 
+
+					
+					
+									 
+			 
+
+			 
+									 
+						PDF					 
+				
+									 
+ 
+						 
+ 
+							Research Areas						 
+						 
+							 
+																	 
+ 
+										 
+											Systems and networking										 
+									 
+															 
+						 
+					 
+							 
+		 
+	 
+
+	 
+
+ 
+	 
+ 
+		 
+			 
+				 
+					 
+						 
+ 
+							Follow us:						 
+						 
+							 
+ 
+																 
+									 Follow on X 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Like on Facebook 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Follow on LinkedIn 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Subscribe on Youtube 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Follow on Instagram 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Subscribe to our RSS feed 
+									
+ 
+								 
+							 
+						 
+					 
+				 
+
+				 
+					 
+						 
+ 
+							Share this page:						 
+						 
+
+							 
+ 
+								
+								 
+									 Share on X 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on Facebook 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on LinkedIn 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on Reddit 
+									
+ 
+								 
+							 
+						 
+					 
+
+				 
+			 
+		 
+	 
+ 
+		 
+			 
+		 
+
+		 
+
+					 
+     
+    
+ 
+             
+                     
+                                 Surface Pro                             
+                                 Surface Laptop                             
+                                 Surface Laptop Ultra                             
+                                 Surface RTX Spark Dev Box                             
+                                 Copilot for organizations                             
+                                 Copilot for personal use                             
+                                 Explore Microsoft products                             
+                                 Windows 11 apps                             
+                     
+                     
+                                 Account profile                             
+                                 Download Center                             
+                                 Microsoft Store support                             
+                                 Returns                             
+                                 Order tracking                             
+                                 Certified Refurbished                             
+                                 Microsoft Store Promise                             
+                                 Flexible Payments                             
+                     
+                     
+                                 Microsoft in education                             
+                                 Devices for education                             
+                                 Microsoft Teams for Education                             
+                                 Microsoft 365 Education                             
+                                 How to buy for your school                             
+                                 Educator training and development                             
+                                 Deals for students and parents                             
+                                 AI for education                             
+                     
+             
+             
+                     
+                                 Microsoft AI                             
+                                 Microsoft Security                             
+                                 Dynamics 365                             
+                                 Microsoft 365                             
+                                 Microsoft Power Platform                             
+                                 Microsoft Teams                             
+                                 Microsoft 365 Copilot                             
+                                 Small Business                             
+                     
+                     
+                                 Azure                             
+                                 Microsoft Developer                             
+                                 Microsoft Learn                             
+                                 Support for AI marketplace apps                             
+                                 Microsoft Tech Community                             
+                                 Microsoft Marketplace                             
+                                 Software companies                             
+                                 Visual Studio                             
+                     
+                     
+                                 Careers                             
+                                 About Microsoft                             
+                                 Company news                             
+                                 Privacy at Microsoft                             
+                                 Investors                             
+                                 Diversity and inclusion                             
+                                 Accessibility                             
+                                 Sustainability                             
+                     
+             
+ 
+     
+        
+ 
+     
+     Your Privacy Choices Opt-Out Icon 
+     
+     
+     
+     
+     
+     Your Privacy Choices 
+ 
+         
+            
+ 
+     
+     Your Privacy Choices Opt-Out Icon 
+     
+     
+     
+     
+     
+     Your Privacy Choices 
+ 
+         
+     
+     Consumer Health Privacy 
+    
+ 
+             Sitemap 
+             Contact Microsoft 
+             Privacy  
+             Manage cookies 
+             Terms of use 
+             Trademarks 
+             Safety & eco 
+             Recycling 
+             About our ads 
+ 
+ 
+		
+		 
+
+		 
+	 
+	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+	 
+ 

@@ -1,0 +1,282 @@
+{
+  "scope": "Planning artifacts only; no experiments, human labeling, API calls or implementation tests.",
+  "checkedAt": "2026-09-13T01:41:20.891Z",
+  "pass": true,
+  "independentPlans": 10,
+  "phaseFiles": 30,
+  "markdownFiles": 44,
+  "localLinksChecked": 159,
+  "plannedLinks": 96,
+  "plannedEffortHours": [
+    308,
+    374
+  ],
+  "dependencyCyclesDetected": 0,
+  "errors": [],
+  "files": [
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-01-start.md",
+      "lines": 125,
+      "bytes": 9003,
+      "sha256": "cba9483124f2327b7663f3be1d1cf971692f6a16a35d865beae932df19841630"
+    },
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-02-build.md",
+      "lines": 132,
+      "bytes": 10089,
+      "sha256": "877f32a1b4cde5fdfe2787d209be1a7766e860b9f428546d88c5bf688e835ac7"
+    },
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/phase-03-validate-and-handoff.md",
+      "lines": 129,
+      "bytes": 9383,
+      "sha256": "a72598e0df6d75461445cde34e146462de9b414f84e0830e0aa7b2616252f742"
+    },
+    {
+      "path": "plans/260913-0057-cs221-01-scope-and-protocol/plan.md",
+      "lines": 76,
+      "bytes": 5237,
+      "sha256": "c419505e3cafc5937f37894e2b6e37582b670a6ac4129355884f71619e956f64"
+    },
+    {
+      "path": "plans/260913-0057-cs221-02-data-and-environment/phase-01-start.md",
+      "lines": 123,
+      "bytes": 8064,
+      "sha256": "9d0b5ad7dd5d51335aa902a2a357a2edb3fa9b6e285cd59a6a1160595444ae39"
+    },
+    {
+      "path": "plans/260913-0057-cs221-02-data-and-environment/phase-02-build.md",
+      "lines": 139,
+      "bytes": 10032,
+      "sha256": "de76bf87b84ae52b433f6862337a2e03b064bdd2ae9efcd21642bd93c9abe228"
+    },
+    {
+      "path": "plans/260913-0057-cs221-02-data-and-environment/phase-03-validate-and-handoff.md",
+      "lines": 129,
+      "bytes": 7881,
+      "sha256": "83bc91ce114f81f5b6c8a0164590d710043591924da725b9db65a15a8d3ff2f3"
+    },
+    {
+      "path": "plans/260913-0057-cs221-02-data-and-environment/plan.md",
+      "lines": 86,
+      "bytes": 7687,
+      "sha256": "d09de91e35aff696461bce7bcc0c9af4d7c132378a6b25dcf99d13d5f8adbcbb"
+    },
+    {
+      "path": "plans/260913-0057-cs221-03-knowledge-corpus/phase-01-start.md",
+      "lines": 125,
+      "bytes": 8157,
+      "sha256": "66d7c16db158a14fb0449bb7f24427b0d3ef8a6895b27f9ee8ca0ecb3d0b43e0"
+    },
+    {
+      "path": "plans/260913-0057-cs221-03-knowledge-corpus/phase-02-build.md",
+      "lines": 135,
+      "bytes": 8892,
+      "sha256": "35cae760a7b5495fea3e2e014d94d4e4dded2401fdc490cfd4660cb49b69ba7c"
+    },
+    {
+      "path": "plans/260913-0057-cs221-03-knowledge-corpus/phase-03-validate-and-handoff.md",
+      "lines": 129,
+      "bytes": 8041,
+      "sha256": "ff6b821ac85767f640bb954763392cc63ecd8f7ee19175eb656aac330b41f27b"
+    },
+    {
+      "path": "plans/260913-0057-cs221-03-knowledge-corpus/plan.md",
+      "lines": 85,
+      "bytes": 7542,
+      "sha256": "a09a44bd8c61ea162ae9d8b7f5229807c78fd71a8b76929606f76f1018a56c77"
+    },
+    {
+      "path": "plans/260913-0057-cs221-04-incident-representation/phase-01-start.md",
+      "lines": 133,
+      "bytes": 8409,
+      "sha256": "54e26f24388f8e7aa10ebfcadb381c3110f5109afe4ac8d5ba63867b0ef02a4c"
+    },
+    {
+      "path": "plans/260913-0057-cs221-04-incident-representation/phase-02-build.md",
+      "lines": 136,
+      "bytes": 9151,
+      "sha256": "4b17e7f24e4f60a8e71c1a2e753d517fe1577aec44b21b37f1c0fa9ace04693b"
+    },
+    {
+      "path": "plans/260913-0057-cs221-04-incident-representation/phase-03-validate-and-handoff.md",
+      "lines": 132,
+      "bytes": 8591,
+      "sha256": "2876eaae417c751eb45f651664f04db4d889a75016fb7673a0ab968e7190b90a"
+    },
+    {
+      "path": "plans/260913-0057-cs221-04-incident-representation/plan.md",
+      "lines": 87,
+      "bytes": 7740,
+      "sha256": "cd63bb7240ed1e8c93653fe17973d225966c7f6b8bd3aa8433ba0fda2e311a58"
+    },
+    {
+      "path": "plans/260913-0057-cs221-05-retrieval-baselines/phase-01-start.md",
+      "lines": 124,
+      "bytes": 6858,
+      "sha256": "6683a2bc93e7654958139176957744bc7c73a88d8c7cea95624a96fb743bfa4a"
+    },
+    {
+      "path": "plans/260913-0057-cs221-05-retrieval-baselines/phase-02-build.md",
+      "lines": 131,
+      "bytes": 7158,
+      "sha256": "a60a9d17564f5435ca6f8a9994ae86af08d53abce9ddf2d885b973d9c9d36a4e"
+    },
+    {
+      "path": "plans/260913-0057-cs221-05-retrieval-baselines/phase-03-validate-and-handoff.md",
+      "lines": 126,
+      "bytes": 6824,
+      "sha256": "9bc9ac9bb7b0cc6fbb2d0ab01c5be49a044b40ea8728df94b91c6c7f7d02a584"
+    },
+    {
+      "path": "plans/260913-0057-cs221-05-retrieval-baselines/plan.md",
+      "lines": 80,
+      "bytes": 5658,
+      "sha256": "6da569078afa0e51b313b3b68ad050ffe88ec376759e140fa5e626873377277f"
+    },
+    {
+      "path": "plans/260913-0057-cs221-06-annotation-and-qrels/phase-01-start.md",
+      "lines": 136,
+      "bytes": 7870,
+      "sha256": "d723323dab35bee127b1cc35af09d6ec5b1f835a07b5888cfd04c6edb96ede58"
+    },
+    {
+      "path": "plans/260913-0057-cs221-06-annotation-and-qrels/phase-02-build.md",
+      "lines": 137,
+      "bytes": 8162,
+      "sha256": "993a4b6fe60ce83cb2b6e50181a2bbed6b254bcd058d6bbc8e5486d1659be798"
+    },
+    {
+      "path": "plans/260913-0057-cs221-06-annotation-and-qrels/phase-03-validate-and-handoff.md",
+      "lines": 135,
+      "bytes": 7958,
+      "sha256": "4bc5752cd4df23b5a82b01a88df0cd8738f45c706f550bda59fa34ebe2b2b715"
+    },
+    {
+      "path": "plans/260913-0057-cs221-06-annotation-and-qrels/plan.md",
+      "lines": 81,
+      "bytes": 5425,
+      "sha256": "efebbe4eab9c870a908681f3a2be3b7b6e4d340b53e42b2ca2ce0445da28156c"
+    },
+    {
+      "path": "plans/260913-0057-cs221-07-grounded-generation/phase-01-start.md",
+      "lines": 135,
+      "bytes": 11020,
+      "sha256": "acc9c5272eb218eab8a6d8091d47b6480ae01b55976504d94ad0dfcdb9a2a2a7"
+    },
+    {
+      "path": "plans/260913-0057-cs221-07-grounded-generation/phase-02-build.md",
+      "lines": 147,
+      "bytes": 13936,
+      "sha256": "2a8736b893f8dabd7e72788fc1fcc011c3abb5fbbcc95a131f0790b45d2df6fd"
+    },
+    {
+      "path": "plans/260913-0057-cs221-07-grounded-generation/phase-03-validate-and-handoff.md",
+      "lines": 132,
+      "bytes": 10210,
+      "sha256": "aad4053a401e598d7199e4814f4e398d02103f1bef2250a0f1cdf44cacdce91b"
+    },
+    {
+      "path": "plans/260913-0057-cs221-07-grounded-generation/plan.md",
+      "lines": 76,
+      "bytes": 5402,
+      "sha256": "a6ae8807ae87abb3ed588d678e42b062c513cb87ce1e6352ca70882a8842ae1d"
+    },
+    {
+      "path": "plans/260913-0057-cs221-08-evaluation-and-freeze/phase-01-start.md",
+      "lines": 141,
+      "bytes": 9025,
+      "sha256": "ab9897c80f75129cfd993da0718b6b1b60c0fd8b289f949b246625103c19c8a0"
+    },
+    {
+      "path": "plans/260913-0057-cs221-08-evaluation-and-freeze/phase-02-build.md",
+      "lines": 146,
+      "bytes": 9996,
+      "sha256": "89eefc8ec5aab5dff58bdbf309f3fbc4c5a9961ea81686923f2c7f8e1cd8d141"
+    },
+    {
+      "path": "plans/260913-0057-cs221-08-evaluation-and-freeze/phase-03-validate-and-handoff.md",
+      "lines": 147,
+      "bytes": 9701,
+      "sha256": "409f7b7152d5080c2c3a7702437e042f01831c5e4adda66b4b11b2cded42326d"
+    },
+    {
+      "path": "plans/260913-0057-cs221-08-evaluation-and-freeze/plan.md",
+      "lines": 81,
+      "bytes": 5738,
+      "sha256": "b49211a73e1185cefb139b67d9f014025143ad8b2ff4e39d973dffdbd9da4a82"
+    },
+    {
+      "path": "plans/260913-0057-cs221-09-evidence-demo/phase-01-start.md",
+      "lines": 127,
+      "bytes": 9461,
+      "sha256": "3ee04f0b4eec33b532aa532c8454b1ae5c62f0a8bb60f42f0cbcad802d672f24"
+    },
+    {
+      "path": "plans/260913-0057-cs221-09-evidence-demo/phase-02-build.md",
+      "lines": 136,
+      "bytes": 10466,
+      "sha256": "f722a2c60ac678c1f9c5f1d247c8781c505b73a4140ec3c60eca02ebc2a7d77a"
+    },
+    {
+      "path": "plans/260913-0057-cs221-09-evidence-demo/phase-03-validate-and-handoff.md",
+      "lines": 135,
+      "bytes": 10501,
+      "sha256": "72bd4cc5f06b333a1e5c2f2630227694338822704a97c660fd12a0a52bc0acf5"
+    },
+    {
+      "path": "plans/260913-0057-cs221-09-evidence-demo/plan.md",
+      "lines": 76,
+      "bytes": 5237,
+      "sha256": "be0181679eb978faca662f9c40025dd3b2ab1f17382d57664a71938bec17ee29"
+    },
+    {
+      "path": "plans/260913-0057-cs221-10-report-and-release/phase-01-start.md",
+      "lines": 133,
+      "bytes": 10413,
+      "sha256": "186cd4bcb875d312474f0e40e4e91fa37de7283bc0bf0a47026319c6f72a465f"
+    },
+    {
+      "path": "plans/260913-0057-cs221-10-report-and-release/phase-02-build.md",
+      "lines": 139,
+      "bytes": 11189,
+      "sha256": "970803cb30837906c359765e7725d937cd629eb34036742dff9fe487f6e8c0bd"
+    },
+    {
+      "path": "plans/260913-0057-cs221-10-report-and-release/phase-03-validate-and-handoff.md",
+      "lines": 144,
+      "bytes": 13601,
+      "sha256": "be57dd2d3857b376af2613fd6e41c9d3fec1e29d799a5409890cfa4544d8fd2b"
+    },
+    {
+      "path": "plans/260913-0057-cs221-10-report-and-release/plan.md",
+      "lines": 77,
+      "bytes": 5405,
+      "sha256": "fbbca913939a71b44f295f05b9fce8743bdd3fecadb73aad44c05ab4f10498d8"
+    },
+    {
+      "path": "plans/260913-independent-plans-index.md",
+      "lines": 72,
+      "bytes": 6904,
+      "sha256": "2adee7e6b5124fd09e48d3b75e78576f986057098d000f9ec97181eabfba55d0"
+    },
+    {
+      "path": "plans/reports/260913-independent-plans-contracts.md",
+      "lines": 140,
+      "bytes": 17948,
+      "sha256": "10fd147a2ac5b4456518c85997022bcae80f6505d0d88ecb67a1f12a07bd96a8"
+    },
+    {
+      "path": "plans/reports/260913-independent-plans-research.md",
+      "lines": 163,
+      "bytes": 23650,
+      "sha256": "79b49595a9ceac8a173dbb4576fa28f2141e76890c1209d639840372c2b857ba"
+    },
+    {
+      "path": "plans/reports/260913-independent-plans-review.md",
+      "lines": 88,
+      "bytes": 9570,
+      "sha256": "b53afebdbe231f0d2d2caca1cb403d8aa1cfcd2d25b3977c2c01a8714036c3f2"
+    }
+  ]
+}

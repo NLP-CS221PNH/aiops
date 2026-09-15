@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/docs/concepts/configuration/manage-resources-containers.md",
+  "retrieved_at": "2026-09-12T16:58:04.302588Z",
+  "sha256": "ad40cba32ae16d74cba965fea50c765ae3427e2fdee5c7e580585f7899b2669e",
+  "bytes": 35379,
+  "http_status": 200,
+  "etag": "\"42b7ca5c6d25291a1965f9d81773635a1f40256315e5078903d64af556ccae89\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

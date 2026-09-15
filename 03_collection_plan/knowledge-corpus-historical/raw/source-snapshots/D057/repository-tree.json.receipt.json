@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/GoogleCloudPlatform/microservices-demo/git/trees/80bea9bfd97bec107361d4663e207aa8d3f312c6?recursive=1",
+  "retrieved_at": "2026-09-12T16:57:53.401433Z",
+  "sha256": "0de0756c5ebc7b716c4a592f2e2748005f036dbe11d3fe5b81cff3f2709d1e56",
+  "bytes": 118380,
+  "http_status": 200,
+  "etag": "W/\"5422622128547daa8f79f912ef689db0db80773a024df7661072015661cc3e99\"",
+  "last_modified_http": "Sat, 12 Sep 2026 15:30:59 GMT",
+  "http_last_modified_is_content_publication_time": false
+}

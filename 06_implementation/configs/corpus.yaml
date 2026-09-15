@@ -1,0 +1,66 @@
+{
+  "schema_version": "cs221-corpus-config-v1",
+  "corpus_version": "historical-candidate-v1",
+  "normalization_version": "source-spans-normalize-v1",
+  "chunking_version": "sections-e5-512-overlap32-v1",
+  "source_root": "03_collection_plan/knowledge-corpus-historical",
+  "selected_sources": ["D057", "D058", "D059"],
+  "expected_source_counts": {"D057": 25, "D058": 14, "D059": 35},
+  "source_hashes": {
+    "source-manifest.jsonl": "f8f768a8ee87b25d414a954fd0b0998d167bb91c5c3f5483cdff1c23ede07391",
+    "documents.jsonl": "b8373b3087de3933b6dfee2ab0aa28db6df14485f7bda913360be3a19d409ab3",
+    "chunks.jsonl": "1f6c1c28f5f7bcab926509595dda5d5400600c0ea773fdb23eb09d1849a6d8ca",
+    "supporting-assets.jsonl": "4a277721a0c5bc3db40cc8456e194d00b40025e941b193e71b1043cd66a68f78"
+  },
+  "preparation_root": "data/knowledge-preparation",
+  "applicability_path": "data/knowledge-preparation/applicability.tsv",
+  "tokenizer": {
+    "model_id": "intfloat/e5-small-v2",
+    "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "selection_state": "local_candidate_only_final_choice_at_F1",
+    "path": "vendor/e5-small-v2/tokenizer.json",
+    "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "library_version": "0.21.4",
+    "max_length": 512,
+    "prefix": "passage: ",
+    "special_tokens": 2,
+    "truncation": false,
+    "padding": false,
+    "assets": [
+      {"path":"vendor/e5-small-v2/tokenizer.json","sha256":"d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"},
+      {"path":"vendor/e5-small-v2/tokenizer_config.json","sha256":"ae83fa6ca0333117ff12606020af925d648667ef70d92ff7f27d781ba0ca4544"},
+      {"path":"vendor/e5-small-v2/special_tokens_map.json","sha256":"b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"},
+      {"path":"vendor/e5-small-v2/vocab.txt","sha256":"07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"}
+    ]
+  },
+  "content_policy": "section_heading + newline + text",
+  "chunking": {"overlap_tokens": 32, "short_chunk_chars": 40},
+  "normalization": {
+    "preserve_technical_literals": true,
+    "newline": "LF",
+    "unicode_normalization": "none",
+    "remove_frontmatter": true,
+    "remove_initial_license_boilerplate_from_index_only": true,
+    "replace_copyright_titles": true,
+    "hugo_include_policy": "verified_local_assets_only",
+    "unknown_hugo_policy": "preserve_with_warning",
+    "offset_unit": "unicode_codepoint"
+  },
+  "applicability": {
+    "decision_version": "applicability-proposal-v1",
+    "decision_values": ["allowed", "excluded", "unknown"],
+    "unknown_policy": "conditional_candidate_only_verify_deployment_and_document_preconditions_before_use",
+    "human_review_required_for_release": true,
+    "human_owner": "A",
+    "human_cross_reviewer": "B"
+  },
+  "release_policy": {
+    "status": "candidate",
+    "index_eligible": false,
+    "requires_plan02_full_acceptance": true,
+    "requires_human_applicability_review": true,
+    "coverage": "unjudged",
+    "relevance": "unjudged",
+    "qrels_invalidation": "rebuild_all_retrieval_branches_repool_rejudge_affected_pairs_no_grade_transfer"
+  }
+}

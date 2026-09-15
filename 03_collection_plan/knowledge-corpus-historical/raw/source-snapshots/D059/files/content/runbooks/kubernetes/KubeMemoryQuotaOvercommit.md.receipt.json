@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/prometheus-operator/runbooks/f8061f3e9b3337d90107aa2f10a0111f3f6dc86f/content/runbooks/kubernetes/KubeMemoryQuotaOvercommit.md",
+  "retrieved_at": "2026-09-12T16:58:06.368435Z",
+  "sha256": "f429eedb5b957888c111e01e768c57c621d19fa5373be71432c65ebe6f94e941",
+  "bytes": 1377,
+  "http_status": 200,
+  "etag": "\"47e66595fcd61a1217e10db06e00346850c9a5e7bca15ff2166d61f934dd7d2c\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

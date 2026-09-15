@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/emailservice.yaml",
+  "retrieved_at": "2026-09-12T16:49:09.558360Z",
+  "sha256": "04a83d1dfe64bf3655a0d712dd0d6cf6d11aa1a67d8474a09b3eeeb2926d0021",
+  "bytes": 2046,
+  "http_status": 200,
+  "etag": "\"7a5613d20f31584ea3cb0b20c5e902aae9f7736d447d275395d21769b6200069\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

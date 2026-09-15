@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/examples/debug/termination.yaml",
+  "retrieved_at": "2026-09-12T16:58:10.795580Z",
+  "sha256": "dc7c8cb8731f0b9340f31877c22849bdc8c5b6e05c51543880196751fe42f4f5",
+  "bytes": 234,
+  "http_status": 200,
+  "etag": "\"48e269f07c2cc500a81480dc743e4746676550e1916c1e29805ac3b9f566c011\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

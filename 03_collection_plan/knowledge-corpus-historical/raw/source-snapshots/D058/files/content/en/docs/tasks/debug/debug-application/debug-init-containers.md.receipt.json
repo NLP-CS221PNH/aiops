@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/docs/tasks/debug/debug-application/debug-init-containers.md",
+  "retrieved_at": "2026-09-12T16:58:02.858180Z",
+  "sha256": "a92f50329389487253656391f0da72e3005a0ba629a2b9b16c491d06760ffaf6",
+  "bytes": 3319,
+  "http_status": 200,
+  "etag": "\"4e927d7d2d3cdee514ff0beb9cc7e914b2a159a3eaceca35662b048086e96424\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

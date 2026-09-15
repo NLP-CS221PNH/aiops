@@ -1,0 +1,27 @@
+{
+  "retrieved_at": "2026-09-12T16:46:13.181954+00:00",
+  "hf_revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
+  "github_revision": "bb48c5aa9a24f1d5fcc716bdd479ea2d63145c90",
+  "license_data": "MIT",
+  "license_evidence_url": "https://github.com/phamquiluan/RCAEval/blob/bb48c5aa9a24f1d5fcc716bdd479ea2d63145c90/README.md#licensing",
+  "license_snapshot_sha256": "9f2c6bb71f29569d5547e52b207bdf10743fbc1943fbe3b5ae200041f3d787e6",
+  "case_counts": {
+    "RE1-OB": 125,
+    "RE1-SS": 125,
+    "RE1-TT": 125,
+    "RE2-OB": 90,
+    "RE2-SS": 90,
+    "RE2-TT": 90,
+    "RE3-OB": 30,
+    "RE3-SS": 30,
+    "RE3-TT": 30
+  },
+  "RE2_OB_files": 360,
+  "RE2_OB_bytes": 922484805,
+  "RE2_TT_files": 359,
+  "RE2_TT_bytes": 1965747924,
+  "manifest_url": "https://huggingface.co/api/datasets/phamquiluan/RCAEval/revision/afeacb11bcc94dadfd1c8f483ee4377b2b8b614e?blobs=true",
+  "release_lineage": "HF author-provided Parquet mirror of RCAEval, not an independent dataset",
+  "available_at": "2026-09-12",
+  "historical_online_claim": false
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/76a0e90f253e924a7b55f01f92a37555bd89be68/content/en/docs/tasks/debug/debug-application/debug-pods.md",
+  "retrieved_at": "2026-09-12T16:49:11.130556Z",
+  "sha256": "387851f607319187a0c82c93518a54840b899d24b387da5f26f7ad0233b4fb3a",
+  "bytes": 8231,
+  "http_status": 200,
+  "etag": "\"9a288b24ca46fdfab0d72bb4e7c2fd41ed155f7a5d975177b65d9f70e1a260aa\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

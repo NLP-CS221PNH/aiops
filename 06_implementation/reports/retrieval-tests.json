@@ -1,0 +1,1211 @@
+{
+  "schema_version": "cs221-retrieval-test-report-v1",
+  "status": "pass",
+  "actor_kind": "codex_agent",
+  "role": "tester",
+  "reviewer": "/root/retrieval_tests",
+  "started_at": "2026-09-13T05:13:44.891319+00:00",
+  "completed_at": "2026-09-13T05:14:26.949798+00:00",
+  "production_files_edited_by_tester": false,
+  "synthetic_retrieval_fixtures_only": true,
+  "runs": [
+    {
+      "scope": "retrieval",
+      "tests": 66,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.054,
+      "exit_code": 0
+    },
+    {
+      "scope": "full_suite",
+      "tests": 269,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 42.032202,
+      "exit_code": 0
+    }
+  ],
+  "environment": {
+    "working_directory": "06_implementation",
+    "python_executable": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\06_implementation\\.venv\\Scripts\\python.exe",
+    "python": "3.11.9",
+    "packages": {
+      "numpy": "2.3.3",
+      "tokenizers": "0.21.4",
+      "jsonschema": "4.25.1",
+      "PyYAML": "6.0.2",
+      "pytest": "8.4.2",
+      "torch": "2.10.0",
+      "transformers": null,
+      "pyarrow": "21.0.0"
+    },
+    "dependency_resolution": "project .venv; prepend existing .retrieval-deps and .corpus-deps; append existing site.getusersitepackages() for prior protocol PyYAML",
+    "installations_by_tester": false
+  },
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe -B -c \"import sys; sys.path.insert(0,'.retrieval-deps'); import unittest; result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.discover('tests',pattern='test_retrieval*.py')); raise SystemExit(not result.wasSuccessful())\"",
+    ".\\.venv\\Scripts\\python.exe -B -c \"import sys,site,unittest; sys.path.insert(0,'.retrieval-deps'); sys.path.insert(0,'.corpus-deps'); sys.path.append(site.getusersitepackages()); result=unittest.TextTestRunner(verbosity=1).run(unittest.defaultTestLoader.discover('tests')); raise SystemExit(not result.wasSuccessful())\""
+  ],
+  "file_hashes_before": {
+    "configs/retrieval.yaml": "db013ba9eacf26938b5a4ac4aaea5ff724fcf6d29198dd9dc3d5710e96fe8b51",
+    "schemas/retrieval-run.schema.json": "4fdf41e284b79743442d523d196109cf52131eb1386bfe4068dca6cd921d9851",
+    "src/retrieval/__init__.py": "a418cf9caecd6ade4df27790cff4565a44a699f7afca98d5527284163989314b",
+    "src/retrieval/__main__.py": "9a5296b72d119c0255e0b50dad3c825e259e32b587974c07223b3132bde86e8f",
+    "src/retrieval/bm25.py": "a953f92103aa03a950de9959d651dab117cd431ae9dddb915e220fbff0d17661",
+    "src/retrieval/cache.py": "e35e723194be204a02cdae2f2063d9addb43e702cfd565ed3fa4d2bc293425bb",
+    "src/retrieval/common.py": "0277b3b3d95efceef6c010e971ff983c0421fb80c309148566ec85fee6dce063",
+    "src/retrieval/consumer.py": "a7a2c20b18106ef50f186283c7283e676e3fb36ea795833a23b616b8e8013174",
+    "src/retrieval/dense.py": "ef3ddd449fb33b70230fe7e97c5bd850df8416470b5493cd9d81c8df740ec14b",
+    "src/retrieval/fusion.py": "07219378ad3ae97364c637c41eb3d40e85d2cc560c7c18cacd73b0364b10c600",
+    "src/retrieval/inputs.py": "19ec3a2293ee80b43bf9fc9b9793d97654aafb3e871c0d17c1cc8179c963aa1e",
+    "src/retrieval/rerank.py": "7df4f3463e50bfb24f733a2424607b261f1e2a3858507583eb37493961750428",
+    "src/retrieval/runner.py": "5a517ba47bb8afd133663a06f1df1f0a4a826c8842a4d70b80fd9f6a9614b7ef",
+    "tests/fixtures/retrieval/bm25-hand.json": "9603f5d1d3140f3724c2e0f043fd2967226cfd85eddb6eaa298b80762f4ef7ef",
+    "tests/fixtures/retrieval/build_fixture.py": "d6c54b05d2a3103ebc3997b26ed518694d1f2cf78cb53b5e878e40a9a2fe987a",
+    "tests/fixtures/retrieval/README.md": "98e7b6b6c996e1c16426e90bff10ca537f90f1ed094d29048635a58e4ae702f8",
+    "tests/fixtures/retrieval/rrf-hand.json": "e1d52ed0d495f4dbdfea8487e85a6bfe66f8591de4b834df1efcbc53f73349fb",
+    "tests/test_retrieval_contract.py": "9b7c9900b4686f1a414cf90e1d73c6c96fe609a5ceae95add0b9bb9ca130d5a9",
+    "tests/test_retrieval_engines.py": "51e516ff55d027e9443ca4e762285908140e13d529059363e620b4dd45921438"
+  },
+  "file_hashes": {
+    "configs/retrieval.yaml": "db013ba9eacf26938b5a4ac4aaea5ff724fcf6d29198dd9dc3d5710e96fe8b51",
+    "schemas/retrieval-run.schema.json": "4fdf41e284b79743442d523d196109cf52131eb1386bfe4068dca6cd921d9851",
+    "src/retrieval/__init__.py": "a418cf9caecd6ade4df27790cff4565a44a699f7afca98d5527284163989314b",
+    "src/retrieval/__main__.py": "9a5296b72d119c0255e0b50dad3c825e259e32b587974c07223b3132bde86e8f",
+    "src/retrieval/bm25.py": "a953f92103aa03a950de9959d651dab117cd431ae9dddb915e220fbff0d17661",
+    "src/retrieval/cache.py": "e35e723194be204a02cdae2f2063d9addb43e702cfd565ed3fa4d2bc293425bb",
+    "src/retrieval/common.py": "0277b3b3d95efceef6c010e971ff983c0421fb80c309148566ec85fee6dce063",
+    "src/retrieval/consumer.py": "a7a2c20b18106ef50f186283c7283e676e3fb36ea795833a23b616b8e8013174",
+    "src/retrieval/dense.py": "ef3ddd449fb33b70230fe7e97c5bd850df8416470b5493cd9d81c8df740ec14b",
+    "src/retrieval/fusion.py": "07219378ad3ae97364c637c41eb3d40e85d2cc560c7c18cacd73b0364b10c600",
+    "src/retrieval/inputs.py": "19ec3a2293ee80b43bf9fc9b9793d97654aafb3e871c0d17c1cc8179c963aa1e",
+    "src/retrieval/rerank.py": "7df4f3463e50bfb24f733a2424607b261f1e2a3858507583eb37493961750428",
+    "src/retrieval/runner.py": "5a517ba47bb8afd133663a06f1df1f0a4a826c8842a4d70b80fd9f6a9614b7ef",
+    "tests/fixtures/retrieval/bm25-hand.json": "9603f5d1d3140f3724c2e0f043fd2967226cfd85eddb6eaa298b80762f4ef7ef",
+    "tests/fixtures/retrieval/build_fixture.py": "d6c54b05d2a3103ebc3997b26ed518694d1f2cf78cb53b5e878e40a9a2fe987a",
+    "tests/fixtures/retrieval/README.md": "98e7b6b6c996e1c16426e90bff10ca537f90f1ed094d29048635a58e4ae702f8",
+    "tests/fixtures/retrieval/rrf-hand.json": "e1d52ed0d495f4dbdfea8487e85a6bfe66f8591de4b834df1efcbc53f73349fb",
+    "tests/test_retrieval_contract.py": "9b7c9900b4686f1a414cf90e1d73c6c96fe609a5ceae95add0b9bb9ca130d5a9",
+    "tests/test_retrieval_engines.py": "51e516ff55d027e9443ca4e762285908140e13d529059363e620b4dd45921438"
+  },
+  "source_changed_during_run": false,
+  "test_outcomes": [
+    {
+      "id": "test_citation_registry.ApplicabilityGateTests.test_blank_reason_or_missing_evidence_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ApplicabilityGateTests.test_human_approval_and_deployment_compatibility_cannot_be_invented",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ApplicabilityGateTests.test_unknown_with_conditional_policy_is_valid_candidate",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ApplicabilityGateTests.test_unknown_without_explicit_policy_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_foreign_source_revision_hash_and_path_cannot_supply_citation",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_incorrect_raw_byte_coordinate_fails_despite_correct_codepoints",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_missing_span_and_noninteger_offsets_are_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_real_unicode_crlf_provenance_reconstructs_full_text_and_chunk_slice",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_utf8_byte_offset_cannot_be_used_as_unicode_codepoint_offset",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.CitationSpanTests.test_valid_source_url_with_wrong_normalized_text_span_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ReviewReceiptTests.test_changed_evidence_bytes_invalidate_receipt",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ReviewReceiptTests.test_changed_manifest_bytes_invalidate_receipt",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ReviewReceiptTests.test_fabricated_human_reviews_are_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_citation_registry.ReviewReceiptTests.test_technical_receipt_pass_does_not_authorize_human_release",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_content_or_chunking_version_change_invalidates_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_fence_marker_with_trailing_text_does_not_close_code_block",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_fenced_markdown_heading_is_not_a_section_boundary",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_indented_local_yaml_include_comment_is_not_a_markdown_heading",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_long_command_block_splits_with_complete_coverage_real_budget_and_offsets",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_overlong_heading_is_explicit_failure_not_silent_truncation",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_prefix_and_heading_overhead_force_split_before_512_content_tokens",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.ChunkingTests.test_yaml_and_proto_comments_do_not_become_markdown_sections",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_bom_crlf_unicode_mapping_retains_exact_codepoint_and_byte_positions",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_corrupt_raw_hash_rejects_before_normalization",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_frontmatter_removal_preserves_literal_technical_content",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_known_include_uses_only_matching_local_asset_with_separate_provenance",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_proto_keeps_case_numeric_tags_and_commands",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_source_registry_text_cannot_disagree_with_raw",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_technical_comment_adjacent_to_license_footer_is_preserved",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_unknown_hugo_include_is_never_fetched_or_silently_removed",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_unterminated_frontmatter_is_kept_with_warning",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.NormalizationTests.test_yaml_copyright_is_metadata_not_markdown_and_license_attribution_survives",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.PublicationBoundaryTests.test_failed_atomic_publish_restores_previous_candidate_bytes",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.PublicationBoundaryTests.test_outputs_cannot_target_raw_preparation_or_unowned_files",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_json_duplicate_keys_nonfinite_values_and_unstable_order",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_real_token_ids_include_passage_prefix_heading_and_special_overhead",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_relative_paths_cannot_escape_root_or_use_absolute_path",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_tokenizer_asset_corruption_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_tokenizer_library_drift_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.TokenizerAndPrimitiveTests.test_unsupported_normalization_toggle_is_rejected_instead_of_ignored",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_all_74_sources_integrity_true_counts_and_no_release_claim",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_altered_artifact_bytes_and_extra_mapping_file_are_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_changed_config_cannot_overwrite_existing_candidate_without_version_decision",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_citation_cannot_change_license_applicability_or_offset_units",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_citation_resolver_accepts_matching_ids_and_rejects_unknown_or_stale",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_corrupt_citation_span_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_dropped_chunk_cannot_pass_by_rebuilding_lineage_counts_and_all_hashes",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_foreign_corpus_stamp_rejected_after_file_hash_refreshed",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_foreign_document_and_corpus_ids_rejected_after_outer_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_forged_chunk_and_citation_provenance_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_human_release_gate_remains_pending_after_technical_pass",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_incorrect_token_counts_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_independent_process_rebuild_is_byte_identical",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_lineage_foreign_chunks_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_lineage_new_spans_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_lineage_relation_rejected_after_full_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_misreported_counts_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_released_index_whitelist_cannot_contain_candidate_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_shifted_valid_content_cannot_reuse_old_chunk_id",
+      "status": "pass"
+    },
+    {
+      "id": "test_corpus_integrity.WholeCorpusTests.test_token_audit_omitted_prefix_policy_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_actual_windows_junction_cannot_escape_allowed_root",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_additional_metrics_remain_available_beyond_top_metric_references",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_crash_during_staging_never_publishes_and_retry_is_clean",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_cross_modality_join_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_duplicate_evidence_reference_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_duplicate_evidence_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_duplicate_incident_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_exact_public_schemas_reject_added_and_missing_fields",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_failed_changed_release_preserves_existing_release_bytes",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_file_content_hash_mismatch_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_foreign_evidence_join_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_foreign_incident_cannot_replace_configured_id",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_foreign_source_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_inference_source_cannot_target_private_even_under_processed_root",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_label_only_changes_leave_all_public_bytes_and_manifest_identical",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_last_millisecond_is_retained_and_end_exclusive_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_local_package_contains_only_exact_public_inventory_and_is_deterministic",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_manifest_extra_private_field_and_content_hash_tamper_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_metric_all_null_preserves_missing_and_does_not_impute",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_missing_modality_reference_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_missing_source_rejects_before_publication",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_nonfinite_json_and_duplicate_keys_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_package_rejects_private_and_extra_files",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_partial_metric_null_and_trace_null_status_are_preserved",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_path_traversal_absolute_ads_and_private_source_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_private_keys_rejected_even_with_attacker_modified_allowlist",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_public_nested_private_value_rejected_with_valid_outer_schema",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_source_nested_gold_fault_and_source_case_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_train_fixture_exports_without_private_source_files",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_unreferenced_evidence_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_boundary.DataBoundaryTests.test_wrong_source_hash_rejects_before_publication",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ActualReleaseProvenanceTests.test_actual_private_sidecars_match_all_source_bytes_and_90_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ActualReleaseProvenanceTests.test_actual_release_validates_all_90_incidents_and_expected_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ActualReleaseProvenanceTests.test_private_split_retains_54_18_18_and_disjoint_30_families",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ActualReleaseProvenanceTests.test_source_processed_files_and_inventory_hashes_remain_pinned",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_copy_crash_does_not_publish_partial_release",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_fixture_label_changes_do_not_change_public_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_sidecar_duplicate_ids_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_sidecar_foreign_id_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_sidecar_hash_change_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.PrivateSidecarTests.test_private_sidecars_preserve_bytes_and_hashes",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ReviewReceiptTests.test_evidence_artifact_change_invalidates_receipt",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ReviewReceiptTests.test_manifest_change_invalidates_receipt",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ReviewReceiptTests.test_pending_human_review_cannot_be_treated_as_approved",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.ReviewReceiptTests.test_technical_receipt_passes_without_asserting_human_review",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.TrainRawProvenanceTests.test_train_log_row_resolves_to_raw_timestamp_and_service",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.TrainRawProvenanceTests.test_train_metric_null_counts_and_statistics_match_raw_values",
+      "status": "pass"
+    },
+    {
+      "id": "test_data_provenance.TrainRawProvenanceTests.test_train_trace_row_resolves_to_raw_timestamp_duration_and_status",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_empty_text_is_accounted_for_as_a_dropped_candidate",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_missing_traces_and_all_null_metric_are_explicit_and_neutral",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_nonzero_and_null_trace_status_are_raw_unknown_facts",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_same_bundle_is_reused_across_all_four_generator_conditions",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_separate_bundle_budget_counts_all_drops_and_recomputes_hash",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.MissingModalitiesAndBundleTests.test_zero_evidence_has_insufficient_state_and_no_invented_observations",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_actual_wordpiece_query_prefix_and_two_special_tokens_are_counted",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_backend_never_silently_truncates_long_input",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_bundle_budget_counts_without_retrieval_prefix",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_exact_real_token_boundary_retains_whole_logs_and_one_less_clips_jointly",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_query_budget_rejects_booleans_fractions_zero_and_encoder_overflow",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_real_unicode_whitespace_makes_r1_overflow_while_r2_fits_but_r2_cannot_refill",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_single_oversize_log_has_explicit_drop_and_no_partial_source_span",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RealTokenizerTests.test_tokenizer_asset_tampering_fails_closed",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RepresentationMetamorphicTests.test_every_input_order_and_equal_timestamp_ties_are_deterministic",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RepresentationMetamorphicTests.test_no_runtime_file_reads_and_private_fixture_changes_cannot_affect_outputs",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RepresentationMetamorphicTests.test_r1_and_r2_preserve_distinct_codes_services_versions_ports_exceptions_and_unicode",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RepresentationMetamorphicTests.test_r1_literal_preservation_and_r2_whitespace_normalization",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.RepresentationMetamorphicTests.test_render_rejects_unselected_foreign_or_duplicate_evidence",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_cross_incident_evidence_and_cross_modality_reference_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_duplicate_and_unreferenced_log_evidence_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_fixture_is_valid_and_source_records_are_unchanged",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_injection_window_policy_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_metric_imputation_and_interpreted_trace_units_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_nested_private_data_and_missing_required_fields_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_post_construction_mutations_cannot_bypass_any_public_consumption_boundary",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_unknown_and_private_fields_rejected_at_every_safe_record_boundary",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SafeRepresentationBoundaryTests.test_window_is_half_open_and_millisecond_end_is_preserved",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SelectionAndProvenanceTests.test_ordinary_logs_are_selected_without_inventing_an_error",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SelectionAndProvenanceTests.test_round_robin_covers_last_service_and_every_drop_has_reason",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SelectionAndProvenanceTests.test_source_spans_and_normalization_map_resolve_every_retained_codepoint",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_contract.SelectionAndProvenanceTests.test_tampered_selection_ledger_cannot_inject_or_reorder_evidence",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.F1GuardTests.test_each_frozen_hash_is_required_and_drift_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.F1GuardTests.test_test_requires_explicit_externally_authenticated_f1_snapshot",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_config_change_invalidates_old_outputs_and_cannot_overwrite_same_version",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_forged_source_span_and_refreshed_outer_hashes_cannot_pass",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_new_version_requires_new_output_directory",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_output_cannot_target_source_or_other_implementation_directories",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_query_byte_tampering_cannot_pass_replay",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_receipt_binds_exact_query_and_each_dependency_hash",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_synthetic_pipeline_rebuild_and_replay_are_identical",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_upstream_manifest_drift_invalidates_receipt_and_outputs",
+      "status": "pass"
+    },
+    {
+      "id": "test_representation_pipeline.RepresentationPipelineTests.test_valid_synthetic_receipt_requires_current_evidence_and_both_review_roles",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CacheFingerprintTests.test_cache_miss_hit_idempotency_and_conflicting_payload_rejection",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CacheFingerprintTests.test_every_embedding_semantics_change_invalidates_fingerprint",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CacheFingerprintTests.test_payload_tampering_and_invalid_cache_key_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CacheFingerprintTests.test_shared_cache_key_lock_blocks_a_second_publisher",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_foreign_record_path_and_concurrent_writer_are_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_interrupted_checkpoint_publication_resumes_only_committed_records",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_interrupted_retry_preserves_the_previous_committed_failed_attempt",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_missing_resume_corrupt_record_and_wrong_binding_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_resume_keeps_completed_records_and_missing_records_explicit",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.CheckpointTests.test_resume_rejects_changed_config_fingerprint_or_specification",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_changed_input_bytes_fail_even_when_filename_is_unchanged",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_external_schema_references_rejected_before_resolution",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_fixture_cannot_be_used_as_real_pilot_or_have_real_incident_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_invalid_or_stale_f1_fails_before_corpus_loading",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_missing_and_duplicate_allowlist_ids_are_not_silently_dropped",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_rehashed_corpus_cannot_hide_bad_content_hashes_or_duplicate_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_rehashed_query_file_cannot_hide_changed_body_private_or_unknown_fields",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_unknown_config_fields_model_aliases_and_invalid_budgets_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputManifestTests.test_valid_fixture_has_only_shared_text_and_provenance_fields",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputPrimitiveTests.test_candidate_manifest_cannot_authorize_real_pilot",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputPrimitiveTests.test_duplicate_json_keys_and_nonfinite_json_are_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputPrimitiveTests.test_frozen_missing_f1_stops_before_any_corpus_or_query_loading",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputPrimitiveTests.test_nested_private_fields_rejected_but_legitimate_observed_words_allowed",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.InputPrimitiveTests.test_private_and_traversal_paths_rejected_before_read",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.ModelAssetBoundaryTests.test_asset_manifest_cannot_read_outside_model_directory",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.ModelAssetBoundaryTests.test_declared_asset_hashes_are_verified_without_model_loading",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.ModelAssetBoundaryTests.test_missing_and_untracked_assets_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.RunnerAndReaderTests.test_all_incident_conditions_kept_when_real_dense_assets_are_missing",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.RunnerAndReaderTests.test_consumer_rejects_missing_records_and_wrong_provenance",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.RunnerAndReaderTests.test_interrupted_run_resumes_without_duplicates_or_recomputing_complete_record",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.RunnerAndReaderTests.test_runner_resume_rejects_changed_configuration",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_contract.RunnerAndReaderTests.test_semantic_hit_tamper_rejected_after_all_outer_checksums_are_recomputed",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_content_policy_rejects_mismatch_and_does_not_index_metadata",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_duplicate_chunk_ids_rejected_before_scoring",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_empty_corpus_empty_query_stopwords_and_zero_overlap",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_equal_scores_order_by_chunk_id_and_depth_does_not_pad",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_hand_calculated_scores_ranks_and_document_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_invalid_depth_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_invalid_parameters_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_nondefault_parameters_have_independent_expected_score",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_repeated_query_terms_do_not_multiply_scores",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.BM25Tests.test_technical_exact_token_and_components_preserved",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_cosines_are_scale_invariant_without_overflow_or_underflow",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_duplicate_chunk_ids_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_empty_index_returns_no_synthetic_evidence",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_exact_cosines_include_zero_and_negative_hits",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_invalid_depth_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_invalid_query_dimensions_and_nonfinite_values_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_nonfinite_zero_ragged_and_wrong_row_count_embeddings_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.DenseIndexTests.test_ties_resolve_by_chunk_id",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_actual_512_limit_includes_prefix_specials_and_excludes_padding",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_empty_batch_and_invalid_kind_limits_fail_without_models",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_entire_body_must_not_disappear_after_prefix_truncation",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_repeated_truncation_is_deterministic",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_true_tokenizer_prefix_and_special_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.E5TokenBudgetTests.test_unpinned_revision_and_missing_assets_do_not_select_latest",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.PairBudgetAndCandidateTests.test_candidate_guards_execute_before_optional_model_access",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.PairBudgetAndCandidateTests.test_pair_budget_counts_both_sides_and_three_bert_specials",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.PairBudgetAndCandidateTests.test_pair_padding_is_excluded_and_empty_sides_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_duplicate_ids_and_duplicate_ranks_within_branch_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_empty_short_and_tied_rankings",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_hand_calculated_scores_missing_branch_and_document_ids",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_invalid_rank_constant_weights_and_depth_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_raw_scores_never_contribute_to_rrf",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_same_chunk_cannot_have_conflicting_document_identity",
+      "status": "pass"
+    },
+    {
+      "id": "test_retrieval_engines.RRFTests.test_weighted_rrf_uses_each_declared_rank",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_absolute_windows_path_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_accepted_gate_without_human_reviews_is_false",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_artifact_traversal_is_rejected",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_mode_cannot_fabricate_human_signatures",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_mode_rejects_wrong_authorization_scope",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_mode_requires_existing_authorization",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_mode_requires_existing_review_receipt",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_override_cannot_grant_api_permissions",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_receipt_cannot_be_empty_pass_claim",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_review_must_match_protocol_and_version",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_review_rejects_blocking_findings",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_review_rejects_hash_drift_after_rehashing_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_review_rejects_missing_scope",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_automated_review_rejects_non_pass_outcome",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_budget_accepts_selected_option_with_separate_numeric_amount",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_budget_must_match_confirmed_numeric_value",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_builder_accepts_only_verified_automated_candidate_and_is_idempotent",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_builder_rejects_missing_authorization_before_output",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_builder_rejects_stale_review_before_replacing_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_changed_artifact_bytes_invalidate_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_changed_source_annotation_status_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_chosen_must_exist_in_recorded_options",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_chosen_rejection_cannot_support_approved_permission",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_cli_read_only_and_strict_exit_status",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_codex_cannot_sign_for_a_human",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_confirmed_permission_without_evidence_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_doc_summary_drift_fails_even_after_rehash",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_explicit_automated_acceptance_passes_without_human_signatures",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_fabricated_current_judgments_fail",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_family_cannot_cross_splits_even_with_refreshed_hashes",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_freeze_order_cannot_use_test_pool_before_f1",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_gate_status_in_yaml_cannot_disagree_with_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_hash_tampering_is_not_trusted",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_literature_cannot_invent_completed_human_reading",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_literature_count_and_duplicate_ids_fail",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_literature_source_hash_change_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_malformed_permissions_produce_report_not_traceback",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_missing_decision_owner_and_deadline_fail",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_missing_phase03_review_cannot_pass_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_missing_unjudged_policy_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_numeric_zero_is_not_boolean_false",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_omitted_open_decision_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_output_cannot_overwrite_frozen_automated_review",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_output_receipt_is_explicit_and_cannot_overwrite_source",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_pending_api_never_authorizes_generation",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_permission_flags_without_confirmed_decision_fail",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_resolved_permission_must_match_machine_value",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_review_mode_must_match_between_protocol_and_manifest",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_synthetic_complete_review_exercises_success_branch_only_in_temp_fixture",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_truthful_draft_is_technically_valid_but_does_not_pass_g0",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_version_mismatch_fails",
+      "status": "pass"
+    },
+    {
+      "id": "test_validate_protocol.ProtocolValidationTests.test_wrong_inventory_cannot_be_rehashed_into_validity",
+      "status": "pass"
+    }
+  ],
+  "real_tokenizer_evidence": {
+    "tokenizer": "intfloat/e5-small-v2 local tokenizer.json",
+    "kind": "actual tokenizer accounting without model weights",
+    "query_600_alpha_input_tokens": 604,
+    "output_tokens": 512,
+    "removed_tokens": 92,
+    "body_tokens_after": 508,
+    "prefix_tokens": 2,
+    "special_tokens": 2,
+    "padding_excluded": true,
+    "pair_budget_note": "Generic pair-budget helper exercised with actual E5 BERT tokenizer (1203 to 512); unavailable BGE tokenizer/model was not tested."
+  },
+  "not_performed": [
+    "real incident pilot rankings",
+    "real E5 embedding inference",
+    "real BGE reranker inference",
+    "private data/gold/qrels reads by retrieval tests",
+    "test materialization or frozen test execution",
+    "human judgments or approvals",
+    "retrieval quality evaluation or winner selection"
+  ],
+  "full_suite_execution_note": "Structured custom TextTestResult recorded each outcome using the same unittest discovery as the second command. Full seconds include discovery and execution; unittest execution alone reported 41.855s.",
+  "delivery_artifact_hashes": {
+    "scripts/verify_retrieval_delivery.py": "7a54de7e9249f0493caf5d77f45e4a6ad5ef2a171128334162d67bf49ec3b55e",
+    "notebooks/02_retrieval.ipynb": "8fc3b0a279637b6bf3ce86f36771a4398106d6ba6863f0964042016ebb340f30",
+    "reports/retrieval-reproducibility.json": "c675fe031ad825e9492669cd71ff33bbd4685dfab81ac66da7aa4b319b778f4f"
+  },
+  "regression_test_source_hashes": {
+    "tests/test_citation_registry.py": "e4a4a38e63c046a75bed0414223b59a97d9f87518552139d58a2e0af86066c62",
+    "tests/test_corpus_integrity.py": "acdd1e22c57a4ede418ac47b278dd12af1477edb3b80086220bc9f376607c88c",
+    "tests/test_data_boundary.py": "212b780b5f6969e7e67af746c550e897377fc9d580771a4e9f44e5acc7c5b6af",
+    "tests/test_data_provenance.py": "a9c01b880b140602a1d2e3898a92ee5fb293798a1b9900a4f73fd251979628aa",
+    "tests/test_representation_contract.py": "51095bc30fa357f0147e865aaa7f234700495718b6555b4344d06fad10b408c5",
+    "tests/test_representation_pipeline.py": "6cc50a36301c5da48a012dd245a96b09c49149db8c06097c96fa078fcbd720bd",
+    "tests/test_retrieval_contract.py": "9b7c9900b4686f1a414cf90e1d73c6c96fe609a5ceae95add0b9bb9ca130d5a9",
+    "tests/test_retrieval_engines.py": "51e516ff55d027e9443ca4e762285908140e13d529059363e620b4dd45921438",
+    "tests/test_validate_protocol.py": "c107c4ea772f1ea8b1fcc703c2689a36b8eb9b2e9cc11b956d8b009619714cf2"
+  }
+}

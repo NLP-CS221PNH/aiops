@@ -1,0 +1,319 @@
+{
+  "schema_version": "cs221-data-review-v1",
+  "created_at_utc": "2026-09-13T02:27:18.843540+00:00",
+  "data_version": "re2-ob-inference-v1",
+  "inference_schema_version": "cs221-inference-v1",
+  "source_revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
+  "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+  "content_hash": "f97a19dbbd3a9aebf3f4846e7b2bd62b736bf35938be0a5a8690a805d98aca30",
+  "source_observation_hash": "232a1f26ca1f2a564bed661bb39a17a130352953d2d1de9324c931e504236ef7",
+  "config_hash": "8992aa1d05ff4adaff3e867b4ecee32608dd76745a29385df0f76b826144b6b1",
+  "transform_hash": "cf7278b17f8713568138079b57909b04fa9b0b94f2bb7bbc8e4e6134d9ce4898",
+  "source_integrity_hash": "4e4f29c99b0478f5a21e7bb11682bc0832b190c5cc080176028184cdc39b12b5",
+  "local_gate": "pass",
+  "full_plan_gate": "pending_human_reviews_and_consumer_acceptance",
+  "package": {
+    "path": "artifacts/inference-package.zip",
+    "sha256": "332717caa25e78ff62cc29a53e675189e598f1e4d98c3e6887e87cb112327527",
+    "files": [
+      "incident-index.parquet",
+      "input-manifest.json",
+      "logs-evidence.jsonl",
+      "metric-summaries.jsonl",
+      "observations.jsonl",
+      "trace-evidence.jsonl"
+    ],
+    "sharing_authorized": false
+  },
+  "evidence": [
+    {
+      "path": "artifacts/inference-package.zip",
+      "sha256": "332717caa25e78ff62cc29a53e675189e598f1e4d98c3e6887e87cb112327527"
+    },
+    {
+      "path": "configs/data.yaml",
+      "sha256": "9e394e23a8080f728371c35bbf7ceb785c5de68122601324c81e652b7bb01dbb"
+    },
+    {
+      "path": "configs/requirements-lock.txt",
+      "sha256": "94e3a9d8aaa380c7c2ea90cb227614cb4435455a8fdc5176d2fefa50deb9bd9c"
+    },
+    {
+      "path": "configs/runtime.yaml",
+      "sha256": "ead5ea2a49511962b07e7809e0909234786bc9f33912c16f35b5c1c57cbc0244"
+    },
+    {
+      "path": "data/private/data-audit.json",
+      "sha256": "25e16b631c3a2d60a8a4d1f297b3ad2d313cc2023d6981a2e1d11ca4c593a00c"
+    },
+    {
+      "path": "data/private/ground_truth.jsonl",
+      "sha256": "bd02f4e8393e9ccfab3dd8b9bb1e016abee79bacb58aa9a8888c05240b8ee893"
+    },
+    {
+      "path": "data/private/source-census.json",
+      "sha256": "e62d2b154504486996e8019b51c0228fa37e2460d5fcf37cbeebc5a8301acac5"
+    },
+    {
+      "path": "data/private/split-map.tsv",
+      "sha256": "d7941d1487d4ec7e3943692b2911ea422bf6b14d620fd8e150324161fc17b8c7"
+    },
+    {
+      "path": "notebooks/00-environment-smoke.ipynb",
+      "sha256": "f2571b48098b1f7f9943f85a1c44ef3a0630d0a64781e0b79d542b0a6cc52c0b"
+    },
+    {
+      "path": "reports/data-code-review.md",
+      "sha256": "68e6ebe7590119e91590ec9013833979994f5c87b0bb7e9ed3e9968dd9c4e7e0"
+    },
+    {
+      "path": "reports/data-contract-review.md",
+      "sha256": "a29c471425fb8702122b87a52d411682f5037834ecc2eac43fe893ebfeb31650"
+    },
+    {
+      "path": "reports/data-replay.json",
+      "sha256": "5ba802f26c0829687735e6dba7061a74aae58bd347d3ea4f4c1c9c0f5ea9f217"
+    },
+    {
+      "path": "reports/data-test-results.json",
+      "sha256": "2b9235d6852d3f7f1cd405f7d2212a041ff5b5bb99071b6b3667381863cac111"
+    },
+    {
+      "path": "reports/data-test-results.md",
+      "sha256": "864d1cd44afe6664369d6edfdcf3dbcc3cf4054c7740d377fdb0c36a2649f484"
+    },
+    {
+      "path": "reports/debugger-report.md",
+      "sha256": "6809efe722f9bb34de20b14b8e59f4620eb9748d631dadc875353fb933dd02a0"
+    },
+    {
+      "path": "reports/debugger-results.json",
+      "sha256": "2948a0bbee3e0e0fef404c0f54294266a91378d51875eb5d93eb7f9a5070c4f4"
+    },
+    {
+      "path": "reports/environment-check.json",
+      "sha256": "5b00fba7732c05ad33008d7c3ad30e4df8a9b232b1ecd516383ea9885058d1f4"
+    },
+    {
+      "path": "reports/environment-recipe.md",
+      "sha256": "3e9be23de449db18ff52e619473a3622d01f564f06487ba6dd8c14e349b70be1"
+    },
+    {
+      "path": "reports/input-validation.json",
+      "sha256": "9959c15317b1b6a968fe4205eeebdc0784d79bcbff796e8923b3f4468443eb10"
+    },
+    {
+      "path": "src/data/__init__.py",
+      "sha256": "080c6825667d244cd20be0dbfd59c5af9f0f06d63393a11c206f8452cd9e1ecc"
+    },
+    {
+      "path": "src/data/build_environment_report.py",
+      "sha256": "9fa8db927d1a86b445847e1741387febda87b7ea35c423c9cb45f7c4ee5a069a"
+    },
+    {
+      "path": "src/data/common.py",
+      "sha256": "0a03b244f2b5067e65612850214002314ba6c27adb570485dbd16d83816285b7"
+    },
+    {
+      "path": "src/data/export_inference_data.py",
+      "sha256": "edb33a08c2ae726d9419bd8ca87f7c4d22ce7542b2dc399170913beb5777efc1"
+    },
+    {
+      "path": "src/data/export_private_sidecars.py",
+      "sha256": "3726566570d95e37389ea3bf8c907444ffd2058fa3ab7f2e619b71ba2ea82000"
+    },
+    {
+      "path": "src/data/package_inference.py",
+      "sha256": "2edcc05a59f5056a6a9585a2cfaa863cbbdfbe73053507e0dc02c32a6a82573d"
+    },
+    {
+      "path": "src/data/review_receipt.py",
+      "sha256": "b643b9dbc66a7c08101927bb6b405efd4632ed8374439c9b087c9f58dfb9daab"
+    },
+    {
+      "path": "src/data/validate_inputs.py",
+      "sha256": "742900ef700782bbfd021e5f26a1b6f7edf42efc0009798278b804a12c1c0784"
+    },
+    {
+      "path": "tests/test_data_boundary.py",
+      "sha256": "212b780b5f6969e7e67af746c550e897377fc9d580771a4e9f44e5acc7c5b6af"
+    },
+    {
+      "path": "tests/test_data_provenance.py",
+      "sha256": "a9c01b880b140602a1d2e3898a92ee5fb293798a1b9900a4f73fd251979628aa"
+    }
+  ],
+  "automated_review": {
+    "reviewer": "Codex source_audit subagent",
+    "independent_of_implementation_and_tests": true,
+    "report": "reports/data-code-review.md",
+    "score_out_of_10": 9,
+    "critical_findings": 0,
+    "open_implementation_findings": 0,
+    "data_tests": 48,
+    "combined_protocol_and_data_tests": 83,
+    "counts_are_additive": false,
+    "debugger_checks": 45,
+    "debugger_scope": "targeted checks at intermediate hashes recorded in debugger report; final suite and code review cover frozen candidate",
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "actual_windows_junction_test_ran": true,
+    "raw_train_provenance": {
+      "incidents": 6,
+      "logs": 97,
+      "traces": 84,
+      "metrics": 433,
+      "mismatches": 0
+    },
+    "human_approval_asserted": false
+  },
+  "local_reproducibility": {
+    "runtime": "CPython 3.11.9; PyArrow 21.0.0; Windows 64-bit; CPU",
+    "fresh_isolated_code_cell_replays": 2,
+    "jupyter_kernel_execution": false,
+    "same_ids_and_content_hashes": true,
+    "full_export_fresh_process_replay": {
+      "incidents": 90,
+      "files": 6,
+      "all_bytes_identical": true
+    }
+  },
+  "human_reviews": [
+    {
+      "owner": "A",
+      "status": "pending",
+      "reviewer": null,
+      "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+      "reviewed_at": null,
+      "scope": "source integrity, provenance, timestamps, nulls, units, aliases and selected train payloads"
+    },
+    {
+      "owner": "B",
+      "status": "pending",
+      "reviewer": null,
+      "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+      "reviewed_at": null,
+      "scope": "data boundary, test oracle, independent replay and downstream consumer acceptance"
+    },
+    {
+      "owner": "C",
+      "status": "pending",
+      "reviewer": null,
+      "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+      "reviewed_at": null,
+      "scope": "runtime, package payload, deferred Kaggle branch and separate sharing review"
+    }
+  ],
+  "sharing_review": {
+    "status": "pending",
+    "owners": [
+      "A",
+      "C"
+    ],
+    "reviewer": null,
+    "reviewed_at": null,
+    "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+    "scope": "external transfer of inference-package.zip; separate from API/model permission"
+  },
+  "kaggle_state": {
+    "state": "deferred",
+    "owner": "C",
+    "device": null,
+    "reason": "Account, sharing approval and compatible Linux environment are not established; no upload or Kaggle execution performed."
+  },
+  "api_enabled": false,
+  "network_used": false,
+  "consumers": [
+    {
+      "plan": "03",
+      "state": "interface_ready_pending_human_acceptance",
+      "inference_root": "data/inference",
+      "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+      "accepted_by": null,
+      "accepted_at": null,
+      "start_condition": "full plan02 gate and applicable protocol approval; no source/private access in model loader"
+    },
+    {
+      "plan": "04",
+      "state": "interface_ready_pending_human_acceptance",
+      "inference_root": "data/inference",
+      "manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+      "accepted_by": null,
+      "accepted_at": null,
+      "start_condition": "full plan02 gate and applicable protocol approval; no source/private access in model loader"
+    }
+  ],
+  "unresolved": [
+    {
+      "item": "trace_duration_unit",
+      "state": "unknown",
+      "owner": "A",
+      "allowed_usage": "retain duration_raw; no physical time conversion"
+    },
+    {
+      "item": "trace_status_semantics",
+      "state": "unknown",
+      "owners": [
+        "A",
+        "B"
+      ],
+      "allowed_usage": "retain integer or null; no nonzero-is-error assumption or null-to-zero conversion"
+    },
+    {
+      "item": "metric_physical_units",
+      "state": "unknown",
+      "owner": "A",
+      "allowed_usage": "retain statistics and missing states without physical-unit claims"
+    },
+    {
+      "item": "frontend_frontendservice_identity",
+      "state": "unknown",
+      "owner": "A",
+      "allowed_usage": "preserve both raw names without merging"
+    },
+    {
+      "item": "query_construction",
+      "state": "downstream_plan04",
+      "owners": [
+        "plan04",
+        "B"
+      ],
+      "allowed_usage": "derive from allowlisted evidence with synthetic provenance; source symptom_query was omitted"
+    },
+    {
+      "item": "human_gate",
+      "state": "pending",
+      "owners": [
+        "A",
+        "B",
+        "C"
+      ],
+      "allowed_usage": "local candidate review only until actual named reviews and consumer acceptance"
+    },
+    {
+      "item": "Kaggle",
+      "state": "deferred",
+      "owner": "C",
+      "allowed_usage": "local CPU candidate only; new compatible Linux lock and sharing authorization required"
+    },
+    {
+      "item": "sharing_and_API",
+      "state": "pending_or_disabled",
+      "owners": [
+        "A",
+        "C",
+        "plan01",
+        "plan07"
+      ],
+      "allowed_usage": "no external transfer or model execution under this local receipt"
+    }
+  ],
+  "method_limitations": [
+    "Initial unfiltered pilot-schema example and one test observation were exposed before train-only content selection; no diagnosis, tuning, evaluation or performance decisions used them. Pristine holdout blinding is not claimed.",
+    "All-90 validation covers structure, IDs, joins, windows, offsets and hashes; detailed raw provenance content replay covers six train cases.",
+    "Regex privacy checks are bounded and do not certify all possible sensitive strings.",
+    "Local technical pass does not replace A/B/C identity-bound reviews, downstream acceptance or protocol authorization."
+  ],
+  "change_policy": "Any changed manifest/evidence invalidates this receipt. Preserve prior bytes, publish a versioned candidate with matching code/config, regenerate affected evidence and obtain actual reviews before full acceptance."
+}

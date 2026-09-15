@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/76a0e90f253e924a7b55f01f92a37555bd89be68/content/en/docs/concepts/workloads/pods/pod-lifecycle.md",
+  "retrieved_at": "2026-09-12T16:49:12.933941Z",
+  "sha256": "f7e45e7780706b5030824ea0fe29d6617b1e6961ccc95d437fa36c6c1b8489a5",
+  "bytes": 56407,
+  "http_status": 200,
+  "etag": "\"f79895346ef4a276db0f702d0d9428aca32fceb5165373ae6b3bc675b669b361\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

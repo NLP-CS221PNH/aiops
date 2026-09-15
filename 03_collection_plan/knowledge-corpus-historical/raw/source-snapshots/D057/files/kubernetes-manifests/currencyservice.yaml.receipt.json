@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/80bea9bfd97bec107361d4663e207aa8d3f312c6/kubernetes-manifests/currencyservice.yaml",
+  "retrieved_at": "2026-09-12T16:58:01.584164Z",
+  "sha256": "4c68212acc1d22b6c67f14570b07e2e669ee4a4eaaef72eb7ca1ca7a540ca4fe",
+  "bytes": 1891,
+  "http_status": 200,
+  "etag": "\"c70bd09049a86c44c9ebf8642fb7830f3b191f3f0d2f468a9aee75e211d8f13f\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

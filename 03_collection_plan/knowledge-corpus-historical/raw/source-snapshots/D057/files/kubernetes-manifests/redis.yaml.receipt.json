@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/80bea9bfd97bec107361d4663e207aa8d3f312c6/kubernetes-manifests/redis.yaml",
+  "retrieved_at": "2026-09-12T16:58:02.175009Z",
+  "sha256": "d4d5c22c12a7d8d6bb8362e23d0b82873528eea47c1fcc3960d868c46a8e1349",
+  "bytes": 1862,
+  "http_status": 200,
+  "etag": "\"f52425b1ebf4dfd5f9e775fa809a69599baf862c1cd1eb66287c0c7fbd32ab3b\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

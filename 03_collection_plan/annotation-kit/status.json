@@ -1,0 +1,14 @@
+{
+  "schema_version": "annotation-kit-v1",
+  "observation_records_found": 90,
+  "task_rows": 90,
+  "active_knowledge_snapshot_id": "cs221-knowledge-pre2024-v1",
+  "document_applicability_rows": 74,
+  "current_document_applicability_rows": 73,
+  "historical_document_applicability_rows": 74,
+  "human_judgments_completed": 0,
+  "gold_qrels_available": false,
+  "reference_answers_available": false,
+  "candidate_pool_complete": false,
+  "status": "blank_forms_ready_human_annotation_required"
+}

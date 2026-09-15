@@ -1,0 +1,22 @@
+{
+  "current_snapshot_id": "cs221-knowledge-2026-09-12-v1",
+  "historical_snapshot_id": "cs221-knowledge-pre2024-v1",
+  "policy": "only_files_present_at_historical_commit_no_forward_filling",
+  "historical_file_count": 74,
+  "current_file_count": 73,
+  "missing_from_historical": [],
+  "historical_only": [
+    {
+      "source_id": "D057",
+      "source_path": "kubernetes-manifests/redis.yaml"
+    }
+  ],
+  "same_path_same_text_count": 41,
+  "same_path_changed_text_count": 32,
+  "all_historical_snapshot_times_before_2024": true,
+  "per_incident_cutoff_check": "passed_before_all_observation_starts",
+  "deployment_version_mapping": "unverified",
+  "observation_count_checked": 90,
+  "earliest_observation_start": "2024-01-15T17:30:22+00:00",
+  "cutoff_check_limit": "time_eligibility_only_deployment_and_evidence_relevance_unverified"
+}

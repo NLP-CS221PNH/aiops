@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/productcatalogservice.yaml",
+  "retrieved_at": "2026-09-12T16:49:10.126347Z",
+  "sha256": "a2d7d1eb5923b54ca37cfbe0a65da8c8ea10aad2d1cab24274b5cd64a96488d9",
+  "bytes": 2082,
+  "http_status": 200,
+  "etag": "\"7f94ac7b622384e69102d24cba576401a218757ec563eb32facee388b45b045c\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

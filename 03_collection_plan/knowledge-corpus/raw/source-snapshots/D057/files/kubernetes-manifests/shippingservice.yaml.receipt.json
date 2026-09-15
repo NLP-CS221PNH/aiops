@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/shippingservice.yaml",
+  "retrieved_at": "2026-09-12T16:49:10.657675Z",
+  "sha256": "b10de1eab50accc163cd80b07fad8311aacb5ff6a0c0113c1ef770d3b7a418e2",
+  "bytes": 2016,
+  "http_status": 200,
+  "etag": "\"41d7e0d89c3fb845d4ca61406cd720864a8fb9b0a0b98829db152f4ed1ffe816\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

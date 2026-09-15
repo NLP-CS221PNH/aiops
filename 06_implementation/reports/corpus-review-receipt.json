@@ -1,0 +1,117 @@
+{
+  "applicability_review": "pending",
+  "automated_reviews": [
+    {
+      "actor_kind": "codex_agent",
+      "evidence_path": "reports/corpus-tests.json",
+      "reviewer": "/root/prerequisite_audit",
+      "role": "tester",
+      "status": "pass"
+    },
+    {
+      "actor_kind": "codex_agent",
+      "evidence_path": "reports/corpus-code-review.md",
+      "open_critical_findings": 0,
+      "reviewer": "/root/source_census",
+      "role": "code-reviewer",
+      "score": 9,
+      "status": "pass"
+    },
+    {
+      "actor_kind": "codex_agent",
+      "evidence_path": "reports/corpus-source-review.md",
+      "reviewer": "/root",
+      "role": "source-preparation-reviewer",
+      "status": "pass"
+    }
+  ],
+  "change_policy": "New corpus version; rebuild retrieval branches; repool and rejudge affected pairs; never transfer qrel grades from old/new overlap; apply plan08 deviation policy after F1.",
+  "citation_registry_hash": "b823384abe9d478f9e4ad56ca997874748d8497cb7fecbe117b961efb0fd9b05",
+  "config_hash": "05b33be146a2732e5cf6ec4b5fb981d978b462f2501db6857a61dc09f1b810b4",
+  "corpus_hash": "5c038293ce2ee69a42277170e18dd9c88417aff7e5c0aa127f034438803e23f3",
+  "counts": {
+    "allowed_documents": 0,
+    "candidate_chunks": 440,
+    "candidate_documents": 67,
+    "documents": 74,
+    "excluded_documents": 7,
+    "indexed_chunks": 0,
+    "indexed_documents": 0,
+    "source_chunks": 580,
+    "supporting_assets": 12,
+    "unknown_documents": 67
+  },
+  "created_at_utc": "2026-09-13T03:31:04.803796+00:00",
+  "evidence": [
+    {
+      "path": "reports/corpus-validation.json",
+      "sha256": "6a7d087d3deecb9d3491b22750b91089cbc059d1605fcf5cab66281b07262d97"
+    },
+    {
+      "path": "reports/corpus-tests.json",
+      "sha256": "af77fd8aff105da1776e31ce999715e5a8f0bca2d817f95666056c70d165e9a9"
+    },
+    {
+      "path": "reports/corpus-code-review.md",
+      "sha256": "b34f27a01cc8383aa84322207fa351b67385e144e96c160e043410089a878889"
+    },
+    {
+      "path": "reports/corpus-source-review.md",
+      "sha256": "a4e00417529b7e8379b1ae50a503ebb0a534854d95b12c1b3773f92594cd3220"
+    },
+    {
+      "path": "reports/corpus-source-audit.json",
+      "sha256": "5bf3cafd4cda19d514e54c40bb336154a5f8904800d3b9b28128ca5860ae8c44"
+    },
+    {
+      "path": "reports/corpus-tokenizer-provisioning.json",
+      "sha256": "7c811be18980573c3cd944a8f179c8eb09d2218cff742efa8fce9a0f2c077dca"
+    },
+    {
+      "path": "configs/corpus-execution-authorization.json",
+      "sha256": "f36c34f0ea26ae0a42d133498d8c8e35938cfa410c58843358fc146f876f5d74"
+    },
+    {
+      "path": "configs/corpus-requirements-lock.txt",
+      "sha256": "16b6aab5c550cee06003bef3eb987906934fbee62a02db2e9e221d0d48cd2f9c"
+    },
+    {
+      "path": "tests/test_corpus_integrity.py",
+      "sha256": "acdd1e22c57a4ede418ac47b278dd12af1477edb3b80086220bc9f376607c88c"
+    },
+    {
+      "path": "tests/test_citation_registry.py",
+      "sha256": "e4a4a38e63c046a75bed0414223b59a97d9f87518552139d58a2e0af86066c62"
+    }
+  ],
+  "human_review_pending_documents": 74,
+  "human_reviews": [],
+  "limitations": [
+    "deployment compatibility unknown for all 74 sources",
+    "all 74 human applicability reviews pending",
+    "43 short chunks and 175 unrendered Hugo warnings retained for review",
+    "incident relevance and evidence coverage unjudged",
+    "no model inference, benchmark, human annotation or external release performed"
+  ],
+  "manifest_hash": "ffbe1715e4bd5387843d083fb0daf27f12dd3b2eea1a8c1f9619c4725c6153f7",
+  "plan02_full_gate": "pending",
+  "rebuild": {
+    "byte_identical_artifacts": 8,
+    "independent_process": true
+  },
+  "release_ready": false,
+  "release_status": "candidate",
+  "schema_version": "cs221-corpus-review-v1",
+  "technical_gate": "pass",
+  "test_summary": {
+    "corpus": 60,
+    "errors": 0,
+    "existing_data": 48,
+    "existing_protocol": 52,
+    "failures": 0,
+    "skipped": 0,
+    "total": 160
+  },
+  "tokenizer_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "tokenizer_sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+}

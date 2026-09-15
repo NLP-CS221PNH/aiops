@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/prometheus-operator/runbooks/commits/f8061f3e9b3337d90107aa2f10a0111f3f6dc86f",
+  "retrieved_at": "2026-09-12T16:57:57.911221Z",
+  "sha256": "7ce07c3414c6764c9a2630ada7c73ff0405d0b675e012ba4b0e03acc35fd3d40",
+  "bytes": 5682,
+  "http_status": 200,
+  "etag": "W/\"e8fee3b818acdb0b3a3fc620e46f3d4cb9be40e78c8291c60cfb195009335a8c\"",
+  "last_modified_http": "Thu, 07 Sep 2023 14:21:57 GMT",
+  "http_last_modified_is_content_publication_time": false
+}

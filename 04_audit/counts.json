@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-12",
+  "input_raw_records": 858,
+  "supplemental_records": 163,
+  "total_input_records": 1021,
+  "dedup_merges": 9,
+  "excluded_groups": 3,
+  "paper_records": 1009,
+  "paper_statuses": {
+    "primary_title_identifier_confirmed": 766,
+    "blocked_or_unreadable": 208,
+    "pdf_readable_title_pending": 35
+  },
+  "paper_topics": {
+    "AIOPS_RCA": 136,
+    "LLM_AIOPS_RCA": 53,
+    "LOG_NLP": 143,
+    "IR_DENSE_SPARSE": 198,
+    "RAG_QA": 283,
+    "GRAPH_RAG": 118,
+    "LOG_TRACE_METRIC": 31,
+    "RAG_EVALUATION": 4,
+    "IR_RERANKING": 43
+  },
+  "paper_scope": {
+    "direct_AIOps_log_observability": 363,
+    "methodological_IR_RAG_QA": 616,
+    "adjacent_method_transfer": 30
+  },
+  "individual_normalized_url_checks": 1017,
+  "metadata_title_corrections": 69,
+  "dataset_source_entries": 102,
+  "dataset_top_level_sources": 64,
+  "dataset_child_entries": 38,
+  "top_level_resource_types": {
+    "dataset_collection": 21,
+    "benchmark_release_unconfirmed": 1,
+    "dataset": 15,
+    "dataset_artifact": 7,
+    "method_only": 1,
+    "generation_platform": 8,
+    "sample_dataset": 2,
+    "derived_dataset": 1,
+    "dataset_release_access_unconfirmed": 1,
+    "corpus_to_collect": 6,
+    "corpus_access_unconfirmed": 1
+  },
+  "license_conflict_top_level_sources": [
+    "LEMMA-RCA",
+    "GAIA — Generic AIOps Atlas",
+    "DeathStarBench"
+  ],
+  "raw_datasets_downloaded": 0,
+  "paper_fulltexts_in_pack": 0,
+  "text_file_count": 144,
+  "independent_dataset_count": "not_asserted; 64 top-level registrations include platforms, collections and corpora",
+  "qa_status": "structural_checks_passed; network_scope_and_unresolved_records_unchanged"
+}

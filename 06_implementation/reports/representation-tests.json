@@ -1,0 +1,39 @@
+{
+  "schema_version": "cs221-representation-test-report-v1",
+  "date": "2026-09-13",
+  "actor_kind": "codex_agent",
+  "role": "tester",
+  "reviewer": "/root/tester",
+  "status": "pass",
+  "synthetic_representation_fixtures_only": true,
+  "production_files_edited_by_tester": false,
+  "runs": [
+    {"scope": "representation", "tests": 43, "failures": 0, "errors": 0, "skipped": 0, "seconds": 2.643, "exit_code": 0},
+    {"scope": "full_suite", "tests": 203, "failures": 0, "errors": 0, "skipped": 0, "seconds": 46.300, "exit_code": 0}
+  ],
+  "environment": {
+    "working_directory": "06_implementation",
+    "runtime": ".venv/Scripts/python.exe",
+    "python": "3.11.9",
+    "tokenizers": "0.21.4",
+    "pyyaml": "6.0.2",
+    "protocol_dependency_resolution": "append existing site.getusersitepackages() to venv sys.path",
+    "installations_performed": false
+  },
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe -B -m unittest discover -s tests -p 'test_representation*.py' -q",
+    ".\\.venv\\Scripts\\python.exe -B -c \"import sys,site,unittest; sys.path.append(site.getusersitepackages()); result=unittest.TextTestRunner(verbosity=1).run(unittest.defaultTestLoader.discover('tests')); raise SystemExit(not result.wasSuccessful())\""
+  ],
+  "real_tokenizer_counterexample": {"whitespace": "U+0085", "r1_tokens": 307, "r2_tokens": 187, "query_limit": 187, "same_whole_log_dropped_by_both": true},
+  "not_performed": ["retrieval", "qrels", "model_execution", "test_materialization", "winner_selection"],
+  "direct_api_observation": "Resolved: canonical snapshot guards now reject post-construction mutations at public consumption points. Fifty independent mutation subcases pass, followed by the full 203-test regression run.",
+  "file_hashes": {
+    "src/representations.py": "3b1a107ac7bca39e5123772c33e89840951c857857319f9b8d09852fa5da90a6",
+    "src/representation_pipeline.py": "7ed8f2b186f3592dbaa4337af0d79ee1bc0acf7ea6e51472f27e03b31197f2cb",
+    "scripts/build_representations.py": "19270e38675921e343abf4dbed479fae0289bb50a58645d192056fb03162a66f",
+    "queries/representation-schema.json": "c86745c9dec0b067b7744951a3f974bf5615978cb0eb266097ed917cf8c3c365",
+    "configs/representation.yaml": "0e0c347c20f7a025013c3e7134a83c73356f5fc00dafed666f099c8395ffd34d",
+    "tests/test_representation_contract.py": "51095bc30fa357f0147e865aaa7f234700495718b6555b4344d06fad10b408c5",
+    "tests/test_representation_pipeline.py": "6cc50a36301c5da48a012dd245a96b09c49149db8c06097c96fa078fcbd720bd"
+  }
+}

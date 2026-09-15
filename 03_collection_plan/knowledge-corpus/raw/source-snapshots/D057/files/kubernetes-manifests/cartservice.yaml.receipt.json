@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/cartservice.yaml",
+  "retrieved_at": "2026-09-12T16:49:09.043881Z",
+  "sha256": "e4ad956409551a90e7c2fc8065f285b65255e81bc15b7b722debf3a6ec761428",
+  "bytes": 3391,
+  "http_status": 200,
+  "etag": "\"d3af1c566f81ef58ec807dd621bc671bc430a798f8c38ba71e5ee12337921d56\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

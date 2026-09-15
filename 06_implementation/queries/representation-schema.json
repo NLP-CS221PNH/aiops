@@ -1,0 +1,980 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cs221:representation-schema:v1",
+  "title": "Plan 04 safe query and common observation bundle contracts",
+  "description": "Validate each JSONL row with its artifact-specific $defs entry. query.config_hash is canonical representation configuration; manifest.config_hash is configuration file bytes. Query/token/bundle tokenizer_hash binds the tokenizer asset; manifest.tokenizer_hash binds the complete tokenizer policy. Offsets are half-open Unicode code points in the redacted safe export. Bundle hash is canonical JSON of all bundle fields except bundle_hash. No private manager fields are accepted.",
+  "$defs": {
+"manifest": {
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "cs221-query-manifest-v1"
+    },
+    "milestone": {
+      "const": "04.variants"
+    },
+    "status": {
+      "const": "candidate"
+    },
+    "representation_version": {
+      "type": "string"
+    },
+    "input_manifest_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "config_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "config_content_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "tokenizer_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "implementation_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "implementation": {
+      "type": "object",
+      "description": "Repository-relative implementation and public policy paths mapped to exact SHA-256 file hashes."
+    },
+    "dependencies_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "python": {
+          "type": "string"
+        },
+        "packages": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "pyarrow": {
+              "type": "string"
+            },
+            "tokenizers": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "pyarrow",
+            "tokenizers"
+          ]
+        },
+        "lock_hashes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "configs/requirements-lock.txt": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            },
+            "configs/corpus-requirements-lock.txt": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            }
+          },
+          "required": [
+            "configs/requirements-lock.txt",
+            "configs/corpus-requirements-lock.txt"
+          ]
+        }
+      },
+      "required": [
+        "python",
+        "packages",
+        "lock_hashes"
+      ]
+    },
+    "schema_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "manager_selection_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "manager_config_hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "variant_ids": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "incidents": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "queries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "selections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "token_ledgers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bundles": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "incidents",
+        "queries",
+        "selections",
+        "token_ledgers",
+        "bundles"
+      ]
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "[0-9a-f]{64}"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "rows": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "bytes",
+          "rows"
+        ]
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "test_materialization": {
+      "const": "not_performed_requires_plan08_F1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "milestone",
+    "status",
+    "representation_version",
+    "input_manifest_hash",
+    "config_hash",
+    "config_content_hash",
+    "tokenizer_hash",
+    "implementation_hash",
+    "implementation",
+    "dependencies_hash",
+    "dependencies",
+    "schema_hash",
+    "manager_selection_hash",
+    "manager_config_hash",
+    "variant_ids",
+    "counts",
+    "outputs",
+    "errors",
+    "test_materialization"
+  ]
+},
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observation_start": {
+          "type": "string"
+        },
+        "observation_end_exclusive": {
+          "type": "string"
+        },
+        "window_policy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "observation_start",
+        "observation_end_exclusive",
+        "window_policy"
+      ]
+    },
+    "source_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string"
+        },
+        "source_file_id": {
+          "type": "string"
+        },
+        "transform_version": {
+          "type": "string"
+        },
+        "redaction_version": {
+          "type": "string"
+        },
+        "source_row_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_row_end_exclusive": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_row_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_char_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_char_end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_text_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "offset_unit": {
+          "const": "unicode_codepoint"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "source_file_id",
+        "transform_version",
+        "redaction_version"
+      ]
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "incident_id": {
+          "type": "string",
+          "pattern": "inc_[0-9a-f]{16}"
+        },
+        "query_id": {
+          "type": "string"
+        },
+        "representation_id": {
+          "enum": [
+            "R1",
+            "R2",
+            "R3"
+          ]
+        },
+        "representation_version": {
+          "type": "string"
+        },
+        "query_text": {
+          "type": "string"
+        },
+        "query_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "window": {
+          "$ref": "#/$defs/window"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "log_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_span"
+          }
+        },
+        "missing_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "query_is_synthetic": {
+          "const": true
+        },
+        "telemetry_is_synthetic": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "insufficient_evidence"
+          ]
+        },
+        "input_manifest_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "config_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "tokenizer_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "normalization_version": {
+          "type": "string"
+        },
+        "redaction_version": {
+          "type": "string"
+        },
+        "transform_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "incident_id",
+        "query_id",
+        "representation_id",
+        "representation_version",
+        "query_text",
+        "query_hash",
+        "window",
+        "evidence_ids",
+        "log_evidence_ids",
+        "source_spans",
+        "missing_information",
+        "query_is_synthetic",
+        "telemetry_is_synthetic",
+        "status",
+        "input_manifest_hash",
+        "config_hash",
+        "tokenizer_hash",
+        "normalization_version",
+        "redaction_version",
+        "transform_version"
+      ]
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "incident_id": {
+          "type": "string",
+          "pattern": "inc_[0-9a-f]{16}"
+        },
+        "window": {
+          "$ref": "#/$defs/window"
+        },
+        "selection_version": {
+          "type": "string"
+        },
+        "universe_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "candidate_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "selected_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "dropped_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "dropped_logs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        },
+        "selected_metric_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "selected_trace_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "enrichment_dropped": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        },
+        "source_selection_loss": {
+          "type": "string"
+        },
+        "ordering": {
+          "type": "string"
+        },
+        "retained_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "budget_dropped_logs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        }
+      },
+      "required": [
+        "incident_id",
+        "window",
+        "selection_version",
+        "universe_hash",
+        "candidate_log_ids",
+        "selected_log_ids",
+        "dropped_log_ids",
+        "dropped_logs",
+        "selected_metric_ids",
+        "selected_trace_ids",
+        "enrichment_dropped",
+        "source_selection_loss",
+        "ordering",
+        "retained_log_ids",
+        "budget_dropped_logs"
+      ]
+    },
+    "token_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "incident_id": {
+          "type": "string",
+          "pattern": "inc_[0-9a-f]{16}"
+        },
+        "query_id": {
+          "type": "string"
+        },
+        "representation_id": {
+          "enum": [
+            "R1",
+            "R2",
+            "R3"
+          ]
+        },
+        "tokenizer_revision": {
+          "type": "string"
+        },
+        "tokenizer_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "prefix": {
+          "const": "query: "
+        },
+        "special_tokens": {
+          "const": 2
+        },
+        "prefix_and_special_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "before_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "after_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retained_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "retained_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_span"
+          }
+        },
+        "normalization_map": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "source_text_hash": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "rendered_text_hash": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "segments": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "source_start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "source_end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "output_start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "output_end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "operation": {
+                      "enum": [
+                        "copy",
+                        "whitespace"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "source_start",
+                    "source_end",
+                    "output_start",
+                    "output_end",
+                    "operation"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "evidence_id",
+              "source_text_hash",
+              "rendered_text_hash",
+              "segments"
+            ]
+          }
+        },
+        "dropped_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        },
+        "partial_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "clipping_unit": {
+          "const": "whole_evidence_block"
+        },
+        "query_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "joint_retained_log_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "joint_dropped_logs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        }
+      },
+      "required": [
+        "incident_id",
+        "query_id",
+        "representation_id",
+        "tokenizer_revision",
+        "tokenizer_hash",
+        "prefix",
+        "special_tokens",
+        "prefix_and_special_tokens",
+        "max_tokens",
+        "before_tokens",
+        "after_tokens",
+        "retained_evidence_ids",
+        "retained_log_ids",
+        "source_spans",
+        "normalization_map",
+        "dropped_evidence",
+        "partial_evidence_ids",
+        "clipping_unit",
+        "query_hash",
+        "joint_retained_log_ids",
+        "joint_dropped_logs"
+      ]
+    },
+    "bundle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "incident_id": {
+          "type": "string",
+          "pattern": "inc_[0-9a-f]{16}"
+        },
+        "bundle_version": {
+          "type": "string"
+        },
+        "window": {
+          "$ref": "#/$defs/window"
+        },
+        "observation_text": {
+          "type": "string"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "observations": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "system_id": {
+              "type": "string"
+            },
+            "deployment_version": {
+              "type": "string"
+            },
+            "service_inventory": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "telemetry_is_synthetic": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "system_id",
+            "deployment_version",
+            "service_inventory",
+            "telemetry_is_synthetic"
+          ]
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_span"
+          }
+        },
+        "normalization_map": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "source_text_hash": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "rendered_text_hash": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "segments": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "source_start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "source_end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "output_start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "output_end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "operation": {
+                      "enum": [
+                        "copy",
+                        "whitespace"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "source_start",
+                    "source_end",
+                    "output_start",
+                    "output_end",
+                    "operation"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "evidence_id",
+              "source_text_hash",
+              "rendered_text_hash",
+              "segments"
+            ]
+          }
+        },
+        "dropped_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "evidence_id",
+              "reason"
+            ]
+          }
+        },
+        "missing_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "insufficient_evidence"
+          ]
+        },
+        "budget": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tokenizer_revision": {
+              "type": "string"
+            },
+            "tokenizer_hash": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            },
+            "before_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "after_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "prefix": {
+              "const": ""
+            },
+            "special_tokens": {
+              "const": 2
+            },
+            "scope": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tokenizer_revision",
+            "tokenizer_hash",
+            "before_tokens",
+            "after_tokens",
+            "max_tokens",
+            "prefix",
+            "special_tokens",
+            "scope"
+          ]
+        },
+        "bundle_hash": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        }
+      },
+      "required": [
+        "incident_id",
+        "bundle_version",
+        "window",
+        "observation_text",
+        "evidence_ids",
+        "observations",
+        "source_spans",
+        "normalization_map",
+        "dropped_evidence",
+        "missing_information",
+        "status",
+        "budget",
+        "bundle_hash"
+      ]
+    }
+  }
+}

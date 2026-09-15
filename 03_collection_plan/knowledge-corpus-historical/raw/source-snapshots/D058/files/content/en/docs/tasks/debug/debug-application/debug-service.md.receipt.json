@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/docs/tasks/debug/debug-application/debug-service.md",
+  "retrieved_at": "2026-09-12T16:58:03.738556Z",
+  "sha256": "dc240d70ba564a724b07b837efd1473a8084ea40e009a0241fc58b4b3a065f1e",
+  "bytes": 23655,
+  "http_status": 200,
+  "etag": "\"6bb93a7020c53213a9f677abcefb05d8d50c1a885c5e5e5178913a64512000a1\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

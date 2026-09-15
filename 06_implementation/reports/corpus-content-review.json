@@ -1,0 +1,2550 @@
+{
+  "corpus_hash": "5c038293ce2ee69a42277170e18dd9c88417aff7e5c0aa127f034438803e23f3",
+  "exact_normalized_duplicate_groups": [],
+  "input_hashes": {
+    "06_implementation/configs/corpus.yaml": "05b33be146a2732e5cf6ec4b5fb981d978b462f2501db6857a61dc09f1b810b4",
+    "06_implementation/data/knowledge/applicability.tsv": "3faf4fdef9585a6d92c646d19c43842c918343be41c512f07a89be63b74289b6",
+    "06_implementation/data/knowledge/chunk-lineage.jsonl": "cf89520a836a6c72b1fee7c9ed4abe1d071a1868a014f7eaaefc44edcaa53edd",
+    "06_implementation/data/knowledge/chunks.jsonl": "b46aafdb29fa6f70d2b95a990ed496d407bd19779ae8d15255c80ff7400a86ba",
+    "06_implementation/data/knowledge/citation-registry.jsonl": "b823384abe9d478f9e4ad56ca997874748d8497cb7fecbe117b961efb0fd9b05",
+    "06_implementation/data/knowledge/corpus-manifest.json": "ffbe1715e4bd5387843d083fb0daf27f12dd3b2eea1a8c1f9619c4725c6153f7",
+    "06_implementation/data/knowledge/documents.jsonl": "7875609c6b2a0eb24e5bb94396496230c30dc160734499501043c2d1eb8e40ce",
+    "06_implementation/data/knowledge/source-registry.jsonl": "4816c8574226bde4c9cc6f0d2b16ae11238ec00e306a265db529eaccd68f106b",
+    "06_implementation/data/knowledge/token-audit.json": "5099c6524cfb5ca52d82a0d8dfbcd2e95f9cf7e197dd6a5bef5c029aec1f3b0e",
+    "06_implementation/reports/corpus-source-audit.json": "5bf3cafd4cda19d514e54c40bb336154a5f8904800d3b9b28128ca5860ae8c44"
+  },
+  "limits": [
+    "Short heading-only sections remain candidates until content review.",
+    "Repeated language and lexical similarity do not establish independent evidence.",
+    "No human reviewer or deployment confirmation is invented.",
+    "Coverage and relevance remain unjudged."
+  ],
+  "lineage_relation_counts": {
+    "excluded": 17,
+    "one_to_many": 55,
+    "overlap": 368,
+    "removed": 140
+  },
+  "local_asset_expansions": [
+    {
+      "change": "resolved_include:content/en/includes/task-tutorial-prereqs.md",
+      "document_id": "KBH-D058-22bb04d72ccf"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/admin/dns/dnsutils.yaml",
+      "document_id": "KBH-D058-22bb04d72ccf"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/application/nginx-with-request.yaml",
+      "document_id": "KBH-D058-4067ea9b384b"
+    },
+    {
+      "change": "resolved_include:content/en/includes/task-tutorial-prereqs.md",
+      "document_id": "KBH-D058-6346769f861a"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/debug/node-problem-detector.yaml",
+      "document_id": "KBH-D058-6346769f861a"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/debug/node-problem-detector-configmap.yaml",
+      "document_id": "KBH-D058-6346769f861a"
+    },
+    {
+      "change": "resolved_include:content/en/includes/task-tutorial-prereqs.md",
+      "document_id": "KBH-D058-8f1d50e206b1"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/debug/termination.yaml",
+      "document_id": "KBH-D058-8f1d50e206b1"
+    },
+    {
+      "change": "resolved_include:content/en/includes/task-tutorial-prereqs.md",
+      "document_id": "KBH-D058-ac5d7aedb7e6"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/debug/counter-pod.yaml",
+      "document_id": "KBH-D058-c2749095504f"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/admin/logging/two-files-counter-pod.yaml",
+      "document_id": "KBH-D058-c2749095504f"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/admin/logging/two-files-counter-pod-streaming-sidecar.yaml",
+      "document_id": "KBH-D058-c2749095504f"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/admin/logging/fluentd-sidecar-config.yaml",
+      "document_id": "KBH-D058-c2749095504f"
+    },
+    {
+      "change": "resolved_code_sample:content/en/examples/admin/logging/two-files-counter-pod-agent-sidecar.yaml",
+      "document_id": "KBH-D058-c2749095504f"
+    }
+  ],
+  "near_duplicate_method": {
+    "empty_union": "not_compared",
+    "purpose": "lexical_content_review_only_not_independence_relevance_coverage_or_qrels",
+    "representation": "casefolded_unicode_word_tokens_regex_\\w+",
+    "scope": "all74_document_pairs_including_excluded",
+    "set_similarity": "Jaccard_intersection_over_union",
+    "shingle_words": 5,
+    "threshold": 0.8
+  },
+  "near_duplicate_pairs": [
+    {
+      "jaccard": 0.83333333,
+      "left_document_id": "KBH-D057-4fe9c69346cd",
+      "right_document_id": "KBH-D057-c14488b4640d",
+      "same_normalized_hash": false,
+      "shared_shingles": 10,
+      "union_shingles": 12
+    },
+    {
+      "jaccard": 0.84864865,
+      "left_document_id": "KBH-D059-0185ccfaeb29",
+      "right_document_id": "KBH-D059-100adba8ab53",
+      "same_normalized_hash": false,
+      "shared_shingles": 157,
+      "union_shingles": 185
+    },
+    {
+      "jaccard": 0.85046729,
+      "left_document_id": "KBH-D059-1e35988462b6",
+      "right_document_id": "KBH-D059-9bcf2fdf8ee8",
+      "same_normalized_hash": false,
+      "shared_shingles": 182,
+      "union_shingles": 214
+    },
+    {
+      "jaccard": 0.80740741,
+      "left_document_id": "KBH-D059-320e57f48715",
+      "right_document_id": "KBH-D059-b32d4a918814",
+      "same_normalized_hash": false,
+      "shared_shingles": 109,
+      "union_shingles": 135
+    }
+  ],
+  "omitted_spans": [
+    {
+      "document_id": "KBH-D059-0185ccfaeb29",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-0980a5088584",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-0d787d431d0c",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-100adba8ab53",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-1e35988462b6",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-2f773ad62c4d",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-320e57f48715",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-40feb3b71482",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-44306ba7be54",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-4bb889d6dca3",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-545ab1351883",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-55680d49eefb",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-5b2f1ba3a5d0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-6c2b859da0cb",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-7f69273da4ee",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-880cd100599f",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-90ee8fc78d14",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-91688933d572",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-91bc8b32682b",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-9bcf2fdf8ee8",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-ab767794153c",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b0277ce1f225",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b32d4a918814",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b8a720c3525a",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-bcfb01413ab2",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c0ae2fc5e6c0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c21de076814a",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c5fd7b512fcf",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-db6bc0dfb97f",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-dc1287ef31f0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-de70fffe8993",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-f471acd3d532",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    }
+  ],
+  "rendering_warnings": [
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-1288140b93d4",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4836,
+      "normalized_start": 4809,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-usage-monitoring.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 907,
+      "normalized_start": 895,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1342,
+      "normalized_start": 1329,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< mermaid >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1433,
+      "normalized_start": 1418,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /mermaid >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 2074,
+      "normalized_start": 2058,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3287,
+      "normalized_start": 3275,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3744,
+      "normalized_start": 3731,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"1.8\" state=\"beta\" >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3832,
+      "normalized_start": 3776,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6433,
+      "normalized_start": 6421,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6558,
+      "normalized_start": 6545,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 9059,
+      "normalized_start": 9032,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"prerequisites\" %}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 107,
+      "normalized_start": 76,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"addon\" term_id=\"addons\" >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 779,
+      "normalized_start": 725,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% version-check %}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 832,
+      "normalized_start": 811,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1197,
+      "normalized_start": 1185,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1475,
+      "normalized_start": 1462,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3648,
+      "normalized_start": 3636,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3749,
+      "normalized_start": 3736,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4854,
+      "normalized_start": 4842,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4942,
+      "normalized_start": 4929,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"ConfigMap\" term_id=\"configmap\" >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6051,
+      "normalized_start": 5990,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"service\"\nterm_id=\"service\" >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7588,
+      "normalized_start": 7531,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"endpoint\"\nterm_id=\"endpoint\" >}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7652,
+      "normalized_start": 7593,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-22bb04d72ccf",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 11051,
+      "normalized_start": 11024,
+      "source_path": "content/en/docs/tasks/administer-cluster/dns-debugging-resolution.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"prerequisites\" %}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 126,
+      "normalized_start": 95,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"Pod\" term_id=\"pod\" >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 185,
+      "normalized_start": 136,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"container image\" term_id=\"image\" >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13131,
+      "normalized_start": 13068,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13415,
+      "normalized_start": 13403,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13528,
+      "normalized_start": 13515,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state state=\"stable\" for_k8s_version=\"v1.25\" >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14111,
+      "normalized_start": 14051,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"Ephemeral containers\" term_id=\"ephemeral-container\" >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14195,
+      "normalized_start": 14113,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15985,
+      "normalized_start": 15973,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip\ntext=\"Container Runtime\" term_id=\"container-runtime\" >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 16113,
+      "normalized_start": 16036,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 16308,
+      "normalized_start": 16295,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 18366,
+      "normalized_start": 18354,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 18999,
+      "normalized_start": 18986,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20190,
+      "normalized_start": 20178,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-4067ea9b384b",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20604,
+      "normalized_start": 20591,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-running-pod.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 669,
+      "normalized_start": 657,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 738,
+      "normalized_start": 725,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6944,
+      "normalized_start": 6932,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7027,
+      "normalized_start": 7014,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13558,
+      "normalized_start": 13546,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13647,
+      "normalized_start": 13634,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-54c2092d43a5",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 23474,
+      "normalized_start": 23447,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-service.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"node\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1519,
+      "normalized_start": 1480,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"node\" term_id=\"node\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1754,
+      "normalized_start": 1703,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"controller\" text=\"controller\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1998,
+      "normalized_start": 1935,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"volume\" text=\"volume\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 2405,
+      "normalized_start": 2350,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< figure src=\"/images/docs/pod.svg\" title=\"Pod diagram\" class=\"diagram-medium\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 2754,
+      "normalized_start": 2670,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< param \"version\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3015,
+      "normalized_start": 2992,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4530,
+      "normalized_start": 4518,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4894,
+      "normalized_start": 4881,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"scheduler\" term_id=\"kube-scheduler\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5823,
+      "normalized_start": 5757,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"container runtime\" term_id=\"container-runtime\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5986,
+      "normalized_start": 5909,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"Secret\" term_id=\"secret\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6643,
+      "normalized_start": 6588,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"app containers\" term_id=\"app-container\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7905,
+      "normalized_start": 7835,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< param \"version\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 9242,
+      "normalized_start": 9219,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.14\" state=\"stable\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 10616,
+      "normalized_start": 10556,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"operator-pattern\" text=\"operators\">}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12062,
+      "normalized_start": 11995,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.29\" state=\"beta\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12745,
+      "normalized_start": 12687,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12759,
+      "normalized_start": 12747,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12845,
+      "normalized_start": 12832,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"cri\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13094,
+      "normalized_start": 13056,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< skew currentVersion >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13361,
+      "normalized_start": 13334,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.26\" state=\"alpha\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14987,
+      "normalized_start": 14928,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 16480,
+      "normalized_start": 16465,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 16947,
+      "normalized_start": 16931,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20395,
+      "normalized_start": 20383,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20732,
+      "normalized_start": 20719,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"kubelet\" term_id=\"kubelet\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 22193,
+      "normalized_start": 22136,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"API Server\" term_id=\"kube-apiserver\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 23005,
+      "normalized_start": 22938,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24286,
+      "normalized_start": 24274,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24465,
+      "normalized_start": 24452,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24598,
+      "normalized_start": 24586,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24809,
+      "normalized_start": 24796,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"service\" text=\"Service\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 25096,
+      "normalized_start": 25039,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"selector\" term_id=\"selector\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 25177,
+      "normalized_start": 25118,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"ReplicaSets\" term_id=\"replica-set\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 25247,
+      "normalized_start": 25182,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{<note>}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26437,
+      "normalized_start": 26427,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{</note>}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26864,
+      "normalized_start": 26853,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{<note>}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26876,
+      "normalized_start": 26866,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{</note>}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 28008,
+      "normalized_start": 27997,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 28751,
+      "normalized_start": 28736,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 28850,
+      "normalized_start": 28834,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 29273,
+      "normalized_start": 29261,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 29400,
+      "normalized_start": 29387,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 29795,
+      "normalized_start": 29780,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /caution >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 29971,
+      "normalized_start": 29955,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"controller\" text=\"controller\" >}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 30370,
+      "normalized_start": 30307,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-57df42feca96",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 31593,
+      "normalized_start": 31566,
+      "source_path": "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"prerequisites\" %}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 654,
+      "normalized_start": 623,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"Addon\" term_id=\"addons\" >}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1595,
+      "normalized_start": 1541,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3093,
+      "normalized_start": 3081,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3210,
+      "normalized_start": 3197,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5995,
+      "normalized_start": 5983,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-6346769f861a",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6087,
+      "normalized_start": 6074,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/monitor-node-health.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-714196198a9c",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7619,
+      "normalized_start": 7592,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-pods.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"prerequisites\" %}}",
+      "document_id": "KBH-D058-8f1d50e206b1",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 497,
+      "normalized_start": 466,
+      "source_path": "content/en/docs/tasks/debug/debug-application/determine-reason-pod-failure.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-8f1d50e206b1",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4923,
+      "normalized_start": 4896,
+      "source_path": "content/en/docs/tasks/debug/debug-application/determine-reason-pod-failure.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< param \"version\" >}}",
+      "document_id": "KBH-D058-8f1d50e206b1",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5047,
+      "normalized_start": 5024,
+      "source_path": "content/en/docs/tasks/debug/debug-application/determine-reason-pod-failure.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"pod\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 77,
+      "normalized_start": 39,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"container\" term_id=\"container\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 196,
+      "normalized_start": 135,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"kube-scheduler\" term_id=\"kube-scheduler\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 427,
+      "normalized_start": 356,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"kubelet\" term_id=\"kubelet\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 607,
+      "normalized_start": 550,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"container runtime\" term_id=\"container-runtime\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 1507,
+      "normalized_start": 1430,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 2095,
+      "normalized_start": 2083,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 2361,
+      "normalized_start": 2348,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3026,
+      "normalized_start": 3014,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3144,
+      "normalized_start": 3131,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5419,
+      "normalized_start": 5407,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5987,
+      "normalized_start": 5974,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"cgroups\" term_id=\"cgroup\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 8605,
+      "normalized_start": 8549,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"evicted\" term_id=\"eviction\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 10222,
+      "normalized_start": 10164,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.25\" state=\"stable\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 11208,
+      "normalized_start": 11148,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip term_id=\"volume\" text=\"volumes\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 11660,
+      "normalized_start": 11604,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< caution >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 11914,
+      "normalized_start": 11899,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /caution >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12102,
+      "normalized_start": 12086,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12117,
+      "normalized_start": 12105,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12513,
+      "normalized_start": 12500,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< tabs name=\"local_storage_configurations\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12791,
+      "normalized_start": 12743,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Single filesystem\" %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12828,
+      "normalized_start": 12792,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13703,
+      "normalized_start": 13691,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Two filesystems\" %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 13738,
+      "normalized_start": 13704,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14613,
+      "normalized_start": 14601,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /tabs >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14627,
+      "normalized_start": 14614,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14942,
+      "normalized_start": 14930,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15065,
+      "normalized_start": 15052,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15079,
+      "normalized_start": 15067,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15294,
+      "normalized_start": 15281,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< caution >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 18664,
+      "normalized_start": 18649,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"taints\" term_id=\"taint\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19014,
+      "normalized_start": 18960,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /caution >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19264,
+      "normalized_start": 19248,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< tabs name=\"resource-emphemeralstorage-measurement\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19389,
+      "normalized_start": 19331,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Periodic scanning\" %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19426,
+      "normalized_start": 19390,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19620,
+      "normalized_start": 19608,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 19989,
+      "normalized_start": 19976,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20002,
+      "normalized_start": 19990,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Filesystem project quota\" %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20046,
+      "normalized_start": 20003,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.15\" state=\"alpha\" >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20107,
+      "normalized_start": 20048,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20448,
+      "normalized_start": 20436,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 20534,
+      "normalized_start": 20521,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 22245,
+      "normalized_start": 22233,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /tabs >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 22259,
+      "normalized_start": 22246,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24170,
+      "normalized_start": 24158,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 24442,
+      "normalized_start": 24429,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 25967,
+      "normalized_start": 25955,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26117,
+      "normalized_start": 26104,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26280,
+      "normalized_start": 26268,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 26414,
+      "normalized_start": 26401,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 34185,
+      "normalized_start": 34158,
+      "source_path": "content/en/docs/concepts/configuration/manage-resources-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{<glossary_tooltip text=\"kubectl\" term_id=\"kubectl\">}}",
+      "document_id": "KBH-D058-aaa3e891815f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 466,
+      "normalized_start": 411,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/_index.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{<glossary_tooltip text=\"controllers\" term_id=\"controller\">}}",
+      "document_id": "KBH-D058-aaa3e891815f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 9138,
+      "normalized_start": 9076,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/_index.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-aaa3e891815f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 12879,
+      "normalized_start": 12852,
+      "source_path": "content/en/docs/tasks/debug/debug-cluster/_index.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"prerequisites\" %}}",
+      "document_id": "KBH-D058-ac5d7aedb7e6",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 283,
+      "normalized_start": 252,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-init-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< version-check >}}",
+      "document_id": "KBH-D058-ac5d7aedb7e6",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 870,
+      "normalized_start": 849,
+      "source_path": "content/en/docs/tasks/debug/debug-application/debug-init-containers.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< feature-state for_k8s_version=\"v1.21\" state=\"stable\" >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 3344,
+      "normalized_start": 3284,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4331,
+      "normalized_start": 4319,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4566,
+      "normalized_start": 4553,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"pods\" term_id=\"pod\" >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 4921,
+      "normalized_start": 4871,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< glossary_tooltip text=\"static Pods\" term_id=\"static-pod\" >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5077,
+      "normalized_start": 5013,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< tabs name=\"log_location_node_tabs\" >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5438,
+      "normalized_start": 5396,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Linux\" %}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 5463,
+      "normalized_start": 5439,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6195,
+      "normalized_start": 6183,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% tab name=\"Windows\" %}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6222,
+      "normalized_start": 6196,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% /tab %}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6952,
+      "normalized_start": 6940,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /tabs >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 6966,
+      "normalized_start": 6953,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 7548,
+      "normalized_start": 7536,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 8174,
+      "normalized_start": 8161,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14229,
+      "normalized_start": 14217,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 14452,
+      "normalized_start": 14439,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15132,
+      "normalized_start": 15120,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< /note >}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 15281,
+      "normalized_start": 15268,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{% heading \"whatsnext\" %}}",
+      "document_id": "KBH-D058-c2749095504f",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 16527,
+      "normalized_start": 16500,
+      "source_path": "content/en/docs/concepts/cluster-administration/logging.md"
+    },
+    {
+      "action": "preserved_verbatim",
+      "directive": "{{< ref \"./NodeFilesystemFilesFillingUp.md\" >}}",
+      "document_id": "KBH-D059-de70fffe8993",
+      "kind": "hugo_directive_not_rendered",
+      "normalized_end": 814,
+      "normalized_start": 767,
+      "source_path": "content/runbooks/node/NodeFilesystemAlmostOutOfSpace.md"
+    }
+  ],
+  "review_state": "pending_human_A_and_B",
+  "schema_version": "cs221-corpus-content-review-v1",
+  "selection_basis": "all_74_historical_documents_no_incident_relevance_or_label_selection",
+  "short_chunks": [
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D057-dd10c13403002bf14e0cc14e",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D057-92b8eacf1ebb",
+      "normalized_span": {
+        "end": 351,
+        "start": 324
+      },
+      "section_heading": "Test",
+      "text": "## Test\n\n```\ngo test .\n```\n",
+      "token_count": 17
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D058-13c7531519b853e6c69b305a",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D058-14d8b6f74be5",
+      "normalized_span": {
+        "end": 6589,
+        "start": 6560
+      },
+      "section_heading": "Measuring resource usage",
+      "text": "## Measuring resource usage\n\n",
+      "token_count": 12
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D058-8b62eaac64b7c653d7835d03",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "normalized_span": {
+        "end": 4353,
+        "start": 4320
+      },
+      "section_heading": "Resource units in Kubernetes",
+      "text": "## Resource units in Kubernetes\n\n",
+      "token_count": 20
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D058-1e6701175e870786cd2dbec4",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "normalized_span": {
+        "end": 22690,
+        "start": 22657
+      },
+      "section_heading": "Managing extended resources",
+      "text": "### Managing extended resources\n\n",
+      "token_count": 13
+    },
+    {
+      "characters": 20,
+      "chunk_id": "KBC-D058-514d90b5cddd66fc4cd2057a",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D058-94f18a70ecb0",
+      "normalized_span": {
+        "end": 27196,
+        "start": 27176
+      },
+      "section_heading": "Troubleshooting",
+      "text": "## Troubleshooting\n\n",
+      "token_count": 12
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-1d89eb1f169a613810c21e3b",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-0185ccfaeb29",
+      "normalized_span": {
+        "end": 30,
+        "start": 1
+      },
+      "section_heading": "KubeNodeReadinessFlapping",
+      "text": "# KubeNodeReadinessFlapping\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 34,
+      "chunk_id": "KBC-D059-ba6af6979007cf564ef0fbf0",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-0980a5088584",
+      "normalized_span": {
+        "end": 35,
+        "start": 1
+      },
+      "section_heading": "KubeDeploymentReplicasMismatch",
+      "text": "# KubeDeploymentReplicasMismatch\n\n",
+      "token_count": 31
+    },
+    {
+      "characters": 19,
+      "chunk_id": "KBC-D059-9b67d55f2737c247e03b8f34",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-0d787d431d0c",
+      "normalized_span": {
+        "end": 20,
+        "start": 1
+      },
+      "section_heading": "KubePodNotReady",
+      "text": "# KubePodNotReady\n\n",
+      "token_count": 17
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-dc401fdfb807f160aee257e1",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-100adba8ab53",
+      "normalized_span": {
+        "end": 24,
+        "start": 1
+      },
+      "section_heading": "KubeNodeUnreachable",
+      "text": "# KubeNodeUnreachable\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 21,
+      "chunk_id": "KBC-D059-df804dd42affdfa66560820b",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-1e35988462b6",
+      "normalized_span": {
+        "end": 22,
+        "start": 1
+      },
+      "section_heading": "KubeCPUOvercommit",
+      "text": "# KubeCPUOvercommit\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D059-66ad4572c0f336f88f02533d",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-2f773ad62c4d",
+      "normalized_span": {
+        "end": 34,
+        "start": 1
+      },
+      "section_heading": "KubePersistentVolumeFillingUp",
+      "text": "# KubePersistentVolumeFillingUp\n\n",
+      "token_count": 27
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-67bbc8420ce514c49e4fd431",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-2f773ad62c4d",
+      "normalized_span": {
+        "end": 486,
+        "start": 471
+      },
+      "section_heading": "Mitigation",
+      "text": "## Mitigation\n\n",
+      "token_count": 12
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-126277119b7d5c401488f7e8",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-320e57f48715",
+      "normalized_span": {
+        "end": 27,
+        "start": 1
+      },
+      "section_heading": "NodeNetworkReceiveErrs",
+      "text": "# NodeNetworkReceiveErrs\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 31,
+      "chunk_id": "KBC-D059-b2a711e786403ccaeff47487",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-40feb3b71482",
+      "normalized_span": {
+        "end": 32,
+        "start": 1
+      },
+      "section_heading": "PrometheusTargetSyncFailure",
+      "text": "# PrometheusTargetSyncFailure\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-34730e47a072ed3be7722add",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-44306ba7be54",
+      "normalized_span": {
+        "end": 28,
+        "start": 1
+      },
+      "section_heading": "NodeFileDescriptorLimit",
+      "text": "# NodeFileDescriptorLimit\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-2f3fb62b0060a0d423606154",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-4bb889d6dca3",
+      "normalized_span": {
+        "end": 24,
+        "start": 1
+      },
+      "section_heading": "PrometheusBadConfig",
+      "text": "# PrometheusBadConfig\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 30,
+      "chunk_id": "KBC-D059-2381fc8a426aed9f47f67840",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-545ab1351883",
+      "normalized_span": {
+        "end": 31,
+        "start": 1
+      },
+      "section_heading": "KubePersistentVolumeErrors",
+      "text": "# KubePersistentVolumeErrors\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 28,
+      "chunk_id": "KBC-D059-216028d87f29f784be526a1d",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-55680d49eefb",
+      "normalized_span": {
+        "end": 29,
+        "start": 1
+      },
+      "section_heading": "PrometheusTargetLimitHit",
+      "text": "# PrometheusTargetLimitHit\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-d2aa1251b13788c44823eb6e",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-55680d49eefb",
+      "normalized_span": {
+        "end": 210,
+        "start": 195
+      },
+      "section_heading": "Diagnosis",
+      "text": "## Diagnosis\n\n\n",
+      "token_count": 8
+    },
+    {
+      "characters": 38,
+      "chunk_id": "KBC-D059-fb119e7bb18018ee88418eb3",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-5b2f1ba3a5d0",
+      "normalized_span": {
+        "end": 39,
+        "start": 1
+      },
+      "section_heading": "NodeHighNumberConntrackEntriesUsed",
+      "text": "# NodeHighNumberConntrackEntriesUsed\n\n",
+      "token_count": 27
+    },
+    {
+      "characters": 19,
+      "chunk_id": "KBC-D059-2742f3ebc079cc74ca65211e",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-6c2b859da0cb",
+      "normalized_span": {
+        "end": 20,
+        "start": 1
+      },
+      "section_heading": "KubeHpaMaxedOut",
+      "text": "# KubeHpaMaxedOut\n\n",
+      "token_count": 17
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-642a0d3fd3d572733f0f4291",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-7f69273da4ee",
+      "normalized_span": {
+        "end": 28,
+        "start": 1
+      },
+      "section_heading": "KubeHpaReplicasMismatch",
+      "text": "# KubeHpaReplicasMismatch\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 14,
+      "chunk_id": "KBC-D059-39faa9b077844af074c6862a",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-8d06231c2525",
+      "normalized_span": {
+        "end": 14,
+        "start": 0
+      },
+      "section_heading": "TargetDown",
+      "text": "# TargetDown\n\n",
+      "token_count": 9
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-e5e91f596a230961f79ceee4",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-90ee8fc78d14",
+      "normalized_span": {
+        "end": 27,
+        "start": 1
+      },
+      "section_heading": "PrometheusRuleFailures",
+      "text": "# PrometheusRuleFailures\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-b56b49400c6ba0fd2fd4198d",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-90ee8fc78d14",
+      "normalized_span": {
+        "end": 464,
+        "start": 438
+      },
+      "section_heading": "Mitigation",
+      "text": "## Mitigation\n\nFix rules.\n",
+      "token_count": 15
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-5ff9a3120e095dfa2e0f5d2a",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-91688933d572",
+      "normalized_span": {
+        "end": 33,
+        "start": 1
+      },
+      "section_heading": "NodeNetworkInterfaceFlapping",
+      "text": "# NodeNetworkInterfaceFlapping\n\n",
+      "token_count": 23
+    },
+    {
+      "characters": 24,
+      "chunk_id": "KBC-D059-c6d0e0a6e831f92a5f3d0184",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-91bc8b32682b",
+      "normalized_span": {
+        "end": 25,
+        "start": 1
+      },
+      "section_heading": "KubeContainerWaiting",
+      "text": "# KubeContainerWaiting\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 24,
+      "chunk_id": "KBC-D059-f5f867ac923713cf7e64aa4a",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-9bcf2fdf8ee8",
+      "normalized_span": {
+        "end": 25,
+        "start": 1
+      },
+      "section_heading": "KubeMemoryOvercommit",
+      "text": "# KubeMemoryOvercommit\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-fdadd185f57371a7534959a7",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-ab767794153c",
+      "normalized_span": {
+        "end": 24,
+        "start": 1
+      },
+      "section_heading": "KubePodCrashLooping",
+      "text": "# KubePodCrashLooping\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 36,
+      "chunk_id": "KBC-D059-0f7417e295938843873d1bd6",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-b0277ce1f225",
+      "normalized_span": {
+        "end": 37,
+        "start": 1
+      },
+      "section_heading": "KubeDeploymentGenerationMismatch",
+      "text": "# KubeDeploymentGenerationMismatch\n\n",
+      "token_count": 27
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-a17c1aa769c517ece1b3f12f",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-b32d4a918814",
+      "normalized_span": {
+        "end": 28,
+        "start": 1
+      },
+      "section_heading": "NodeNetworkTransmitErrs",
+      "text": "# NodeNetworkTransmitErrs\n\n",
+      "token_count": 21
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-ca20e8614bc9ec7697acc56d",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-b8a720c3525a",
+      "normalized_span": {
+        "end": 16,
+        "start": 1
+      },
+      "section_heading": "KubeletDown",
+      "text": "# KubeletDown\n\n",
+      "token_count": 13
+    },
+    {
+      "characters": 21,
+      "chunk_id": "KBC-D059-cfdd42f90a5372bd65505339",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-bcfb01413ab2",
+      "normalized_span": {
+        "end": 22,
+        "start": 1
+      },
+      "section_heading": "KubeQuotaExceeded",
+      "text": "# KubeQuotaExceeded\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-94df8754974efe7d97f579aa",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-c0ae2fc5e6c0",
+      "normalized_span": {
+        "end": 33,
+        "start": 1
+      },
+      "section_heading": "NodeFilesystemSpaceFillingUp",
+      "text": "# NodeFilesystemSpaceFillingUp\n\n",
+      "token_count": 23
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-fc5a59e3c7ec6673a52879db",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-c21de076814a",
+      "normalized_span": {
+        "end": 24,
+        "start": 1
+      },
+      "section_heading": "CPU Throttling High",
+      "text": "# CPU Throttling High\n\n",
+      "token_count": 15
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-61821aab0ac759105c3818c0",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-c5fd7b512fcf",
+      "normalized_span": {
+        "end": 28,
+        "start": 1
+      },
+      "section_heading": "PrometheusLabelLimitHit",
+      "text": "# PrometheusLabelLimitHit\n\n",
+      "token_count": 19
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-951a7980f5466c025304ccc1",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-c5fd7b512fcf",
+      "normalized_span": {
+        "end": 208,
+        "start": 193
+      },
+      "section_heading": "Diagnosis",
+      "text": "## Diagnosis\n\n\n",
+      "token_count": 8
+    },
+    {
+      "characters": 20,
+      "chunk_id": "KBC-D059-7f17ad5e4fc878a95a90b752",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-db6bc0dfb97f",
+      "normalized_span": {
+        "end": 21,
+        "start": 1
+      },
+      "section_heading": "KubeNodeNotReady",
+      "text": "# KubeNodeNotReady\n\n",
+      "token_count": 17
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-925da253bd0308e281db13e3",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-dc1287ef31f0",
+      "normalized_span": {
+        "end": 30,
+        "start": 1
+      },
+      "section_heading": "KubeMemoryQuotaOvercommit",
+      "text": "# KubeMemoryQuotaOvercommit\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 34,
+      "chunk_id": "KBC-D059-9becdd2518992da52a6e0ad3",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-de70fffe8993",
+      "normalized_span": {
+        "end": 35,
+        "start": 1
+      },
+      "section_heading": "NodeFilesystemAlmostOutOfSpace",
+      "text": "# NodeFilesystemAlmostOutOfSpace\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 14,
+      "chunk_id": "KBC-D059-b1d2bdefe5dac83330aa7351",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-de70fffe8993",
+      "normalized_span": {
+        "end": 714,
+        "start": 700
+      },
+      "section_heading": "Diagnosis",
+      "text": "## Diagnosis\n\n",
+      "token_count": 8
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-8fc12bdf6bb2d674aa519e6d",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-f471acd3d532",
+      "normalized_span": {
+        "end": 33,
+        "start": 1
+      },
+      "section_heading": "KubeletPodStartUpLatencyHigh",
+      "text": "# KubeletPodStartUpLatencyHigh\n\n",
+      "token_count": 25
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-af73d22ef236eb7a1e2020b4",
+      "disposition": "retained_for_human_content_review",
+      "document_id": "KBH-D059-f471acd3d532",
+      "normalized_span": {
+        "end": 142,
+        "start": 113
+      },
+      "section_heading": "Impact",
+      "text": "## Impact\n\nSlow pod starts.\n\n",
+      "token_count": 12
+    }
+  ],
+  "title_changes": [
+    {
+      "document_id": "KBH-D057-0ad6299a6f1d",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "d4d5c22c12a7d8d6bb8362e23d0b82873528eea47c1fcc3960d868c46a8e1349",
+      "source_path": "kubernetes-manifests/redis.yaml",
+      "title": "redis Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-1abc0a247aed",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "8198d8f4ccab29076f027f6ee21cc1dc438c07c22a32e7df6260008825582147",
+      "source_path": "kubernetes-manifests/cartservice.yaml",
+      "title": "cartservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-4849feed2498",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "a992d1f3606e252a422834040eaba329552d3dc1f25f532cd83181617fdcf5bc",
+      "source_path": "kubernetes-manifests/productcatalogservice.yaml",
+      "title": "productcatalogservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-562ed69e4788",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "0604873bb6f8eac9f678fec315e8bf562ff09151a3d3f304f8411fa509632ff5",
+      "source_path": "kubernetes-manifests/frontend.yaml",
+      "title": "frontend Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-86278876e6bf",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "1aef175d1cee25cbd4d947d6d5a9f4362e9efede59040731272065ab89521e82",
+      "source_path": "kubernetes-manifests/loadgenerator.yaml",
+      "title": "loadgenerator Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-9151fc03d266",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "b3e8869a9fbb027aa7e090cf8a1ccfddf91db32850f39e8f43fd63d593b91596",
+      "source_path": "kubernetes-manifests/emailservice.yaml",
+      "title": "emailservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-938597fb30c8",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "eb07628abb581a21fa498d2a6c959b79b0e77a474ea1d1eaab0fea7a453d15ec",
+      "source_path": "kubernetes-manifests/recommendationservice.yaml",
+      "title": "recommendationservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-9db557923ec4",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "f6b8c44f94af1addd4f4aa222011a948840876934b0e624b574d66b71e6f7820",
+      "source_path": "kubernetes-manifests/adservice.yaml",
+      "title": "adservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-a0e4aadcfe2b",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "567359463eb8af70470c92fc80699924cb7136da7f94a4e57fe3f5ee2c477275",
+      "source_path": "kubernetes-manifests/shippingservice.yaml",
+      "title": "shippingservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-da53c9e679f7",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "0986f2ab93612ff5e5ae7a3a8a1454c9c1796acb094d9ab6ac70937af501cd3f",
+      "source_path": "kubernetes-manifests/checkoutservice.yaml",
+      "title": "checkoutservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-e84a682ff5d9",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "63822c66bed8974fccc7c5f26cf1a2ead8c8664597d9b85458d437824a5159c6",
+      "source_path": "kubernetes-manifests/paymentservice.yaml",
+      "title": "paymentservice Kubernetes manifest"
+    },
+    {
+      "document_id": "KBH-D057-fda19af7a97a",
+      "original_title": "Copyright 2018 Google LLC",
+      "raw_sha256": "4c68212acc1d22b6c67f14570b07e2e669ee4a4eaaef72eb7ca1ca7a540ca4fe",
+      "source_path": "kubernetes-manifests/currencyservice.yaml",
+      "title": "currencyservice Kubernetes manifest"
+    }
+  ]
+}

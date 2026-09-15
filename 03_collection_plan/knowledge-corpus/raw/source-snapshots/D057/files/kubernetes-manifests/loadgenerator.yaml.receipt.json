@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/b9a978db9e01f4ad3dca9494a22cb9edc17548fe/kubernetes-manifests/loadgenerator.yaml",
+  "retrieved_at": "2026-09-12T16:49:09.958784Z",
+  "sha256": "367a01bbd6cf160eac30f013269c20e3c978f14fa2b294446ae027cbdc91b875",
+  "bytes": 2881,
+  "http_status": 200,
+  "etag": "\"ce9e988a931bdc231715bac9b6ea29de85155804a61b1e4cd8f2a63ea74db800\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

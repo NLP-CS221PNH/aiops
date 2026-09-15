@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/prometheus-operator/runbooks/git/trees/a685d14cf5128bb30e2bf935c3983decd772d885?recursive=1",
+  "retrieved_at": "2026-09-12T16:49:05.770367Z",
+  "sha256": "3e6ea980a437dd5c20f396cb990ca814456f71b6d80d083447406fc903137f63",
+  "bytes": 37917,
+  "http_status": 200,
+  "etag": "W/\"9eab2fee7bb66125cae1cc53108fb43c72b711ff32982335d8fd3f3e74363c6b\"",
+  "last_modified_http": "Thu, 06 Aug 2026 09:29:54 GMT",
+  "http_last_modified_is_content_publication_time": false
+}

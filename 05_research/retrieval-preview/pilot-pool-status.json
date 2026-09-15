@@ -1,0 +1,44 @@
+{
+  "status": "annotation_seed_pool_only_not_final_qrels",
+  "n_incidents": 20,
+  "n_candidates": 400,
+  "incident_ids": [
+    "inc_08457c0fbff4700e",
+    "inc_0991de462f9a6c05",
+    "inc_0f782051d78bc07a",
+    "inc_15361b2d5df6a488",
+    "inc_1bd0f85d1967890c",
+    "inc_1c35829e1a5668b7",
+    "inc_1fa5a9117fca9344",
+    "inc_25067c4b053b5763",
+    "inc_28c54291b6ec0364",
+    "inc_41b29f4527655ffa",
+    "inc_42d05a5a96453d5d",
+    "inc_440b5aa2334e385c",
+    "inc_447fc19738a290b6",
+    "inc_57f6ede7e94d009b",
+    "inc_5aec36653e1ae8e1",
+    "inc_a5147fba2d0d1f50",
+    "inc_a9c5f4078ddde5fb",
+    "inc_ddb222a8702276b2",
+    "inc_28de536b28e1a888",
+    "inc_2adbb3fd7fbcb7b3"
+  ],
+  "selection": "train_only_family_spread_then_id_order",
+  "retrievers_included": [
+    "bm25_preview_only"
+  ],
+  "retrievers_missing_for_plan_pool": [
+    "dense",
+    "hybrid"
+  ],
+  "human_judgments_completed": 0,
+  "corpus_path": "03_collection_plan/knowledge-corpus-historical/chunks.jsonl",
+  "corpus_hash": "1f6c1c28f5f7bcab926509595dda5d5400600c0ea773fdb23eb09d1849a6d8ca",
+  "query_source": "deterministic_observation_only_symptom_query",
+  "limitations": [
+    "Not an estimate of retrieval quality.",
+    "Pool must be extended with dense and hybrid before final evaluation.",
+    "Historical corpus still needs deployment/version applicability review."
+  ]
+}

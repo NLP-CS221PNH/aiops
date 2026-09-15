@@ -1,0 +1,39 @@
+{
+  "original_unresolved_or_mismatch_cohort": {
+    "row_count": 152,
+    "counts": {
+      "resolved": 146,
+      "owned_by_priority_research": 2,
+      "still_unresolved": 4
+    }
+  },
+  "previously_matched_but_incomplete_bib_cohort": {
+    "row_count": 6,
+    "counts": {
+      "resolved": 5,
+      "still_unresolved": 1
+    }
+  },
+  "total_rows": 158,
+  "counts": {
+    "resolved": 151,
+    "owned_by_priority_research": 2,
+    "still_unresolved": 5
+  },
+  "resolved_but_publication_year_missing": [
+    "P0422"
+  ],
+  "no_fuzzy_title_candidates_accepted": true,
+  "full_text_read": false,
+  "catalog_mutated": false,
+  "all_original_urls_reverified": false,
+  "new_doi_and_original_inaccessible_url_equivalence_separate": true,
+  "still_unresolved_ids": [
+    "P0089",
+    "P0189",
+    "P0437",
+    "P0537",
+    "P0810"
+  ],
+  "metadata_sha256": "2c735fafb0437d9f9c01f4da3f2aa1ee97e721e9e0285ae95a30029b648ab0d1"
+}

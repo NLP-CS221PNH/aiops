@@ -1,0 +1,9 @@
+condition	run_id	status	n_incidents	n_groups	qrels_version	split_hash	corpus_hash	config_hash	recall_at_5	mrr_at_5	ndcg_at_5	rca_hit_at_1	citation_precision	unsupported_claim_rate	coverage	selective_risk	latency_p50_ms	latency_p95_ms	ci_low	ci_high	ci_method
+IR-1_BM25		NOT_RUN																			
+IR-2_dense		NOT_RUN																			
+IR-3_hybrid		NOT_RUN																			
+IR-4_hybrid_rerank		NOT_RUN																			
+GEN-0_no_RAG		NOT_RUN																			
+GEN-1_naive_RAG		NOT_RUN																			
+GEN-2_hybrid_RAG		NOT_RUN																			
+GEN-3_reranked_RAG		NOT_RUN																			

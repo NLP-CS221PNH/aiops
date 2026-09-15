@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/80bea9bfd97bec107361d4663e207aa8d3f312c6/kubernetes-manifests/frontend.yaml",
+  "retrieved_at": "2026-09-12T16:58:01.638802Z",
+  "sha256": "0604873bb6f8eac9f678fec315e8bf562ff09151a3d3f304f8411fa509632ff5",
+  "bytes": 3716,
+  "http_status": 200,
+  "etag": "\"1fbc0ff814feb9292ea572116fdc5c1998426236733649c00fcadff71b05bf95\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

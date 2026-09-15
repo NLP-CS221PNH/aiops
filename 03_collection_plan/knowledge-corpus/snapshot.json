@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "cs221-knowledge-2026-09-12-v1",
+  "created_at": "2026-09-12T16:51:21.086630Z",
+  "document_count": 73,
+  "chunk_count": 598,
+  "mapping_candidate_count": 82,
+  "supporting_asset_count": 15,
+  "source_counts": {
+    "D057": 24,
+    "D058": 14,
+    "D059": 35
+  },
+  "raw_document_bytes": 328832,
+  "all_chunk_offsets_verified": true,
+  "exact_text_duplicate_groups": [],
+  "human_review_completed": false,
+  "incident_coverage_measured": false,
+  "historical_compatibility_verified": false,
+  "hashes": {
+    "source-manifest.jsonl": "f1c1d0f33bd9935d22410e0593cdab1ff7340200e55aecf31d0eb1348591ab54",
+    "documents.jsonl": "1dbc5eb23e211ce3cbcab3301a0831abf689dbdb6bb4284cad82098987980fce",
+    "chunks.jsonl": "b3a567eaef9ad13cecee15dea79be158a4268899c7ca94b226d034fa843116be",
+    "proposed-mappings.jsonl": "ff4b79f164bae53f360abf92c3d9d0a87eeeab01fb10c7246b217352ddd0c16d",
+    "supporting-assets.jsonl": "4e8c21ce1cd794070d07fc90f050cd0adf67d80e33ae22ffdda3c240131681d1"
+  }
+}

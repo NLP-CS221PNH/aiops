@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/7e631d0318dc279cb2d31231d8823360e61e9304/content/en/examples/debug/counter-pod.yaml",
+  "retrieved_at": "2026-09-12T16:58:11.717150Z",
+  "sha256": "e01b346c91436897c0fa3ecdf712d2b1a85bc59163795451c8bb198c2534694c",
+  "bytes": 216,
+  "http_status": 200,
+  "etag": "\"654bacfa888fe318a4ef5bc62d32c9692b201652b38dbb11f3e2ee53344f7082\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

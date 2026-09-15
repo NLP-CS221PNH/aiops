@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/80bea9bfd97bec107361d4663e207aa8d3f312c6/kubernetes-manifests/paymentservice.yaml",
+  "retrieved_at": "2026-09-12T16:58:02.091301Z",
+  "sha256": "63822c66bed8974fccc7c5f26cf1a2ead8c8664597d9b85458d437824a5159c6",
+  "bytes": 1870,
+  "http_status": 200,
+  "etag": "\"1bed236dbbe797ce205017d9a6c68dba88124446717b437fbe730ac11b88ab9d\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

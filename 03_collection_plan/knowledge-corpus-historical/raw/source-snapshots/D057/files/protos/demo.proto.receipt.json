@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/80bea9bfd97bec107361d4663e207aa8d3f312c6/protos/demo.proto",
+  "retrieved_at": "2026-09-12T16:58:01.075675Z",
+  "sha256": "850feb8b21f5e40adc72d86f85f0c978f460e7d6e0735994ea3dff08228ea57a",
+  "bytes": 6069,
+  "http_status": 200,
+  "etag": "\"de88bb9d8124d28f7bda84811d0e470f9855e693e2116f05711cb790003e88e7\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

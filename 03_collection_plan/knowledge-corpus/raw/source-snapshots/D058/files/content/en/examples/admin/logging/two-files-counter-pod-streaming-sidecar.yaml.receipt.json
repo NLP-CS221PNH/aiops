@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/kubernetes/website/76a0e90f253e924a7b55f01f92a37555bd89be68/content/en/examples/admin/logging/two-files-counter-pod-streaming-sidecar.yaml",
+  "retrieved_at": "2026-09-12T16:51:20.908312Z",
+  "sha256": "13cb575acb60cc6bd2735be009175cfdbb7fc558740c791a539e956e019425ee",
+  "bytes": 770,
+  "http_status": 200,
+  "etag": "\"2056b4afdf866637f847693a87f0f5e901ce86773a148c0bf1c59494a6077868\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

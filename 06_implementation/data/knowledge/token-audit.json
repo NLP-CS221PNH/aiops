@@ -1,0 +1,3294 @@
+{
+  "candidate_chunk_count": 440,
+  "chunks": [
+    {
+      "characters": 1287,
+      "chunk_id": "KBC-D057-6e2368f1d4cff56ab472ce58",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 286
+    },
+    {
+      "characters": 317,
+      "chunk_id": "KBC-D057-50dfee9359a0fb8b0f8fcce4",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 92
+    },
+    {
+      "characters": 1812,
+      "chunk_id": "KBC-D057-878a460540274ab64e37e0c2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 503
+    },
+    {
+      "characters": 734,
+      "chunk_id": "KBC-D057-a72b9ef1a4bcab571d212376",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 277
+    },
+    {
+      "characters": 664,
+      "chunk_id": "KBC-D057-235c5908c8face0edf77aba6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 150
+    },
+    {
+      "characters": 552,
+      "chunk_id": "KBC-D057-e8b20c6108c548d41af76612",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 141
+    },
+    {
+      "characters": 1727,
+      "chunk_id": "KBC-D057-f6c48ce30e1e7270ef4116c4",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 491
+    },
+    {
+      "characters": 411,
+      "chunk_id": "KBC-D057-fe5bd21242cd9a20432a7b7c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 126
+    },
+    {
+      "characters": 1330,
+      "chunk_id": "KBC-D057-90841863f220313bffa0377b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 295
+    },
+    {
+      "characters": 136,
+      "chunk_id": "KBC-D057-19060432c18f745ae76160ca",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 276,
+      "chunk_id": "KBC-D057-415277894cb67f2e886d59c9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 90
+    },
+    {
+      "characters": 142,
+      "chunk_id": "KBC-D057-9eb162643bfc16e94b75db5c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 56
+    },
+    {
+      "characters": 80,
+      "chunk_id": "KBC-D057-342a27b3d2948e037573a588",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 39
+    },
+    {
+      "characters": 1331,
+      "chunk_id": "KBC-D057-29a453aba71c4953c65d4ea9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 297
+    },
+    {
+      "characters": 2194,
+      "chunk_id": "KBC-D057-6eb155351cb0c12576824a54",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 505
+    },
+    {
+      "characters": 1077,
+      "chunk_id": "KBC-D057-28440acf88b6eb52936392e5",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 253
+    },
+    {
+      "characters": 1796,
+      "chunk_id": "KBC-D057-5cdb2d2b76a4a2a11b2c32fa",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 412
+    },
+    {
+      "characters": 1331,
+      "chunk_id": "KBC-D057-774cd0583e25f22e46d87ed8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 287
+    },
+    {
+      "characters": 140,
+      "chunk_id": "KBC-D057-f39b82330a0ba4865176d6a7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 30
+    },
+    {
+      "characters": 115,
+      "chunk_id": "KBC-D057-605e57c7fe713ccf57b1a26f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 69,
+      "chunk_id": "KBC-D057-1321e4a638b01a241f54720d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 32
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D057-dd10c13403002bf14e0cc14e",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 17
+    },
+    {
+      "characters": 1477,
+      "chunk_id": "KBC-D057-9c300e9ac0a425bea44eeb9f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 313
+    },
+    {
+      "characters": 1330,
+      "chunk_id": "KBC-D057-7c5704e3d5d36cf73e47a68e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 291
+    },
+    {
+      "characters": 1289,
+      "chunk_id": "KBC-D057-d7efd4b9deeae34f3da243fe",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 271
+    },
+    {
+      "characters": 119,
+      "chunk_id": "KBC-D057-8ad3ad9272c51c8e60227cff",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 37
+    },
+    {
+      "characters": 990,
+      "chunk_id": "KBC-D057-3ee3acdd94b6a20076234394",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 294
+    },
+    {
+      "characters": 299,
+      "chunk_id": "KBC-D057-660284d18bc582f32d167e59",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 96
+    },
+    {
+      "characters": 939,
+      "chunk_id": "KBC-D057-19aaddc155f04da493e6b0fa",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 298
+    },
+    {
+      "characters": 730,
+      "chunk_id": "KBC-D057-6b125026827a7a65f4191e16",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 355
+    },
+    {
+      "characters": 333,
+      "chunk_id": "KBC-D057-422941ad2b2ea771e8de6322",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 150
+    },
+    {
+      "characters": 1674,
+      "chunk_id": "KBC-D057-257b02cf2e7f763d7602c9b9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 488
+    },
+    {
+      "characters": 1534,
+      "chunk_id": "KBC-D057-f43a5e910b133af7ef278865",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 487
+    },
+    {
+      "characters": 262,
+      "chunk_id": "KBC-D057-5b4ce155ee3bdd2471e2ffa1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 97
+    },
+    {
+      "characters": 241,
+      "chunk_id": "KBC-D057-a136dd87514595bdf033224a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 87
+    },
+    {
+      "characters": 512,
+      "chunk_id": "KBC-D057-ce093fbbbc553c0d7b6441ed",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 155
+    },
+    {
+      "characters": 1550,
+      "chunk_id": "KBC-D057-ebb2cf48c9eed9865917abc8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 490
+    },
+    {
+      "characters": 1573,
+      "chunk_id": "KBC-D057-d1710294594e7e8b042d5ad2",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 295
+    },
+    {
+      "characters": 1075,
+      "chunk_id": "KBC-D057-384231830f45a0c283231c34",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 334
+    },
+    {
+      "characters": 123,
+      "chunk_id": "KBC-D057-ffe36b9a9b58e424205fe9dd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 36
+    },
+    {
+      "characters": 1379,
+      "chunk_id": "KBC-D057-81ba5bbc3633e8c5a9e9665c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 480
+    },
+    {
+      "characters": 1387,
+      "chunk_id": "KBC-D057-6d507cb66b72d0a39ed73739",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 469
+    },
+    {
+      "characters": 937,
+      "chunk_id": "KBC-D057-eb736f4286d1f14a649c5f3b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 303
+    },
+    {
+      "characters": 1745,
+      "chunk_id": "KBC-D057-d2dec06bc5ad6334bea381b1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 472
+    },
+    {
+      "characters": 394,
+      "chunk_id": "KBC-D057-0dde74cf961d9834e938e36e",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 126
+    },
+    {
+      "characters": 483,
+      "chunk_id": "KBC-D057-41241c3c32b3f06db74b9b40",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 172
+    },
+    {
+      "characters": 144,
+      "chunk_id": "KBC-D057-040efe49ada48775caefdf0d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 35
+    },
+    {
+      "characters": 764,
+      "chunk_id": "KBC-D057-89431d2abfea7382b3d0a0b7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 276
+    },
+    {
+      "characters": 1680,
+      "chunk_id": "KBC-D057-5d63e9cebb7d4b89c108cf65",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 267,
+      "chunk_id": "KBC-D057-4fdcf825c4dbc040c18511cb",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 84
+    },
+    {
+      "characters": 1271,
+      "chunk_id": "KBC-D057-93d02128fe3a7d00c20440dc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 352
+    },
+    {
+      "characters": 142,
+      "chunk_id": "KBC-D057-9a53d1eca3b9db243325d1dd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 41
+    },
+    {
+      "characters": 1747,
+      "chunk_id": "KBC-D057-e9a382e7d4fd09cb360debfc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 383
+    },
+    {
+      "characters": 1295,
+      "chunk_id": "KBC-D057-8d55e1bff7b7969ec51602f7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 276
+    },
+    {
+      "characters": 1587,
+      "chunk_id": "KBC-D057-0caeb6bf377ab228f9807bc3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 510
+    },
+    {
+      "characters": 1707,
+      "chunk_id": "KBC-D057-728f4de0d3d02c2e44535e4d",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 501
+    },
+    {
+      "characters": 1582,
+      "chunk_id": "KBC-D057-4aa99ad9ca8a6ef110f7e03b",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 487
+    },
+    {
+      "characters": 971,
+      "chunk_id": "KBC-D057-45b99fa125935926d356e9b6",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 307
+    },
+    {
+      "characters": 1316,
+      "chunk_id": "KBC-D057-4ad07558cdb6c225ea655d65",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 280
+    },
+    {
+      "characters": 897,
+      "chunk_id": "KBC-D058-ffea3d1c290086a535f344b3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 213
+    },
+    {
+      "characters": 1481,
+      "chunk_id": "KBC-D058-4be9018bee98b198013b9bf2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 380
+    },
+    {
+      "characters": 1977,
+      "chunk_id": "KBC-D058-f0ef16251d4479b8c7ee0683",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 495
+    },
+    {
+      "characters": 629,
+      "chunk_id": "KBC-D058-63912cea0cd769204e85ee9f",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 151
+    },
+    {
+      "characters": 631,
+      "chunk_id": "KBC-D058-d04e823b5df235576b59b05e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 227
+    },
+    {
+      "characters": 1687,
+      "chunk_id": "KBC-D058-42bcde24cd7f963bd421fce7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 505
+    },
+    {
+      "characters": 1524,
+      "chunk_id": "KBC-D058-4c35e34544e5f454f47b01b0",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 502
+    },
+    {
+      "characters": 722,
+      "chunk_id": "KBC-D058-eac2ff3335beb425621a7c52",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 203
+    },
+    {
+      "characters": 1328,
+      "chunk_id": "KBC-D058-ae56fe742b23076d3b77e3c8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 1240,
+      "chunk_id": "KBC-D058-47c79baf332b61ba8c888fca",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 490
+    },
+    {
+      "characters": 403,
+      "chunk_id": "KBC-D058-c193314da0f5af4e116cfb03",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 146
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D058-13c7531519b853e6c69b305a",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 12
+    },
+    {
+      "characters": 582,
+      "chunk_id": "KBC-D058-4cf2585d029f62f51451e39d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 145
+    },
+    {
+      "characters": 815,
+      "chunk_id": "KBC-D058-a9fb62720732d90d0ceeca3c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 183
+    },
+    {
+      "characters": 1043,
+      "chunk_id": "KBC-D058-b86de7683d5b35bc8e4f290b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 268
+    },
+    {
+      "characters": 861,
+      "chunk_id": "KBC-D058-e57825f1a71f22f90fcdecf1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 321
+    },
+    {
+      "characters": 73,
+      "chunk_id": "KBC-D058-1914de68a61e503dae99c882",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 30
+    },
+    {
+      "characters": 777,
+      "chunk_id": "KBC-D058-7ee5c38d11fc4e792b55dc82",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 267
+    },
+    {
+      "characters": 1309,
+      "chunk_id": "KBC-D058-c397f1470da4e6c6052fb7ea",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 432
+    },
+    {
+      "characters": 1088,
+      "chunk_id": "KBC-D058-a924a4a5d774115bf7fc53ef",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 387
+    },
+    {
+      "characters": 701,
+      "chunk_id": "KBC-D058-e96e19d48f6f8af082908d8c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 239
+    },
+    {
+      "characters": 565,
+      "chunk_id": "KBC-D058-31ac8982748c44c9bfdc4c77",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 246
+    },
+    {
+      "characters": 636,
+      "chunk_id": "KBC-D058-6a67b9244520ef5bd5725141",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 213
+    },
+    {
+      "characters": 632,
+      "chunk_id": "KBC-D058-345df4754bd85dab430f1e3e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 216
+    },
+    {
+      "characters": 1516,
+      "chunk_id": "KBC-D058-10388242a077cec6edbb2a9b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 497
+    },
+    {
+      "characters": 226,
+      "chunk_id": "KBC-D058-5b86503d419c093f8eded70a",
+      "overlap_tokens": 31,
+      "short_chunk": false,
+      "token_count": 122
+    },
+    {
+      "characters": 1477,
+      "chunk_id": "KBC-D058-2eaea984b39fa83192303a01",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 436
+    },
+    {
+      "characters": 626,
+      "chunk_id": "KBC-D058-5af0fdd967fe4247f7f5e41f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 210
+    },
+    {
+      "characters": 1463,
+      "chunk_id": "KBC-D058-a41cdc36245a4a6b1e4f6063",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 415
+    },
+    {
+      "characters": 231,
+      "chunk_id": "KBC-D058-7c3c56ef3fa9a693c1bac0d3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 97
+    },
+    {
+      "characters": 92,
+      "chunk_id": "KBC-D058-1af3bcbe381dc6b390c1aa26",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 35
+    },
+    {
+      "characters": 467,
+      "chunk_id": "KBC-D058-afd8a48e3d15931e4cf8ebf7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 155
+    },
+    {
+      "characters": 1667,
+      "chunk_id": "KBC-D058-7048af2d6791b1b77a5d5500",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 499
+    },
+    {
+      "characters": 1728,
+      "chunk_id": "KBC-D058-a5e6e0f7ad6a8a24ab5a2229",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 506
+    },
+    {
+      "characters": 1600,
+      "chunk_id": "KBC-D058-26999603da73a62f99a2ff0a",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 352
+    },
+    {
+      "characters": 1771,
+      "chunk_id": "KBC-D058-a6a0637e038cc33b03625f29",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 1883,
+      "chunk_id": "KBC-D058-df5b455a466490c961307df8",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 502
+    },
+    {
+      "characters": 1622,
+      "chunk_id": "KBC-D058-3d474e6f27a5164b96458bca",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 509
+    },
+    {
+      "characters": 1805,
+      "chunk_id": "KBC-D058-af53af35781acf2a26a8f0ba",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 495
+    },
+    {
+      "characters": 776,
+      "chunk_id": "KBC-D058-2a6b22a3c5e42c4df64e3f65",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 327
+    },
+    {
+      "characters": 319,
+      "chunk_id": "KBC-D058-7886df0077ae55fc86f2b816",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 109
+    },
+    {
+      "characters": 971,
+      "chunk_id": "KBC-D058-a5160d65c57404ffa90c5912",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 337
+    },
+    {
+      "characters": 473,
+      "chunk_id": "KBC-D058-f5305774425be1a16362ae7a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 174
+    },
+    {
+      "characters": 1604,
+      "chunk_id": "KBC-D058-98288c0832299f117df8740f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 500
+    },
+    {
+      "characters": 1142,
+      "chunk_id": "KBC-D058-f62cff70c16a29f9ff96f004",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 394
+    },
+    {
+      "characters": 425,
+      "chunk_id": "KBC-D058-682af4d117739620409953f5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 108
+    },
+    {
+      "characters": 1607,
+      "chunk_id": "KBC-D058-de5a5d60bd9e13a8c877de07",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 485
+    },
+    {
+      "characters": 1605,
+      "chunk_id": "KBC-D058-322e3f8b50ef1ba377f68f0f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 434
+    },
+    {
+      "characters": 791,
+      "chunk_id": "KBC-D058-1fd81fbbf889ff8101b6a9f5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 266
+    },
+    {
+      "characters": 1071,
+      "chunk_id": "KBC-D058-ff5d11ba6104831bc81dbac1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 341
+    },
+    {
+      "characters": 376,
+      "chunk_id": "KBC-D058-33305f7a809e562c71a1e251",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 96
+    },
+    {
+      "characters": 529,
+      "chunk_id": "KBC-D058-f53ee0616b90859a5f96e26c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 170
+    },
+    {
+      "characters": 1769,
+      "chunk_id": "KBC-D058-19e0ec9d5bc1ebf15fdcd47c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 927,
+      "chunk_id": "KBC-D058-4da28b82fea88522f8b204f9",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 303
+    },
+    {
+      "characters": 1687,
+      "chunk_id": "KBC-D058-b5a94ecf7245094ac39c583e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 455
+    },
+    {
+      "characters": 311,
+      "chunk_id": "KBC-D058-da57ba2dd22d99f2a1710571",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 86
+    },
+    {
+      "characters": 1487,
+      "chunk_id": "KBC-D058-fea0c5dc725f0e08d97f6617",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 490
+    },
+    {
+      "characters": 1646,
+      "chunk_id": "KBC-D058-778b33ece726f85c0c7287a7",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 481
+    },
+    {
+      "characters": 724,
+      "chunk_id": "KBC-D058-52cf3d1154ea6e80b84230ec",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 256
+    },
+    {
+      "characters": 565,
+      "chunk_id": "KBC-D058-2371d50f1ad7b202b3c2489b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 186
+    },
+    {
+      "characters": 1447,
+      "chunk_id": "KBC-D058-bb3e022971abb7e72ba5e28a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 434
+    },
+    {
+      "characters": 1884,
+      "chunk_id": "KBC-D058-ac73c0c6d4bb0e7a9886c878",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 502
+    },
+    {
+      "characters": 882,
+      "chunk_id": "KBC-D058-da00a2b73a1315c9250356e3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 271
+    },
+    {
+      "characters": 608,
+      "chunk_id": "KBC-D058-e330e3ea502b0cfe64336d16",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 144
+    },
+    {
+      "characters": 1333,
+      "chunk_id": "KBC-D058-d1a0ce29e16ba99082a96368",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 1205,
+      "chunk_id": "KBC-D058-cf032377950818e1a0b12a53",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 396
+    },
+    {
+      "characters": 1057,
+      "chunk_id": "KBC-D058-6b9c37e5ee6c0c6b1cf507f7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 494
+    },
+    {
+      "characters": 836,
+      "chunk_id": "KBC-D058-e1330dfaa71958c179bddf4c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 343
+    },
+    {
+      "characters": 777,
+      "chunk_id": "KBC-D058-9222a8176e80594bd0f98a40",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 269
+    },
+    {
+      "characters": 511,
+      "chunk_id": "KBC-D058-ac3faf6b5acb425af88f8eb8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 193
+    },
+    {
+      "characters": 962,
+      "chunk_id": "KBC-D058-2c86269ce1d38ce7ec075f4a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 315
+    },
+    {
+      "characters": 1394,
+      "chunk_id": "KBC-D058-b868a54e37319ab0c268877e",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 511
+    },
+    {
+      "characters": 584,
+      "chunk_id": "KBC-D058-3bd517d79939385aa5304dd7",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 223
+    },
+    {
+      "characters": 470,
+      "chunk_id": "KBC-D058-8771f7ad37034d910a91c5cb",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 150
+    },
+    {
+      "characters": 122,
+      "chunk_id": "KBC-D058-a365eff196b66ca392cf826a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 57
+    },
+    {
+      "characters": 1131,
+      "chunk_id": "KBC-D058-154792910d6ea8a2b8baf183",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 283
+    },
+    {
+      "characters": 1766,
+      "chunk_id": "KBC-D058-b9860a875b6538eb6625a8f8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 474
+    },
+    {
+      "characters": 1999,
+      "chunk_id": "KBC-D058-4377eff02acdbfe58cb8b914",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 507
+    },
+    {
+      "characters": 634,
+      "chunk_id": "KBC-D058-57d5c42ff2878903bc2fd08b",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 189
+    },
+    {
+      "characters": 818,
+      "chunk_id": "KBC-D058-0e7fef9459e385db315f5953",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 231
+    },
+    {
+      "characters": 538,
+      "chunk_id": "KBC-D058-ab36855bdb6362e5ed4a88e4",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 154
+    },
+    {
+      "characters": 355,
+      "chunk_id": "KBC-D058-a04f46792cab6a00a60be530",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 99
+    },
+    {
+      "characters": 461,
+      "chunk_id": "KBC-D058-60e5b0167e383de496a49690",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 123
+    },
+    {
+      "characters": 1480,
+      "chunk_id": "KBC-D058-e0cfb221a0d9e6882866b38d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 414
+    },
+    {
+      "characters": 1417,
+      "chunk_id": "KBC-D058-b7b0546789fdd7d20fdaad62",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 389
+    },
+    {
+      "characters": 1294,
+      "chunk_id": "KBC-D058-0c6a32d6d84824353de6825d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 369
+    },
+    {
+      "characters": 832,
+      "chunk_id": "KBC-D058-35317a74c399ca0e54e2b57f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 232
+    },
+    {
+      "characters": 1835,
+      "chunk_id": "KBC-D058-c0c26533fe9c7304a4d87463",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 496
+    },
+    {
+      "characters": 523,
+      "chunk_id": "KBC-D058-e147e495c840494dd5a7bce1",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 129
+    },
+    {
+      "characters": 240,
+      "chunk_id": "KBC-D058-30ef0b137615bf9132e81581",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 90
+    },
+    {
+      "characters": 267,
+      "chunk_id": "KBC-D058-bfb2860f797c5b128afd59c5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 75
+    },
+    {
+      "characters": 1577,
+      "chunk_id": "KBC-D058-87cc776afa8cbb47854ca3ac",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 380
+    },
+    {
+      "characters": 265,
+      "chunk_id": "KBC-D058-a92ed9d1af7a5fa842cd1644",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 64
+    },
+    {
+      "characters": 1394,
+      "chunk_id": "KBC-D058-bb9fd6015230d82fbbeb9b8b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 326
+    },
+    {
+      "characters": 470,
+      "chunk_id": "KBC-D058-2d5b25763795bbd4a4cba9f0",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 126
+    },
+    {
+      "characters": 1656,
+      "chunk_id": "KBC-D058-a92e5ea21aed45abbc5570e7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 364
+    },
+    {
+      "characters": 756,
+      "chunk_id": "KBC-D058-aab90e55333fdae747396e79",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 181
+    },
+    {
+      "characters": 2169,
+      "chunk_id": "KBC-D058-93ee4d9b900a6e40eea3f6fe",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 509
+    },
+    {
+      "characters": 2008,
+      "chunk_id": "KBC-D058-de09b44c1cf18aa27e97a214",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 505
+    },
+    {
+      "characters": 2353,
+      "chunk_id": "KBC-D058-e619693eba91dd121438497d",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 505
+    },
+    {
+      "characters": 1183,
+      "chunk_id": "KBC-D058-bc4e0aaadeda28ec7dafe0b9",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 278
+    },
+    {
+      "characters": 1489,
+      "chunk_id": "KBC-D058-dc408df75d3155d6935ddfb9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 390
+    },
+    {
+      "characters": 1392,
+      "chunk_id": "KBC-D058-7a65d80dedb5476f8b499ca2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 377
+    },
+    {
+      "characters": 750,
+      "chunk_id": "KBC-D058-d1723129126bca987f0a6ca7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 242
+    },
+    {
+      "characters": 620,
+      "chunk_id": "KBC-D058-e2e92c445475eaa7145defe5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 164
+    },
+    {
+      "characters": 616,
+      "chunk_id": "KBC-D058-a8bbf810266345a89ebcbf6b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 212
+    },
+    {
+      "characters": 214,
+      "chunk_id": "KBC-D058-24438e12780b2d246c43261c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 52
+    },
+    {
+      "characters": 240,
+      "chunk_id": "KBC-D058-c6fcf21d59309458c84e23f7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 72
+    },
+    {
+      "characters": 1667,
+      "chunk_id": "KBC-D058-c56f3ee91830e4c89e094d21",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 437
+    },
+    {
+      "characters": 417,
+      "chunk_id": "KBC-D058-a6e520d7863e28f2a53734da",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 130
+    },
+    {
+      "characters": 1831,
+      "chunk_id": "KBC-D058-eb6e4dc5f7ae953b63c8beb1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 510
+    },
+    {
+      "characters": 752,
+      "chunk_id": "KBC-D058-3ceb8e76c909855962731e1c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 224
+    },
+    {
+      "characters": 1494,
+      "chunk_id": "KBC-D058-16ecc3527ecd2f1dac04b78d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 482
+    },
+    {
+      "characters": 411,
+      "chunk_id": "KBC-D058-55d2903c74b9746ff6cfa2a9",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 117
+    },
+    {
+      "characters": 338,
+      "chunk_id": "KBC-D058-80d4250faaca38725aa15e6d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 127
+    },
+    {
+      "characters": 411,
+      "chunk_id": "KBC-D058-44567ddba1d60a0b58222f9a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 120
+    },
+    {
+      "characters": 852,
+      "chunk_id": "KBC-D058-dfeb5112cf1be8db05d23b69",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 228
+    },
+    {
+      "characters": 570,
+      "chunk_id": "KBC-D058-a658e2070a136ce7191f6ca2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 135
+    },
+    {
+      "characters": 288,
+      "chunk_id": "KBC-D058-d400ace5e506cdbf892f3cfe",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 95
+    },
+    {
+      "characters": 320,
+      "chunk_id": "KBC-D058-047b202b556b744c1665b09a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 92
+    },
+    {
+      "characters": 370,
+      "chunk_id": "KBC-D058-8f51db0ffa798573720fd268",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 102
+    },
+    {
+      "characters": 1054,
+      "chunk_id": "KBC-D058-36364a81f403164d81774e89",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 254
+    },
+    {
+      "characters": 573,
+      "chunk_id": "KBC-D058-799ab579f02967aebf9b7b97",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 153
+    },
+    {
+      "characters": 1337,
+      "chunk_id": "KBC-D058-beb0eaeaf025453cd7464078",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 328
+    },
+    {
+      "characters": 214,
+      "chunk_id": "KBC-D058-9a2081ac5abc0ef4f57e1846",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 79
+    },
+    {
+      "characters": 1687,
+      "chunk_id": "KBC-D058-26bb990f995bdd93c932e191",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 510
+    },
+    {
+      "characters": 364,
+      "chunk_id": "KBC-D058-9ca61875e37e7672f7b050e1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 95
+    },
+    {
+      "characters": 706,
+      "chunk_id": "KBC-D058-6544c4229e157ce96d2d1e78",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 164
+    },
+    {
+      "characters": 531,
+      "chunk_id": "KBC-D058-3ed804f42f73212fe0fbab77",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 148
+    },
+    {
+      "characters": 145,
+      "chunk_id": "KBC-D058-01ad1bbb69045df697598c8c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 56
+    },
+    {
+      "characters": 467,
+      "chunk_id": "KBC-D058-4edd1002338498339f645a15",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 156
+    },
+    {
+      "characters": 463,
+      "chunk_id": "KBC-D058-20984e0d2a117baf02df8b92",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 105
+    },
+    {
+      "characters": 616,
+      "chunk_id": "KBC-D058-ac665d895b8b257406c0022e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 212
+    },
+    {
+      "characters": 1854,
+      "chunk_id": "KBC-D058-a069ed3f5f4b97d0910063ee",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 458
+    },
+    {
+      "characters": 296,
+      "chunk_id": "KBC-D058-aa091d4e5127f0d156a5679b",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 108
+    },
+    {
+      "characters": 1799,
+      "chunk_id": "KBC-D058-39d01c721b9fbe1dd684e6a8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 430
+    },
+    {
+      "characters": 321,
+      "chunk_id": "KBC-D058-aa25b5494728008ac68f50cf",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 134
+    },
+    {
+      "characters": 867,
+      "chunk_id": "KBC-D058-4bc03ea1b2b1be450707dcea",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 250
+    },
+    {
+      "characters": 1496,
+      "chunk_id": "KBC-D058-2c57357db69f27189765089d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 347
+    },
+    {
+      "characters": 1206,
+      "chunk_id": "KBC-D058-e618c48bdd226d959f003273",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 315
+    },
+    {
+      "characters": 751,
+      "chunk_id": "KBC-D058-63d509f196c47c913d4f3daa",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 195
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D058-8b62eaac64b7c653d7835d03",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 20
+    },
+    {
+      "characters": 1636,
+      "chunk_id": "KBC-D058-5299197ef9fe3a45bb3d5e98",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 443
+    },
+    {
+      "characters": 695,
+      "chunk_id": "KBC-D058-b05f04fabce889b4709256fc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 229
+    },
+    {
+      "characters": 846,
+      "chunk_id": "KBC-D058-44da706c51027c7f9d79dd6c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 242
+    },
+    {
+      "characters": 706,
+      "chunk_id": "KBC-D058-87459b64f17981b029175f04",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 157
+    },
+    {
+      "characters": 1989,
+      "chunk_id": "KBC-D058-1d002ac932ad52604c652fa1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 506
+    },
+    {
+      "characters": 433,
+      "chunk_id": "KBC-D058-2c9325c119b1216960352e90",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 131
+    },
+    {
+      "characters": 508,
+      "chunk_id": "KBC-D058-34ace26ee64eb4116667d786",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 154
+    },
+    {
+      "characters": 1550,
+      "chunk_id": "KBC-D058-c412e826ca4836a93e5087cc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 429
+    },
+    {
+      "characters": 1825,
+      "chunk_id": "KBC-D058-7e2b7387bbbc472de511a69a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 506
+    },
+    {
+      "characters": 1009,
+      "chunk_id": "KBC-D058-41bfcf0798b955040f7a4030",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 277
+    },
+    {
+      "characters": 1837,
+      "chunk_id": "KBC-D058-f905f0ea3a784e615a40c2b5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 509
+    },
+    {
+      "characters": 215,
+      "chunk_id": "KBC-D058-aecef74f791d159756d22724",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 75
+    },
+    {
+      "characters": 480,
+      "chunk_id": "KBC-D058-3956b031228cad61e15559b9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 130
+    },
+    {
+      "characters": 1905,
+      "chunk_id": "KBC-D058-e553ec25294e6071afaa9160",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 498
+    },
+    {
+      "characters": 1877,
+      "chunk_id": "KBC-D058-60fbb0e0939c9c04056bafc2",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 505
+    },
+    {
+      "characters": 1071,
+      "chunk_id": "KBC-D058-e45726896b6ade5a53bce6e6",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 324
+    },
+    {
+      "characters": 396,
+      "chunk_id": "KBC-D058-7159e80c5a72f292dac723f7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 89
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D058-1e6701175e870786cd2dbec4",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 13
+    },
+    {
+      "characters": 86,
+      "chunk_id": "KBC-D058-80cec20c57385e08a62f1133",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 28
+    },
+    {
+      "characters": 196,
+      "chunk_id": "KBC-D058-b26d9393fd1872aa4d4c601c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 66
+    },
+    {
+      "characters": 1472,
+      "chunk_id": "KBC-D058-c47242e4d346550f8d4fc92c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 437
+    },
+    {
+      "characters": 1082,
+      "chunk_id": "KBC-D058-7b6d8cd79c3158ab390aca82",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 296
+    },
+    {
+      "characters": 1436,
+      "chunk_id": "KBC-D058-49472bf6c1db1f2bac071168",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 351
+    },
+    {
+      "characters": 214,
+      "chunk_id": "KBC-D058-b4bfcc66d061a13bac06938c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 66
+    },
+    {
+      "characters": 20,
+      "chunk_id": "KBC-D058-514d90b5cddd66fc4cd2057a",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 12
+    },
+    {
+      "characters": 1967,
+      "chunk_id": "KBC-D058-08c26d83a4bdb300a4368e59",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 510
+    },
+    {
+      "characters": 1535,
+      "chunk_id": "KBC-D058-60bac8f23d1c5f9ab5809f5c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 508
+    },
+    {
+      "characters": 1555,
+      "chunk_id": "KBC-D058-66a674577336487fcf69dbad",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 399
+    },
+    {
+      "characters": 2115,
+      "chunk_id": "KBC-D058-4d0fa2f55567fc939b2114a1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 502
+    },
+    {
+      "characters": 293,
+      "chunk_id": "KBC-D058-197a7e2d9ca443a1dffc7491",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 67
+    },
+    {
+      "characters": 833,
+      "chunk_id": "KBC-D058-091c42e9734e330fe951de08",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 294
+    },
+    {
+      "characters": 575,
+      "chunk_id": "KBC-D058-7d823037b21bf0d37989a4dc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 188
+    },
+    {
+      "characters": 406,
+      "chunk_id": "KBC-D058-c70822caa3413a4462c9f7b4",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 105
+    },
+    {
+      "characters": 1690,
+      "chunk_id": "KBC-D058-70d23bde47d3316dd574e62b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 491
+    },
+    {
+      "characters": 1662,
+      "chunk_id": "KBC-D058-9c00a77232e7edf2e0aa73a7",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 502
+    },
+    {
+      "characters": 1592,
+      "chunk_id": "KBC-D058-65a7de2b1cd13f2d6190e03c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 493
+    },
+    {
+      "characters": 1382,
+      "chunk_id": "KBC-D058-fe3ddeec3705e776748f2b37",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 506
+    },
+    {
+      "characters": 1482,
+      "chunk_id": "KBC-D058-d231c3289e6fb5e62215bb71",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 511
+    },
+    {
+      "characters": 264,
+      "chunk_id": "KBC-D058-dabf2b393444d4fe0f96025c",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 138
+    },
+    {
+      "characters": 250,
+      "chunk_id": "KBC-D058-8a693e79dd29b25a9cb203e8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 60
+    },
+    {
+      "characters": 433,
+      "chunk_id": "KBC-D058-6a8146cb03604e36acb918b9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 132
+    },
+    {
+      "characters": 234,
+      "chunk_id": "KBC-D058-82953dc883ff3f16f0792672",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 73
+    },
+    {
+      "characters": 148,
+      "chunk_id": "KBC-D058-5867d99f566d2ee1000dbfe6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 37
+    },
+    {
+      "characters": 314,
+      "chunk_id": "KBC-D058-d2c643aa1f5b303cbf83f219",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 84
+    },
+    {
+      "characters": 1630,
+      "chunk_id": "KBC-D058-9e6019cd5b488d783e6332c3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 341
+    },
+    {
+      "characters": 1298,
+      "chunk_id": "KBC-D058-b12b0d1e28530803ecee1ef6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 325
+    },
+    {
+      "characters": 791,
+      "chunk_id": "KBC-D058-37c0f1c700a159cb70af94d3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 307
+    },
+    {
+      "characters": 249,
+      "chunk_id": "KBC-D058-427dd446f0f141db7e7fd9f7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 79
+    },
+    {
+      "characters": 913,
+      "chunk_id": "KBC-D058-5fb3a89e1916e85142a035b0",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 312
+    },
+    {
+      "characters": 444,
+      "chunk_id": "KBC-D058-7b7cbbc14742af06d927d479",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 124
+    },
+    {
+      "characters": 1098,
+      "chunk_id": "KBC-D058-9b226d96c9b9897dfdd62991",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 260
+    },
+    {
+      "characters": 363,
+      "chunk_id": "KBC-D058-50d56b29f2059d51f958b3c8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 110
+    },
+    {
+      "characters": 615,
+      "chunk_id": "KBC-D058-48143accc4c59c4d262e185c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 169
+    },
+    {
+      "characters": 1224,
+      "chunk_id": "KBC-D058-7d87d9588a32bed8d9937a76",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 249
+    },
+    {
+      "characters": 1298,
+      "chunk_id": "KBC-D058-fc886b19f0f37dd0282ca673",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 424
+    },
+    {
+      "characters": 744,
+      "chunk_id": "KBC-D058-205a23a654dd8d79b20c2edd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 188
+    },
+    {
+      "characters": 1302,
+      "chunk_id": "KBC-D058-303a172378f2c5f969b575d3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 375
+    },
+    {
+      "characters": 677,
+      "chunk_id": "KBC-D058-58c988f5a24f69e97fb72245",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 177
+    },
+    {
+      "characters": 1708,
+      "chunk_id": "KBC-D058-7bfc16019eebdc5d953bc238",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 510
+    },
+    {
+      "characters": 1308,
+      "chunk_id": "KBC-D058-abcc6d118984cb4b046c4364",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 340
+    },
+    {
+      "characters": 394,
+      "chunk_id": "KBC-D058-59e4c6e29433eab2652730d5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 90
+    },
+    {
+      "characters": 824,
+      "chunk_id": "KBC-D058-6f7236282df505e06ce5e71d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 197
+    },
+    {
+      "characters": 343,
+      "chunk_id": "KBC-D058-c2e43a79988c0eb2a92c81da",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 104
+    },
+    {
+      "characters": 1936,
+      "chunk_id": "KBC-D058-d32ae3648ef435189a328c0c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 509
+    },
+    {
+      "characters": 1567,
+      "chunk_id": "KBC-D058-edeb594af96dcba74c1bf8f1",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 503
+    },
+    {
+      "characters": 912,
+      "chunk_id": "KBC-D058-f7c1ee27392bd97c8fc07169",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 209
+    },
+    {
+      "characters": 1820,
+      "chunk_id": "KBC-D058-dddc0f25db36aec870fe966d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 492
+    },
+    {
+      "characters": 643,
+      "chunk_id": "KBC-D058-681f0817a86dc511577f9fbd",
+      "overlap_tokens": 32,
+      "short_chunk": false,
+      "token_count": 220
+    },
+    {
+      "characters": 272,
+      "chunk_id": "KBC-D058-e61ff7a464dbb356dda29dae",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 73
+    },
+    {
+      "characters": 430,
+      "chunk_id": "KBC-D058-5388925824db7450fe28f4fd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 144
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-1d89eb1f169a613810c21e3b",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 89,
+      "chunk_id": "KBC-D059-1431d8fdde692ffb461c5ddb",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 23
+    },
+    {
+      "characters": 128,
+      "chunk_id": "KBC-D059-db65da4957d8c6736054ce81",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 596,
+      "chunk_id": "KBC-D059-6a15ce16eb348822ec71771d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 151
+    },
+    {
+      "characters": 448,
+      "chunk_id": "KBC-D059-767d46efb36489f7e0bb04a7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 150
+    },
+    {
+      "characters": 34,
+      "chunk_id": "KBC-D059-ba6af6979007cf564ef0fbf0",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 31
+    },
+    {
+      "characters": 439,
+      "chunk_id": "KBC-D059-bfc42b0dcfd4ba4c2d4f15ec",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 100
+    },
+    {
+      "characters": 51,
+      "chunk_id": "KBC-D059-dbe4557f0869afa3196e4b9d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 887,
+      "chunk_id": "KBC-D059-3573801c768020fc3134b446",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 198
+    },
+    {
+      "characters": 270,
+      "chunk_id": "KBC-D059-335de151642a6a92b25a56c9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 82
+    },
+    {
+      "characters": 19,
+      "chunk_id": "KBC-D059-9b67d55f2737c247e03b8f34",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 17
+    },
+    {
+      "characters": 426,
+      "chunk_id": "KBC-D059-34a83b8bf399175ff60163b2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 118
+    },
+    {
+      "characters": 110,
+      "chunk_id": "KBC-D059-21c15a8ac883be6068ad1b02",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 28
+    },
+    {
+      "characters": 1119,
+      "chunk_id": "KBC-D059-ab4838fda74fffd362610e6a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 262
+    },
+    {
+      "characters": 244,
+      "chunk_id": "KBC-D059-7f9c8f1c212d21385572f72d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 78
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-dc401fdfb807f160aee257e1",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 83,
+      "chunk_id": "KBC-D059-503b55b9af978a8c1a8bdc25",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 29
+    },
+    {
+      "characters": 128,
+      "chunk_id": "KBC-D059-c45c3b5bea8fc6feca592a44",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 596,
+      "chunk_id": "KBC-D059-72dce3351421c5eafd9801d2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 151
+    },
+    {
+      "characters": 448,
+      "chunk_id": "KBC-D059-b63bfa66efe37a05fdd9985c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 150
+    },
+    {
+      "characters": 21,
+      "chunk_id": "KBC-D059-df804dd42affdfa66560820b",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 295,
+      "chunk_id": "KBC-D059-92409756f8e25f4823ac4e07",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 67
+    },
+    {
+      "characters": 124,
+      "chunk_id": "KBC-D059-d3a0c93603b1c85c04c16358",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 194,
+      "chunk_id": "KBC-D059-bc44b25a75649525229d7e47",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 45
+    },
+    {
+      "characters": 744,
+      "chunk_id": "KBC-D059-6d1c806dc0c34f2c8a979bc3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 200
+    },
+    {
+      "characters": 33,
+      "chunk_id": "KBC-D059-66ad4572c0f336f88f02533d",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 27
+    },
+    {
+      "characters": 249,
+      "chunk_id": "KBC-D059-26a78c94d75b8a79b433b26d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 52
+    },
+    {
+      "characters": 62,
+      "chunk_id": "KBC-D059-b3cf56a1105af9112668f652",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 17
+    },
+    {
+      "characters": 126,
+      "chunk_id": "KBC-D059-c04edd81e7bfd2258e2e0f74",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 30
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-67bbc8420ce514c49e4fd431",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 12
+    },
+    {
+      "characters": 215,
+      "chunk_id": "KBC-D059-9f482dde3d26162c387731f6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 51
+    },
+    {
+      "characters": 146,
+      "chunk_id": "KBC-D059-81ed9ead14087a419baf5f92",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 39
+    },
+    {
+      "characters": 550,
+      "chunk_id": "KBC-D059-3798f0a55597bbdbf87db334",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 128
+    },
+    {
+      "characters": 1433,
+      "chunk_id": "KBC-D059-3fdc624b78e3f5b37aa00472",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 437
+    },
+    {
+      "characters": 189,
+      "chunk_id": "KBC-D059-b8079ccd927f2ecbf172fcf7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 56
+    },
+    {
+      "characters": 248,
+      "chunk_id": "KBC-D059-669a8709e83d6abeb3de4229",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 62
+    },
+    {
+      "characters": 461,
+      "chunk_id": "KBC-D059-d7e9808e3d8c39acbedd34e6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 109
+    },
+    {
+      "characters": 647,
+      "chunk_id": "KBC-D059-bee83a645d958f925cc2a16b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 138
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-126277119b7d5c401488f7e8",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 65,
+      "chunk_id": "KBC-D059-08022c7b0a660df19fa4958e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 154,
+      "chunk_id": "KBC-D059-e5587cff22788d1af6c36b19",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 149,
+      "chunk_id": "KBC-D059-d8159181e59294fe9718b641",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 610,
+      "chunk_id": "KBC-D059-8252bb91268e94194292ea6a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 184
+    },
+    {
+      "characters": 31,
+      "chunk_id": "KBC-D059-b2a711e786403ccaeff47487",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 134,
+      "chunk_id": "KBC-D059-aab6f70d0cfb018c37641a2e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 30
+    },
+    {
+      "characters": 61,
+      "chunk_id": "KBC-D059-dd014a0c8a3a501f033195f9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 352,
+      "chunk_id": "KBC-D059-300fa4e44aa863d8dd26c7c6",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 103
+    },
+    {
+      "characters": 234,
+      "chunk_id": "KBC-D059-02fe0f70f9054ea8fda61e45",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 56
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-34730e47a072ed3be7722add",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 224,
+      "chunk_id": "KBC-D059-e13f6db8f86e9e3dc2911491",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 58
+    },
+    {
+      "characters": 169,
+      "chunk_id": "KBC-D059-0177c3d2e4844ca36e84b981",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 38
+    },
+    {
+      "characters": 305,
+      "chunk_id": "KBC-D059-b2047fb4180ed45698b11adc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 110
+    },
+    {
+      "characters": 157,
+      "chunk_id": "KBC-D059-16902d905851262a32683296",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-2f3fb62b0060a0d423606154",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 133,
+      "chunk_id": "KBC-D059-e797c9cbb79a32e94dd57ccc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 29
+    },
+    {
+      "characters": 237,
+      "chunk_id": "KBC-D059-81b8b9effffc193e3bc230c0",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 55
+    },
+    {
+      "characters": 203,
+      "chunk_id": "KBC-D059-ada308ee04cad6f7660d2854",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 44
+    },
+    {
+      "characters": 56,
+      "chunk_id": "KBC-D059-811f3021c30ccb0751ebfeae",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 17
+    },
+    {
+      "characters": 30,
+      "chunk_id": "KBC-D059-2381fc8a426aed9f47f67840",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 66,
+      "chunk_id": "KBC-D059-548a3bb384e53f43764daa60",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 110,
+      "chunk_id": "KBC-D059-bceaf0a2fe397810978a846c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 29
+    },
+    {
+      "characters": 136,
+      "chunk_id": "KBC-D059-9b154e80f47a8dccae1547a1",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 40
+    },
+    {
+      "characters": 164,
+      "chunk_id": "KBC-D059-48ce9ae17523b8fb3614e9a7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 41
+    },
+    {
+      "characters": 28,
+      "chunk_id": "KBC-D059-216028d87f29f784be526a1d",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 105,
+      "chunk_id": "KBC-D059-035ddc23fb838ece6dfb1222",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 26
+    },
+    {
+      "characters": 61,
+      "chunk_id": "KBC-D059-f8666a41d3d94b5e6af96401",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-d2aa1251b13788c44823eb6e",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 8
+    },
+    {
+      "characters": 110,
+      "chunk_id": "KBC-D059-a92f0940d98738fe107b6905",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 38,
+      "chunk_id": "KBC-D059-fb119e7bb18018ee88418eb3",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 27
+    },
+    {
+      "characters": 65,
+      "chunk_id": "KBC-D059-74621182abf061fbeec2fe3d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 21
+    },
+    {
+      "characters": 101,
+      "chunk_id": "KBC-D059-7b1f56f62445784c1bf75c61",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 25
+    },
+    {
+      "characters": 112,
+      "chunk_id": "KBC-D059-4fa6f5206af574d215d8050b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 29
+    },
+    {
+      "characters": 149,
+      "chunk_id": "KBC-D059-ba4beffb5bdab4657c254fe2",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 41
+    },
+    {
+      "characters": 19,
+      "chunk_id": "KBC-D059-2742f3ebc079cc74ca65211e",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 17
+    },
+    {
+      "characters": 100,
+      "chunk_id": "KBC-D059-6c389571ac2122f04ec5b72b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 26
+    },
+    {
+      "characters": 160,
+      "chunk_id": "KBC-D059-c1da3beef26e4887ec73357c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 44
+    },
+    {
+      "characters": 116,
+      "chunk_id": "KBC-D059-746d51b78d2727e31c98ecbc",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 285,
+      "chunk_id": "KBC-D059-69bcce5849a84804eaf27856",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 69
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-642a0d3fd3d572733f0f4291",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 114,
+      "chunk_id": "KBC-D059-dbb7ec16e829559ff5279fd9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 28
+    },
+    {
+      "characters": 63,
+      "chunk_id": "KBC-D059-c11ac6c56b70dd8b76e3ce5d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 161,
+      "chunk_id": "KBC-D059-8d96560b6e466ad559db6226",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 39
+    },
+    {
+      "characters": 125,
+      "chunk_id": "KBC-D059-41229ce2e35188b1b64acd71",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 39
+    },
+    {
+      "characters": 1265,
+      "chunk_id": "KBC-D059-d30463249bc318fbf1d34bc5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 378
+    },
+    {
+      "characters": 14,
+      "chunk_id": "KBC-D059-39faa9b077844af074c6862a",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 9
+    },
+    {
+      "characters": 666,
+      "chunk_id": "KBC-D059-b0a9035ece1985a6691617a9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 167
+    },
+    {
+      "characters": 148,
+      "chunk_id": "KBC-D059-4b61e56a5221e260c953ae1c",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 38
+    },
+    {
+      "characters": 172,
+      "chunk_id": "KBC-D059-9a64a4f2e344387f2c2afd03",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 48
+    },
+    {
+      "characters": 99,
+      "chunk_id": "KBC-D059-34e96dde7ee4127e3b24bb5a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-e5e91f596a230961f79ceee4",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 108,
+      "chunk_id": "KBC-D059-9960fb90b7afd06e4569ace8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 28
+    },
+    {
+      "characters": 61,
+      "chunk_id": "KBC-D059-05ba5f615d51b4b34e72449e",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 242,
+      "chunk_id": "KBC-D059-79daf7846514828196ac8abb",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 63
+    },
+    {
+      "characters": 26,
+      "chunk_id": "KBC-D059-b56b49400c6ba0fd2fd4198d",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 15
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-5ff9a3120e095dfa2e0f5d2a",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 23
+    },
+    {
+      "characters": 60,
+      "chunk_id": "KBC-D059-3199f4597fd2c1735daae3bd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 15
+    },
+    {
+      "characters": 154,
+      "chunk_id": "KBC-D059-038a504668609c8d1deb3019",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 149,
+      "chunk_id": "KBC-D059-52004a93c596f8ad169d24fd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 62,
+      "chunk_id": "KBC-D059-4de64005fdb89f180f244b92",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 23
+    },
+    {
+      "characters": 24,
+      "chunk_id": "KBC-D059-c6d0e0a6e831f92a5f3d0184",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 64,
+      "chunk_id": "KBC-D059-e93154dee50868e7ef754836",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 51,
+      "chunk_id": "KBC-D059-f185d137b67c307f5bf08532",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 316,
+      "chunk_id": "KBC-D059-dcee5f131f762cd77986b973",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 91
+    },
+    {
+      "characters": 139,
+      "chunk_id": "KBC-D059-adf458708e1cebcb0eea5910",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 57
+    },
+    {
+      "characters": 24,
+      "chunk_id": "KBC-D059-f5f867ac923713cf7e64aa4a",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 301,
+      "chunk_id": "KBC-D059-0059e2e3ccf4988bca11b960",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 67
+    },
+    {
+      "characters": 124,
+      "chunk_id": "KBC-D059-9894e958116e5fba98fb2b54",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 197,
+      "chunk_id": "KBC-D059-7693bdad75c5d0dc18b9eab9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 45
+    },
+    {
+      "characters": 744,
+      "chunk_id": "KBC-D059-880abecb9d942b3e9656fc77",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 200
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-fdadd185f57371a7534959a7",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 128,
+      "chunk_id": "KBC-D059-da2e481fe7598902b436e2bb",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 36
+    },
+    {
+      "characters": 155,
+      "chunk_id": "KBC-D059-270f6048a502fe5910d2b777",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 35
+    },
+    {
+      "characters": 1077,
+      "chunk_id": "KBC-D059-c41aceaca4b285e6cd8aafab",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 254
+    },
+    {
+      "characters": 244,
+      "chunk_id": "KBC-D059-f490cdd5d6147190064c6238",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 78
+    },
+    {
+      "characters": 36,
+      "chunk_id": "KBC-D059-0f7417e295938843873d1bd6",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 27
+    },
+    {
+      "characters": 71,
+      "chunk_id": "KBC-D059-82aceadb04cda9679892ce97",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 20
+    },
+    {
+      "characters": 51,
+      "chunk_id": "KBC-D059-099a1d0d0120e1688adb1990",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 1191,
+      "chunk_id": "KBC-D059-b47a650f1d8cfc7e88fc86aa",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 282
+    },
+    {
+      "characters": 663,
+      "chunk_id": "KBC-D059-89ecbec9b694ce1fe9f88a08",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 185
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-a17c1aa769c517ece1b3f12f",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 21
+    },
+    {
+      "characters": 66,
+      "chunk_id": "KBC-D059-bfc1a2d461d4fe6be4fbc221",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 154,
+      "chunk_id": "KBC-D059-c0fb55f81992c7db96150860",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 33
+    },
+    {
+      "characters": 213,
+      "chunk_id": "KBC-D059-fc6828685351a267320ec467",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 45
+    },
+    {
+      "characters": 610,
+      "chunk_id": "KBC-D059-53aa3a265999ba4c500ca844",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 184
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-ca20e8614bc9ec7697acc56d",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 13
+    },
+    {
+      "characters": 147,
+      "chunk_id": "KBC-D059-42f93189bab4c05d618b70ec",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 37
+    },
+    {
+      "characters": 395,
+      "chunk_id": "KBC-D059-5e766cd1835ec2807537fc43",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 91
+    },
+    {
+      "characters": 402,
+      "chunk_id": "KBC-D059-889d13af26389e2fd18e38ea",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 125
+    },
+    {
+      "characters": 280,
+      "chunk_id": "KBC-D059-ca16f23fa419c4cf4987edbe",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 89
+    },
+    {
+      "characters": 21,
+      "chunk_id": "KBC-D059-cfdd42f90a5372bd65505339",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 77,
+      "chunk_id": "KBC-D059-f9868f2d199012875e887a19",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 20
+    },
+    {
+      "characters": 57,
+      "chunk_id": "KBC-D059-d55cbd70c2538ef150fc738f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 18
+    },
+    {
+      "characters": 75,
+      "chunk_id": "KBC-D059-e218584710de744eb2b929a4",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 20
+    },
+    {
+      "characters": 274,
+      "chunk_id": "KBC-D059-e4f64d639df7cf8c2427dd1a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 76
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-94df8754974efe7d97f579aa",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 23
+    },
+    {
+      "characters": 781,
+      "chunk_id": "KBC-D059-55cd946cbdde1c14ae423774",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 196
+    },
+    {
+      "characters": 176,
+      "chunk_id": "KBC-D059-e37534591c876af98388b178",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 47
+    },
+    {
+      "characters": 539,
+      "chunk_id": "KBC-D059-4dc8f136222c014e525cedd9",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 128
+    },
+    {
+      "characters": 738,
+      "chunk_id": "KBC-D059-d32323b8f75f04262aee5d7f",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 251
+    },
+    {
+      "characters": 23,
+      "chunk_id": "KBC-D059-fc5a59e3c7ec6673a52879db",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 15
+    },
+    {
+      "characters": 59,
+      "chunk_id": "KBC-D059-a5591c1c5307c1b1936f9319",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 16
+    },
+    {
+      "characters": 122,
+      "chunk_id": "KBC-D059-0f17d1e90c43938f4a7b12b8",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 30
+    },
+    {
+      "characters": 171,
+      "chunk_id": "KBC-D059-fda1b5e1e32fd1c69bc6be09",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 35
+    },
+    {
+      "characters": 993,
+      "chunk_id": "KBC-D059-39c4ddc13882563d00420255",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 264
+    },
+    {
+      "characters": 27,
+      "chunk_id": "KBC-D059-61821aab0ac759105c3818c0",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 19
+    },
+    {
+      "characters": 104,
+      "chunk_id": "KBC-D059-6ecd9b91d387e0db21fb5944",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 26
+    },
+    {
+      "characters": 61,
+      "chunk_id": "KBC-D059-57a63cfd29ea8f8856acd93d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 19
+    },
+    {
+      "characters": 15,
+      "chunk_id": "KBC-D059-951a7980f5466c025304ccc1",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 8
+    },
+    {
+      "characters": 110,
+      "chunk_id": "KBC-D059-6c66b5f875b40f88051db2e3",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 20,
+      "chunk_id": "KBC-D059-7f17ad5e4fc878a95a90b752",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 17
+    },
+    {
+      "characters": 201,
+      "chunk_id": "KBC-D059-f14d4c1b7e7c0324dda8b690",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 61
+    },
+    {
+      "characters": 128,
+      "chunk_id": "KBC-D059-84db1c547ce20b864b9de35b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 31
+    },
+    {
+      "characters": 372,
+      "chunk_id": "KBC-D059-0575e7f5e24d5ec17a341976",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 118
+    },
+    {
+      "characters": 286,
+      "chunk_id": "KBC-D059-9b25740de9d959cac872489a",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 89
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-925da253bd0308e281db13e3",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 80,
+      "chunk_id": "KBC-D059-1133102e1683ee6785f30f0b",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 22
+    },
+    {
+      "characters": 91,
+      "chunk_id": "KBC-D059-19f27a1adacdf242ef419748",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 23
+    },
+    {
+      "characters": 267,
+      "chunk_id": "KBC-D059-136a39549135a9a548b10163",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 59
+    },
+    {
+      "characters": 816,
+      "chunk_id": "KBC-D059-6de244fa88e77de67b2b7871",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 213
+    },
+    {
+      "characters": 34,
+      "chunk_id": "KBC-D059-9becdd2518992da52a6e0ad3",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 328,
+      "chunk_id": "KBC-D059-3444a855d0d7da2b02664abd",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 85
+    },
+    {
+      "characters": 337,
+      "chunk_id": "KBC-D059-8aa39f9b5f72c93c98272ddb",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 73
+    },
+    {
+      "characters": 14,
+      "chunk_id": "KBC-D059-b1d2bdefe5dac83330aa7351",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 8
+    },
+    {
+      "characters": 102,
+      "chunk_id": "KBC-D059-9f1e61cdc0dda88225f32ec7",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 48
+    },
+    {
+      "characters": 32,
+      "chunk_id": "KBC-D059-8fc12bdf6bb2d674aa519e6d",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 25
+    },
+    {
+      "characters": 80,
+      "chunk_id": "KBC-D059-79b315f5f398f0607234330d",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 25
+    },
+    {
+      "characters": 29,
+      "chunk_id": "KBC-D059-af73d22ef236eb7a1e2020b4",
+      "overlap_tokens": 0,
+      "short_chunk": true,
+      "token_count": 12
+    },
+    {
+      "characters": 55,
+      "chunk_id": "KBC-D059-128a462289dd2e71fec8c5d5",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 18
+    },
+    {
+      "characters": 169,
+      "chunk_id": "KBC-D059-deeebb4a9fab55fe73c8ac96",
+      "overlap_tokens": 0,
+      "short_chunk": false,
+      "token_count": 62
+    }
+  ],
+  "content_policy": "section_heading + newline + text",
+  "corpus_hash": "5c038293ce2ee69a42277170e18dd9c88417aff7e5c0aa127f034438803e23f3",
+  "encoder_prefix": "passage: ",
+  "excluded_document_count": 7,
+  "library_version": "0.21.4",
+  "max_length": 512,
+  "max_tokens": 511,
+  "omitted_spans": [
+    {
+      "document_id": "KBH-D059-0185ccfaeb29",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-0980a5088584",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-0d787d431d0c",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-100adba8ab53",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-1e35988462b6",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-2f773ad62c4d",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-320e57f48715",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-40feb3b71482",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-44306ba7be54",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-4bb889d6dca3",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-545ab1351883",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-55680d49eefb",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-5b2f1ba3a5d0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-6c2b859da0cb",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-7f69273da4ee",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-880cd100599f",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-90ee8fc78d14",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-91688933d572",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-91bc8b32682b",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-9bcf2fdf8ee8",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-ab767794153c",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b0277ce1f225",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b32d4a918814",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-b8a720c3525a",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-bcfb01413ab2",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c0ae2fc5e6c0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c21de076814a",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-c5fd7b512fcf",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-db6bc0dfb97f",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-dc1287ef31f0",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-de70fffe8993",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    },
+    {
+      "document_id": "KBH-D059-f471acd3d532",
+      "end_offset": 1,
+      "reason": "whitespace_or_html_marker_only",
+      "start_offset": 0
+    }
+  ],
+  "over_limit_count": 0,
+  "overlap_chunk_count": 55,
+  "short_chunk_count": 43,
+  "special_tokens": 2,
+  "token_count_includes_prefix_and_special_tokens": true,
+  "tokenizer_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "tokenizer_sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "truncation": false
+}

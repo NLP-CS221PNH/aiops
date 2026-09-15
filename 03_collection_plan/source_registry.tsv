@@ -1,0 +1,81 @@
+source_id	url	kind	warning
+S001	https://github.com/2471023025/RALM_Survey/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S002	https://github.com/DEEP-PolyU/Awesome-GraphRAG/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S003	https://github.com/DavidZWZ/Awesome-RAG-Reasoning	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S004	https://github.com/IntelligentDDS/awesome-papers/blob/main/Anomaly_detection/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S005	https://github.com/IntelligentDDS/awesome-papers/blob/main/Root_cause_analysis/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S006	https://github.com/Jun-jie-Huang/awesome-LLM-AIOps/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S007	https://github.com/OpsPAI/awesome-AIOps/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S008	https://github.com/PKU-DAIR/RAG-Survey/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S009	https://github.com/RUC-NLPIR/LLM4IR-Survey/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S010	https://github.com/RUCAIBox/DenseRetrieval/blob/main/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S011	https://github.com/YHPeter/Awesome-RAG-Evaluation	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S012	https://github.com/logpai/awesome-log-analysis/blob/master/README.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S013	https://github.com/phamquiluan/awesome-failure-diagnosis	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S014	https://github.com/zeyang919/LLM4Log/blob/main/papers.md	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S015	primary_abstract_and_project_pages	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+S016	web_search_primary_arxiv	bibliography_discovery_only	Nguồn phát hiện, không thay primary-title verification của từng paper.
+D001	https://github.com/phamquiluan/RCAEval	dataset_collection	explicit_data_and_code; public_landing_and_file_or_download_listing; assets_not_tested
+D002	https://github.com/microsoft/OpenRCA	dataset_collection	repo_only_external_data_unclear; public_repository; external_download_not_tested
+D003	https://arxiv.org/abs/2606.27154	benchmark_release_unconfirmed	release_and_license_unconfirmed; paper_readable; data_release_not_confirmed
+D004	https://lemma-rca.github.io/	dataset_collection	conflict; public_dataset_cards; license_conflict_blocks_release_decision
+D005	https://github.com/logpai/loghub	dataset_collection	custom_research_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D006	https://github.com/logpai/loghub-2.0	dataset_collection	custom_research_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D007	https://github.com/CloudWise-OpenSource/GAIA-DataSet	dataset_collection	conflict; public_repository; license_conflict_blocks_release_decision
+D008	https://zenodo.org/records/3549604	dataset	not_established; public_landing_and_file_or_download_listing; assets_not_tested
+D009	https://github.com/IntelligentDDS/Nezha	dataset_artifact	repo_only_external_data_unclear; public_landing_and_file_or_download_listing; assets_not_tested
+D010	https://github.com/BEbillionaireUSD/Eadro	dataset_artifact	not_established; public_repository; external_download_not_tested
+D011	https://github.com/NetManAIOps/DejaVu	dataset_collection	repo_only_external_data_unclear; public_repository; external_download_not_tested
+D012	https://github.com/NetManAIOps/TraceRCA	dataset_artifact	not_established; public_repository; external_download_not_tested
+D013	https://github.com/IntelligentDDS/MicroRank	method_only	code_only; public_method_repository; no_dataset_release_confirmed
+D014	https://github.com/NetManAIOps/CIRCA	generation_platform	code_only; public_code_and_simulation_resources
+D015	https://github.com/IntelligentDDS/Post-mortems-Analysis	dataset_artifact	not_established; public_repository_with_documents_and_annotations
+D016	https://github.com/NetManAIOps/OmniAnomaly	dataset	repo_only_external_data_unclear; public_landing_and_file_or_download_listing; assets_not_tested
+D017	https://github.com/khundman/telemanom	dataset_collection	repo_only_external_data_unclear; public_landing_and_file_or_download_listing; assets_not_tested
+D018	https://github.com/numenta/NAB	dataset_collection	data_scope_unconfirmed; public_landing_and_file_or_download_listing; assets_not_tested
+D019	https://github.com/ModelInteraction/MSQA	sample_dataset	not_established; public_sample_only; full_release_not_confirmed
+D020	https://github.com/HC-Guo/Owl	sample_dataset	repo_only_external_data_unclear; public_repository_and_examples; full_dataset_not_confirmed
+D021	https://huggingface.co/datasets/NASP/neteval-exam	dataset	explicit_dataset_card; public_landing_and_file_or_download_listing; assets_not_tested
+D022	https://huggingface.co/datasets/galileo-ai/ragbench	dataset_collection	explicit_dataset_card; public_landing_and_file_or_download_listing; assets_not_tested
+D023	https://github.com/chen700564/RGB	dataset	explicit_data_and_code; public_landing_and_file_or_download_listing; assets_not_tested
+D024	https://github.com/yixuantt/MultiHop-RAG	dataset	explicit_dataset_license; public_landing_and_file_or_download_listing; assets_not_tested
+D025	https://github.com/IAAR-Shanghai/CRUD_RAG	dataset	not_established; public_landing_and_file_or_download_listing; assets_not_tested
+D026	https://github.com/ielab/FeB4RAG	dataset_artifact	repo_only_upstream_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D027	https://github.com/IBM/mt-rag-benchmark	dataset_collection	repo_assets_with_upstream_caveat; public_landing_and_file_or_download_listing; assets_not_tested
+D028	https://github.com/facebookresearch/CRAG	dataset	explicit_dataset_license; public_landing_and_file_or_download_listing; assets_not_tested
+D029	https://github.com/freshllms/freshqa	dataset	repo_assets_with_upstream_caveat; public_repository; external_download_not_tested
+D030	https://huggingface.co/datasets/miracl/nomiracl	dataset	explicit_card_with_upstream_caveat; public_files; viewer_disabled_custom_loader
+D031	https://github.com/OpenBMB/RAGEval	generation_platform	not_established; public_code_and_example_assets
+D032	https://huggingface.co/datasets/PrimeQA/TechQA	dataset	explicit_dataset_card; public_file_listing; viewer_error; binary_not_downloaded
+D033	https://huggingface.co/datasets/xlangai/BRIGHT	dataset_collection	explicit_dataset_card; public_landing_and_file_or_download_listing; assets_not_tested
+D034	https://github.com/beir-cellar/beir	dataset_collection	heterogeneous_explicit_disclaimer; public_landing_and_file_or_download_listing; assets_not_tested
+D035	https://microsoft.github.io/msmarco/	dataset_collection	custom_research_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D036	https://huggingface.co/datasets/miracl/miracl	dataset_collection	explicit_card_with_upstream_caveat; public_files; viewer_disabled_custom_loader
+D037	https://github.com/unicamp-dl/mMARCO	derived_dataset	upstream_restrictions_apply; public_landing_and_file_or_download_listing; assets_not_tested
+D038	https://huggingface.co/datasets/google/frames-benchmark	dataset	explicit_dataset_card; public_landing_and_file_or_download_listing; assets_not_tested
+D039	https://github.com/onyx-dot-app/EnterpriseRAG-Bench	dataset_artifact	repo_assets_with_upstream_caveat; public_landing_and_file_or_download_listing; assets_not_tested
+D040	https://github.com/stonybrooknlp/musique	dataset	explicit_dataset_license; public_repository; external_download_not_tested
+D041	https://hotpotqa.github.io/	dataset	explicit_dataset_license; public_landing_and_file_or_download_listing; assets_not_tested
+D042	https://github.com/princeton-nlp/ALCE	dataset_artifact	repo_only_upstream_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D043	https://github.com/ParticleMedia/RAGTruth	dataset	repo_assets_with_upstream_caveat; public_landing_and_file_or_download_listing; assets_not_tested
+D044	https://github.com/Alibaba-NLP/CDQA	dataset	not_established; public_landing_and_file_or_download_listing; assets_not_tested
+D045	https://github.com/facebookresearch/KILT	dataset_collection	repo_only_upstream_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D046	https://github.com/swe-bench/SWE-bench	dataset_collection	repo_assets_with_upstream_caveat; public_landing_and_file_or_download_listing; assets_not_tested
+D047	https://github.com/google/cluster-data	dataset_collection	explicit_data_terms; public_landing_and_file_or_download_listing; assets_not_tested
+D048	https://github.com/alibaba/clusterdata	dataset_collection	not_established; public_landing_and_file_or_download_listing; assets_not_tested
+D049	https://github.com/Azure/AzurePublicDataset	dataset_collection	explicit_separate_data_code; public_landing_and_file_or_download_listing; assets_not_tested
+D050	https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70	dataset_release_access_unconfirmed	not_established; landing_blocked_in_audit; access_requirements_unconfirmed
+D051	https://huggingface.co/datasets/ibm-research/ITBench-Lite	dataset_collection	explicit_dataset_card; public_landing_and_file_or_download_listing; assets_not_tested
+D052	https://github.com/itbench-hub/ITBench	generation_platform	code_only; public_platform_repository
+D053	https://github.com/microsoft/AIOpsLab	generation_platform	code_only; public_platform_repository
+D054	https://github.com/open-telemetry/opentelemetry-demo	generation_platform	code_only; public_demo_repository
+D055	https://github.com/delimitrou/DeathStarBench	generation_platform	conflict; public_repository; code_license_conflict
+D056	https://github.com/FudanSELab/train-ticket	generation_platform	code_only; public_application_repository
+D057	https://github.com/GoogleCloudPlatform/microservices-demo	generation_platform	code_only; public_application_repository
+D058	https://kubernetes.io/docs/tasks/debug/	corpus_to_collect	explicit_documentation_license; public_documentation_pages
+D059	https://github.com/prometheus-operator/runbooks	corpus_to_collect	repo_assets_license; public_repository_and_runbook_site
+D060	https://sre.google/workbook/	corpus_access_unconfirmed	not_established; landing_blocked_in_audit
+D061	https://status.cloud.google.com/summary	corpus_to_collect	publisher_terms_review_required; public_history_landing
+D062	https://aws.amazon.com/premiumsupport/technology/pes/	corpus_to_collect	publisher_terms_review_required; public_postevent_landing
+D063	https://blog.cloudflare.com/tag/post-mortem/	corpus_to_collect	publisher_terms_review_required; public_tag_landing
+D064	https://www.githubstatus.com/history	corpus_to_collect	publisher_terms_review_required; public_history_landing

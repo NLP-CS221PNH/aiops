@@ -1,0 +1,750 @@
+
+ 
+	 
+		 
+		 
+
+		 
+			 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+			 
+
+	 
+	 Discovering Dependencies for Network Management - Microsoft Research 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	 
+	 
+
+	
+	 
+	 
+	 
+
+	
+	 
+	 
+	 
+
+	 
+ 
+     	 
+
+	 
+
+		
+
+		 
+							 
+     Skip to main content 
+
+ 
+    
+ 
+         
+             
+         
+             
+  Research               
+ 
+
+
+ 
+
+
+
+ 
+    
+
+         
+                     Publications 
+                     Code, datasets and models 
+         
+         
+                     Artificial intelligence 
+                     Audio & acoustics 
+                     Computer vision 
+                     Graphics & multimedia 
+                     Human-computer interaction 
+                     Human language technologies 
+                     Search & information retrieval 
+         
+         
+                     Data platforms and analytics 
+                     Hardware & devices 
+                     Programming languages & software engineering 
+                     Quantum computing 
+                     Security, privacy & cryptography 
+                     Systems & networking 
+         
+         
+                     Algorithms 
+                     Mathematics 
+         
+         
+                     Ecology & environment 
+                     Economics 
+                     Medical, health & genomics 
+                     Social sciences 
+                     Technology for emerging markets 
+         
+
+
+ 
+
+
+ 
+    
+
+             Academic programs 
+             Events & academic conferences 
+             Microsoft Research Forum 
+
+
+ 
+
+
+ 
+    
+
+             Microsoft Research Blog 
+             Microsoft Research Podcast 
+             Microsoft Research Stories 
+
+
+ 
+
+
+ 
+    
+
+         
+                     About Microsoft Research 
+                     Careers & internships 
+                     People 
+                     Emeritus program 
+                     News & awards 
+                     Microsoft Research newsletter 
+         
+         
+                     Africa 
+                     AI for Science 
+                     AI Frontiers 
+                     Asia-Pacific 
+                     Cambridge 
+                     Catalyst 
+                     Health Futures 
+                     India 
+                     Montreal 
+                     New England 
+                     New York City 
+                     Redmond 
+         
+         
+                     Applied Sciences 
+                     Mixed Reality & AI - Cambridge 
+                     Mixed Reality & AI - Zurich 
+         
+
+
+              
+                Register: Research Forum
+             
+      
+        
+ 
+    
+     
+             Microsoft Security 
+             Azure 
+             Dynamics 365 
+             Microsoft 365 
+             Microsoft Teams 
+             Windows 365 
+     
+
+         
+                     Microsoft AI 
+                     Azure Space 
+                     Mixed reality 
+                     Microsoft HoloLens 
+                     Microsoft Viva 
+                     Quantum computing 
+                     Sustainability 
+         
+         
+                     Education 
+                     Automotive 
+                     Financial services 
+                     Government 
+                     Healthcare 
+                     Manufacturing 
+                     Retail 
+         
+         
+                     Find a partner 
+                     Become a partner 
+                     Partner Network 
+                     Microsoft Marketplace 
+                     Software companies 
+         
+         
+                     Blog 
+                     Microsoft Advertising 
+                     Developer Center 
+                     Documentation 
+                     Events 
+                     Licensing 
+                     Microsoft Learn 
+                     Microsoft Research 
+         
+
+     
+         View Sitemap 
+     
+
+ 
+
+
+             
+             
+     
+ 
+					 
+
+		
+ 
+
+	 
+		 
+ Discovering Dependencies for Network Management 
+
+		 
+			 
+				 
+					
+			 
+			 
+ 
+							 
+					 Victor Bahl 
+				 
+						,		 
+			 
+ 
+							 Paul Barham 
+						,		 
+			 
+ 
+							 
+					 Richard Black 
+				 
+						,		 
+			 
+ 
+							 
+					 Ranveer Chandra 
+				 
+						,		 
+			 
+ 
+							 Moises Goldszmidt 
+						,		 
+			 
+ 
+							 Rebecca Isaacs 
+						,		 
+			 
+ 
+							 Srikanth Kandula 
+						,		 
+			 
+ 
+							 Lun Li 
+						,		 
+			 
+ 
+							 John MacCormick 
+						,		 
+			 
+ 
+							 
+					 Dave Maltz 
+				 
+						,		 
+			 
+ 
+							 Richard Mortier 
+						,		 
+			 
+ 
+							 Mike Wawrzoniak 
+						,		 
+			 
+ 
+							 Ming Zhang 
+								 
+	 
+	
+ 
+ 
+	 
+		 
+			
+			Workshop on Hot Topics in Networks (HotNets-V)
+					 
+	 
+
+	 |  November 2006 
+
+	 
+ Published by Association for Computing Machinery, Inc. 
+
+
+
+				 
+			 
+							 
+																 Download BibTex 
+									 
+					 
+		 
+			 
+				 
+					
+					 
+						
+
+
+ 
+ This paper presents the Leslie Graph, a simple yet powerful abstraction describing the complex dependencies between network, host and application components in modern networked systems. It discusses challenges in the discovery of Leslie Graphs, their uses, and describes two alternate approaches to their discovery, supported by some initial feasibility results. 
+ Opens in a new tab 					 
+
+					
+											 
+							 
+ Copyright © 2006 by the Association for Computing Machinery, Inc. Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on servers, or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from Publications Dept, ACM Inc., fax +1 (212) 869-0481, or permissions@acm.org. The definitive version of this paper can be found at ACM's Digital Library --http://www.acm.org/dl/. 
+						 
+					
+									 
+			 
+
+			 
+									 
+						PDF					 
+				
+									 
+ 
+						 
+ 
+							Groups						 
+						 
+							 
+																	 
+ 
+										 
+											Networking Research Group										 
+									 
+															 
+						 
+					 
+									 
+ 
+						 
+ 
+							Projects						 
+						 
+							 
+																	 
+ 
+										 
+											NetHealth										 
+									 
+															 
+						 
+					 
+									 
+ 
+						 
+ 
+							Research Areas						 
+						 
+							 
+																	 
+ 
+										 
+											Systems and networking										 
+									 
+															 
+						 
+					 
+									 
+ 
+						 
+ 
+							Research Labs						 
+						 
+							 
+																	 
+ 
+										 
+											Microsoft Research Lab - Redmond										 
+									 
+															 
+						 
+					 
+							 
+		 
+	 
+
+	 
+
+ 
+	 
+ 
+		 
+			 
+				 
+					 
+						 
+ 
+							Follow us:						 
+						 
+							 
+ 
+																 
+									 Follow on X 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Like on Facebook 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Follow on LinkedIn 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Subscribe on Youtube 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Follow on Instagram 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Subscribe to our RSS feed 
+									
+ 
+								 
+							 
+						 
+					 
+				 
+
+				 
+					 
+						 
+ 
+							Share this page:						 
+						 
+
+							 
+ 
+								
+								 
+									 Share on X 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on Facebook 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on LinkedIn 
+									
+ 
+								 
+							 
+
+							 
+ 
+								 
+									 Share on Reddit 
+									
+ 
+								 
+							 
+						 
+					 
+
+				 
+			 
+		 
+	 
+ 
+		 
+			 
+		 
+
+		 
+
+					 
+     
+    
+ 
+             
+                     
+                                 Surface Pro                             
+                                 Surface Laptop                             
+                                 Surface Laptop Ultra                             
+                                 Surface RTX Spark Dev Box                             
+                                 Copilot for organizations                             
+                                 Copilot for personal use                             
+                                 Explore Microsoft products                             
+                                 Windows 11 apps                             
+                     
+                     
+                                 Account profile                             
+                                 Download Center                             
+                                 Microsoft Store support                             
+                                 Returns                             
+                                 Order tracking                             
+                                 Certified Refurbished                             
+                                 Microsoft Store Promise                             
+                                 Flexible Payments                             
+                     
+                     
+                                 Microsoft in education                             
+                                 Devices for education                             
+                                 Microsoft Teams for Education                             
+                                 Microsoft 365 Education                             
+                                 How to buy for your school                             
+                                 Educator training and development                             
+                                 Deals for students and parents                             
+                                 AI for education                             
+                     
+             
+             
+                     
+                                 Microsoft AI                             
+                                 Microsoft Security                             
+                                 Dynamics 365                             
+                                 Microsoft 365                             
+                                 Microsoft Power Platform                             
+                                 Microsoft Teams                             
+                                 Microsoft 365 Copilot                             
+                                 Small Business                             
+                     
+                     
+                                 Azure                             
+                                 Microsoft Developer                             
+                                 Microsoft Learn                             
+                                 Support for AI marketplace apps                             
+                                 Microsoft Tech Community                             
+                                 Microsoft Marketplace                             
+                                 Software companies                             
+                                 Visual Studio                             
+                     
+                     
+                                 Careers                             
+                                 About Microsoft                             
+                                 Company news                             
+                                 Privacy at Microsoft                             
+                                 Investors                             
+                                 Diversity and inclusion                             
+                                 Accessibility                             
+                                 Sustainability                             
+                     
+             
+ 
+     
+        
+ 
+     
+     Your Privacy Choices Opt-Out Icon 
+     
+     
+     
+     
+     
+     Your Privacy Choices 
+ 
+         
+            
+ 
+     
+     Your Privacy Choices Opt-Out Icon 
+     
+     
+     
+     
+     
+     Your Privacy Choices 
+ 
+         
+     
+     Consumer Health Privacy 
+    
+ 
+             Sitemap 
+             Contact Microsoft 
+             Privacy  
+             Manage cookies 
+             Terms of use 
+             Trademarks 
+             Safety & eco 
+             Recycling 
+             About our ads 
+ 
+ 
+		
+		 
+
+		 
+	 
+	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+	 
+ 

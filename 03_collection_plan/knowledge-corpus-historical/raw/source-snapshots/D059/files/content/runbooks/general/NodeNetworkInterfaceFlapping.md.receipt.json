@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/prometheus-operator/runbooks/f8061f3e9b3337d90107aa2f10a0111f3f6dc86f/content/runbooks/general/NodeNetworkInterfaceFlapping.md",
+  "retrieved_at": "2026-09-12T16:58:04.984945Z",
+  "sha256": "553464c2ec2318e4c448076e41a57be9078a3d8da0420b8118218f49dba39728",
+  "bytes": 516,
+  "http_status": 200,
+  "etag": "\"61a7cc6ce54a74e6840dad4d73a37213beed5a0f1502e558c08141742d2a01ac\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "plan.reindex",
+  "data": {
+    "applied": true,
+    "root": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack",
+    "plans_dir": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans",
+    "outcomes": [
+      {
+        "slug": ".agentkit-runtime",
+        "status": "unrecognized",
+        "reason": "not an AgentKit plan (no parseable plan.md)"
+      },
+      {
+        "slug": "260913-0020-cs221-aiops-rag-master-plan",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0141",
+        "phases": 10
+      },
+      {
+        "slug": "260913-0057-cs221-01-scope-and-protocol",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0141-2",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-02-data-and-environment",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-03-knowledge-corpus",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-2",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-04-incident-representation",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-3",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-05-retrieval-baselines",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-4",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-06-annotation-and-qrels",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-5",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-07-grounded-generation",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-6",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-08-evaluation-and-freeze",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-7",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-09-evidence-demo",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-8",
+        "phases": 3
+      },
+      {
+        "slug": "260913-0057-cs221-10-report-and-release",
+        "status": "recognized",
+        "store_id": "CS221_AIOps_RAG_Research_Pack/260913-0057-9",
+        "phases": 3
+      },
+      {
+        "slug": "journals",
+        "status": "skipped",
+        "reason": "reserved directory"
+      },
+      {
+        "slug": "reports",
+        "status": "skipped",
+        "reason": "reserved directory"
+      }
+    ]
+  }
+}

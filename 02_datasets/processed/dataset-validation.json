@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "source_index_row_counts_match": true,
+  "observation_label_isolation": true,
+  "family_split_isolation": true,
+  "evidence_ids_unique_and_resolvable": true,
+  "log_trace_row_offsets_in_bounds": true,
+  "all_selected_timestamps_within_half_open_windows": true,
+  "actual_counts": {
+    "metric_rows": 128742,
+    "logs_rows": 15053223,
+    "trace_rows": 34461235
+  }
+}

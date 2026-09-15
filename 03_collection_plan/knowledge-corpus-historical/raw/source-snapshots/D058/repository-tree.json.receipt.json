@@ -1,0 +1,10 @@
+{
+  "url": "https://api.github.com/repos/kubernetes/website/git/trees/7e631d0318dc279cb2d31231d8823360e61e9304?recursive=1",
+  "retrieved_at": "2026-09-12T16:57:54.425054Z",
+  "sha256": "1f433a72c1c6be7b6956b3fad8ca688a89a89333060c193830c93ef0fd092117",
+  "bytes": 2861233,
+  "http_status": 200,
+  "etag": "W/\"7cf9cfa7cbcba9ae313f138a8de083d272b1fb546eb09a471b742604a22c66ac\"",
+  "last_modified_http": "Sat, 12 Sep 2026 08:25:21 GMT",
+  "http_last_modified_is_content_publication_time": false
+}

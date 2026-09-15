@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/prometheus-operator/runbooks/f8061f3e9b3337d90107aa2f10a0111f3f6dc86f/content/runbooks/kubernetes/KubeDeploymentGenerationMismatch.md",
+  "retrieved_at": "2026-09-12T16:58:05.750593Z",
+  "sha256": "68c5b9616d6162d05ed73cfc6e34849d380d636affca3a6f18667d129588f1f8",
+  "bytes": 2075,
+  "http_status": 200,
+  "etag": "\"724fc9548b90a01cf1a4c8580616660ec83f648a069512461605bf1975e810c5\"",
+  "last_modified_http": null,
+  "http_last_modified_is_content_publication_time": false
+}
