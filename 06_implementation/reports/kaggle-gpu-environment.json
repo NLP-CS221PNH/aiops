@@ -1,0 +1,9 @@
+{
+  "platform": "win32",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "cuda_available": false,
+  "device_count": 0,
+  "device_name": "CPU",
+  "gpu_memory_gb": 0.0,
+  "torch_version": "not_installed"
+}

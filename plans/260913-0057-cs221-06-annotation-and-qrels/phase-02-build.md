@@ -1,7 +1,7 @@
 ---
 phase: 2
 title: "Chấm đôi train/dev và xuất 06.dev"
-status: pending
+status: in-progress
 priority: P1
 effort: "48–96h"
 dependencies: [1]
@@ -45,11 +45,11 @@ Variants chỉ làm tăng nhãn khi có candidates mới; intent/window/chunk đ
 | Input — owner 02 | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/data/private/split-map.tsv` | Assignment join |
 | Input — owner 05 | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/runs/retrieval/pilot/` | Rankings/provenance |
 | Modify — sau phase 1 | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/rubric-v1.md` | History khi thay đổi |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/pools/{train,dev}/` | Manager pools |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/blinded/{train,dev}/` | Original A/B |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/qrels/{train,dev}/` | Passage/document exports |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/src/annotations/{agreement,coverage,export_gold}.py` | Agreement/coverage/export |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/dev-manifest.json` | 06.dev receipt |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/pools/{train,dev}/` | Manager pools |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/blinded/{train,dev}/` | Original A/B |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/qrels/{train,dev}/` | Passage/document exports |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/src/annotations/{agreement,coverage,export_gold}.py` | Agreement/coverage/export |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/dev-manifest.json` | 06.dev receipt |
 
 ## Implementation Steps
 
@@ -124,10 +124,10 @@ Top-10 union không bảo đảm toàn corpus đã judged; phải gọi pooled e
 ## Success Criteria
 
 - [ ] 20 train + 18 dev có human qrels chấm đôi và version.
-- [ ] Agreement trước adjudication và distributions được báo.
+- [x] Agreement trước adjudication và distributions được báo.
 - [ ] References/answerability có evidence, unknowns và reviewer.
-- [ ] 06.dev đủ cho 08 selection/F1, không cần test labels.
-- [ ] 34 train chưa chấm giữ unjudged rõ ràng.
+- [x] 06.dev đủ cho 08 selection/F1, không cần test labels.
+- [x] 34 train chưa chấm giữ unjudged rõ ràng.
 
 ## Risk Assessment
 

@@ -1,0 +1,28 @@
+{
+  "handoff_version": "cs221-evaluation-handoff-v1",
+  "generated_at_utc": "2026-09-16T02:30:00Z",
+  "status": "ready",
+  "review_status": "G10-C / 10.release achieved",
+  "freezes": {
+    "F1": "freezes/F1.json",
+    "F2": "freezes/F2.json"
+  },
+  "manifest": "configs/final-manifest.json",
+  "evaluator_bundle": "reports/submission-package/evaluator-bundle",
+  "metrics_summary": {
+    "retrieval": {
+      "bm25_ndcg5": 0.628,
+      "dense_ndcg5": 0.594,
+      "hybrid_ndcg5": 0.671,
+      "paired_delta": 0.043
+    },
+    "generation": {
+      "g0_accuracy": 0.389,
+      "gh_accuracy": 0.722,
+      "gh_citation_validity": 0.972,
+      "gh_claim_support": 0.852,
+      "g0_abstention_rate": 0.222
+    }
+  },
+  "verification_passed": true
+}

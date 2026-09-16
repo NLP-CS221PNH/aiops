@@ -1,0 +1,7 @@
+family_id	target_service	fault_type	n_incidents	ir_b_ndcg	ir_d_ndcg	ir_h_ndcg	gh_top1_acc
+fam_2a575f522598f438	productcatalogservice	loss	3	0.2315	0.6531	0.3144	1.0000
+fam_4f5e98ae3822da35	currencyservice	cpu	3	0.2420	0.1244	0.2074	1.0000
+fam_60b0d0f21531c84a	checkoutservice	mem	3	0.4372	0.3518	0.4254	1.0000
+fam_71e9d3c57030acb4	currencyservice	socket	3	0.3868	0.4566	0.3645	1.0000
+fam_7309889d70bf55f2	recommendationservice	delay	3	0.4662	0.4734	0.4858	1.0000
+fam_d01fafb55e33d975	currencyservice	disk	3	0.3589	0.1970	0.2564	1.0000

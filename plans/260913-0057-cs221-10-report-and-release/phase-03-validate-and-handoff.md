@@ -1,7 +1,7 @@
 ---
 phase: 3
 title: "Tái lập, đóng gói và diễn tập bảo vệ"
-status: pending
+status: done
 priority: P1
 effort: "10h"
 dependencies: [2]
@@ -110,19 +110,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **10.3.1**: Reproduction receipts; A hoặc C không viết runner / B xác nhận bằng chứng.
-- [ ] **10.3.2**: PDFs local đã review; Codex + C / A xác nhận bằng chứng.
-- [ ] **10.3.3**: Manifest, checklist và package; Codex + A / C xác nhận bằng chứng.
-- [ ] **10.3.4**: Bàn giao sẵn sàng để nhóm nộp; A/B/C / kiểm chéo xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 10h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **10.3.1**: Reproduction receipts; A hoặc C không viết runner / B xác nhận bằng chứng.
+- [x] **10.3.2**: PDFs local đã review; Codex + C / A xác nhận bằng chứng.
+- [x] **10.3.3**: Manifest, checklist và package; Codex + A / C xác nhận bằng chứng.
+- [x] **10.3.4**: Bàn giao sẵn sàng để nhóm nộp; A/B/C / kiểm chéo xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 10h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Người khác tính lại được bảng/metrics chính từ evaluator artifacts đã lưu; receipt giới hạn chỉ thay cho optional raw/IR/model reruns, không thay core metric recomputation.
-- [ ] Report, slides và demo khớp versions/claims; gói đủ manifest, checksum và hướng dẫn.
-- [ ] Không còn secret, vấn đề license chưa xử lý hoặc claim vượt quá evidence.
-- [ ] Nhóm đã review đóng góp và rubric; gói local sẵn sàng, nộp thật là bước của người được phân công.
+- [x] Người khác tính lại được bảng/metrics chính từ evaluator artifacts đã lưu; receipt giới hạn chỉ thay cho optional raw/IR/model reruns, không thay core metric recomputation.
+- [x] Report, slides và demo khớp versions/claims; gói đủ manifest, checksum và hướng dẫn.
+- [x] Không còn secret, vấn đề license chưa xử lý hoặc claim vượt quá evidence.
+- [x] Nhóm đã review đóng góp và rubric; gói local sẵn sàng, nộp thật là bước của người được phân công.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

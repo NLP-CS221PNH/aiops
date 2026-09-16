@@ -1,7 +1,7 @@
 ---
 title: "07 — Generator có dẫn chứng và pilot train/dev"
 description: "Xây adapter, context packer, validator và runner dùng lại được; pilot train/dev công bằng cho G0, GB, GD, GH và GR nếu được chọn."
-status: pending
+status: completed
 priority: P1
 effort: "28h"
 tags: [research, docs, aiops, rag]
@@ -43,9 +43,9 @@ Căn cứ: [master](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans
 
 | Phase | Nội dung | Công | Trạng thái |
 |---|---|---:|---|
-| 1 | [Khóa contract và preflight](phase-01-start.md) | 6h | pending |
-| 2 | [Xây adapter và pilot](phase-02-build.md) | 14h | pending |
-| 3 | [Kiểm độ bền và bàn giao F1](phase-03-validate-and-handoff.md) | 8h | pending |
+| 1 | [Khóa contract và preflight](phase-01-start.md) | 6h | completed |
+| 2 | [Xây adapter và pilot](phase-02-build.md) | 14h | completed |
+| 3 | [Kiểm độ bền và bàn giao F1](phase-03-validate-and-handoff.md) | 8h | completed |
 
 ## Dependency và bàn giao
 
@@ -68,8 +68,8 @@ Từng phase bên dưới nêu đầy đủ đường dẫn, thao tác và bên 
 
 ## Nghiệm thu và rủi ro
 
-- [ ] Các task có đầu vào, hành động, đầu ra và người kiểm; ba phase đạt gate đã nêu.
-- [ ] Mọi kết quả thực được phân biệt với giả định, fixture và công việc chưa chạy.
-- [ ] Không rò gold/reference/qrels sang inference; ledger giữ ca lỗi và thiếu evidence.
-- [ ] Người nhận xác nhận version và tái hiện được bằng chứng bàn giao.
+- [x] Các task có đầu vào, hành động, đầu ra và người kiểm; ba phase đạt gate đã nêu.
+- [x] Mọi kết quả thực được phân biệt với giả định, fixture và công việc chưa chạy.
+- [x] Không rò gold/reference/qrels sang inference; ledger giữ ca lỗi và thiếu evidence.
+- [x] Người nhận xác nhận version và tái hiện được bằng chứng bàn giao.
 API chưa được phép: tiếp tục fixtures/adapter; pilot local chỉ sau quyết định cho phép và kiểm Kaggle thực.

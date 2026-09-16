@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PassageAnnotationRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "incident_id",
+    "chunk_id",
+    "corpus_hash",
+    "review_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-annotation-passage-v1"
+    },
+    "incident_id": {
+      "type": "string",
+      "pattern": "^inc_[0-9a-f]{16}$"
+    },
+    "task_version": {
+      "type": "string"
+    },
+    "window_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "chunk_id": {
+      "type": "string"
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grade": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "enum": [
+        0,
+        1,
+        2,
+        null
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rubric_version": {
+      "type": "string"
+    },
+    "evidence_role": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "symptom_interpretation",
+        "service_dependency",
+        "diagnostic_check",
+        "elimination_check",
+        "root_cause_support",
+        "counter_evidence",
+        "context_only",
+        null
+      ]
+    },
+    "supported_claim": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "applicability": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "compatible",
+        "incompatible",
+        "uncertain_pending_review",
+        null
+      ]
+    },
+    "span_start": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "span_end": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "review_state": {
+      "type": "string",
+      "enum": [
+        "unjudged",
+        "draft",
+        "completed"
+      ]
+    },
+    "query_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    }
+  }
+}

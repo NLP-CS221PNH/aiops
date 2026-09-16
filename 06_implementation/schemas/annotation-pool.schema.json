@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnnotationPoolManifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "split",
+    "created_at",
+    "seed",
+    "depth",
+    "corpus_hash",
+    "n_incidents",
+    "n_candidates",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-annotation-pool-v1"
+    },
+    "split": {
+      "type": "string",
+      "enum": [
+        "train",
+        "dev",
+        "test",
+        "calibration"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "depth": {
+      "type": "integer"
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "n_incidents": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_candidates": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "incident_id",
+          "chunk_id",
+          "document_id",
+          "provenance"
+        ],
+        "properties": {
+          "incident_id": {
+            "type": "string"
+          },
+          "chunk_id": {
+            "type": "string"
+          },
+          "document_id": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "retrievers",
+              "query_hashes"
+            ],
+            "properties": {
+              "retrievers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "query_hashes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ranks": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer"
+                }
+              },
+              "scores": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

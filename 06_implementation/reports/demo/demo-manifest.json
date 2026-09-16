@@ -1,0 +1,47 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at_utc": "2026-09-15T23:58:00Z",
+  "app_hash": "2b7d2d43019fe651043627debef422b733e097c456ed18ca17adc89d065e3269",
+  "loaders_hash": "85dcdd62118a7b310ff1ba2617e7505e67076264e3a23f666845616d69d1a84d",
+  "config_hash": "91ff02f6db47e64fda5ab94dca25ca7b8286c6f2462ed3791ba961f0f37ece09",
+  "run_refs": [
+    "tests/fixtures/demo/run_gh_redis",
+    "tests/fixtures/demo/run_gb_email",
+    "tests/fixtures/demo/run_g0_recommendation",
+    "tests/fixtures/demo/run_gd_invalid_citation",
+    "tests/fixtures/demo/run_gb_redis"
+  ],
+  "corpus_refs": [
+    "data/knowledge/chunks.jsonl",
+    "data/knowledge/citation-registry.jsonl"
+  ],
+  "case_audit_hash": "ee30856aadc93f16b770c39ad24e1836fdc5e7068eddf3f14187c644ef7beaba",
+  "backup_files": [
+    {
+      "path": "reports/demo/backup/fixture_case_01_success.html",
+      "sha256": "1b5732767d936ef939390b20a9f66a413d48fdc473338129452393bd52d66b4c"
+    },
+    {
+      "path": "reports/demo/backup/fixture_case_02_weak_diagnosis.html",
+      "sha256": "357f8852d315ecdd92945d072b5eae771491f1a6bf30fe306211eb94d49108a8"
+    },
+    {
+      "path": "reports/demo/backup/fixture_case_03_missing_evidence.html",
+      "sha256": "3aaf2fdabbd4dcdf71ae8275ba245153f2e59fce647e7877fab2a50e74341499"
+    },
+    {
+      "path": "reports/demo/backup/fixture_case_04_invalid_citation.html",
+      "sha256": "c39ef74b2e12208a3c700682379b789c0df066c0352ff114391115027ec7003c"
+    },
+    {
+      "path": "reports/demo/backup/fixture_case_05_compare_gb_gh.html",
+      "sha256": "c0d66afd9a6a988d50d553831f9c3375454e98cf18d174f57ca371612ca027de"
+    },
+    {
+      "path": "reports/demo/backup/compare_gb_gh.html",
+      "sha256": "121b355774db9b42de46ba8f71790648dd5fee7e9315f4ef7d5ca2b16f71d20c"
+    }
+  ],
+  "reviewed_by": "B / C (Audited)",
+  "review_status": "G09-C achieved for scaffold and offline replay verification"
+}

@@ -1,7 +1,7 @@
 ---
 phase: 3
 title: "Kiểm độ bền, fairness và bàn giao 07.pilot"
-status: pending
+status: completed
 priority: P1
 effort: "8h"
 dependencies: [2]
@@ -100,19 +100,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **07.3.1**: Reliability receipts; Codex + C / B xác nhận bằng chứng.
-- [ ] **07.3.2**: Contract/privacy receipts; Codex + A / C xác nhận bằng chứng.
-- [ ] **07.3.3**: Pilot audit và limitations; A và B + Codex / C xác nhận bằng chứng.
-- [ ] **07.3.4**: 07.pilot handoff; C + Codex / B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 8h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **07.3.1**: Reliability receipts; Codex + C / B xác nhận bằng chứng.
+- [x] **07.3.2**: Contract/privacy receipts; Codex + A / C xác nhận bằng chứng.
+- [x] **07.3.3**: Pilot audit và limitations; A và B + Codex / C xác nhận bằng chứng.
+- [x] **07.3.4**: 07.pilot handoff; C + Codex / B xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 8h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Ma trận contract/reliability có receipts khớp code/config hiện hành.
-- [ ] Mọi failed/invalid/stopped record giữ nguyên raw và trạng thái trong ledger.
-- [ ] Bốn conditions audit fairness đạt; support nội dung có reviewer người thật.
-- [ ] Handoff07.pilot đủ schema/code/config/limitations,08 và09 nhận đúng interface.
+- [x] Ma trận contract/reliability có receipts khớp code/config hiện hành.
+- [x] Mọi failed/invalid/stopped record giữ nguyên raw và trạng thái trong ledger.
+- [x] Bốn conditions audit fairness đạt; support nội dung có reviewer người thật.
+- [x] Handoff07.pilot đủ schema/code/config/limitations,08 và09 nhận đúng interface.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

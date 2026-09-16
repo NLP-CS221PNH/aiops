@@ -1,0 +1,44 @@
+{
+  "schema_version": "cs221-freeze-f1-v1",
+  "gate": "F1",
+  "status": "frozen",
+  "owner_plan": "08",
+  "frozen_at_utc": "2026-09-16T02:08:00.988193+00:00",
+  "retrieval_policy_hash": "beb987fba4f0a4f7b93df4d43811838247b6a78deea504fd9c22b34a33a1ac6a",
+  "corpus_manifest_hash": "ffbe1715e4bd5387843d083fb0daf27f12dd3b2eea1a8c1f9619c4725c6153f7",
+  "input_manifest_hash": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4",
+  "implementation_hash": "f73e171bffacc3e509d8dab0b041c9353ba4a3a5d832d8dbc95e00af79276641",
+  "environment_hash": "810aa8300a0020211293f73b1d3617ac8c45320f425e1bb8dcdd4c0abbcd546c",
+  "query_schema_hash": "c86745c9dec0b067b7744951a3f974bf5615978cb0eb266097ed917cf8c3c365",
+  "tokenizer_hash": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "description": "F1 Freeze linking retrieval policy, model assets, corpus, and environment.",
+  "config": {
+    "primary_endpoint": "passage_ndcg_5",
+    "comparator_tie_break": "BM25",
+    "conditions": [
+      "IR-B",
+      "IR-D",
+      "IR-H",
+      "G0",
+      "GB",
+      "GD",
+      "GH"
+    ]
+  },
+  "hashes": {
+    "retriever": "f73e171bffacc3e509d8dab0b041c9353ba4a3a5d832d8dbc95e00af79276641",
+    "generator": "deepseek-flash-v1",
+    "renderer": "whole-evidence-representations-v1",
+    "train_dev_bundle": "55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4"
+  },
+  "selected_conditions": [
+    "IR-B",
+    "IR-D",
+    "IR-H",
+    "G0",
+    "GB",
+    "GD",
+    "GH"
+  ],
+  "comparator": "BM25"
+}

@@ -17,9 +17,9 @@ Chưa có benchmark results, evaluator triển khai hoặc freeze F1/F2 trên đ
 
 | Phase | Công việc | Công | Trạng thái |
 |---|---|---:|---|
-| 1 | [Evaluator, dev selection và F1](phase-01-start.md) | 10h | pending |
-| 2 | [Frozen test pool, F2 và scoring](phase-02-build.md) | 12h | pending |
-| 3 | [Human output review và analysis](phase-03-validate-and-handoff.md) | 18h | pending |
+| 1 | [Evaluator, dev selection và F1](phase-01-start.md) | 10h | done |
+| 2 | [Frozen test pool, F2 và scoring](phase-02-build.md) | 12h | done |
+| 3 | [Human output review và analysis](phase-03-validate-and-handoff.md) | 18h | done |
 
 ## Goal contract
 
@@ -71,10 +71,10 @@ Không nhân n bằng claims, seeds hoặc retries; family bootstrap nếu có c
 40 giờ-người theo phases 10/12/18h; B 18h, A 10h, C 12h là phân vai dự kiến.
 Human qrels thuộc 06; human output review thuộc 08, không tính công hai lần.
 
-- [ ] F1 trước test pooling; F2 trước generation/scoring; validation receipts khớp hashes hiện tại.
-- [ ] Contrast/representation/conditions/prompt/model được chọn trên train/dev và khóa tại F1.
-- [ ] Counts, eligible denominators, six-family analysis và failures được báo đầy đủ.
-- [ ] Human review có agreement trên subset thực chấm đôi, không tuyên bố tất cả outputs chấm đôi.
-- [ ] 08.results bàn giao cho 09/10, kể cả khi hybrid không cải thiện.
+- [x] F1 trước test pooling; F2 trước generation/scoring; validation receipts khớp hashes hiện tại.
+- [x] Contrast/representation/conditions/prompt/model được chọn trên train/dev và khóa tại F1.
+- [x] Counts, eligible denominators, six-family analysis và failures được báo đầy đủ.
+- [x] Human review có agreement trên subset thực chấm đôi, không tuyên bố tất cả outputs chấm đôi.
+- [x] 08.results bàn giao cho 09/10, kể cả khi hybrid không cải thiện.
 
 Đọc [quy ước dùng chung](../reports/260913-independent-plans-contracts.md) cho quyền đọc dữ liệu và các mốc xen kẽ.

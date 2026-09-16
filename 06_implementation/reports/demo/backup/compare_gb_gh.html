@@ -1,0 +1,331 @@
+
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <title>So sánh đối chứng BM25 vs Hybrid — CS221 Demo</title>
+        <style>
+    :root {
+        --bg-color: #0f172a;
+        --panel-bg: #1e293b;
+        --card-bg: #334155;
+        --border-color: #475569;
+        --text-color: #f1f5f9;
+        --text-muted: #94a3b8;
+        --accent-blue: #38bdf8;
+        --accent-green: #4ade80;
+        --accent-yellow: #facc15;
+        --accent-red: #f87171;
+        --highlight-bg: #854d0e;
+        --highlight-border: #facc15;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Header */
+    .app-header {
+        background-color: var(--panel-bg);
+        border-bottom: 2px solid var(--border-color);
+        padding: 12px 24px;
+    }
+    .header-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+    .logo-icon { font-size: 28px; }
+    .app-header h1 { font-size: 1.3rem; font-weight: 700; color: var(--accent-blue); }
+    .subtitle { font-size: 0.85rem; color: var(--text-muted); }
+    
+    .system-disclaimer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: rgba(250, 204, 21, 0.1);
+        border-left: 4px solid var(--accent-yellow);
+        padding: 6px 12px;
+        margin-bottom: 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Nav */
+    .case-nav {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background-color: var(--card-bg);
+        font-size: 0.85rem;
+        transition: all 0.15s ease;
+    }
+    .nav-item:hover { background-color: var(--border-color); }
+    .nav-item.active {
+        background-color: var(--accent-blue);
+        color: #0f172a;
+        font-weight: 600;
+    }
+    .nav-compare { background-color: #4338ca; }
+    .nav-compare.active { background-color: #6366f1; color: #fff; }
+
+    /* Layout */
+    .three-panel-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr 1.15fr;
+        gap: 16px;
+        padding: 16px;
+        flex: 1;
+        overflow: hidden;
+    }
+    @media (max-width: 1200px) {
+        .three-panel-layout { grid-template-columns: 1fr; overflow: auto; }
+    }
+
+    .panel {
+        background-color: var(--panel-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .panel-header {
+        padding: 12px 16px;
+        background-color: rgba(0,0,0,0.2);
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .panel-header h2 { font-size: 1.05rem; font-weight: 600; }
+    .count-badge { font-size: 0.75rem; background: var(--card-bg); padding: 2px 8px; border-radius: 12px; }
+    .panel-body { padding: 16px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 16px; }
+
+    /* Cards */
+    .card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 12px;
+    }
+    .meta-row { margin-bottom: 6px; font-size: 0.85rem; }
+    .meta-row:last-child { margin-bottom: 0; }
+    .hash-code { font-family: monospace; font-size: 0.8rem; color: var(--accent-yellow); }
+    .time-range { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* Telemetry */
+    .telemetry-list { list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; }
+    .telemetry-item { background: rgba(0,0,0,0.15); padding: 4px 8px; border-radius: 4px; }
+    .more-item { color: var(--text-muted); font-style: italic; }
+
+    /* Evidence Items */
+    .evidence-card {
+        transition: all 0.2s ease;
+        border-left: 4px solid var(--accent-blue);
+    }
+    .evidence-card.highlighted {
+        background-color: var(--highlight-bg) !important;
+        border-color: var(--highlight-border) !important;
+        box-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
+        transform: scale(1.01);
+    }
+    .evidence-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+    .rank-pill { background: var(--accent-blue); color: #000; font-weight: 700; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; }
+    .evidence-provenance { font-size: 0.75rem; color: var(--text-muted); display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+    .text-label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
+    .code-snippet { background: #0b0f19; padding: 10px; border-radius: 4px; font-size: 0.8rem; overflow-x: auto; white-space: pre-wrap; }
+
+    /* Claims */
+    .cause-card { background: #1e1e38; border-left: 4px solid var(--accent-green); padding: 10px; border-radius: 4px; margin-bottom: 8px; }
+    .cause-title { font-size: 0.9rem; margin-bottom: 4px; }
+    .cause-reason { font-size: 0.85rem; color: var(--text-muted); }
+
+    .claim-card { background: rgba(0,0,0,0.25); border: 1px solid var(--border-color); border-radius: 6px; padding: 12px; margin-bottom: 8px; }
+    .claim-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
+    .claim-text { font-size: 0.9rem; margin-bottom: 8px; }
+    .cit-btn {
+        background: #0284c7; color: white; border: none; padding: 4px 8px; border-radius: 4px;
+        font-size: 0.75rem; cursor: pointer; font-family: monospace; font-weight: bold;
+    }
+    .cit-btn:hover { background: #0ea5e9; }
+    .claim-citations.empty { font-size: 0.75rem; color: var(--accent-red); }
+
+    /* Badges & Alerts */
+    .badge { font-size: 0.75rem; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
+    .badge-fixture { background-color: #854d0e; color: #fef08a; }
+    .badge-replay { background-color: #065f46; color: #a7f3d0; }
+    .badge-condition { background-color: #3730a3; color: #e0e7ff; }
+    .badge-warning { background-color: var(--accent-yellow); color: #000; }
+    .badge-info { background-color: var(--accent-blue); color: #000; }
+
+    .alert { padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 12px; }
+    .alert-success { background: rgba(74, 222, 128, 0.15); border-left: 4px solid var(--accent-green); }
+    .alert-warning { background: rgba(250, 204, 21, 0.15); border-left: 4px solid var(--accent-yellow); }
+    .alert-danger { background: rgba(248, 113, 113, 0.15); border-left: 4px solid var(--accent-red); }
+    .alert-info { background: rgba(56, 189, 248, 0.15); border-left: 4px solid var(--accent-blue); }
+
+    .conf-badge { padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.75rem; }
+    .conf-high { background: var(--accent-green); color: #000; }
+    .conf-medium { background: var(--accent-yellow); color: #000; }
+    .conf-low { background: var(--accent-red); color: #fff; }
+    .conf-abstain { background: #64748b; color: #fff; }
+
+    /* Compare */
+    .compare-container { padding: 24px; max-width: 1400px; margin: 0 auto; flex: 1; }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+    .compare-col { background: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; }
+    .compare-col-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 16px; }
+    .mini-ev-card { background: var(--card-bg); padding: 8px; border-radius: 4px; margin-bottom: 8px; font-size: 0.8rem; }
+    .mini-ev-text { font-size: 0.75rem; white-space: pre-wrap; }
+
+    /* Footer */
+    .app-footer { background: var(--panel-bg); border-top: 1px solid var(--border-color); padding: 8px 24px; font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between; }
+    
+    .empty-hint { color: var(--text-muted); font-style: italic; font-size: 0.85rem; }
+    .raw-code { background: #050811; padding: 10px; border-radius: 4px; font-size: 0.75rem; max-height: 200px; overflow-y: auto; }
+    </style>
+    </head>
+    <body>
+        
+    <header class="app-header">
+        <div class="header-brand">
+            <div class="logo-icon">🔬</div>
+            <div>
+                <h1>CS221 AIOps RAG — Offline Evidence Demo</h1>
+                <p class="subtitle">Hệ thống kiểm chứng liên kết bằng chứng viễn trắc & tri thức cục bộ (Plan 09)</p>
+            </div>
+        </div>
+        <div class="system-disclaimer">
+            <span class="badge badge-warning">LƯU Ý NGHIÊN CỨU</span>
+            <span>Chạy 100% Offline (Localhost). Chưa có 08.results; các ca gắn nhãn DỮ LIỆU MÔ PHỎNG không dùng làm số liệu thống kê.</span>
+        </div>
+        <nav class="case-nav">
+            <a href="/?case_id=fixture:case_01_success" class="nav-item ">#1: case_01_success</a>
+<a href="/?case_id=fixture:case_02_weak_diagnosis" class="nav-item ">#2: case_02_weak_diagnosis</a>
+<a href="/?case_id=fixture:case_03_missing_evidence" class="nav-item ">#3: case_03_missing_evidence</a>
+<a href="/?case_id=fixture:case_04_invalid_citation" class="nav-item ">#4: case_04_invalid_citation</a>
+<a href="/?case_id=fixture:case_05_compare_gb_gh" class="nav-item ">#5: case_05_compare_gb_gh</a>
+<a href="/compare" class="nav-item nav-compare active">⚖️ So sánh đối chứng (GB vs GH)</a>
+        </nav>
+    </header>
+    
+        <main class="compare-container">
+            <div class="compare-intro">
+                <h2>Đối chiếu điều kiện: BM25 (GB) vs Hybrid (GH)</h2>
+                <p>Cùng một incident viễn trắc (<code>inc_0f782051d78bc07a</code>) với cùng observation hash (<code>618e736641eb2eba...</code>).</p>
+                
+            </div>
+            
+            <div class="compare-grid">
+                <div class="compare-col col-gb">
+                    <div class="compare-col-header">
+                        <h3>Điều kiện GB: BM25 Lexical Retrieval</h3>
+                        <span class="badge badge-warning">Baseline</span>
+                    </div>
+                    <div class="compare-content">
+                        <h4>Tri thức truy xuất (Evidence Context):</h4>
+                        <div class="ev-mini-list">
+                            
+        <div class="mini-ev-card">
+            <div class="mini-ev-header">
+                <strong>Rank #1:</strong> <code>know_redis_bm25_generic</code>
+            </div>
+            <pre class="mini-ev-text"><code>Redis cache container deployment notes: Redis is used as in-memory data store for cart items....</code></pre>
+        </div>
+        
+                        </div>
+                        <h4>Chẩn đoán & Tuyên bố:</h4>
+                        <div class="diag-summary">
+                            <p><strong>Causes:</strong> suspected_overload</p>
+                            <p><strong>Confidence:</strong> <span class="conf-badge conf-medium">MEDIUM</span></p>
+                            <p><strong>Claims:</strong> 1 claims (Tài liệu tổng quan, thiếu chi tiết resource limits)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compare-col col-gh">
+                    <div class="compare-col-header">
+                        <h3>Điều kiện GH: Hybrid Retrieval (BM25 + Dense)</h3>
+                        <span class="badge badge-success">Candidate GH</span>
+                    </div>
+                    <div class="compare-content">
+                        <h4>Tri thức truy xuất (Evidence Context):</h4>
+                        <div class="ev-mini-list">
+                            
+        <div class="mini-ev-card">
+            <div class="mini-ev-header">
+                <strong>Rank #1:</strong> <code>know_redis_manifest_01</code>
+            </div>
+            <pre class="mini-ev-text"><code>redis Kubernetes manifest
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-cart
+spec:
+  template:
+    spec:
+      containers:
+      - name: redis
+ ...</code></pre>
+        </div>
+        
+        <div class="mini-ev-card">
+            <div class="mini-ev-header">
+                <strong>Rank #2:</strong> <code>know_redis_tuning_02</code>
+            </div>
+            <pre class="mini-ev-text"><code>Redis persistence and socket configuration:
+When cart service experiences rapid session churn, appendonly fsync can saturate IOPS limits if redis-data volume ex...</code></pre>
+        </div>
+        
+                        </div>
+                        <h4>Chẩn đoán & Tuyên bố:</h4>
+                        <div class="diag-summary">
+                            <p><strong>Causes:</strong> diskio_saturation</p>
+                            <p><strong>Confidence:</strong> <span class="conf-badge conf-high">HIGH</span></p>
+                            <p><strong>Claims:</strong> 2 claims (Truy xuất đúng manifest và IO tuning ở Rank 1 & 2)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+    function highlightEvidence(evidenceId) {
+        // Remove previous highlight
+        document.querySelectorAll('.evidence-card').forEach(card => {
+            card.classList.remove('highlighted');
+        });
+        
+        const target = document.getElementById('ev-' + evidenceId);
+        if (target) {
+            target.classList.add('highlighted');
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            alert('Trích dẫn [' + evidenceId + '] không tồn tại trong danh sách bằng chứng thực tế!');
+        }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'c' || e.key === 'C') {
+            window.location.href = '/compare';
+        }
+    });
+    </script>
+    </body>
+    </html>
+    

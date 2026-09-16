@@ -1,7 +1,7 @@
 ---
 phase: 2
 title: "Tổng hợp kết quả, kiểm lập luận và viết giới hạn"
-status: pending
+status: done
 priority: P1
 effort: "12h"
 dependencies: [1]
@@ -106,19 +106,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **10.2.1**: Final tables và phần kết quả; Codex + B / A xác nhận bằng chứng.
-- [ ] **10.2.2**: claim-evidence.tsv reviewed; A/B/C + Codex / người khác xác nhận bằng chứng.
-- [ ] **10.2.3**: Discussion/limitations cuối; C + Codex / A và B xác nhận bằng chứng.
-- [ ] **10.2.4**: slides.md và claim audit; Codex + C / B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 12h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **10.2.1**: Final tables và phần kết quả; Codex + B / A xác nhận bằng chứng.
+- [x] **10.2.2**: claim-evidence.tsv reviewed; A/B/C + Codex / người khác xác nhận bằng chứng.
+- [x] **10.2.3**: Discussion/limitations cuối; C + Codex / A và B xác nhận bằng chứng.
+- [x] **10.2.4**: slides.md và claim audit; Codex + C / B xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 12h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Mọi số liệu chính có đường trace đến artifacts/version/mẫu số.
-- [ ] Toàn bộ 18 test được hạch toán ở diagnosis và failures; Mẫu số IR hợp lệ được giải thích.
-- [ ] Báo cáo và slides giữ sáu families, uncertainty, kết quả âm và giới hạn.
-- [ ] Claim registry không còn result claim verified thiếu evidence.
+- [x] Mọi số liệu chính có đường trace đến artifacts/version/mẫu số.
+- [x] Toàn bộ 18 test được hạch toán ở diagnosis và failures; Mẫu số IR hợp lệ được giải thích.
+- [x] Báo cáo và slides giữ sáu families, uncertainty, kết quả âm và giới hạn.
+- [x] Claim registry không còn result claim verified thiếu evidence.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

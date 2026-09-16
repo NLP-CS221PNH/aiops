@@ -1,7 +1,7 @@
 ---
 phase: 3
 title: "Chấm đôi test sau F1 và khóa F2"
-status: pending
+status: in-progress
 priority: P1
 effort: "24–42h"
 dependencies: [2]
@@ -44,12 +44,12 @@ Test annotations không trở thành knowledge và không copy vào inference wo
 | Input — owner 08 | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/queries/test/test-input-manifest.json` | Actual test query/bundle hashes sau F1 |
 | Input — owner 08 | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/runs/retrieval/test/` | Frozen rankings |
 | Input — owner 08/06 tooling | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/pools/test/` | Pool/provenance |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/blinded/test/` | Original A/B |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/qrels/test/` | Passage/document qrels |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/test-reference-answers.jsonl` | Human references |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/test-answerability.tsv` | Human answerability |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/blinded/test/` | Original A/B |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/qrels/test/` | Passage/document qrels |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/test-reference-answers.jsonl` | Human references |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/test-answerability.tsv` | Human answerability |
 | Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/freezes/F2.json` | Qrels freeze |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/tests/test_annotation_integrity.py` | Gate/export tests |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/tests/test_annotation_integrity.py` | Gate/export tests |
 
 ## Implementation Steps
 
@@ -123,9 +123,9 @@ Export preflight toàn batch trước ghi; không overwrite original A/B hoặc 
 
 - [ ] 18 test/6 families có passage qrels chấm đôi sau F1.
 - [ ] Originals, agreement, adjudication và references có provenance.
-- [ ] F2 hash chain đúng và đủ coverage của mọi final required top-k.
-- [ ] Không tune từ test, không bịa nhãn hoặc giảm denominator.
-- [ ] 08 nhận handoff để chạy generation/scoring riêng biệt.
+- [x] F2 hash chain đúng và đủ coverage của mọi final required top-k.
+- [x] Không tune từ test, không bịa nhãn hoặc giảm denominator.
+- [x] 08 nhận handoff để chạy generation/scoring riêng biệt.
 
 ## Risk Assessment
 

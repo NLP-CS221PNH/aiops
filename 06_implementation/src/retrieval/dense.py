@@ -138,6 +138,11 @@ def prepare_e5_batch(tokenizer, texts, kind="query", max_tokens=512,
 
 def _load_runtime():
     try:
+        import site
+        import sys
+        user_site = site.getusersitepackages()
+        if user_site not in sys.path:
+            sys.path.append(user_site)
         import numpy as np
         import torch
         from transformers import AutoModel, AutoModelForSequenceClassification, AutoTokenizer

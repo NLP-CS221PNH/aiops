@@ -1,0 +1,86 @@
+# Cấu hình các ca phục vụ Offline Evidence Demo (Plan 260913-0057-cs221-09-evidence-demo)
+# Lưu ý quan trọng: Chưa có kết quả chạy mô hình cuối từ 08.results; không quan sát thấy case thật
+# thuộc nhóm này trong runs chính thức. Tất cả các ca dưới đây sử dụng fixture gắn nhãn (origin: fixture,
+# namespace fixture:). Các ca fixture chỉ dùng để kiểm thử và trình diễn khả năng hiển thị bằng chứng,
+# KHÔNG được đưa vào tính toán số liệu thống kê khoa học.
+
+version: "1.0.0"
+generated_at_utc: "2026-09-15T23:50:00Z"
+review_note: "Scaffolded with labeled fixtures awaiting 08.results"
+
+cases:
+  - case_id: "fixture:case_01_success"
+    incident_id: "inc_0f782051d78bc07a"
+    run_id: "run_gh_redis"
+    condition: "GH"
+    purpose: "success"
+    origin: "fixture"
+    selection_reason: "Ca thành công tiêu biểu: Hybrid retrieval (GH) truy xuất đúng cấu hình Redis manifest và persistence tuning; mô hình đưa ra chẩn đoán chính xác kèm exact context citations hỗ trợ từng claim."
+    result_ref: "tests/fixtures/demo/run_gh_redis"
+    manifest_hash: "3bd8b6c1a555e80c4b981426e2e15b6601eb8a98ab55fba714c9dc07cea5d70b"
+    expected_status: "success"
+    display_order: 1
+    display_mode: "fixture"
+    source_snapshot_hash: "7eeaa06ff8ba9b3b3f9ed3cf237b0614089b711a40f13cd73f02a4a1ace59ec2"
+    approved_payload_ref: null
+
+  - case_id: "fixture:case_02_weak_diagnosis"
+    incident_id: "inc_08457c0fbff4700e"
+    run_id: "run_gb_email"
+    condition: "GB"
+    purpose: "weak_diagnosis"
+    origin: "fixture"
+    selection_reason: "Ca chẩn đoán yếu: BM25 thuần túy (GB) chỉ truy xuất được tài liệu kiến trúc chung chung, không có cấu hình chi tiết về worker queue, dẫn tới kết luận độ tin cậy thấp (low confidence) và thiếu thông tin."
+    result_ref: "tests/fixtures/demo/run_gb_email"
+    manifest_hash: "e42b717d0c4206dec714b614671ad73a6b7a200578e74489c13285e16ca209e9"
+    expected_status: "weak_diagnosis"
+    display_order: 2
+    display_mode: "fixture"
+    source_snapshot_hash: "e3f2fb70ff5a8392e2079f0836cc7742ce40baffffe23c2e87b84c3f0bb614f7"
+    approved_payload_ref: null
+
+  - case_id: "fixture:case_03_missing_evidence"
+    incident_id: "inc_00f82e5883a2163d"
+    run_id: "run_g0_recommendation"
+    condition: "G0"
+    purpose: "missing_evidence"
+    origin: "fixture"
+    selection_reason: "Ca thiếu bằng chứng / từ chối chẩn đoán (abstain): Điều kiện G0 (No-RAG) không có tài liệu tri thức, mô hình chủ động từ chối chẩn đoán (abstain=True) và liệt kê danh sách missing_information thay vì suy đoán."
+    result_ref: "tests/fixtures/demo/run_g0_recommendation"
+    manifest_hash: "e60da0e866e92ff7c2b12bbc6e97117968fdf8d8b52207d3b9ace0b8c2aa78b1"
+    expected_status: "abstained"
+    display_order: 3
+    display_mode: "fixture"
+    source_snapshot_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    approved_payload_ref: null
+
+  - case_id: "fixture:case_04_invalid_citation"
+    incident_id: "inc_0991de462f9a6c05"
+    run_id: "run_gd_invalid_citation"
+    condition: "GD"
+    purpose: "invalid_citation"
+    origin: "fixture"
+    selection_reason: "Ca lỗi trích dẫn giả mạo (invalid citation / schema error): Output chứa evidence_id không nằm trong actual_context_ids, validator phát hiện lỗi invalid_citation, giao diện hiển thị raw output đã escape và thông báo lỗi."
+    result_ref: "tests/fixtures/demo/run_gd_invalid_citation"
+    manifest_hash: "477b4d21ac9212ea9bb01ba39f20cb597d62f8f75a686254532ee0b6a770c461"
+    expected_status: "invalid_citation"
+    display_order: 4
+    display_mode: "fixture"
+    source_snapshot_hash: "b82a404e33859b169afe68c38fa6ea0ba4a2bd4b09c63edbcf6fde5c03c5b962"
+    approved_payload_ref: null
+
+  - case_id: "fixture:case_05_compare_gb_gh"
+    incident_id: "inc_0f782051d78bc07a"
+    run_id: "run_gb_redis"
+    condition: "GB"
+    purpose: "success"
+    origin: "fixture"
+    selection_reason: "Ca so sánh đối chứng (compare view): Cùng incident_id và cùng hash telemetry nhưng khác điều kiện truy xuất giữa GB (BM25) và GH (Hybrid). GH xếp hạng tài liệu manifest Redis ở Rank 1 giúp chẩn đoán rõ ràng hơn GB."
+    result_ref: "tests/fixtures/demo/run_gb_redis"
+    compare_with_case_id: "fixture:case_01_success"
+    manifest_hash: "089f43e3ba1190574f41303b0f4457db06b20b64fd96cdab3aef37fc78527a0a"
+    expected_status: "success"
+    display_order: 5
+    display_mode: "fixture"
+    source_snapshot_hash: "07469a364c4a74e1c8c5d76057e0fd65a464b26634560bea00e95aeeadc3e438"
+    approved_payload_ref: null

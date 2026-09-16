@@ -2,6 +2,9 @@
 .claude/
 .cursor/
 .runtime-python/
+.agentkit/
+.agents/
+engineer/
 plans/.agentkit-runtime/
 
 # Python
@@ -11,6 +14,8 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.hypothesis/
+*/.hypothesis/
 .coverage
 htmlcov/
 *.egg-info/
@@ -29,7 +34,19 @@ ENV/
 06_implementation/.test-work/
 06_implementation/.wheelhouse/
 06_implementation/.work/
-06_implementation/runs/
+06_implementation/cache/
+06_implementation/runs/*
+!06_implementation/runs/generation/
+06_implementation/runs/generation/*
+!06_implementation/runs/generation/test/
+06_implementation/runs/generation/test/*
+!06_implementation/runs/generation/test/responses.jsonl
+
+# Large model weights (downloaded on demand via 06_implementation/scripts/download_e5_assets.py)
+*.safetensors
+*.bin
+*.pt
+*.onnx
 
 # OS / editor
 .DS_Store

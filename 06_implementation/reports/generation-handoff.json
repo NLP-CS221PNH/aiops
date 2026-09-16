@@ -1,0 +1,10 @@
+{
+  "milestone": "07.pilot",
+  "code_hash": "pending_hash",
+  "config_hash": "pending_hash",
+  "prompt_hash": "pending_hash",
+  "schema_version": "1.0",
+  "pilot_run_ids": [],
+  "validation_receipts": [],
+  "permissions_ref": "docs/decision-log.md"
+}

@@ -1,0 +1,6 @@
+incident_id	round	reviewer_A	reviewer_B	adjudicator
+INC-001	calibration	user_A	user_B	user_C
+INC-002	calibration	user_B	user_C	user_A
+INC-003	calibration	user_C	user_A	user_B
+INC-004	calibration	user_A	user_B	user_C
+INC-005	calibration	user_B	user_C	user_A

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReferenceAnswerRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "incident_id",
+    "corpus_hash",
+    "reference_text",
+    "evidence_ids",
+    "reviewer_id",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-annotation-reference-v1"
+    },
+    "incident_id": {
+      "type": "string",
+      "pattern": "^inc_[0-9a-f]{16}$"
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "reference_text": {
+      "type": "string"
+    },
+    "required_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "claim_text",
+          "evidence_ids"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "claim_text": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewer_id": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

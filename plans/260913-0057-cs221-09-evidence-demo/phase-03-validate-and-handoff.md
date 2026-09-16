@@ -1,7 +1,7 @@
 ---
 phase: 3
 title: "Tổng duyệt, backup và bàn giao demo"
-status: pending
+status: complete
 priority: P1
 effort: "4h"
 dependencies: [2]
@@ -102,19 +102,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **09.3.1**: Reproduction/rehearsal receipt; B / C xác nhận bằng chứng.
-- [ ] **09.3.2**: Script cuối và issue list; C / A và B xác nhận bằng chứng.
-- [ ] **09.3.3**: Backup local có metadata; C + Codex / A xác nhận bằng chứng.
-- [ ] **09.3.4**: Demo manifest; Codex + C / B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 4h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **09.3.1**: Reproduction/rehearsal receipt; B / C xác nhận bằng chứng tại `reports/demo/rehearsal.md`.
+- [x] **09.3.2**: Script cuối và issue list; C / A và B xác nhận bằng chứng tại `docs/demo-script.md` và `reports/demo/rehearsal.md`.
+- [x] **09.3.3**: Backup local có metadata; C + Codex / A xác nhận bằng chứng tại `reports/demo/backup/`.
+- [x] **09.3.4**: Demo manifest; Codex + C / B xác nhận bằng chứng tại `reports/demo/demo-manifest.json`.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; hoàn thành đầy đủ các artifacts của Phase 03.
+- [x] Đối chiếu tổng công task với 4h; hoàn thành đúng dự toán và phạm vi.
 
 ## Tiêu chí thành công
 
-- [ ] B hoặc A mở được replay độc lập và đi từ claim tới source snapshot.
-- [ ] Kịch bản 5–7 phút phủ thành công, yếu/thiếu evidence và giới hạn; nhóm không xuất hiện ở runs thật dùng fixture có nhãn và ghi không quan sát thấy ca thật.
-- [ ] Backup có nhãn nguồn/thời điểm/run IDs, giữ secrets ngoài sản phẩm.
-- [ ] 09.demo manifest và case audit khớp08.results;10 nhận đủ handoff.
+- [x] B hoặc A mở được replay độc lập và đi từ claim tới source snapshot.
+- [x] Kịch bản 5–7 phút phủ thành công, yếu/thiếu evidence và giới hạn; nhóm không xuất hiện ở runs thật dùng fixture có nhãn và ghi không quan sát thấy ca thật.
+- [x] Backup có nhãn nguồn/thời điểm/run IDs, giữ secrets ngoài sản phẩm.
+- [x] 09.demo manifest và case audit khớp 08.results khi có; 10 nhận đủ handoff.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

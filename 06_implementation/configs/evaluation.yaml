@@ -1,0 +1,18 @@
+primary_endpoint: passage_ndcg_5
+comparator_tie_break: BM25
+conditions:
+  - IR-B
+  - IR-D
+  - IR-H
+  - G0
+  - GB
+  - GD
+  - GH
+immutable_model_limitations: none
+review_subset:
+  - incident_1
+  - incident_2
+  - incident_3
+  - incident_4
+  - incident_5
+  - incident_6

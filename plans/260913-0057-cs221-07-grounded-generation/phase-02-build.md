@@ -1,7 +1,7 @@
 ---
 phase: 2
 title: "Xây context, adapter, runner và pilot train/dev"
-status: pending
+status: completed
 priority: P1
 effort: "14h"
 dependencies: [1]
@@ -114,19 +114,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **07.2.1**: Context snapshots tái lập; Codex + C / B xác nhận bằng chứng.
-- [ ] **07.2.2**: Provider adapter có mock tests; Codex + C / A xác nhận bằng chứng.
-- [ ] **07.2.3**: Runner và `python -m src.generation run` có ledger/exit codes đúng contract; Codex + C / B xác nhận bằng chứng.
-- [ ] **07.2.4**: Pilot report và artifacts cho08; C + Codex / A và B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 14h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **07.2.1**: Context snapshots tái lập; Codex + C / B xác nhận bằng chứng.
+- [x] **07.2.2**: Provider adapter có mock tests; Codex + C / A xác nhận bằng chứng.
+- [x] **07.2.3**: Runner và `python -m src.generation run` có ledger/exit codes đúng contract; Codex + C / B xác nhận bằng chứng.
+- [x] **07.2.4**: Pilot report và artifacts cho08; C + Codex / A và B xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 14h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Packer/validator/adapter/runner dùng chung schema; bốn điều kiện mandatory hoạt động trên fixture.
-- [ ] Pilot thật chỉ train/dev khi có quyền; request/response/usage/errors lưu đầy đủ.
-- [ ] Context limits và truncation kiểm được, token ước lượng ghi rõ khác usage thật.
-- [ ] Resume không bỏ trạng thái lỗi, duplicate output hoặc làm mất chi phí.
+- [x] Packer/validator/adapter/runner dùng chung schema; bốn điều kiện mandatory hoạt động trên fixture.
+- [x] Pilot thật chỉ train/dev khi có quyền; request/response/usage/errors lưu đầy đủ.
+- [x] Context limits và truncation kiểm được, token ước lượng ghi rõ khác usage thật.
+- [x] Resume không bỏ trạng thái lỗi, duplicate output hoặc làm mất chi phí.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

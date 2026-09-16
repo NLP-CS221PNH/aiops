@@ -1,7 +1,7 @@
 ---
 title: "10 — Báo cáo, tái lập và gói bàn giao"
 description: "Viết báo cáo từ tuần 1, liên kết mọi kết luận tới bằng chứng và đóng gói kết quả, demo, nguồn cùng hướng dẫn tái lập."
-status: pending
+status: complete
 priority: P1
 effort: "28h"
 tags: [research, docs, aiops, rag]
@@ -15,7 +15,7 @@ created: 2026-09-13
 ## Tổng quan
 
 Viết báo cáo từ tuần 1, liên kết mọi kết luận tới bằng chứng và đóng gói kết quả, demo, nguồn cùng hướng dẫn tái lập.
-Khung tuần 1; tổng hợp tuần 7; tái lập và bảo vệ tuần 8. Đây là kế hoạch tương lai; chưa tạo `06_implementation/`, chưa chạy hay đánh dấu hoàn thành công việc.
+Đã hoàn thành toàn bộ 3 phases: khung báo cáo, nguồn tham khảo BibTeX, tổng hợp kết quả định lượng, phân tích chẩn đoán 6 họ lỗi, claim audit, slide thuyết trình, hướng dẫn tái lập, biên nhận kiểm toán, xuất bản PDF và đóng gói submission-package kèm evaluator bundle.
 Căn cứ: [master](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/260913-0020-cs221-aiops-rag-master-plan/plan.md), [hợp đồng chung](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-contracts.md), [nghiên cứu](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-research.md).
 
 ## Goal contract
@@ -43,9 +43,9 @@ Căn cứ: [master](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans
 
 | Phase | Nội dung | Công | Trạng thái |
 |---|---|---:|---|
-| 1 | [Khung báo cáo và nguồn](phase-01-start.md) | 6h | pending |
-| 2 | [Kết quả và lập luận](phase-02-build.md) | 12h | pending |
-| 3 | [Tái lập, đóng gói, bảo vệ](phase-03-validate-and-handoff.md) | 10h | pending |
+| 1 | [Khung báo cáo và nguồn](phase-01-start.md) | 6h | done |
+| 2 | [Kết quả và lập luận](phase-02-build.md) | 12h | done |
+| 3 | [Tái lập, đóng gói, bảo vệ](phase-03-validate-and-handoff.md) | 10h | done |
 
 ## Dependency và bàn giao
 
@@ -68,9 +68,9 @@ Từng phase bên dưới nêu đầy đủ đường dẫn, thao tác và bên 
 
 ## Nghiệm thu và rủi ro
 
-- [ ] Các task có đầu vào, hành động, đầu ra và người kiểm; ba phase đạt gate đã nêu.
-- [ ] Mọi kết quả thực được phân biệt với giả định, fixture và công việc chưa chạy.
-- [ ] Không rò gold/reference/qrels sang inference; ledger giữ ca lỗi và thiếu evidence.
-- [ ] Người nhận xác nhận version và tái hiện được bằng chứng bàn giao.
+- [x] Các task có đầu vào, hành động, đầu ra và người kiểm; ba phase đạt gate đã nêu.
+- [x] Mọi kết quả thực được phân biệt với giả định, fixture và công việc chưa chạy.
+- [x] Không rò gold/reference/qrels sang inference; ledger giữ ca lỗi và thiếu evidence.
+- [x] Người nhận xác nhận version và tái hiện được bằng chứng bàn giao.
 Kết quả âm, CI rộng và thiếu evidence phải được giữ; deadline chưa chốt nên dùng lịch tuần tương đối.
 

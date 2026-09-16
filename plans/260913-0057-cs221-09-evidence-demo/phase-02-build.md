@@ -1,7 +1,7 @@
 ---
 phase: 2
 title: "Xây viewer cục bộ và nối kết quả"
-status: pending
+status: complete
 priority: P1
 effort: "6h"
 dependencies: [1]
@@ -104,19 +104,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **09.2.1**: loaders.py; Codex + C / B xác nhận bằng chứng.
-- [ ] **09.2.2**: app.py và màn hình mẫu; Codex + C / A xác nhận bằng chứng.
-- [ ] **09.2.3**: Case audit; C + Codex / B xác nhận bằng chứng.
-- [ ] **09.2.4**: Runbook và mode check; C + Codex / A xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 6h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **09.2.1**: loaders.py; Codex + C / B xác nhận bằng chứng tại `src/demo/loaders.py` và `tests/test_demo_loaders.py`.
+- [x] **09.2.2**: app.py và màn hình mẫu; Codex + C / A xác nhận bằng chứng tại `src/demo/app.py` và `tests/test_demo_app.py`.
+- [x] **09.2.3**: Case audit; C + Codex / B xác nhận bằng chứng tại `reports/demo/case-audit.tsv`.
+- [x] **09.2.4**: Runbook và mode check; C + Codex / A xác nhận bằng chứng tại `docs/demo-runbook.md`.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; hoàn thành đầy đủ các artifacts của Phase 02.
+- [x] Đối chiếu tổng công task với 6h; hoàn thành đúng dự toán và phạm vi.
 
 ## Tiêu chí thành công
 
-- [ ] Người xem đi từ claim tới exact context evidence trong vài thao tác rõ.
-- [ ] Replay dùng được không internet; paths và hashes không khớp báo lỗi.
-- [ ] UI không chạy instructions/HTML trong data và không lộ secrets.
-- [ ] Fixtures, final results và optional live phân biệt trực quan bằng text.
+- [x] Người xem đi từ claim tới exact context evidence trong vài thao tác rõ.
+- [x] Replay dùng được không internet; paths và hashes không khớp báo lỗi.
+- [x] UI không chạy instructions/HTML trong data và không lộ secrets.
+- [x] Fixtures, final results và optional live phân biệt trực quan bằng text.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

@@ -1,0 +1,7 @@
+family_id	target_service	fault_type	n_incidents	ir_b_ndcg	ir_d_ndcg	ir_h_ndcg	paired_delta	gh_top1_acc	leave_one_out_macro_delta
+FAM-TEST-01	productcatalogservice	loss	3	0.232	0.653	0.314	+0.083	1.000	-0.006
+FAM-TEST-02	currencyservice	cpu	3	0.242	0.124	0.207	-0.035	1.000	-0.027
+FAM-TEST-03	checkoutservice	mem	3	0.437	0.352	0.425	-0.012	1.000	+0.017
+FAM-TEST-04	currencyservice	socket	3	0.387	0.457	0.365	-0.022	1.000	+0.004
+FAM-TEST-05	recommendationservice	delay	3	0.466	0.473	0.486	+0.020	1.000	+0.029
+FAM-TEST-06	currencyservice	disk	3	0.359	0.197	0.256	-0.102	1.000	-0.017

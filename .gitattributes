@@ -1,0 +1,13 @@
+# Preserve LF line endings on all text files across Windows and Linux
+* text=auto eol=lf
+
+# Explicit binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.whl binary
+*.safetensors binary
+*.npy binary
+*.parquet binary

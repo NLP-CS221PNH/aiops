@@ -1,7 +1,7 @@
 ---
 phase: 1
 title: "Rubric, schema và calibration năm ca"
-status: pending
+status: in-progress
 priority: P1
 effort: "12h"
 dependencies: []
@@ -45,10 +45,10 @@ LLM draft nếu có phải ghi provenance và người kiểm; không tự xuấ
 | Read — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/scripts/prepare-annotation-kit.py` | Overwrite safeguards |
 | Read — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/03_collection_plan/annotation-kit/qrels-annotator-A.tsv` | Template hiện tại |
 | Read — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/05_research/retrieval-preview/candidate-diagnostics.jsonl` | Seed chưa gold |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/rubric-v1.md` | Rubric triển khai |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/assignments.tsv` | Reviewer roles |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/src/annotations/{build_pool,validate}.py` | Tooling |
-| Create — chưa có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/calibration/` | Phiếu, timing, receipts |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/rubric-v1.md` | Rubric triển khai |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/assignments.tsv` | Reviewer roles |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/src/annotations/{build_pool,validate}.py` | Tooling |
+| Create — đã có | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/annotations/calibration/` | Phiếu, timing, receipts |
 
 ## Implementation Steps
 
@@ -123,10 +123,10 @@ Root-service gold ở private evaluator, không dùng để tự gán qrels.
 
 ## Success Criteria
 
-- [ ] Rubric, schemas và assignments có version/reviewer.
+- [x] Rubric, schemas và assignments có version/reviewer.
 - [ ] Năm calibration có original A/B và actual time.
-- [ ] Tool bảo vệ partial work và blinding được kiểm.
-- [ ] Effort hai phases sau được review bằng throughput thực.
+- [x] Tool bảo vệ partial work và blinding được kiểm.
+- [x] Effort hai phases sau được review bằng throughput thực.
 
 ## Risk Assessment
 

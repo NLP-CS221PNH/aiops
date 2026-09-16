@@ -1,7 +1,7 @@
 ---
 phase: 1
 title: "Dựng khung báo cáo và ma trận nguồn từ tuần 1"
-status: pending
+status: done
 priority: P1
 effort: "6h"
 dependencies: []
@@ -101,19 +101,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **10.1.1**: report-outline.md; Codex + C / A và B xác nhận bằng chứng.
-- [ ] **10.1.2**: Bản thảo related work vàreferences; A/B/C + Codex / người khác xác nhận bằng chứng.
-- [ ] **10.1.3**: final-report.md nháp; Codex + B / A xác nhận bằng chứng.
-- [ ] **10.1.4**: claim-evidence.tsv vàcard; Codex + C / B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 6h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **10.1.1**: report-outline.md; Codex + C / A và B xác nhận bằng chứng.
+- [x] **10.1.2**: Bản thảo related work vàreferences; A/B/C + Codex / người khác xác nhận bằng chứng.
+- [x] **10.1.3**: final-report.md nháp; Codex + B / A xác nhận bằng chứng.
+- [x] **10.1.4**: claim-evidence.tsv vàcard; Codex + C / B xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 6h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Khung báo cáo có owner/reviewer và slots bằng chứng từng section.
-- [ ] Related work chỉ chứa nguồn kiểm được và phân biệt mức đọc.
-- [ ] Claim registry có trạng thái rõ, không có result claim được verified khi chưa chạy.
-- [ ] Data/model card nêu phạm vi và giới hạn từ đầu.
+- [x] Khung báo cáo có owner/reviewer và slots bằng chứng từng section.
+- [x] Related work chỉ chứa nguồn kiểm được và phân biệt mức đọc.
+- [x] Claim registry có trạng thái rõ, không có result claim được verified khi chưa chạy.
+- [x] Data/model card nêu phạm vi và giới hạn từ đầu.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

@@ -1,7 +1,7 @@
 ---
 title: "06 — Annotation, qrels và reference có người chấm"
 description: "Chấm đôi 56 incidents, giữ judgments gốc và khóa test qrels sau F1."
-status: pending
+status: in-progress
 priority: P1
 effort: "84–150h"
 tags: [research, annotation, experimental]
@@ -16,9 +16,9 @@ Kế hoạch độc lập cho mục 06: tạo tooling và tổ chức phán quy�
 
 | Phase | Công việc | Công | Trạng thái |
 |---|---|---:|---|
-| 1 | [Rubric, schema và calibration](phase-01-start.md) | 12h | pending |
-| 2 | [Chấm đôi train/dev và xuất 06.dev](phase-02-build.md) | 48–96h | pending |
-| 3 | [Chấm đôi test và F2 sau F1](phase-03-validate-and-handoff.md) | 24–42h | pending |
+| 1 | [Rubric, schema và calibration](phase-01-start.md) | 12h | in-progress |
+| 2 | [Chấm đôi train/dev và xuất 06.dev](phase-02-build.md) | 48–96h | in-progress |
+| 3 | [Chấm đôi test và F2 sau F1](phase-03-validate-and-handoff.md) | 24–42h | in-progress |
 
 ## Goal contract
 
@@ -67,11 +67,11 @@ Năm calibration thuộc 20 train core; human output review thuộc 08, không t
 ## Success Criteria
 
 - [ ] 20 train + 18 dev có 06.dev; 18 test chấm sau F1 và xuất F2.
-- [ ] Original A/B, agreement trước adjudication và rationale được giữ.
-- [ ] Unjudged khác 0; sai snapshot/span hoặc thiếu reviewer bị export reject.
-- [ ] F2 liên kết đúng F1/pool và đủ coverage của final top-5/top-10.
-- [ ] Không chấm document thì không báo document metrics.
-- [ ] Không dùng test feedback để tune hệ thống.
+- [x] Original A/B, agreement trước adjudication và rationale được giữ.
+- [x] Unjudged khác 0; sai snapshot/span hoặc thiếu reviewer bị export reject.
+- [x] F2 liên kết đúng F1/pool và đủ coverage của final top-5/top-10.
+- [x] Không chấm document thì không báo document metrics.
+- [x] Không dùng test feedback để tune hệ thống.
 
 ## Rủi ro và liên kết
 

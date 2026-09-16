@@ -1,7 +1,7 @@
 ---
 phase: 1
 title: "Khóa contract output và preflight generator"
-status: pending
+status: completed
 priority: P1
 effort: "6h"
 dependencies: []
@@ -102,19 +102,19 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **07.1.1**: Preflight record hoặc blocker rõ; Codex + C / A xác nhận bằng chứng.
-- [ ] **07.1.2**: schemas.py và contract review; Codex + C / B xác nhận bằng chứng.
-- [ ] **07.1.3**: Prompt/config draft có hash; Codex + C / A và B xác nhận bằng chứng.
-- [ ] **07.1.4**: Generation protocol và preflight receipt; C + Codex / B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 6h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **07.1.1**: Preflight record hoặc blocker rõ; Codex + C / A xác nhận bằng chứng.
+- [x] **07.1.2**: schemas.py và contract review; Codex + C / B xác nhận bằng chứng.
+- [x] **07.1.3**: Prompt/config draft có hash; Codex + C / A và B xác nhận bằng chứng.
+- [x] **07.1.4**: Generation protocol và preflight receipt; C + Codex / B xác nhận bằng chứng.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
+- [x] Đối chiếu tổng công task với 6h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
 
 ## Tiêu chí thành công
 
-- [ ] Schema có citations gắn từng claim, actual-context lookup và output lỗi đầy đủ.
-- [ ] Config nêu rõ non-thinking, budget và quyền đã kiểm hoặc blocker thật.
-- [ ] Preflight tách model requested/returned, provider epoch và hạn chế alias bất biến.
-- [ ] A duyệt payload, B duyệt công bằng; không dùng gold/reference trong prompt.
+- [x] Schema có citations gắn từng claim, actual-context lookup và output lỗi đầy đủ.
+- [x] Config nêu rõ non-thinking, budget và quyền đã kiểm hoặc blocker thật.
+- [x] Preflight tách model requested/returned, provider epoch và hạn chế alias bất biến.
+- [x] A duyệt payload, B duyệt công bằng; không dùng gold/reference trong prompt.
 
 ## Gate nghiệm thu và điều kiện thất bại
 

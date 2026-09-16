@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnswerabilityRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "incident_id",
+    "corpus_hash",
+    "answerability"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-annotation-answerability-v1"
+    },
+    "incident_id": {
+      "type": "string",
+      "pattern": "^inc_[0-9a-f]{16}$"
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "answerability": {
+      "type": "string",
+      "enum": [
+        "answerable",
+        "partially_answerable",
+        "unanswerable",
+        "uncertain_pending_review"
+      ]
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

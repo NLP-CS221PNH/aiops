@@ -1,0 +1,42 @@
+{
+  "schema_version": "cs221-annotation-freeze-f2-v1",
+  "created_at_utc": "2026-09-16T02:08:01.004499+00:00",
+  "F1_hash": "5fd958a5f04a17f156fbdfb170e2e84cd8d9958dceda92d820203d9745c26411",
+  "test_input_manifest_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "test_pool_hash": "428eaeacf3e46d0341a4d057ca8d8981a473cf9b67647096f4afd797265c0341",
+  "qrels_hash": "7f27c50daa32bdf87142f4fe966fc65c9991715e35dca5d3b32c9a71f426b67a",
+  "rubric_version": "rubric-v1",
+  "annotation_version": "06.F2-v1",
+  "incident_ids": [
+    "inc_00f82e5883a2163d",
+    "inc_1340494405aa1c58",
+    "inc_32ac1eca40134b1f",
+    "inc_3ca96f4fd6ec63a3",
+    "inc_41d11c8c51f185b7",
+    "inc_485a27d825269561",
+    "inc_5b4214f9c0e50d81",
+    "inc_666f8c5628760ebf",
+    "inc_77ceaec9d84d6e25",
+    "inc_792aba678ac59ed6",
+    "inc_7a5cc77f7867a66f",
+    "inc_8540cb108d4f274a",
+    "inc_992fcfd045820f03",
+    "inc_a90410596ea7234e",
+    "inc_c3bf40c257e90fe0",
+    "inc_c9f0d2d384af68cf",
+    "inc_d1821966fc7791fc",
+    "inc_ee53782e9c264b25"
+  ],
+  "judged_coverage": {
+    "top5_coverage_ratio": 1.0,
+    "top10_coverage_ratio": 1.0,
+    "required_pairs_count": 180,
+    "judged_pairs_count": 180
+  },
+  "reviewer_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "F2 freezes adjudicated human test qrels linked to F1 freeze.",
+    "Qrels are restricted to evaluator use; runners must not mount qrels during generation.",
+    "Test labels cannot be used to fine-tune prompts, representations, or retrieval parameters."
+  ]
+}

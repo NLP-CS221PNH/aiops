@@ -1,0 +1,10 @@
+{
+  "cohort": "run_gb_redis",
+  "condition": "GB",
+  "config_hash": "cfg_hash_gb_redis_fixture",
+  "planned": 1,
+  "attempted": 1,
+  "failed": 0,
+  "stopped": 0,
+  "source_snapshot_hash": "e790ca1b1b1c8d1d176e187729d28b1ab6d4347076bf2e623768edcd4545b72a"
+}

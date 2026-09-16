@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentAnnotationRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "incident_id",
+    "document_id",
+    "corpus_hash",
+    "review_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-annotation-document-v1"
+    },
+    "incident_id": {
+      "type": "string",
+      "pattern": "^inc_[0-9a-f]{16}$"
+    },
+    "task_version": {
+      "type": "string"
+    },
+    "corpus_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "document_grade": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "enum": [
+        0,
+        1,
+        2,
+        null
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rubric_version": {
+      "type": "string"
+    },
+    "applicability": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "compatible",
+        "incompatible",
+        "uncertain_pending_review",
+        null
+      ]
+    },
+    "review_state": {
+      "type": "string",
+      "enum": [
+        "unjudged",
+        "draft",
+        "completed"
+      ]
+    },
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

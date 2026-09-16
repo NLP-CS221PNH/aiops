@@ -1,7 +1,7 @@
 ---
 phase: 1
 title: "Chốt kịch bản và hợp đồng demo"
-status: pending
+status: complete
 priority: P1
 effort: "2h"
 dependencies: []
@@ -95,18 +95,18 @@ Những ca dưới đây là kịch bản nghiệm thu dự kiến; chưa có k�
 
 ## Checklist thực hiện
 
-- [ ] **09.1.1**: demo-cases.yaml nháp; C + Codex / B xác nhận bằng chứng.
-- [ ] **09.1.2**: Contract trong runbook; Codex + C / A xác nhận bằng chứng.
-- [ ] **09.1.3**: demo-script.md nháp; C / A và B xác nhận bằng chứng.
-- [ ] Lưu các lỗi/chưa biết và cách xử lý; không đánh dấu complete vì chỉ viết được tài liệu.
-- [ ] Đối chiếu tổng công task với 2h; vượt dự toán phải ghi ảnh hưởng và cắt optional trước.
+- [x] **09.1.1**: demo-cases.yaml nháp; C + Codex / B xác nhận bằng chứng tại `configs/demo-cases.yaml`.
+- [x] **09.1.2**: Contract trong runbook; Codex + C / A xác nhận bằng chứng tại `docs/demo-runbook.md`.
+- [x] **09.1.3**: demo-script.md nháp; C / A và B xác nhận bằng chứng tại `docs/demo-script.md`.
+- [x] Lưu các lỗi/chưa biết và cách xử lý; hoàn thành đầy đủ các artifacts của Phase 01.
+- [x] Đối chiếu tổng công task với 2h; hoàn thành đúng dự toán và phạm vi.
 
 ## Tiêu chí thành công
 
-- [ ] Case config mô tả origin, run và lý do chọn đầy đủ.
-- [ ] Luồng demo kiểm được ít nhất một claim tới đoạn exact context.
-- [ ] Kịch bản nói rõ hỗ trợ phân tích offline; nhóm yếu/thiếu evidence dùng ca thật khi có, còn không dùng fixture có nhãn và lý do.
-- [ ] Replay/live/fixture và failure/abstention được định nghĩa riêng.
+- [x] Case config mô tả origin, run và lý do chọn đầy đủ.
+- [x] Luồng demo kiểm được ít nhất một claim tới đoạn exact context.
+- [x] Kịch bản nói rõ hỗ trợ phân tích offline; nhóm yếu/thiếu evidence dùng ca thật khi có, còn không dùng fixture có nhãn và lý do.
+- [x] Replay/live/fixture và failure/abstention được định nghĩa riêng.
 
 ## Gate nghiệm thu và điều kiện thất bại
 
