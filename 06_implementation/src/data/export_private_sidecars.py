@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import shutil
 import tempfile
+import time
 
 from .common import (
     DEFAULT_CONFIG, IMPL, ROOT, DataContractError, load_config, read_jsonl,
@@ -17,6 +18,23 @@ from .export_inference_data import _cleanup_staging, _output_path
 
 
 PRIVATE_FILES = ("split-map.tsv", "ground_truth.jsonl")
+
+
+def _commit_staging_dir(staging: Path, output: Path, attempts: int = 12) -> None:
+    """Promote a staging directory. Windows may deny the first rename while a scanner holds the tree."""
+    delay = 0.05
+    last_error: OSError | None = None
+    for _ in range(attempts):
+        try:
+            staging.rename(output)
+            return
+        except PermissionError as error:
+            last_error = error
+            time.sleep(delay)
+            delay = min(delay * 2, 0.5)
+    if last_error is not None:
+        raise last_error
+    staging.rename(output)
 
 
 def export_private_sidecars(
@@ -74,7 +92,7 @@ def export_private_sidecars(
                            or sha256(output / name) != sha256(staging / name) for name in names)):
                 raise DataContractError("OUTPUT_VERSION_CHANGE_REQUIRED")
             return audit
-        staging.rename(output)
+        _commit_staging_dir(staging, output)
         return audit
     finally:
         _cleanup_staging(staging, output.parent, ".private-staging-")

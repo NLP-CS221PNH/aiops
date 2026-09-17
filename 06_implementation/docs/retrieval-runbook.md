@@ -6,10 +6,10 @@ No real BM25/dense/hybrid pilot rankings, retrieval-quality metrics, human judgm
 
 ## Local environment
 
-Run commands from `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation` in PowerShell. The measured interpreter is `.venv/Scripts/python.exe`, CPython 3.11.9 on Windows AMD64. Retrieval tooling is isolated under `.retrieval-deps`; the real E5 Rust tokenizer is under `.corpus-deps`.
+Run commands from `06_implementation` in PowerShell. The measured interpreter is `.venv/Scripts/python.exe`, CPython 3.11.9 on Windows AMD64. Retrieval tooling is isolated under `.retrieval-deps`; the real E5 Rust tokenizer is under `.corpus-deps`.
 
 ```powershell
-Set-Location 'C:\Users\Siinn\Downloads\CS221_AIOps_RAG_Research_Pack\06_implementation'
+Set-Location '\06_implementation'
 $env:PYTHONPATH = '.retrieval-deps;.corpus-deps'
 .\.venv\Scripts\python.exe -B -m unittest discover -s tests -p 'test_retrieval*.py' -v
 ```

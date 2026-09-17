@@ -1,3 +1,5 @@
 # Tested data preparation: CPython 3.11.9, Windows x64.
-# Install into a fresh compatible environment when moving the package.
+# Install with hashes from 06_implementation/configs/requirements-lock.txt.
+# Linux is not a supported platform until a Linux hash lock exists.
+# pip install --require-hashes -r 06_implementation/configs/requirements-lock.txt
 pyarrow==21.0.0

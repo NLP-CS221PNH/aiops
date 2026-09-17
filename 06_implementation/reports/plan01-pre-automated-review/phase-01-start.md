@@ -17,15 +17,15 @@ Owner điều phối C; task ghi người thực hiện và reviewer. Codex so�
 
 ## Bối cảnh và đầu vào
 
-Đọc [plan cha](plan.md), [hợp đồng chung](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-research.md).
+Đọc [plan cha](plan.md), [hợp đồng chung](plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](plans/reports/260913-independent-plans-research.md).
 Các đường dẫn trong `06_implementation` bên dưới là sản phẩm dự kiến; chưa tồn tại chỉ vì tài liệu kế hoạch đã viết.
 
 | Đầu vào | Đường dẫn tuyệt đối | Điều phải kiểm |
 |---|---|---|
-| Đề cương | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/00_plan/project_proposal.md` | C đọc mục tiêu, A kiểm dữ liệu, B kiểm RQ |
-| Thiết kế | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/05_research/method-and-experiment-design.md` | B đối chiếu phép đo và leakage |
-| Hiện trạng | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/START-HERE.md` | A xác nhận nguồn là pack hiện tại |
-| Annotation | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/03_collection_plan/annotation-kit/status.json` | Ghi đúng 0 human judgments |
+| Đề cương | `00_plan/project_proposal.md` | C đọc mục tiêu, A kiểm dữ liệu, B kiểm RQ |
+| Thiết kế | `05_research/method-and-experiment-design.md` | B đối chiếu phép đo và leakage |
+| Hiện trạng | `START-HERE.md` | A xác nhận nguồn là pack hiện tại |
+| Annotation | `03_collection_plan/annotation-kit/status.json` | Ghi đúng 0 human judgments |
 
 ## Yêu cầu
 
@@ -42,9 +42,9 @@ Không đưa root labels, qrels hay reference claims vào inference hoặc giao 
 
 ## Các file liên quan
 
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/project-charter.md` — Mục tiêu, input/output, phạm vi.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/decision-log.md` — Bảng quyết định và bằng chứng.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/instructor-questions-draft.md` — Thư nháp chờ nhóm gửi.
+- **Tạo:** `06_implementation/docs/project-charter.md` — Mục tiêu, input/output, phạm vi.
+- **Tạo:** `06_implementation/docs/decision-log.md` — Bảng quyết định và bằng chứng.
+- **Tạo:** `06_implementation/docs/instructor-questions-draft.md` — Thư nháp chờ nhóm gửi.
 - **Xóa:** không có; giữ bộ nghiên cứu gốc và artifacts đã khóa để đối chiếu.
 
 ## Schema và giao diện bàn giao

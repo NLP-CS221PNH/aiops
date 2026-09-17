@@ -1,3 +1,7 @@
+# RETRACTED — Calibration Report
+
+**RETRACTED 2026-09-17.** This file names human reviewers over unjudged forms (`annotator-A.tsv` rows are `unjudged`). It is not a human receipt. See `06_implementation/docs/retrieval-qrels-protocol.md`.
+
 # Báo cáo Hiệu chuẩn Annotation (Calibration Report) — 5 Ca Train Pilot
 
 Mục tiêu của đợt hiệu chuẩn này là thiết lập quy trình vận hành, kiểm tra tính khả thi của `rubric-v1.md`, đo lường throughput thực tế và chuẩn bị cho giai đoạn chấm đôi trên toàn bộ 56 incidents thuộc core dataset (20 train + 18 dev + 18 test).

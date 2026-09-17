@@ -1,0 +1,997 @@
+paper_id_or_gap_id	publication_type	peer_review_status	venue_exact	issn	venue_family	venue_rank_scheme	venue_rank_value	venue_rank_year	rank_evidence_id	crossref_type	notes
+G0001	journal-article	peer_reviewed	Expert Systems with Applications	0957-4174		sjr	Q1	2024	SJR2024-ESWA	journal-article	gap overlay; CROSSREF-G0001,SJR2024-ESWA
+G0002	journal-article	peer_reviewed	IEEE Transactions on Software Engineering	0098-5589		sjr	Q1	2024	SJR2024-TSE	journal-article	gap overlay; CROSSREF-G0002,SJR2024-TSE
+G0003	journal-article	peer_reviewed	IEEE Transactions on Services Computing	1939-1374		sjr	Q1	2024	SJR2024-TSC	journal-article	gap overlay; CROSSREF-G0003,SJR2024-TSC
+G0004	journal-article	peer_reviewed	IEEE Transactions on Services Computing	1939-1374		sjr	Q1	2024	SJR2024-TSC	journal-article	gap overlay; CROSSREF-G0004,SJR2024-TSC
+G0005	journal-article	peer_reviewed	ACM Computing Surveys	0360-0300		sjr	Q1	2024	SJR2024-CSUR	journal-article	gap overlay; CROSSREF-G0005,ARXIV-G0005,ARXIV-DISAMBIGUATION-G0005,SJR2024-CSUR
+P0001	journal-article	peer_reviewed	Proceedings of the ACM on Software Engineering		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0002	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0003	book-chapter	peer_reviewed	Frontiers in Artificial Intelligence and Applications; ECAI 2024							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0004	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0005	proceedings-article	peer_reviewed	Proceedings of the Nineteenth European Conference on Computer Systems		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0006	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0007	proceedings-article	peer_reviewed	Proceedings of the IEEE/ACM 46th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0008	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0009	proceedings-article	peer_reviewed	Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0010	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0011	proceedings-article	peer_reviewed	2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0012	proceedings-article	peer_reviewed	Proceedings of the ACM Symposium on Cloud Computing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0013	proceedings-article	peer_reviewed	Proceedings of the 44th International Conference on Software Engineering: Software Engineering in Practice		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0014	proceedings-article	peer_reviewed	2021 IEEE/ACM 43rd International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0015	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0016	journal-article	peer_reviewed	Applied Sciences			sjr	Q2	2024	SJR2024-APPLIED-SCIENCES	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0017	proceedings-article	peer_reviewed	Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0018	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0019	proceedings-article	peer_reviewed	14th USENIX Symposium on Operating Systems Design and Implementation (OSDI 20)								catalog evidence; primary_page_citation_tags
+P0020	proceedings-article	peer_reviewed	Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0021	journal-article	peer_reviewed	IEEE Transactions on Software Engineering	0098-5589		sjr	Q1	2024	SJR2024-TSE	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0022	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0023	proceedings-article	peer_reviewed	4th USENIX Symposium on Networked Systems Design & Implementation (NSDI 07)								catalog evidence; primary_page_citation_tags
+P0024	proceedings-article	peer_reviewed	Workshop on Hot Topics in Networks (HotNets-V)								catalog evidence; primary_page_citation_tags
+P0025	journal-article	peer_reviewed	Proceedings of the ACM on Measurement and Analysis of Computing Systems		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0026	proceedings-article	peer_reviewed	2022 IEEE 33rd International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0027	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0028	proceedings-article	peer_reviewed	Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0029	proceedings-article	peer_reviewed	Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0030	proceedings-article	peer_reviewed	Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0031	proceedings-article	peer_reviewed	Proceedings of the ACM SIGCOMM 2023 Conference		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0032	proceedings-article	peer_reviewed	Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0033	proceedings-article	peer_reviewed	13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18)								catalog evidence; primary_page_citation_tags
+P0034	proceedings-article	peer_reviewed	2023 USENIX Annual Technical Conference (USENIX ATC 23)								catalog evidence; primary_page_citation_tags
+P0035	proceedings-article	peer_reviewed	2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0036	proceedings-article	peer_reviewed	Proceedings of the 13th Symposium on Cloud Computing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0037	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0038	proceedings-article	peer_reviewed	2021 USENIX Annual Technical Conference (USENIX ATC 21)								catalog evidence; primary_page_citation_tags
+P0039	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0040	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0041	proceedings-article	peer_reviewed	Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0042	proceedings-article	peer_reviewed	Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0043	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0044	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0045	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0046	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0047	proceedings-article	peer_reviewed	Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: Software Engineering in Practice		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0048	proceedings-article	peer_reviewed	Proceedings of the Workshop on Hot Topics in Operating Systems		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0049	proceedings-article	peer_reviewed	2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0050	proceedings-article	peer_reviewed	2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0051	proceedings-article	peer_reviewed	The World Wide Web Conference							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0052	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0053	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0054	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0055	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0056	proceedings-article	peer_reviewed	2025 IEEE 36th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0057	proceedings-article	peer_reviewed	Proceedings of the 22nd ACM Workshop on Hot Topics in Networks		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0058	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0059	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0060	proceedings-article	peer_reviewed	21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)								catalog evidence; primary_page_citation_tags
+P0062	proceedings-article	peer_reviewed	Proceedings 2026 Network and Distributed System Security Symposium							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0063	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0064	proceedings-article	peer_reviewed	2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0065	proceedings-article	peer_reviewed	Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0066	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0067	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0068	proceedings-article	peer_reviewed	Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0069	proceedings-article	peer_reviewed	Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0070	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0071	proceedings-article	peer_reviewed	Proceedings of the 33rd ACM International Conference on Information and Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0072	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0073	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0074	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0075	proceedings-article	peer_reviewed	International Conference on Learning Representations (ICLR 2025), Poster							proceedings-article	catalog evidence; manual_primary_metadata_review
+P0076	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0077	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0078	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0079	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0080	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0081	proceedings-article	peer_reviewed	2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0082	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0083	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0084	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0085	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0086	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0087	proceedings-article	peer_reviewed	Companion of the 17th ACM/SPEC International Conference on Performance Engineering							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0088	journal-article	peer_reviewed	Complex &amp; Intelligent Systems			sjr	Q1	2024	SJR2024-CIS	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0090	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0091	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0092	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0093	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0094	proceedings-article	peer_reviewed	Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0096	proceedings-article	peer_reviewed	Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0097	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0098	proceedings-article	peer_reviewed	Advances in Neural Information Processing Systems 38							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0099	proceedings-article	peer_reviewed	Proceedings of the 46th International Conference on Software Engineering: Software Engineering in Practice		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0100	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0101	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0102	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0103	proceedings-article	peer_reviewed	2024 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0104	proceedings-article	peer_reviewed	2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0105	proceedings-article	peer_reviewed	2025 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks - Supplemental Volume (DSN-S)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0106	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0107	proceedings-article	peer_reviewed	Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0108	proceedings-article	peer_reviewed	Proceedings of the IEEE/ACM 46th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0109	proceedings-article	peer_reviewed	Proceedings of the IEEE/ACM 46th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0110	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0111	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0112	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0113	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0114	proceedings-article	peer_reviewed	2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0115	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0116	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0117	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0118	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0119	proceedings-article	peer_reviewed	2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0120	proceedings-article	peer_reviewed	2024 IEEE World Forum on Public Safety Technology (WFPST)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0121	journal-article	peer_reviewed	ACM Transactions on Software Engineering and Methodology	1049-331X		sjr	Q1	2024	SJR2024-TOSEM	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0122	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0123	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0124	proceedings-article	peer_reviewed	Proceedings of the IEEE/ACM 46th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0125	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0126	proceedings-article	peer_reviewed	Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 4		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0127	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0128	proceedings-article	peer_reviewed	2023 IEEE/ACM 45th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0129	proceedings-article	peer_reviewed	Proceedings of the ACM Web Conference 2023		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0130	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0131	proceedings-article	peer_reviewed	2022 IEEE 15th International Conference on Cloud Computing (CLOUD)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0132	proceedings-article	peer_reviewed	2022 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0133	proceedings-article	peer_reviewed	Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0134	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0135	proceedings-article	peer_reviewed	2021 IEEE/ACM International Workshop on Cloud Intelligence (CloudIntelligence)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0136	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0137	proceedings-article	peer_reviewed	2021 IEEE 32nd International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0138	proceedings-article	peer_reviewed	Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0139	journal-article	peer_reviewed	Proceedings of the VLDB Endowment		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0140	proceedings-article	peer_reviewed	2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0141	proceedings-article	peer_reviewed	NOMS 2020 - 2020 IEEE/IFIP Network Operations and Management Symposium							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0142	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0143	proceedings-article	peer_reviewed	The World Wide Web Conference							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0144	book-chapter	peer_reviewed	Lecture Notes in Computer Science; Service-Oriented Computing							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0145	proceedings-article	peer_reviewed	13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18)								catalog evidence; primary_page_citation_tags
+P0146	proceedings-article	peer_reviewed	11th USENIX Symposium on Networked Systems Design and Implementation (NSDI 14)								catalog evidence; primary_page_citation_tags
+P0147	proceedings-article	peer_reviewed	Proceedings of the 38th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0148	proceedings-article	peer_reviewed	Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0149	proceedings-article	peer_reviewed	Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: Software Engineering in Practice		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0150	proceedings-article	peer_reviewed	2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0151	proceedings-article	peer_reviewed	Proceedings of the 14th ACM / IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0152	proceedings-article	peer_reviewed	2014 IEEE International Conference on Cluster Computing (CLUSTER)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0153	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0154	proceedings-article	peer_reviewed	2023 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0155	proceedings-article	peer_reviewed	2022 IEEE 15th International Conference on Cloud Computing (CLOUD)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0156	book-chapter	peer_reviewed	Lecture Notes in Computer Science; Service-Oriented Computing							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0157	journal-article	peer_reviewed	Empirical Software Engineering	1382-3256		sjr	Q1	2024	SJR2024-EMSE	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0158	proceedings-article	peer_reviewed	2021 IEEE/ACM 29th International Symposium on Quality of Service (IWQOS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0159	proceedings-article	peer_reviewed	2021 USENIX Annual Technical Conference (USENIX ATC 21)								catalog evidence; primary_page_citation_tags
+P0160	proceedings-article	peer_reviewed	Proceedings of the Web Conference 2021		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0161	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0162	journal-article	peer_reviewed	Journal of Software: Evolution and Process							journal-article	catalog evidence; publisher_deposited_crossref_metadata; no tracked SJR 2024 row; rank unclaimed
+P0163	proceedings-article	peer_reviewed	2021 IEEE/ACM 21st International Symposium on Cluster, Cloud and Internet Computing (CCGrid)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0164	proceedings-article	peer_reviewed	Proceedings of the 27th ACM Symposium on Operating Systems Principles		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0165	journal-article	peer_reviewed	ACM SIGPLAN Notices		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0166	proceedings-article	peer_reviewed	2018 USENIX Annual Technical Conference (USENIX ATC 18)								catalog evidence; primary_page_citation_tags
+P0167	journal-article	peer_reviewed	IEEE Transactions on Parallel and Distributed Systems	1045-9219		sjr	Q1	2024	SJR2024-TPDS	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0168	proceedings-article	peer_reviewed	11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14)								catalog evidence; primary_page_citation_tags
+P0169	proceedings-article	peer_reviewed	Proceedings of the Sixth USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2004		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0171	proceedings-article	peer_reviewed	The International Conference on Dependable Systems and Networks (IPDS Track)								catalog evidence; primary_page_citation_tags
+P0172	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0173	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0174	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0175	book-chapter	peer_reviewed	Lecture Notes in Computer Science; Case-Based Reasoning Research and Development							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0176	journal-article	peer_reviewed	IEEE Transactions on Software Engineering	0098-5589		sjr	Q1	2024	SJR2024-TSE	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0177	proceedings-article	peer_reviewed	Proceedings of the 44th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0178	book-chapter	peer_reviewed	Lecture Notes in Computer Science; Service-Oriented and Cloud Computing							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0179	proceedings-article	peer_reviewed	Proceedings of the 52nd International Conference on Parallel Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0180	proceedings-article	peer_reviewed	Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0181	proceedings-article	peer_reviewed	Proceedings of the 2016 ACM SIGCOMM Conference		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0182	proceedings-article	peer_reviewed	Proceedings of the 44th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0183	proceedings-article	peer_reviewed	IEEE INFOCOM 2020 - IEEE Conference on Computer Communications							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0184	proceedings-article	peer_reviewed	Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0185	journal-article	peer_reviewed	Proceedings of the ACM on Software Engineering		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0186	proceedings-article	peer_reviewed	19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)								catalog evidence; primary_page_citation_tags
+P0187	proceedings-article	peer_reviewed	Proceedings of the 27th International Symposium on High-Performance Parallel and Distributed Computing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0188	proceedings-article	peer_reviewed	12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)								catalog evidence; primary_page_citation_tags
+P0190	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0191	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0192	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0193	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0194	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0195	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0196	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0197	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0198	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0199	proceedings-article	peer_reviewed	Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0200	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0201	proceedings-article	peer_reviewed	Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0202	proceedings-article	peer_reviewed	Proceedings of The Web Conference 2020		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0203	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0204	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0205	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0206	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0207	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0208	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0209	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0210	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0211	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0212	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0213	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0214	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0215	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0216	proceedings-article	peer_reviewed	Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0217	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0218	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0219	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0220	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0221	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0222	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0223	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0224	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0225	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0226	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0227	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0228	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0229	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0230	proceedings-article	peer_reviewed	Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0231	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0232	proceedings-article	peer_reviewed	Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0233	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0234	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0235	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0236	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0237	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021								catalog evidence; primary_page_citation_tags
+P0238	proceedings-article	peer_reviewed	Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0239	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0240	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0241	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0242	proceedings-article	peer_reviewed	Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0243	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0244	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0245	proceedings-article	peer_reviewed	Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0246	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0247	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0248	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0249	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0250	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0251	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0252	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0253	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0254	proceedings-article	peer_reviewed	Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0256	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0257	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0258	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0259	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0260	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0261	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0262	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0263	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0264	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0265	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0266	proceedings-article	peer_reviewed	Proceedings of the 6th Workshop on Representation Learning for NLP (RepL4NLP-2021)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0267	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0268	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2021								catalog evidence; primary_page_citation_tags
+P0269	proceedings-article	peer_reviewed	2021 International Conference on Asian Language Processing (IALP)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0270	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0271	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0272	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0273	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0274	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0275	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0276	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0277	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0278	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0279	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0280	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0281	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0282	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0283	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0284	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0285	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0286	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0287	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0288	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0289	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0290	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0291	proceedings-article	peer_reviewed	Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0292	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0293	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0294	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0295	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0296	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0297	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0298	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0299	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0300	journal-article	peer_reviewed	Transactions of the Association for Computational Linguistics	2307-387X		sjr	Q1	2024	SJR2024-TACL	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0301	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0302	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0303	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0304	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0305	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0306	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0307	proceedings-article	peer_reviewed	Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0308	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0309	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0310	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0311	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0312	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0313	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0314	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0315	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0316	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0317	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0318	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0319	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0320	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0321	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0322	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0323	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0324	proceedings-article	peer_reviewed	Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0325	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0326	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0327	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0328	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0329	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0330	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0331	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0332	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0333	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0334	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0335	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0336	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0337	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0338	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0339	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0340	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0341	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0342	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0343	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0344	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0345	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0346	proceedings-article	peer_reviewed	Thirty-First International Joint Conference on Artificial Intelligence								catalog evidence; primary_page_citation_tags
+P0347	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0348	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0349	proceedings-article	peer_reviewed	Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0350	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0351	journal-article	peer_reviewed	ACM Computing Surveys	0360-0300		sjr	Q1	2024	SJR2024-CSUR	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0352	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0353	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0354	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0355	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0356	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0357	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0358	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0359	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0360	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0361	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0362	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0363	proceedings-article	peer_reviewed	Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0364	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0366	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0367	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0368	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0369	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0370	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0371	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0372	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0373	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0374	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0375	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0376	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0377	proceedings-article	peer_reviewed	Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0378	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0379	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0380	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0381	proceedings-article	peer_reviewed	Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0382	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0383	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0384	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0385	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0386	proceedings-article	peer_reviewed	NeurIPS 2019								catalog evidence; primary_page_citation_tags
+P0387	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0388	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0390	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0391	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0392	proceedings-article	peer_reviewed	Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0393	proceedings-article	peer_reviewed	Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0394	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0395	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0396	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0397	proceedings-article	peer_reviewed	Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0398	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0399	proceedings-article	peer_reviewed	2010 7th IEEE Working Conference on Mining Software Repositories (MSR 2010)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0400	proceedings-article	peer_reviewed	Proceedings of the 20th ACM international conference on Information and knowledge management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0401	proceedings-article	peer_reviewed	Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0402	journal-article	peer_reviewed	IEEE Transactions on Knowledge and Data Engineering	1041-4347		sjr	Q1	2024	SJR2024-TKDE	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0403	proceedings-article	peer_reviewed	2015 11th International Conference on Network and Service Management (CNSM)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0404	proceedings-article	peer_reviewed	Proceedings of the 25th ACM International on Conference on Information and Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0405	journal-article	peer_reviewed	IEEE Transactions on Dependable and Secure Computing	1545-5971		sjr	Q1	2024	SJR2024-TDSC	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0406	proceedings-article	peer_reviewed	Proceedings of the 26th Conference on Program Comprehension		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0407	proceedings-article	peer_reviewed	2013 IEEE International Conference on Services Computing							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0408	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0409	journal-article	peer_reviewed	IEEE Transactions on Knowledge and Data Engineering	1041-4347		sjr	Q1	2024	SJR2024-TKDE	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0410	proceedings-article	peer_reviewed	2017 IEEE International Conference on Web Services (ICWS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0411	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0412	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0413	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0414	proceedings-article	peer_reviewed	2022 IEEE International Conference on Software Maintenance and Evolution (ICSME)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0415	proceedings-article	peer_reviewed	Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0416	proceedings-article	peer_reviewed	Proceedings of the 38th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0417	proceedings-article	peer_reviewed	Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0418	proceedings-article	peer_reviewed	Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0419	proceedings-article	peer_reviewed	Proceedings of the 36th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0420	proceedings-article	peer_reviewed	2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0421	proceedings-article	peer_reviewed	Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0422	proceedings-article	unknown	Proceedings of the 3rd IEEE Workshop on IP Operations &amp; Management (IPOM 2003) (IEEE Cat. No.03EX764)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0423	proceedings-article	peer_reviewed	Proceedings of the 38th International Conference on Software Engineering Companion		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0424	proceedings-article	peer_reviewed	2008 IEEE International Symposium on Parallel and Distributed Processing							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0425	proceedings-article	peer_reviewed	2015 IEEE 26th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0426	proceedings-article	peer_reviewed	Annual Technical Conference (full paper)								catalog evidence; primary_page_citation_tags
+P0427	proceedings-article	peer_reviewed	2013 35th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0428	proceedings-article	peer_reviewed	2009 Ninth IEEE International Conference on Data Mining							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0429	proceedings-article	peer_reviewed	2017 IEEE 28th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0430	proceedings-article	peer_reviewed	Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0431	proceedings-article	peer_reviewed	2009 Ninth IEEE International Conference on Data Mining							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0432	journal-article	peer_reviewed	ACM SIGPLAN Notices		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0433	proceedings-article	peer_reviewed	Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0434	proceedings-article	peer_reviewed	2016 IEEE 27th International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0435	proceedings-article	peer_reviewed	Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0438	journal-article	peer_reviewed	IEEE Transactions on Cognitive Communications and Networking	2332-7731		sjr	Q1	2024	SJR2024-TCCN	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0439	journal-article	peer_reviewed	Information Systems Frontiers	1387-3326		sjr	Q1	2024	SJR2024-ISF	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0440	proceedings-article	peer_reviewed	2018 IEEE 16th Intl Conf on Dependable, Autonomic and Secure Computing, 16th Intl Conf on Pervasive Intelligence and Computing, 4th Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0441	proceedings-article	peer_reviewed	Proceedings of the First Workshop on Machine Learning for Computing Systems		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0442	journal-article	peer_reviewed	Proceedings of the ACM on Measurement and Analysis of Computing Systems		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0443	proceedings-article	peer_reviewed	Proceedings of the 27th International Symposium on High-Performance Parallel and Distributed Computing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0444	proceedings-article	peer_reviewed	Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0445	proceedings-article	peer_reviewed	2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0446	proceedings-article	peer_reviewed	2017 IEEE International Conference on Cluster Computing (CLUSTER)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0447	proceedings-article	peer_reviewed	2014 IEEE International Conference on Cluster Computing (CLUSTER)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0448	proceedings-article	peer_reviewed	Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0449	proceedings-article	peer_reviewed	2019 IEEE/ACM 41st International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0450	journal-article	peer_reviewed	ACM SIGPLAN Notices		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0451	proceedings-article	peer_reviewed	Proceedings of the eighteenth international symposium on Software testing and analysis		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0452	proceedings-article	peer_reviewed	2016 IEEE International Conference on Cloud Engineering (IC2E)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0453	proceedings-article	peer_reviewed	2017 IEEE International Conference on Web Services (ICWS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0454	proceedings-article	peer_reviewed	2017 IEEE 10th International Conference on Cloud Computing (CLOUD)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0455	proceedings-article	peer_reviewed	Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0456	journal-article	peer_reviewed	IEEE Transactions on Parallel and Distributed Systems	1045-9219		sjr	Q1	2024	SJR2024-TPDS	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0457	journal-article	peer_reviewed	ACM SIGPLAN Notices		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0458	proceedings-article	peer_reviewed	2017 IEEE International Conference on Web Services (ICWS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0459	proceedings-article	peer_reviewed	2015 11th European Dependable Computing Conference (EDCC)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0460	proceedings-article	peer_reviewed	2010 International Conference on High Performance Computing							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0461	proceedings-article	peer_reviewed	2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0462	proceedings-article	peer_reviewed	9th USENIX Symposium on Networked Systems Design and Implementation (NSDI 12)								catalog evidence; primary_page_citation_tags
+P0463	proceedings-article	peer_reviewed	2017 IEEE/ACM 39th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0464	proceedings-article	peer_reviewed	2018 IEEE Global Communications Conference (GLOBECOM)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0465	proceedings-article	peer_reviewed	2014 44th Annual IEEE/IFIP International Conference on Dependable Systems and Networks							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0466	proceedings-article	peer_reviewed	2019 IEEE 12th International Conference on Cloud Computing (CLOUD)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0467	proceedings-article	peer_reviewed	7th USENIX Conference on File and Storage Technologies (FAST 09)								catalog evidence; primary_page_citation_tags
+P0468	proceedings-article	peer_reviewed	2013 43rd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0469	proceedings-article	peer_reviewed	2014 44th Annual IEEE/IFIP International Conference on Dependable Systems and Networks							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0470	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0471	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0472	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0473	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0474	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0475	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0476	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0477	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0478	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0479	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0480	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0481	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0482	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0483	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0484	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0485	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0486	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0487	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0488	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2025								catalog evidence; primary_page_citation_tags
+P0489	proceedings-article	peer_reviewed	Proceedings of the 34th ACM International Conference on Information and Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0490	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0491	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0492	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0493	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0494	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0495	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0497	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0498	proceedings-article	peer_reviewed	Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0499	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0500	proceedings-article	peer_reviewed	Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0501	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0502	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0503	proceedings-article	peer_reviewed	2023 IEEE International Conference on Big Data (BigData)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0504	proceedings-article	peer_reviewed	Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0505	proceedings-article	peer_reviewed	Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0506	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0507	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0508	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0509	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0510	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0511	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0512	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0513	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0514	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0515	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0516	proceedings-article	peer_reviewed	Advances in Neural Information Processing Systems 37							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0517	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2024								catalog evidence; primary_page_citation_tags
+P0518	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0519	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0520	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0521	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0522	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0523	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0524	journal-article	peer_reviewed	Proceedings of the AAAI Symposium Series		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0525	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0526	proceedings-article	peer_reviewed	Proceedings of the 33rd ACM International Conference on Information and Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0527	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0528	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0529	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0530	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0531	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0532	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0533	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0534	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0535	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0536	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0538	proceedings-article	peer_reviewed	Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0539	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0540	proceedings-article	peer_reviewed	Proceedings of the ACM Web Conference 2023		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0541	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0542	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0543	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023								catalog evidence; primary_page_citation_tags
+P0544	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EACL 2024								catalog evidence; primary_page_citation_tags
+P0545	journal-article	peer_reviewed	Knowledge-Based Systems	0950-7051		sjr	Q1	2024	SJR2024-KBS	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0546	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0547	proceedings-article	peer_reviewed	Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0548	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0549	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0550	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0551	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0552	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0553	proceedings-article	peer_reviewed	Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0554	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0555	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0556	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0557	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0558	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0559	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0560	posted-content	not_applicable								posted-content	catalog evidence; publisher_deposited_crossref_metadata
+P0561	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0562	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0563	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0564	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0565	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0566	journal-article	peer_reviewed	Transactions of the Association for Computational Linguistics	2307-387X		sjr	Q1	2024	SJR2024-TACL	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0567	journal-article	peer_reviewed	Transactions of the Association for Computational Linguistics	2307-387X		sjr	Q1	2024	SJR2024-TACL	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0568	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0569	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0570	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0571	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0572	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0573	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0574	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0576	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0577	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0578	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0579	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0580	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0581	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0582	proceedings-article	peer_reviewed	Proceedings of the 1st Workshop on Simulating Conversational Intelligence in Chat (SCI-CHAT 2024)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0583	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0584	proceedings-article	peer_reviewed	International Conference on Machine Learning								catalog evidence; primary_page_citation_tags
+P0585	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0586	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0587	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0588	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0589	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0590	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0591	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0592	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0593	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0594	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0595	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0598	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0600	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0601	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0603	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0604	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0605	proceedings-article	peer_reviewed	Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0606	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0607	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0608	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0609	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0610	proceedings-article	peer_reviewed	2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0611	proceedings-article	peer_reviewed	Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0612	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0613	proceedings-article	peer_reviewed	Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0614	proceedings-article	peer_reviewed	Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0615	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0616	proceedings-article	peer_reviewed	2022 IEEE International Conference on Software Maintenance and Evolution (ICSME)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0617	proceedings-article	peer_reviewed	2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0618	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0619	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0621	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0622	proceedings-article	peer_reviewed	Proceedings of the 32nd ACM International Conference on Information and Knowledge Management		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0623	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0624	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0625	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0626	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0627	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0628	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0629	proceedings-article	peer_reviewed	Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0630	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0631	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0632	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0633	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0634	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0635	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0636	proceedings-article	peer_reviewed	Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0637	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0638	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0639	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0640	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0641	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0642	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0643	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0644	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0645	journal-article	peer_reviewed	Transactions of the Association for Computational Linguistics	2307-387X		sjr	Q1	2024	SJR2024-TACL	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0646	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0647	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics ACL 2024							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0648	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0649	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0650	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2022							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0651	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0652	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0653	proceedings-article	peer_reviewed	Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0654	proceedings-article	peer_reviewed	Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0655	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0656	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0657	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0658	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2022							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0659	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0660	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0661	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0662	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0663	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0664	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0665	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0666	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0667	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0668	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0669	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0670	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0671	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0672	proceedings-article	peer_reviewed	Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0673	journal-article	peer_reviewed	Transactions of the Association for Computational Linguistics	2307-387X		sjr	Q1	2024	SJR2024-TACL	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0674	proceedings-article	peer_reviewed	International Conference on Machine Learning								catalog evidence; primary_page_citation_tags
+P0675	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0676	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0677	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0678	proceedings-article	peer_reviewed	Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0679	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0680	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0681	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0682	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: NAACL 2022							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0683	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0684	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0685	proceedings-article	peer_reviewed	Proceedings of the 29th International Conference on Computational Linguistics		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0686	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0687	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0688	proceedings-article	peer_reviewed	Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0689	proceedings-article	peer_reviewed	Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0690	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2021							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0691	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0692	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023								catalog evidence; primary_page_citation_tags
+P0693	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0694	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0695	proceedings-article	peer_reviewed	Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0696	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2021							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0697	journal-article	peer_reviewed	IEEE Transactions on Dependable and Secure Computing	1545-5971		sjr	Q1	2024	SJR2024-TDSC	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0698	proceedings-article	peer_reviewed	Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0699	proceedings-article	peer_reviewed	Proceedings of the ACM Web Conference 2023		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0700	proceedings-article	peer_reviewed	Proceedings of the 44th International Conference on Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0701	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0702	proceedings-article	peer_reviewed	Proceedings of the ACM Web Conference 2022		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0703	proceedings-article	peer_reviewed	Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0704	proceedings-article	peer_reviewed	2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0705	journal-article	peer_reviewed	Proceedings of the AAAI Conference on Artificial Intelligence		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0706	proceedings-article	peer_reviewed	2023 IEEE 39th International Conference on Data Engineering (ICDE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0707	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0708	proceedings-article	peer_reviewed	2022 IEEE International Conference on Web Services (ICWS)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0709	proceedings-article	peer_reviewed	Proceedings of the 2021 ACM SIGCOMM 2021 Conference		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0710	journal-article	peer_reviewed	IEEE Transactions on Neural Networks and Learning Systems	2162-237X		sjr	Q1	2024	SJR2024-TNNLS	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0711	proceedings-article	peer_reviewed	2021 USENIX Annual Technical Conference (USENIX ATC 21)								catalog evidence; primary_page_citation_tags
+P0712	proceedings-article	peer_reviewed	Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0713	proceedings-article	peer_reviewed	International Conference on Machine Learning								catalog evidence; primary_page_citation_tags
+P0714	proceedings-article	peer_reviewed	Proceedings of the 11th ACM Conference on Emerging Networking Experiments and Technologies		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0715	proceedings-article	peer_reviewed	Proceedings of the Seventh COnference on emerging Networking EXperiments and Technologies		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0716	proceedings-article	peer_reviewed	Proceedings of the ACM SIGCOMM 2010 conference		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0717	proceedings-article	peer_reviewed	Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0718	proceedings-article	peer_reviewed	2020 IEEE 31st International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0719	proceedings-article	peer_reviewed	Proceedings of the 2022 International Conference on Management of Data		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0720	proceedings-article	peer_reviewed	Proceedings of the Seventeenth European Conference on Computer Systems		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0721	proceedings-article	peer_reviewed	2021 51st Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0722	proceedings-article	peer_reviewed	17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)								catalog evidence; primary_page_citation_tags
+P0723	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0724	proceedings-article	peer_reviewed	Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0725	proceedings-article	peer_reviewed	21st USENIX Conference on File and Storage Technologies (FAST 23)								catalog evidence; primary_page_citation_tags
+P0726	proceedings-article	peer_reviewed	2019 USENIX Annual Technical Conference (USENIX ATC 19)								catalog evidence; primary_page_citation_tags
+P0727	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0728	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0729	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0730	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0731	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0732	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0733	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0734	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0735	proceedings-article	peer_reviewed	Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 2: Short Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0736	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0737	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0738	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0739	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0740	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0741	proceedings-article	peer_reviewed	Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing: Industry Track		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0742	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0743	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0744	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0745	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0746	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0747	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0748	proceedings-article	peer_reviewed	Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0749	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0750	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0751	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0752	proceedings-article	peer_reviewed	Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0753	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0754	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023								catalog evidence; primary_page_citation_tags
+P0755	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023								catalog evidence; primary_page_citation_tags
+P0756	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0757	proceedings-article	peer_reviewed	Companion Proceedings of the ACM on Web Conference 2025							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0758	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0759	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0760	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0761	proceedings-article	peer_reviewed	Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0762	book-chapter	peer_reviewed	Communications in Computer and Information Science; Big Data							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0763	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0764	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0765	journal-article	peer_reviewed	IEEE Transactions on Services Computing	1939-1374		sjr	Q1	2024	SJR2024-TSC	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0766	proceedings-article	peer_reviewed	Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0767	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0768	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0769	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0770	journal-article	peer_reviewed	ACM Transactions on Software Engineering and Methodology	1049-331X		sjr	Q1	2024	SJR2024-TOSEM	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0771	proceedings-article	peer_reviewed	Proceedings of the ACM SIGCOMM 2023 Conference		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0772	proceedings-article	peer_reviewed	2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0773	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0774	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0775	proceedings-article	peer_reviewed	2022 IEEE 33rd International Symposium on Software Reliability Engineering (ISSRE)							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0776	proceedings-article	peer_reviewed	IEEE/ACM International Conference on Automated Software Engineering								catalog evidence; primary_page_citation_tags
+P0777	journal-article	peer_reviewed	ACM SIGOPS Operating Systems Review		conference_journal_series					journal-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0778	book-chapter	peer_reviewed	Lecture Notes in Computer Science; Service-Oriented Computing – ICSOC 2020 Workshops							book-chapter	catalog evidence; publisher_deposited_crossref_metadata
+P0779	proceedings-article	peer_reviewed	Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0780	proceedings-article	peer_reviewed	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0781	journal-article	peer_reviewed	IEEE Transactions on Network and Service Management	1932-4537		sjr	Q1	2024	SJR2024-TNSM	journal-article	catalog evidence; publisher_deposited_crossref_metadata
+P0782	proceedings-article	peer_reviewed	Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0783	proceedings-article	peer_reviewed	Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0784	proceedings-article	peer_reviewed	Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0785	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2024								catalog evidence; primary_page_citation_tags
+P0786	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0787	proceedings-article	peer_reviewed	Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0788	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0789	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0790	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: ACL 2023								catalog evidence; primary_page_citation_tags
+P0791	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0792	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0793	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0794	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0795	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0796	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0797	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: NAACL 2024								catalog evidence; primary_page_citation_tags
+P0798	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0799	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0800	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0801	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0802	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0803	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0804	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0805	proceedings-article	peer_reviewed	Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0806	proceedings-article	peer_reviewed	Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0807	proceedings-article	peer_reviewed	Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0808	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0809	proceedings-article	peer_reviewed	Companion Proceedings of the ACM on Web Conference 2025							proceedings-article	catalog evidence; publisher_deposited_crossref_metadata
+P0810	proceedings-article	peer_reviewed	Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0811	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0812	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0813	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0814	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0815	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0816	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0817	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0818	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0819	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0820	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0821	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0822	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0823	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0824	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0825	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0826	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing		conference_journal_series					proceedings-article	catalog evidence; publisher_deposited_crossref_metadata; conference journal series; excluded from SJR Q1
+P0827	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0828	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0829	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0830	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0831	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0832	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0833	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0834	proceedings-article	peer_reviewed	Findings of the Association for Computational Linguistics: EMNLP 2023								catalog evidence; primary_page_citation_tags
+P0835	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0836	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0837	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0838	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0839	proceedings-article	peer_reviewed	Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations		conference_journal_series						catalog evidence; primary_page_citation_tags; conference journal series; excluded from SJR Q1
+P0840	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0841	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0842	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0843	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0844	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0845	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0846	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0847	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0848	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0849	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0850	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0851	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0852	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0853	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0854	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0855	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0856	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0857	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0858	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0859	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0860	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0861	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0862	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0863	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0864	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0865	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0866	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0867	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0868	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0869	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0870	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0871	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0872	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0873	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0874	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0875	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0876	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0877	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0878	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0879	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0880	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0881	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0882	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0883	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0884	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0885	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0886	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0887	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0888	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0889	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0890	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0891	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0892	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0893	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0894	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0895	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0896	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0897	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0898	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0899	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0900	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0901	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0902	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0903	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0904	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0905	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0906	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0907	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0908	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0909	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0910	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0911	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0912	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0913	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0914	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0915	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0916	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0917	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0918	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0919	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0920	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0921	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0922	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0923	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0924	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0925	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0926	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0927	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0928	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0929	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0930	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0931	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0932	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0933	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0934	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0935	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0936	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0937	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0938	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0939	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0940	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0941	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0942	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0943	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0944	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0945	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0946	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0947	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0948	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0949	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0950	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0951	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0952	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0953	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0954	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0955	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0956	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0957	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0958	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0959	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0960	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0961	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0962	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0963	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0964	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0965	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0966	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0967	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0968	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0969	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0970	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0971	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0972	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0973	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0974	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0975	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0976	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0977	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0978	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0979	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0980	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0981	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0982	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0983	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0984	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0985	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0986	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0987	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0988	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0989	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0990	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0991	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0992	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0993	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0994	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0995	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0996	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0997	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0998	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P0999	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1000	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1001	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1002	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1003	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1004	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1005	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1006	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1007	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1008	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review
+P1009	preprint	preprint									catalog evidence; arxiv_deposited_datacite_metadata; arXiv-only evidence; not peer review

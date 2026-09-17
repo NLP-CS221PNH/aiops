@@ -5,7 +5,7 @@
   "reviewer": "Codex prerequisite_audit tester/debugger",
   "status": "pass",
   "python": "3.11.9",
-  "executable": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\06_implementation\\.venv\\Scripts\\python.exe",
+  "executable": ".\\06_implementation\\.venv\\Scripts\\python.exe",
   "corpus_suite": {
     "command": "./06_implementation/.venv/Scripts/python.exe -B -m unittest discover -s 06_implementation/tests -p test_c*py -v",
     "runner": "unittest.defaultTestLoader.discover and TextTestRunner(verbosity=2); same discovery as command",

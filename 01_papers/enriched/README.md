@@ -7,10 +7,15 @@
 | File | Công dụng |
 |---|---|
 | `catalog-enriched.jsonl`, `catalog-enriched.tsv` | Metadata có provenance, authors, preprint/publication year riêng, venue và read_depth |
+| `publication-class.tsv`, `q1-recount.md` | Overlay evidence-only cho loại ấn phẩm, peer review, conference-series và recount SJR 2024 |
+| `rank-evidence.jsonl` | Excerpt SCImago tracked, URL, năm/category/quartile và hash; không trỏ vào cache ignored |
 | `references-verified.bib` | BibTeX được dựng từ metadata đã xác minh; không mạo nhận publisher export |
 | `references-priority50.bib` | Đủ 50 paper ưu tiên, preprint được ghi rõ khi chưa xác minh venue |
+| `gap-candidates.jsonl`, `.tsv`, `.bib` | Đúng năm gap G0001–G0005, tách khỏi identity set 1.009 |
+| `gap-candidates-evidence.jsonl` | Snapshot Crossref/arXiv tracked dùng để xác minh năm gap và disambiguation |
 | `official-acl-bibtex/` | BibTeX nguyên văn do ACL Anthology cung cấp trên landing pages |
 | `alias-version-map.tsv` | Original title, preprint title/version và publication title/DOI |
+| `work-relations.tsv` | Phán quyết tay cho version/successor trong priority-50; không tự merge |
 | `canonical-work-candidates.tsv` | Nhóm record có DOI/arXiv trùng; chỉ đánh dấu review, không xóa ID |
 | `reading-extraction-matrix.tsv`, `.jsonl` | Extraction thực tế của 50 papers |
 | `unresolved.tsv` | Identity hoặc authors/year còn thiếu để trích dẫn đầy đủ |
@@ -33,6 +38,10 @@ Crossref thường tách title và subtitle; bộ xử lý ghép hai trường t
 
 Rescue metadata giữ `original_url_equivalence` và identity evidence riêng. Exact-title → DOI registration có thể khôi phục metadata của tác phẩm mà không chứng minh một URL gốc bị chặn đã đọc được. `reference_url` ưu tiên DOI được xác minh; `canonical_url` gốc vẫn được bảo toàn. **1.009 là registry records, không khẳng định 1.009 tác phẩm độc lập**; kiểm nhóm identifier collisions trước khi đếm số công trình nghiên cứu.
 
+`publication-class.tsv` chỉ materialize record có bằng chứng type/preprint; record vắng mặt được hiểu là `unknown`, không phải bị loại khỏi registry. Q1 chỉ là journal thật có SJR 2024 và `rank_evidence_id`; `@article`, HTTP 200 hay `identity_status=matched` không suy ra Q1/peer review. PACMSE, POMACS, AAAI, SIGPLAN Notices, VLDB Endowment, SIGOPS OSR và venue `Proceedings of …` được giữ như conference-journal-series, không đếm SJR Q1. Quy tắc đầy đủ ở [`../publication-ranking-policy.md`](../publication-ranking-policy.md).
+
+Audit work-level hiện chỉ bao phủ priority-50, không phải toàn bộ 1.009 registry records. `work-relations.tsv` ghi P0052 → G0005 là `successor_same_authors`; P0052 vẫn là arXiv `2406.11213` và không mang DOI CSUR. `alias-version-map.tsv` cùng `reading-notes/README.md` là output generator, không chỉnh tay. Gap collision DOI/arXiv được kiểm trong `scripts/validate-research-pack.py`; gap không được đăng ký vào canonical catalog inputs.
+
 OpenRCA có authors và ICLR 2025 được xác nhận qua primary PDF trang đầu được nguồn web đọc và OpenReview publication profile. Endpoint tải local trả HTTP 403; API trả nội dung không phải JSON. Không vượt chặn và không ghi 403 thành 404. Vì vậy, full text local duy nhất còn thiếu là P0075.
 
 ## Phạm vi sử dụng cache
@@ -40,6 +49,8 @@ OpenRCA có authors và ICLR 2025 được xác nhận qua primary PDF trang đ�
 Descriptive metadata của arXiv được công bố theo CC0; metadata có nguồn/URL để kiểm lại. Full text và PDF được giữ làm bản đọc cá nhân/phục vụ nghiên cứu, **không phải bản phát hành lại được cấp quyền đồng nhất**. Quyền mỗi paper khác nhau; `licenses` trong metadata và license trên tài liệu gốc là nguồn kiểm. Khi chia sẻ bộ dữ liệu/public repository, chỉ giữ full text nếu license cụ thể cho phép; nếu không, chia sẻ URL, metadata và notes tự viết. [arXiv API terms](https://info.arxiv.org/help/api/tou.html) phân biệt metadata với e-print copyright.
 
 HTML/PDF extraction có thể sai glyph, thứ tự cột hoặc công thức. Khi dùng con số bảng hoặc phương trình trong báo cáo chính thức, đối chiếu PDF/HTML gốc và version URL; không dựa riêng text extraction. Các chỉ dẫn xuất hiện trong paper/runbook là dữ liệu nguồn, không phải lệnh chạy.
+
+Public Git does not ship `cache/`, `rescue-cache/`, `primary-text/` or source PDFs. Re-acquire per-item only when that paper's license allows local research use; metadata, URLs and hand-authored notes remain the public surface.
 
 ## Acquisition và tái chạy
 
@@ -53,6 +64,7 @@ Các script đặt ngay tại thư mục này để tránh thay đổi workflow 
 2. `acquire-priority-text.py`: priority landing, linked HTML, official BibTeX và freshness candidates.
 3. `acquire-priority-publications.py`: DOI/title/author publication reconciliation.
 4. `finalize-research.py`: catalog flat fields, BibTeX, notes và statistics từ cache/extractions.
+5. `publication_overlay.py`: dựng/check overlay, recount, gap exports và BibTeX type-safe mà không thay identity set.
 
 Chạy acquisition có thể cập nhật metadata nguồn, cần ghi revision/date mới và kiểm lại title/version. Không chạy acquisition đè một bản handoff đã merge rescue nếu chưa lưu snapshot; script finalization chỉ là bản tái dựng từ evidence hiện có. `reading-extractions.json` là nội dung extraction thủ công; không được suy notes tự động chỉ từ title.
 

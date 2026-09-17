@@ -1,9 +1,21 @@
 """Build a standalone local resource browser from collected records; no external assets."""
 from pathlib import Path
 import json
+import sys
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_INPUTS = (
+    "01_papers/enriched/catalog-enriched.jsonl",
+    "01_papers/catalog.jsonl",
+    "02_datasets/processed/observations.jsonl",
+    "03_collection_plan/knowledge-corpus/documents.jsonl",
+    "03_collection_plan/knowledge-corpus-historical/documents.jsonl",
+)
+if "--check" in sys.argv:
+    missing = [rel for rel in CANONICAL_INPUTS if not (ROOT / rel).is_file() and rel != "01_papers/catalog.jsonl"]
+    print(json.dumps({"passed": not missing, "missing": missing, "output": "START-HERE.html", "disposition": "generate"}))
+    raise SystemExit(0 if not missing else 1)
 
 
 def jl(name):

@@ -8,6 +8,15 @@ conditions:
   - GB
   - GD
   - GH
+control_conditions:
+  - G-oracle
+  - G-random
+  - answerability-slice
+  - leakage-diagnostic
+primary_rq2:
+  - IR-B
+  - IR-D
+  - IR-H
 immutable_model_limitations: none
 review_subset:
   - incident_1

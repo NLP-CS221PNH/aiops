@@ -1,8 +1,10 @@
-# Bảng 2: Hiệu Năng Sinh Chẩn Đoán Dẫn Chứng Trên 18 Test Incidents (Grounded Generation)
+# Table 2: Generation performance
 
-| Điều Kiện (Condition) | Số Phản Hồi (N) | Độ Chính Xác Top-1 (Root Cause) | Độ Chính Xác Top-3 | Tính Hợp Lệ Dẫn Chứng (Citation Validity) | Độ Chuẩn Xác Chứng Cứ (Claim Precision) | Tỷ Lệ Từ Chối (Abstention) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **G0 (No-RAG)** | 18 | **33.3%** | 44.4% | null | 50.0% | 16.7% |
-| **GB (BM25 RAG)** | 18 | **61.1%** | 66.7% | 100.0% | 38.9% | 5.6% |
-| **GD (Dense RAG)** | 18 | **55.6%** | 66.7% | 100.0% | 33.3% | 5.6% |
-| **GH (Hybrid RAG)** | 18 | **100.0%** | 100.0% | 100.0% | 36.1% | 0.0% |
+> Qrels provenance is llm_judge_adjudicated (on-disk label llm_lexical_proxy). Not human gold. Headline IR metrics stay NOT_RUN until human-double-adjudicated G2 and frozen rankings exist. Primary RQ2 columns are IR-B / IR-D / IR-H only.
+
+| condition | responses_n | top1_service_acc | top3_service_acc | citation_validity | claim_support_precision | abstention_rate | qrels_provenance | status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| G0 (No-RAG) | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| GB (BM25 RAG) | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| GD (Dense RAG) | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| GH (Hybrid RAG) | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |

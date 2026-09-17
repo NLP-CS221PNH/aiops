@@ -1,11 +1,13 @@
-# Bảng 4: Hạch Toán Tài Nguyên & Chi Phí Thực Thi (Resource Accounting & Efficiency)
+# Table 4: Resource accounting (retracted until receipts exist)
 
-| Giai Đoạn (Pipeline Phase) | Môi Trường Tính Toán | Bộ Nhớ Đỉnh (RAM) | Thời Gian (s) | Tổng Token | Chi Phí (USD) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Data Imputation & Validation** | Python 3.11 CPU | 180 MB | 2.8s | 0 | $0.00 |
-| **Corpus Tokenization & Whitelist** | HuggingFace Tokenizer CPU | 240 MB | 4.5s | 128,450 | $0.00 |
-| **Dense Embedding Cache (580 chunks)** | E5-small-v2 PyTorch CPU | 480 MB | 18.2s | 142,800 | $0.00 |
-| **Test Retrieval (54 queries x 3 engines)** | BM25 + Dense + RRF | 350 MB | 7.1s | 27,648 | $0.00 |
-| **Double Annotation (360 reviews)** | LLM-as-a-Judge | 220 MB | 12.4s | 158,400 | $0.00 |
-| **Grounded Generation (72 responses)** | DeepSeek-Flash Engine | 210 MB | 15.6s | 39,840 | $0.00 |
-| **Total End-to-End Pipeline** | Hybrid Local/API Stack | 480 MB | 60.6s | 497,138 | $0.00 |
+> Qrels provenance is llm_judge_adjudicated (on-disk label llm_lexical_proxy). Not human gold. Headline IR metrics stay NOT_RUN until human-double-adjudicated G2 and frozen rankings exist. Primary RQ2 columns are IR-B / IR-D / IR-H only.
+
+| pipeline_phase | compute_engine | memory_mb | duration_sec | token_count | cost_usd | qrels_provenance | status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Data Imputation & Validation | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Corpus Tokenization & Whitelist | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Dense Embedding Cache | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Test Retrieval | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Double Annotation | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Grounded Generation | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| Total End-to-End Pipeline | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |

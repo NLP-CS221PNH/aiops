@@ -1,0 +1,42 @@
+{
+  "schema_version": "cs221-f2-provenance-v1",
+  "created": "2026-09-17",
+  "f2_path": "06_implementation/freezes/F2.json",
+  "f2_sha256": "a4cc0ed9da46515ad80de53a9ef1713969ae857f5e584609eea61d1e0ceebe88",
+  "qrels_hash": "7f27c50daa32bdf87142f4fe966fc65c9991715e35dca5d3b32c9a71f426b67a",
+  "qrels_provenance": "llm_lexical_proxy",
+  "human_gold": false,
+  "pool_circular": true,
+  "headline_ndcg_eligible": false,
+  "limitations_in_f2_json": [
+    "F2 freezes adjudicated human test qrels linked to F1 freeze.",
+    "Qrels are restricted to evaluator use; runners must not mount qrels during generation.",
+    "Test labels cannot be used to fine-tune prompts, representations, or retrieval parameters."
+  ],
+  "authoritative_note": "F1/F2 bytes are historical and invalid for evaluation. qrels_hash is the historical F2 binding; current_qrels_hash binds the provenance-stamped test dump.",
+  "qrels_files": {
+    "train": {
+      "path": "06_implementation/annotations/qrels/train/qrels.tsv",
+      "sha256": "e4a992d32c1e4ba0e3dcaac60e375b66213e25952fed49b46c92ba926f798068",
+      "rows": 200,
+      "historical_sha256": "c29909683d7d4b92504b1ad4779d5abaea65dac15ec20dfed42ed52132d934f1"
+    },
+    "dev": {
+      "path": "06_implementation/annotations/qrels/dev/qrels.tsv",
+      "sha256": "7997f6016eeb8fb0876eac35992d0af29a95e7cc33b119489c75741952429831",
+      "rows": 180,
+      "historical_sha256": "64d769ca4d803960acf474df69376f4a2c1fdaa4641ba1ca24bef2b749865931"
+    },
+    "test": {
+      "path": "06_implementation/annotations/qrels/test/qrels.tsv",
+      "sha256": "f461e2196a1269f467d4c5e43952227972dc25c3280a5c444a41c3cfa152dd8e",
+      "rows": 180,
+      "historical_sha256": "7f27c50daa32bdf87142f4fe966fc65c9991715e35dca5d3b32c9a71f426b67a"
+    }
+  },
+  "current_qrels_hash": "f461e2196a1269f467d4c5e43952227972dc25c3280a5c444a41c3cfa152dd8e",
+  "f1_sha256": "5fd958a5f04a17f156fbdfb170e2e84cd8d9958dceda92d820203d9745c26411",
+  "f1_evaluation_eligible": false,
+  "f2_evaluation_eligible": false,
+  "invalidation_reason": "empty released whitelist and pool-circular lexical proxy judgments"
+}

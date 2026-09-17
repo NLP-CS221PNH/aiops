@@ -1,1 +1,0 @@
-{"url": "https://hal.inria.fr/hal-03155797/document", "requested_at": "2026-09-12T16:52:11.335181+00:00", "kind": "metadata", "status": "network_error", "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>", "text": ""}

@@ -55,7 +55,7 @@
         "ak",
         "plan",
         "validate",
-        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+        ".\\plans\\260913-0057-cs221-01-scope-and-protocol",
         "--json"
       ],
       "exit_code": 0,
@@ -64,7 +64,7 @@
         "kind": "plan.validate",
         "data": {
           "valid": true,
-          "dir": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+          "dir": ".\\plans\\260913-0057-cs221-01-scope-and-protocol",
           "errors": null
         }
       },
@@ -75,7 +75,7 @@
         "ak",
         "plan",
         "status",
-        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\260913-0057-cs221-01-scope-and-protocol",
+        ".\\plans\\260913-0057-cs221-01-scope-and-protocol",
         "--json"
       ],
       "exit_code": 0,
@@ -100,7 +100,7 @@
         "ak",
         "journal",
         "validate",
-        "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
+        ".\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
         "--json"
       ],
       "exit_code": 0,
@@ -108,7 +108,7 @@
         "schema_version": 1,
         "kind": "journal.validate",
         "data": {
-          "path": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
+          "path": ".\\plans\\journals\\2026-09-13-cs221-plan01-protocol-review-handoff.md",
           "ok": true,
           "title": "CS221 plan01 protocol review handoff",
           "date": "2026-09-13"

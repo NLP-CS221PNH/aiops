@@ -33,7 +33,7 @@ Người phụ trách: Thành viên A (Data), Thành viên B (Model), Thành vi�
 
 ### Phạm vi và Quy trình gán nhãn (Annotation Scope & Protocols)
 - **Tập Core:** 56 incidents gồm 20 train (đại diện 18 families), 18 dev, 18 test.
-- **Quy chuẩn chấm đôi:** Mỗi cặp (incident, candidate chunk) được đánh giá độc lập bởi 2 người chấm (Reviewer A và B); bất đồng được phân xử bởi người thứ 3 (Adjudicator C) theo rubric đã khóa `rubric-v1.md`.
+- **Quy chuẩn chấm đôi:** Planned human process (plan 06). Current on-disk qrels are `llm_lexical_proxy`, not two human reviewers.
 - **Thang điểm Relevance:** 0 (không liên quan), 1 (liên quan gián tiếp), 2 (hỗ trợ trực tiếp / nguyên nhân gốc rễ).
 - **Tập mở rộng:** 34 train incidents còn lại không có human qrels core.
 

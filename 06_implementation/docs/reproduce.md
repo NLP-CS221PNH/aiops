@@ -9,14 +9,9 @@ Ngày ban hành: `2026-09-16T01:30:00Z`
 
 ## 1. Yêu cầu Môi trường (System & Environment Requirements)
 
-- **Hệ điều hành:** Hỗ trợ Windows 10/11 (AMD64) hoặc Linux (Ubuntu 22.04 LTS / Debian 12 / Kaggle CPU/GPU).
-- **Python:** Phiên bản chuẩn CPython `3.11.9` (hỗ trợ `3.11.x`).
-- **Phụ thuộc cốt lõi:**
-  - `numpy >= 1.24.0` (xử lý ma trận cosine và L2-normalization)
-  - `pyarrow >= 21.0.0` (đọc telemetry data định dạng Parquet)
-  - `pydantic >= 2.0.0` (xác thực schema đầu ra của mô hình sinh)
-  - `PyYAML >= 6.0` (phân tích cấu hình hệ thống)
-  - `pytest >= 8.0` (chạy bộ kiểm thử tự động)
+- **Hệ điều hành:** Windows 10/11 AMD64 is the supported hash-locked platform. Linux is not claimed until a Linux `--require-hashes` lock exists.
+- **Python:** CPython `3.11.9` (`3.11.x`).
+- **Cài đặt:** `python -m pip install --require-hashes -r configs/requirements-lock.txt`
 
 ---
 
@@ -36,23 +31,20 @@ python -m venv .venv
 # (Trên Linux / macOS: source .venv/bin/activate)
 
 # Cài đặt các gói phụ thuộc
-pip install numpy pyarrow pydantic PyYAML pytest
+pip install --require-hashes -r configs/requirements-lock.txt
+python -m pip install pytest pyyaml numpy pydantic tokenizers==0.21.4
 ```
 
-### Bước 2: Chạy Toàn bộ Kiểm thử Hợp đồng và Tính toàn vẹn (302 Automated Tests)
+`tokenizers==0.21.4` is the pinned tokenizer library for PR tests. Model weights are not required. The Windows `--require-hashes` lock above is runtime-only and does not cover Linux.
 
-Bộ kiểm thử tự động xác minh tính bất biến của dữ liệu, không rò rỉ nhãn (data leakage) và độ chính xác của các thuật toán xếp hạng:
+### Bước 2: Named test suites
+
+Do not treat a historical pass count as a contract. Required files include `tests/test_evaluation_cli.py`, `tests/test_release_integrity.py`, `tests/test_evaluation_contract.py` and `tests/test_public_artifact_policy.py`.
 
 ```powershell
-# Chạy pytest từ thư mục 06_implementation
-python -m pytest -o pythonpath=.
+python -m pytest -o pythonpath=. tests/test_evaluation_cli.py tests/test_release_integrity.py tests/test_evaluation_contract.py tests/test_public_artifact_policy.py
+python -m pytest -q -o pythonpath=.
 ```
-
-**Kỳ vọng đầu ra (Expected Output):**
-```text
-============================ 302 passed in ~45s =============================
-```
-Mọi test case liên quan đến phân tách split, chuẩn hóa token, BM25, Dense cosine, RRF fusion, validator trích dẫn và demo loaders đều phải đạt `PASSED`.
 
 ---
 
@@ -62,30 +54,27 @@ Mọi test case liên quan đến phân tách split, chuẩn hóa token, BM25, D
 
 ```powershell
 # 1. Tính toán lại bảng xếp hạng truy hồi (Retrieval Performance)
-python -m src.evaluation score --system freezes/F1.json --qrels annotations/qrels/test/ --runs runs/retrieval/
+python -m src.evaluation score --system freezes/F1.json --qrels annotations/qrels/test/ --runs runs/retrieval/ --output results/scored-from-replay.tsv
 
 # 2. Phân tích thống kê theo cụm 6 families và Leave-One-Family-Out
-python -m src.evaluation analyze --results results/per-incident.tsv --group scenario_family_id
+python -m src.evaluation analyze --results results/per-incident.tsv --group scenario_family_id --output results/family-comparison-from-replay.tsv
 
 # 3. Kiểm tra tính toàn vẹn của gói bàn giao
-python -m src.evaluation validate-handoff --manifest configs/final-manifest.json
+python -m src.evaluation validate-handoff --manifest reports/submission-package/configs/final-manifest.json
 ```
 
 ---
 
 ## 3. Bảng Đối chiếu Kết quả và Dung sai Số học (Tolerance Matrix)
 
+Headline IR/generation values are `NOT_RUN`. A second scorer pass must match TSV means within $10^{-8}$ when rankings and human G2 exist. Until then, do not claim test IR-H nDCG is 0.342 or 0.671.
+
 | Chỉ số (Metric) | Điều kiện / Bộ truy hồi | Giá trị Kỳ vọng (Expected) | Dung sai cho phép (Tolerance) | Nguồn lưu vết |
 |---|---|:---:|:---:|---|
-| **passage nDCG@5** | IR-B (BM25) on Test | `0.628` | $\pm 10^{-8}$ | `reports/final-tables/table1-retrieval-performance.tsv` |
-| **passage nDCG@5** | IR-D (Dense E5) on Test | `0.594` | $\pm 10^{-8}$ | `reports/final-tables/table1-retrieval-performance.tsv` |
-| **passage nDCG@5** | IR-H (Hybrid RRF) on Test | `0.671` | $\pm 10^{-8}$ | `reports/final-tables/table1-retrieval-performance.tsv` |
-| **Paired Delta ($\Delta$)** | IR-H vs. BM25 on Test | `+0.043` | $\pm 10^{-8}$ | `reports/final-tables/table1-retrieval-performance.tsv` |
-| **Top-1 Accuracy** | G0 (No-RAG) | `38.9% (7/18)` | Exact ratio | `reports/final-tables/table2-generation-performance.tsv` |
-| **Top-1 Accuracy** | GH (Hybrid RAG) | `72.2% (13/18)` | Exact ratio | `reports/final-tables/table2-generation-performance.tsv` |
-| **Citation Validity** | GH (Hybrid RAG) | `97.2% (35/36)` | Exact ratio | `reports/final-tables/table2-generation-performance.tsv` |
-| **Claim Support** | GH (Hybrid RAG) | `85.2% (46/54)` | Exact ratio | `reports/final-tables/table2-generation-performance.tsv` |
-| **Abstention Rate** | G0 (No-RAG) | `22.2% (4/18)` | Exact ratio | `reports/final-tables/table2-generation-performance.tsv` |
+| **passage nDCG@5** | IR-B / IR-D / IR-H on Test | `NOT_RUN` | $\pm 10^{-8}$ when scored | `reports/final-tables/table1-retrieval-performance.tsv` |
+| **Paired Delta ($\Delta$)** | IR-H vs. BM25 on Test | `NOT_RUN` | $\pm 10^{-8}$ when scored | `reports/final-tables/table1-retrieval-performance.tsv` |
+| **Top-1 Accuracy** | G0 / GH | `NOT_RUN` | Exact ratio when scored | `reports/final-tables/table2-generation-performance.tsv` |
+| **Qrels provenance** | all headline IR | `llm_judge_adjudicated` | exact label | `configs/methodology-lock.yaml` |
 
 ---
 
@@ -105,7 +94,6 @@ Mở trình duyệt tại `http://127.0.0.1:8080` để duyệt 5 ca sự cố �
 
 1. **Lỗi `ModuleNotFoundError: No module named 'src'`:**  
    Chạy lệnh với tùy chọn `python -m ...` hoặc thiết lập biến môi trường `$env:PYTHONPATH="."`.
-2. **Lỗi phiên bản bánh xe PyArrow trên Linux:**  
-   Nếu chạy trên môi trường Linux/Kaggle, cài đặt gói pyarrow tương ứng với Linux x86_64 qua `pip install pyarrow==21.0.0`. Không sao chép các file `.whl` định dạng Windows `win_amd64`.
+2. **Linux is unsupported until a Linux hash lock exists.** Do not copy Windows `win_amd64` wheels.
 3. **Sự khác biệt khi gọi lại API sinh mới (Fresh Generation):**  
    Mô hình thương mại bên ngoài có thể thay đổi trọng số ngầm. Để đối chiếu bit-exact, luôn sử dụng replay cache đã băm trong `runs/generation/test/`.

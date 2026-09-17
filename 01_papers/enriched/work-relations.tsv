@@ -1,0 +1,2 @@
+source_id	target_id	relation	doi	arxiv_id	title_similarity	author_surname_overlap	decision_scope	evidence_ids	notes
+P0052	G0005	successor_same_authors	10.1145/3746635	2507.12472	0.8113	8	priority-50	CROSSREF-G0005; ARXIV-G0005; ARXIV-DISAMBIGUATION-G0005	Different title, abstract, and arXiv identifier; do not merge or attach the DOI to P0052.

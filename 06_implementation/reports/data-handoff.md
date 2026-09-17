@@ -2,14 +2,14 @@
 
 Date: 2026-09-13. Local technical gate: **pass**. Human A/B/C reviews and actual plan 03/04 acceptance: **pending**. The implementation is ready for those reviews; plan 02 remains in progress and does not authorize downstream experiments, external sharing, Kaggle upload or API calls.
 
-The candidate is `re2-ob-inference-v1`, schema `cs221-inference-v1`, derived from source revision `afeacb11bcc94dadfd1c8f483ee4377b2b8b614e`.
+The candidate is `re2-ob-inference-v1`, schema `cs221-inference-v1`, derived from source revision `afeacb11bcc94dadfd1c8f483ee4377b2b8b614e`. Gold layers follow [gold-type-contract.md](../docs/gold-type-contract.md): G1 is evaluator-only; tracked `acquisition-manifest.tsv` / `cases-index.json` are G1-equivalent leaks and must not be joined by annotators or mapping generators. Existing F2 qrels are `llm_lexical_proxy` and must not score headline nDCG.
 
 | Frozen artifact | SHA256 |
 |---|---|
 | `data/inference/input-manifest.json` | `55e091a86081e7a9b46208364a1dc8c65658a2628908306f1ec076e693334ae4` |
 | `artifacts/inference-package.zip` | `332717caa25e78ff62cc29a53e675189e598f1e4d98c3e6887e87cb112327527` |
 
-These paths are relative to [06_implementation](../). The exact inference root is `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/data/inference`. Its source-free consumer API is `src.data.common.validate_inference(root)`. It loads the pinned configuration and implementation code but does not open raw telemetry, acquisition metadata, labels or private sidecars.
+These paths are relative to [06_implementation](../). The exact inference root is `06_implementation/data/inference`. Its source-free consumer API is `src.data.common.validate_inference(root)`. It loads the pinned configuration and implementation code but does not open raw telemetry, acquisition metadata, labels or private sidecars.
 
 ## Contents and boundaries
 
@@ -49,7 +49,7 @@ Schema fields are owned by [configs/data.yaml](../configs/data.yaml). The packag
 
 ## Commands from the pack root
 
-Use PowerShell in `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack`. The tested interpreter is the explicit local venv below. Set its module search path for this shell:
+Use PowerShell in the pack root. The tested interpreter is the explicit local venv below. Set its module search path for this shell:
 
 ```powershell
 $env:PYTHONPATH = Join-Path (Get-Location) '06_implementation'

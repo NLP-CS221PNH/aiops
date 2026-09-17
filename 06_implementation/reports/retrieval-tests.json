@@ -30,7 +30,7 @@
   ],
   "environment": {
     "working_directory": "06_implementation",
-    "python_executable": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\06_implementation\\.venv\\Scripts\\python.exe",
+    "python_executable": ".\\06_implementation\\.venv\\Scripts\\python.exe",
     "python": "3.11.9",
     "packages": {
       "numpy": "2.3.3",

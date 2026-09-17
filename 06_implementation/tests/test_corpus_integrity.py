@@ -13,7 +13,7 @@ import unittest
 from unittest import mock
 
 from src.corpus.common import (
-    IMPL, CorpusError, canonical_hash, load_config, parse_json, safe_path,
+    IMPL, ROOT, CorpusError, canonical_hash, load_config, parse_json, safe_path,
     sha256, text_hash, read_json, read_jsonl, write_json, write_jsonl,
 )
 from src.corpus.normalize import normalize_document, clip_spans
@@ -332,6 +332,13 @@ class WholeCorpusTests(CorpusFixture):
     @classmethod
     def setUpClass(cls):
         cls.config = load_config()
+        snapshot_receipt = (
+            ROOT / "03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/D057/LICENSE.receipt.json"
+        )
+        if not snapshot_receipt.is_file():
+            raise unittest.SkipTest(
+                "source-snapshots are archive_private and absent from the public tree"
+            )
         base = IMPL / '.test-work'
         base.mkdir(exist_ok=True)
         cls.temporary = tempfile.TemporaryDirectory(prefix='corpus-full-suite-', dir=base)

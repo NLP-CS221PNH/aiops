@@ -41,3 +41,10 @@ Một ứng dụng Train Ticket/Online Boutique/DeathStarBench có thể đượ
 Trước mọi batch lớn, lưu snapshot điều khoản và ngày kiểm tra; xác nhận scope file, dữ liệu dẫn xuất, mục đích học thuật và quyền công bố. Nguồn conflict/unknown không tự bật crawler. Tải mẫu sau khi quyền phù hợp; kiểm tra định dạng, PII và gold fields; sau đó mới quyết định thu thập phần cần cho thí nghiệm.
 
 Quy trình này không yêu cầu public lại raw data. Báo cáo môn học có thể phát hành manifest, schema, hướng dẫn và code xử lý của nhóm trong phạm vi cho phép, còn người tái lập lấy dữ liệu từ nguồn gốc theo điều khoản của họ.
+
+## RCAEval / source-snapshot release decision (2026-09-16)
+
+- Raw RCAEval Parquet: `internal_only` / `archive_private`. Reconstruct from the exact revision and SHA-256 in `02_datasets/acquired/labels/acquisition-manifest.jsonl`. Owner grant is still required before those bytes may be published (`ARCH-2026-09-16-UPSTREAM-PIN`).
+- De-identified processed extracts and the canonical inference bundle may stay public.
+- Gold/labels remain evaluator-only until a separate release-stage approval.
+- Knowledge snapshot *source bytes* stay archive-private. Snapshot `LICENSE` files stay public reconstruction evidence (`PUB-2026-09-16-LICENSE-EVIDENCE`). Processed attributed chunks and license/source manifests stay public when their snapshotted license is Apache-2.0 or CC-BY-4.0.

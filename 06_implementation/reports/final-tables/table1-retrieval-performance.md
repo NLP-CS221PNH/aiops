@@ -1,10 +1,12 @@
-# Bảng 1: Hiệu Năng Truy Xuất Trên Tập Dev & Test Thật (Offline Retrieval Evaluation)
+# Table 1: Retrieval performance (primary RQ2)
 
-| Hệ Thống (Retriever) | Tập (Split) | Số Ca (N) | Passage nDCG@5 | MRR@10 | Recall@20 | Chênh Lệch Ghép Cặp (vs BM25) | Khoảng Tin Cậy 95% (CI95) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **IR-B (BM25)** | `dev` | 18 | 0.642 | 0.725 | 0.820 | — | — |
-| **IR-D (Dense E5)** | `dev` | 18 | 0.618 | 0.684 | 0.785 | -0.024 | [-0.052, +0.004] |
-| **IR-H (Hybrid RRF)** | `dev` | 18 | **0.684** | **0.769** | **0.871** | **+0.042** | [+0.011, +0.073] |
-| **IR-B (BM25)** | `test` | 18 | 0.354 | 0.576 | 1.000 | — | — |
-| **IR-D (Dense E5)** | `test` | 18 | 0.376 | 0.536 | 0.989 | +0.022 | [-0.058, +0.002] |
-| **IR-H (Hybrid RRF)** | `test` | 18 | **0.342** | **0.617** | **1.000** | **-0.011** | [+0.009, +0.075] |
+> Qrels provenance is llm_judge_adjudicated (on-disk label llm_lexical_proxy). Not human gold. Headline IR metrics stay NOT_RUN until human-double-adjudicated G2 and frozen rankings exist. Primary RQ2 columns are IR-B / IR-D / IR-H only.
+
+| retriever | split | eligible_n | passage_ndcg_5 | mrr_10 | recall_20 | paired_delta_vs_single | uncertainty_ci95 | qrels_provenance | status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| IR-B (BM25) | dev | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | - | - | llm_judge_adjudicated | NOT_RUN |
+| IR-D (Dense E5) | dev | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| IR-H (Hybrid RRF) | dev | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| IR-B (BM25) | test | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | - | - | llm_judge_adjudicated | NOT_RUN |
+| IR-D (Dense E5) | test | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
+| IR-H (Hybrid RRF) | test | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | llm_judge_adjudicated | NOT_RUN |
