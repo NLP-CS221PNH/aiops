@@ -4,7 +4,7 @@
   "created_at_utc": "2026-09-13T04:56:25.735933+00:00",
   "scope": "Synthetic retrieval tooling only; no real indexing, model execution, model weights, private data transfer or upstream environment edits.",
   "python": "3.11.9",
-  "executable": "C:\\Users\\Siinn\\Downloads\\CS221_AIOps_RAG_Research_Pack\\06_implementation\\.venv\\Scripts\\python.exe",
+  "executable": ".\\06_implementation\\.venv\\Scripts\\python.exe",
   "install_target": ".retrieval-deps",
   "wheelhouse": ".retrieval-wheelhouse",
   "lock_path": "configs/retrieval-requirements-lock.txt",

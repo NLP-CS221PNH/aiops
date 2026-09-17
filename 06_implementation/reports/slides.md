@@ -1,3 +1,9 @@
+> **Evaluation claims retracted, 2026-09-17.** All reported nDCG/MRR/Recall values, comparisons and winner claims below are historical proxy outputs, not accepted experimental results. Historical F1/F2 are invalid for evaluation; see `freezes/F2.provenance.json`. The plan completes readiness contracts only. Human G2 and evidence coverage remain unavailable.
+
+# RETRACTED human-qrels claims
+
+**RETRACTED 2026-09-17.** Any slide text below that says two humans judged 56 incidents is false. Current qrels are `llm_lexical_proxy`. See `docs/gold-type-contract.md`.
+
 # Trình chiếu Báo cáo Đồ án CS221 (Slide Storyboard)
 
 **Đề tài:** Phân loại sự cố và Hỗ trợ chẩn đoán nguyên nhân gốc cho Microservices bằng Hybrid RAG có Dẫn chứng  
@@ -56,7 +62,7 @@
 
 ### Kho Tri thức & Nhãn Chú thích Con người
 - **Corpus lịch sử:** 74 tài liệu, 580 chunks chuẩn hóa codepoint offsets tiền 2024.
-- **Core 56 Incidents:** 20 train, 18 dev, 18 test được chấm đôi độc lập bởi 2 người và phân xử bởi người thứ 3 (adjudication) theo `rubric-v1.md`.
+- **Core 56 Incidents:** planned human G2 (20/18/18). Current `annotations/qrels` files are `llm_lexical_proxy`, not two humans. See `freezes/F2.provenance.json`.
 
 ---
 
@@ -66,12 +72,12 @@
 ### Kiến trúc Đường ống (Pipeline Architecture)
 1. **Biểu diễn sự cố:** Chuẩn hóa log, giữ nguyên service names, exceptions và HTTP codes.
 2. **Truy hồi Kết hợp (Hybrid Retrieval):**
-   - Nhánh từ khóa: BM25 ($k_1 = 1.5, b = 0.75$)
+   - Nhánh từ khóa: BM25 ($k_1 = 1.2, b = 0.75$) — older $k_1=1.5$ citations are defects
    - Nhánh ngữ nghĩa: Dense `intfloat/e5-small-v2` (cosine similarity)
    - Hợp nhất: Reciprocal Rank Fusion ($c = 60$, candidate depth = 50 mỗi nhánh)
 3. **Mô hình Sinh có Kiểm soát Ngân sách (Grounded Generator):**
    - Ngân sách context: Observations $\le 2048$ tokens, Knowledge $\le 4096$ tokens, Output $\le 768$ tokens.
-   - 4 điều kiện đối chứng: **G0** (No-RAG), **GB** (BM25), **GD** (Dense), **GH** (Hybrid RRF). Giải mã deterministic ($T = 0.0$).
+   - 4 điều kiện đối chứng: **G0** (No-RAG), **GB** (BM25), **GD** (Dense), **GH** (Hybrid RRF). Decoding temperature $T = 0.1$ (lock). $T = 0.0$ in older drafts is a defect.
 
 ---
 
@@ -80,8 +86,8 @@
 
 ### Trình tự Đóng băng Nghiêm ngặt
 - **Mốc F1 (Plan 08):** Đóng băng toàn bộ cấu hình tiền xử lý, retriever, tokenizer, prompt template và evaluator trước khi chạm vào tập test.
-- **Mốc F2 (Plan 06):** Đóng băng qrels test sau khi hoàn tất chấm đôi và phân xử con người.
-- **Lựa chọn Baseline trên Dev:** Trên tập dev, BM25 đạt 0.642 so với Dense 0.618 $\rightarrow$ BM25 được khóa làm **Stronger Dev Single Comparator**.
+- **Mốc F2:** existing `F2.json` bytes are historical and still say human. Authoritative record is `F2.provenance.json` (`llm_lexical_proxy`). A new human F2 is future plan 06 work.
+- **Lựa chọn Baseline trên Dev:** Dev nDCG figures 0.642/0.618 were pasted, not scorer output. Headline IR is `NOT_RUN`. BM25 remains the protocol tie-break.
 - **Chỉ số Đánh giá:**
   - Truy hồi: `passage nDCG@5` (chính), `MRR@10`, `Pooled Recall@20`.
   - Sinh: Top-1/Top-3 Service Accuracy, Citation Validity, Claim Support Precision, Abstention Rate.
@@ -93,16 +99,11 @@
 
 ### Bảng 1: Hiệu năng Truy hồi trên tập Dev và Test (Eligible $n = 18$)
 
-| Bộ truy hồi | Tập | passage nDCG@5 | MRR@10 | Recall@20 | Paired Delta vs. BM25 | 95% Bootstrap CI |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **IR-B (BM25)** | Dev | 0.642 | 0.725 | 0.820 | *Baseline* | — |
-| **IR-D (Dense E5)** | Dev | 0.618 | 0.684 | 0.785 | -0.024 | [-0.052, +0.004] |
-| **IR-H (Hybrid RRF)** | Dev | 0.684 | 0.769 | 0.871 | +0.042 | [+0.011, +0.073] |
-| **IR-B (BM25)** | Test | 0.628 | 0.714 | 0.812 | *Baseline* | — |
-| **IR-D (Dense E5)** | Test | 0.594 | 0.667 | 0.765 | -0.034 | [-0.068, +0.001] |
-| **IR-H (Hybrid RRF)** | Test | **0.671** | **0.758** | **0.864** | **+0.043** | **[+0.008, +0.078]** |
+Headline IR is `NOT_RUN`. LLM-judge qrels; missing frozen rankings. Do not cite test IR-H nDCG as both 0.342 and 0.671.
 
-- **Kết luận RQ2:** Hybrid RRF vượt trội hơn baseline đơn mạnh nhất một khoảng statistically positive $\Delta = +0.043$ ($+4.3\%$), với khoảng tin cậy 95% bootstrap theo cụm luôn dương.
+See `reports/final-tables/table1-retrieval-performance.md`.
+
+- **Kết luận RQ2:** Headline IR remains `NOT_RUN`. The older $\Delta = +0.043$ claim is a defect, not a finding. See `reports/final-tables/table1-retrieval-performance.md`.
 
 ---
 
@@ -111,17 +112,9 @@
 
 ### Bảng 2: Chất lượng Sinh và Định vị trên 18 Test Incidents (72 Responses)
 
-| Điều kiện Sinh | Top-1 Service Accuracy | Top-3 Service Accuracy | Citation Validity (%) | Claim Support Precision (%) | Tỉ lệ Từ chối (Abstain %) |
-|---|:---:|:---:|:---:|:---:|:---:|
-| **G0 (No-RAG)** | 38.9% (7/18) | 61.1% (11/18) | *N/A* | 41.2% (14/34) | 22.2% (4/18) |
-| **GB (BM25 RAG)** | 61.1% (11/18) | 77.8% (14/18) | 94.4% (34/36) | 78.6% (33/42) | 11.1% (2/18) |
-| **GD (Dense RAG)** | 55.6% (10/18) | 72.2% (13/18) | 91.7% (33/36) | 73.5% (25/34) | 11.1% (2/18) |
-| **GH (Hybrid RAG)** | **72.2% (13/18)** | **88.9% (16/18)** | **97.2% (35/36)** | **85.2% (46/54)** | 5.6% (1/18) |
+Headline generation is `NOT_RUN`. See `reports/final-tables/table2-generation-performance.md`. Past 72.2% / 97.2% / 85.2% cells are defects, not scorer output.
 
-- **Kết luận RQ3:**
-  - Hybrid RAG tăng vọt độ chính xác định vị service từ **38.9%** lên **72.2%** (+33.3% absolute gain).
-  - Tỉ lệ mệnh đề chẩn đoán có căn cứ hỗ trợ tăng hơn gấp đôi (từ 41.2% lên **85.2%**).
-  - Ảo giác trích dẫn bị triệt tiêu gần như hoàn toàn (97.2% citation validity).
+- **Kết luận RQ3:** Generator permission is pending. Mock provider success is not a result. Do not cite GH top-1, citation validity, or claim-support percentages as live findings.
 
 ---
 
@@ -130,17 +123,7 @@
 
 ### Bảng 3: Hiệu năng trên 6 Họ lỗi Kiểm thử và Leave-One-Family-Out Sensitivity
 
-| Family ID | Dịch vụ mục tiêu | Dạng lỗi tiêm | IR-H nDCG | Paired Delta ($\Delta$) | GH Top-1 Accuracy | LOFO Macro Delta |
-|---|---|---|:---:|:---:|:---:|:---:|
-| `FAM-TEST-01` | `cartservice` | CPU Throttle | 0.724 | +0.057 | 100% (3/3) | +0.040 |
-| `FAM-TEST-02` | `paymentservice` | Network Latency | 0.631 | +0.042 | 66.7% (2/3) | +0.043 |
-| `FAM-TEST-03` | `checkoutservice` | Pod Failure / Crash | 0.748 | +0.046 | 100% (3/3) | +0.042 |
-| `FAM-TEST-04` | `frontend` | HTTP 500 Error | 0.569 | +0.026 | 33.3% (1/3) | +0.046 |
-| `FAM-TEST-05` | `emailservice` | Memory Pressure | 0.655 | +0.040 | 66.7% (2/3) | +0.044 |
-| `FAM-TEST-06` | `redis-cart` | Connection Timeout | 0.699 | +0.048 | 66.7% (2/3) | +0.042 |
-
-- **Tính ổn định của LOFO:** Loại trừ bất kỳ họ lỗi nào, $\Delta$ vĩ mô vẫn dao động hẹp trong khoảng $[+0.040, +0.046]$.
-- **Thách thức tại `frontend` (`FAM-TEST-04`):** Lỗi lan truyền qua RPC khiến mô hình dễ nhầm lẫn giữa dịch vụ gọi và dịch vụ bị lỗi gốc (Top-1 chỉ đạt 33.3%).
+Family diagnostics remain `NOT_RUN` until human G2 and frozen rankings exist. Historical LOFO cells (including $[+0.040, +0.046]$) are retracted with the 0.671/0.342 conflict.
 
 ---
 
@@ -160,14 +143,12 @@
 ## Slide 11: Hạch toán Tài nguyên, Khả năng Tái lập & Kiểm thử
 
 ### Bảng 4: Chi phí, Độ trễ và Tài nguyên Hệ thống
-- **Độ trễ trung bình:** 1.12s (G0) $\rightarrow$ 2.15s (GH). Mức tăng 1.03s hoàn toàn nằm trong SLA vận hành (< 5s).
-- **Tổng chi phí API:** \$0.114 cho toàn bộ 72 lượt chạy kiểm thử test set.
-- **Tỉ lệ lỗi hệ thống:** 0 ca crash chết luồng.
+- Cost/latency cells are `NOT_RUN`. No GPU hours or API spend are invented while generator permission is pending.
 
-### Khả năng Tái lập Tuyệt đối (Reproducibility)
-- Toàn bộ 302/302 automated unit & contract tests đã chạy và vượt qua 100%.
-- Bảng số liệu được sinh trực tiếp bằng code từ các artifacts đã băm SHA256.
-- Hướng dẫn chạy lại từng bước chi tiết tại `docs/reproduce.md`.
+### Khả năng Tái lập (Reproducibility)
+- Headline tables come from `python -m src.evaluation write-tables` (`src/evaluation`), not pasted literals.
+- Hướng dẫn chạy lại: `docs/reproduce.md`.
+- Current pytest count is not a frozen 302/302 claim; re-run `python -m pytest -q -o pythonpath=.` in `06_implementation`.
 
 ---
 
@@ -175,9 +156,9 @@
 ## Slide 12: Kết luận & Giới hạn Nghiên cứu (Conclusions & Limitations)
 
 ### Kết luận Khoa học Cốt lõi
-1. **Hybrid RRF mang lại ưu thế thực chất:** Đạt hiệu số $+4.3\%$ so với BM25 trên tập test, kết hợp hiệu quả giữa mã lỗi kỹ thuật và ngữ nghĩa chẩn đoán.
-2. **RAG giải quyết bài toán ảo giác:** Nâng độ chính xác định vị lên **72.2%**, đạt **97.2%** trích dẫn hợp lệ và **85.2%** nhận định có căn cứ.
-3. **Tính an toàn vận hành:** Cơ chế phát hiện trích dẫn giả mạo và từ chối trả lời (abstention) bảo vệ an toàn cho kỹ sư SRE.
+1. Methodology is locked at R2 + IR-B/IR-D/IR-H; knobs live in `configs/methodology-lock.yaml`. Headline IR/generation remain `NOT_RUN`.
+2. Past $+4.3\%$, 72.2%, 97.2%, and 85.2% claims are retracted defects, not findings.
+3. Labeled controls (G0, G-oracle, G-random, answerability, leakage) are documented in `reports/controls-mvp.md`. GraphRAG / multi-agent / IR-R / iterative retrieval stay deferred.
 
 ### Giới hạn & Hướng Phát triển
 - Tập kiểm thử giới hạn ở 6 họ lỗi microservice; cần mở rộng sang các kiến trúc phân tán đa ngôn ngữ khác.

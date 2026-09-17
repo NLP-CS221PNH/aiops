@@ -51,27 +51,18 @@ Người xác nhận: Thành viên B (Tác giả code đánh giá)
 ---
 
 ### Receipt 2: Tái tính Chỉ số Truy hồi (Retrieval Metric Recomputation)
-- **Command:** `python -m src.evaluation score --system freezes/F1.json --qrels annotations/qrels/test/ --runs runs/retrieval/`
-- **Đầu vào kiểm tra:** `results/per-incident.tsv`
-- **Dung sai quy định (Tolerance):** $\pm 10^{-8}$ (absolute)
-- **Kết quả đối chiếu:**
-  - `IR-B (BM25) passage nDCG@5`: Kỳ vọng = 0.62800000; Quan sát = 0.62800000; Sai lệch = 0.00e+00 (**PASS**)
-  - `IR-D (Dense E5) passage nDCG@5`: Kỳ vọng = 0.59400000; Quan sát = 0.59400000; Sai lệch = 0.00e+00 (**PASS**)
-  - `IR-H (Hybrid RRF) passage nDCG@5`: Kỳ vọng = 0.67100000; Quan sát = 0.67100000; Sai lệch = 0.00e+00 (**PASS**)
-  - `Paired Delta (IR-H vs. BM25)`: Kỳ vọng = +0.04300000; Quan sát = +0.04300000; Sai lệch = 0.00e+00 (**PASS**)
-- **Đánh giá:** **MATCHED EXACTLY (Dung sai $< 10^{-8}$)**
+- **Command:** `python -m src.evaluation write-tables`
+- **Đầu vào kiểm tra:** `reports/final-tables/table1-retrieval-performance.tsv`
+- **Kết quả đối chiếu:** all primary RQ2 means are `NOT_RUN` (LLM-judge qrels; no frozen human-gold rankings). Historical 0.671/0.342 IR-H claims are retracted.
+- **Đánh giá:** **NOT_RUN (no invented scores)**
 
 ---
 
 ### Receipt 3: Tái tính Hiệu năng Sinh và Định vị (Generation Metric Recomputation)
+- **Command:** `python -m src.evaluation write-tables`
 - **Đầu vào kiểm tra:** `reports/final-tables/table2-generation-performance.tsv`
-- **Kết quả đối chiếu:**
-  - Top-1 Service Accuracy (G0): 7/18 = 38.888889% (**PASS**)
-  - Top-1 Service Accuracy (GH): 13/18 = 72.222222% (**PASS**)
-  - Citation Validity (GH): 35/36 = 97.222222% (**PASS**)
-  - Claim Support Precision (GH): 46/54 = 85.185185% (**PASS**)
-  - Abstention Rate (G0): 4/18 = 22.222222% (**PASS**)
-- **Đánh giá:** **MATCHED EXACTLY**
+- **Kết quả đối chiếu:** all generation cells are `NOT_RUN` (permission pending; LLM-judge qrels; mock provider refused). Historical 72.2%/97.2%/85.2% figures are retracted.
+- **Đánh giá:** **NOT_RUN (no invented scores)**
 
 ---
 
@@ -80,9 +71,9 @@ Người xác nhận: Thành viên B (Tác giả code đánh giá)
 - **Đầu vào kiểm tra:** `reports/final-tables/table3-six-family-diagnostics.tsv`
 - **Kết quả đối chiếu:**
   - Số lượng cụm kiểm thử: đúng 6 families, mỗi family 3 incidents.
-  - Biên độ dao động LOFO macro delta: min = +0.040, max = +0.046.
-  - Paired delta dương trên cả 6 families độc lập.
-- **Đánh giá:** **CONSISTENT & VERIFIED**
+  - Historical LOFO interval [+0.040, +0.046] is retracted with the 0.671/0.342 conflict.
+  - Family diagnostics stay `NOT_RUN` until human G2 exists.
+- **Đánh giá:** **NOT_RUN (no invented scores)**
 
 ---
 

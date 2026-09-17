@@ -1,12 +1,40 @@
 # CS221 · AIOps / RCA / Hybrid RAG — Research Pack
 
 **Nguyễn Văn Nam · MSSV 24521120**  
-**Ngày rà soát nguồn:** 12/09/2026  
-**Trạng thái:** tài liệu nghiên cứu và kế hoạch, chưa thu thập dataset hay chạy thí nghiệm.
+**Current HEAD:** implementation and research-pack working tree (see `START-HERE.md`).  
+**Initial research snapshot (12/09/2026):** Markdown/JSON catalogs only; that snapshot is audit history, not the current public surface.
 
-## Đọc trước
+## Read this first
 
-Gói gồm **1.009 mục tài liệu sau khử trùng**, **102 đăng ký nguồn/tập con/tài nguyên dữ liệu**, kế hoạch đồ án và nhật ký kiểm tra. Chỉ có Markdown, JSON/JSONL, TSV, TXT và BibTeX tối thiểu; không có PDF, model, dữ liệu gốc hoặc crawler.
+Current publication rules: [docs/repository-publication-policy.md](docs/repository-publication-policy.md).  
+Archive and history limitations: [docs/public-release-runbook.md](docs/public-release-runbook.md).  
+Ledger: [04_audit/public-artifact-ledger.tsv](04_audit/public-artifact-ledger.tsv).
+
+The public Git tip tracks project-owned code, schemas, descriptive metadata, de-identified processed extracts, the canonical inference bundle, attributed knowledge manifests/chunks, and snapshot `LICENSE` files needed for offline reconstruction checks. Raw RCAEval Parquet, paper caches/full text/PDFs, gold labels, private sidecars, candidate copies and knowledge snapshot *source bytes* are gitignored and reconstructed from pinned upstream revisions.
+
+Root `LICENSE` is MIT for project Software. It does not relicense third-party data, PDFs, full text or snapshots.
+
+## Start here
+
+Read the [proposal](00_plan/project_proposal.md), then [dataset shortlist](02_datasets/shortlist.md), [evaluation plan](00_plan/experiments_and_evaluation.md), and [remaining work](00_plan/remaining-work.md). For reading order, open [50 priority papers](01_papers/priority_reading.md).
+
+Offline PR checks from a clean checkout:
+
+```powershell
+python scripts/validate-public-artifacts.py --ledger 04_audit/public-artifact-ledger.tsv --tracked-only
+python scripts/canonical_identifiers.py
+python scripts/validate-research-pack.py --check --mode pr
+python scripts/freeze-research-pack.py --check
+cd 06_implementation
+python -m pytest -q -o pythonpath=.
+```
+
+Windows AMD64 + CPython 3.11.9 is the supported install (`06_implementation/configs/requirements-lock.txt` with `pip --require-hashes`). This repository does not currently ship a Linux hash lock.
+
+Historical catalog counts from the 12/09/2026 snapshot remain in `04_audit/package_qa.md` (labelled as that snapshot) and in `MANIFEST_SHA256.txt`.
+
+## Catalog snapshot (12/09/2026, historical)
+
 
 **1.009 không có nghĩa 1.009 bài đã được xác minh đầy đủ.** Có 766 mục được đối chiếu **tiêu đề và định danh** trên nguồn gốc; 35 mục có PDF đọc được nhưng chưa xác nhận tiêu đề; 208 mục bị chặn/chưa đọc được qua công cụ. Tất cả mục đều đã có lần thử kiểm tra link chuẩn hóa. Tác giả, venue, năm xuất bản và tình trạng phản biện **chưa được kiểm chứng đồng loạt**, nên để trống thay vì suy đoán. Bộ 243 mục chưa xác nhận được tách riêng trong `01_papers/unresolved.tsv`.
 
@@ -29,13 +57,13 @@ Gói gồm **1.009 mục tài liệu sau khử trùng**, **102 đăng ký nguồ
 
 ## Bắt đầu từ đâu?
 
-Đọc [đề cương](00_plan/project_proposal.md), sau đó [shortlist dữ liệu](02_datasets/shortlist.md) và [kế hoạch đánh giá](00_plan/experiments_and_evaluation.md). Để chọn tài liệu đọc, mở [50 tài liệu ưu tiên](01_papers/priority_reading.md). Các ghi chú ưu tiên là câu hỏi cần rút ra khi đọc, không giả làm bản tóm tắt toàn văn đã hoàn tất.
+Đọc [đề cương](00_plan/project_proposal.md), sau đó [shortlist dữ liệu](02_datasets/shortlist.md), [kế hoạch đánh giá](00_plan/experiments_and_evaluation.md) và [việc còn lại](00_plan/remaining-work.md). Để chọn tài liệu đọc, mở [50 tài liệu ưu tiên](01_papers/priority_reading.md). Các ghi chú ưu tiên là câu hỏi cần rút ra khi đọc, không giả làm bản tóm tắt toàn văn đã hoàn tất.
 
 ## Cấu trúc
 
 | Đường dẫn | Công dụng |
 |---|---|
-| `00_plan/` | Đề cương, tổng hợp hướng nghiên cứu, thí nghiệm, annotation, timeline |
+| `00_plan/` | Đề cương, tổng hợp hướng nghiên cứu, thí nghiệm, annotation, timeline, việc còn lại |
 | `01_papers/catalog.tsv` | Lọc/tìm tên bài, chủ đề, trạng thái và nguồn metadata |
 | `01_papers/catalog.jsonl` | Một bản ghi đầy đủ mỗi dòng, thuận tiện xử lý riêng |
 | `01_papers/confirmed_primary.jsonl` | Chỉ 766 mục xác nhận được tiêu đề/định danh |

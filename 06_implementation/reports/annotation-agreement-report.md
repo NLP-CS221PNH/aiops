@@ -1,8 +1,12 @@
+# RETRACTED as human agreement
+
+**RETRACTED 2026-09-17.** Kappa below is an arithmetic property of a lexical proxy with seeded A/B noise. It does not unlock Plan 06 and is not human inter-rater agreement.
+
 # Báo Cáo Đo Lường Độ Đồng Thuận Chấm Nhãn (Plan 06 Hướng B)
 
 ## 1. Phương pháp & Giao thức Thực hiện
 
-- **Phương pháp:** LLM-as-a-Judge với quy trình chấm đôi độc lập (Double Annotation) theo Rubric 3 mức (0: Không liên quan, 1: Liên quan một phần, 2: Xác đáng hỗ trợ chẩn đoán).
+- **Phương pháp:** lexical proxy (`llm_judge.py`), not an LLM and not two human reviewers. Grades are 0/1/2 with seeded A/B noise over one `base_grade`.
 - **Người chấm:**
   - `Annotator A`: Persona SRE khắt khe, ưu tiên định danh chính xác mã dịch vụ và hành vi lỗi.
   - `Annotator B`: Persona SRE mở rộng ngữ cảnh, đánh giá cao sự liên đới kiến trúc và phụ thuộc giữa các microservices.
@@ -44,4 +48,4 @@
 
 ## 4. Kết luận
 
-Hệ thống chấm đôi tự động LLM-as-a-Judge đạt hệ số tương quan liên người chấm vững chắc (Quadratic Weighted Kappa > 0.70 trên cả 3 tập train, dev, test), đủ điều kiện giải phóng cổng kiểm soát Plan 06 và chuyển giao sang bước đóng băng F2.
+Do not treat this kappa as human agreement. It does not unlock Plan 06. Headline nDCG on these proxy files is invalid. See `freezes/F2.provenance.json`.

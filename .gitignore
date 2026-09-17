@@ -1,10 +1,16 @@
-# Local AI / editor tooling (plans/*.md and plan folders stay tracked)
+# Local AI / editor tooling
 .claude/
 .cursor/
 .runtime-python/
 .agentkit/
 .agents/
 engineer/
+
+# AgentKit operational plans stay local. One G0 freeze snapshot remains public.
+plans/*
+!plans/reports/
+plans/reports/*
+!plans/reports/260913-independent-plans-contracts.md
 plans/.agentkit-runtime/
 
 # Python
@@ -61,6 +67,36 @@ Desktop.ini
 .env
 .env.*
 !.env.example
+
+# Publication / local-only research artifacts
+01_papers/enriched/cache/
+01_papers/enriched/rescue-cache/
+01_papers/enriched/primary-text/
+01_papers/enriched/**/*.pdf
+02_datasets/acquired/raw/
+02_datasets/processed/labels/
+# Snapshot source bytes stay private. LICENSE text is public reconstruction evidence.
+03_collection_plan/knowledge-corpus/raw/source-snapshots/*
+!03_collection_plan/knowledge-corpus/raw/source-snapshots/*/
+03_collection_plan/knowledge-corpus/raw/source-snapshots/*/*
+!03_collection_plan/knowledge-corpus/raw/source-snapshots/*/LICENSE
+03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*
+!03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*/
+03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*/*
+!03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*/LICENSE
+05_research/source-snapshots/
+06_implementation/data/private/
+06_implementation/data/candidate-inference/
+06_implementation/data/candidate-pre-review/
+06_implementation/data/imputed/
+06_implementation/reports/**/*.pdf
+06_implementation/reports/submission-package/
+06_implementation/reports/data-test-results.json
+06_implementation/reports/environment-check.json
+06_implementation/reports/data-test-results.json
+06_implementation/reports/environment-check.json
+START-HERE.html
+06_implementation/configs/final-manifest.json
 
 # Local scratch (do not commit)
 _remote_check/

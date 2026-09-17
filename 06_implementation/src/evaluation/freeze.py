@@ -2,8 +2,14 @@ import json
 import yaml
 from pathlib import Path
 
+LOCKED_F1 = Path(__file__).resolve().parents[2] / "freezes" / "F1.json"
+
+
 def generate_f1_freeze(config_path: str, output_path: str):
     """Generate F1 freeze from evaluation config."""
+    out_file = Path(output_path)
+    if out_file.resolve() == LOCKED_F1.resolve() and LOCKED_F1.exists():
+        raise SystemExit("f1_overwrite_forbidden")
     config_file = Path(config_path)
     with config_file.open('r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
@@ -22,7 +28,6 @@ def generate_f1_freeze(config_path: str, output_path: str):
         "comparator": "BM25"
     }
     
-    out_file = Path(output_path)
     out_file.parent.mkdir(parents=True, exist_ok=True)
     with out_file.open('w', encoding='utf-8') as f:
         json.dump(f1_data, f, indent=2)

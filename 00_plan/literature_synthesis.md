@@ -8,7 +8,7 @@ Có ít nhất ba loại đầu ra dễ bị trộn: service gây lỗi, mô t�
 
 Một hệ thống có thể truy hồi đúng một incident tương tự nhưng vẫn áp dụng nguyên nhân cũ sai vào service hiện tại. Ngược lại, nó có thể đoán đúng service từ một token lộ nhãn mà hoàn toàn không sử dụng evidence. Vì vậy, đề xuất tách retrieval quality, root-cause correctness và evidence grounding; demo câu trả lời mạch lạc không đủ là thí nghiệm RCA.
 
-Hai nguồn khảo sát để định nghĩa terminology và ranh giới tác vụ là [P0052 — A Survey of AIOps for Failure Management in the Era of Large Language Models](https://arxiv.org/abs/2406.11213) và [P0773 — Failure Diagnosis in Microservice Systems: A Comprehensive Survey and Analysis](https://arxiv.org/abs/2407.01710). Khi đọc, cần lập ma trận “observed input → output label → evaluation unit”. Không gắn tên RCA cho mọi anomaly detection benchmark chỉ vì cùng có log.
+Hai nguồn khảo sát để định nghĩa terminology và ranh giới tác vụ là [P0052 — A Survey of AIOps for Failure Management in the Era of Large Language Models](https://arxiv.org/abs/2406.11213) và [P0773 — Failure Diagnosis in Microservice Systems: A Comprehensive Survey and Analysis](https://arxiv.org/abs/2407.01710). P0052 là preprint failure-management riêng; [G0005 — A Survey of AIOps in the Era of Large Language Models](https://doi.org/10.1145/3746635) là khảo sát CSUR successor cùng nhóm tác giả, không phải DOI/bản in của P0052. Khi đọc, cần lập ma trận “observed input → output label → evaluation unit”. Không gắn tên RCA cho mọi anomaly detection benchmark chỉ vì cùng có log.
 
 ## 2. Định vị đóng góp NLP rõ ràng
 
@@ -78,6 +78,6 @@ Không tuyên bố đây là khoảng trống khoa học chưa ai làm trên to�
 
 ## 10. Cách biến danh mục thành related work
 
-Đọc 15–25 bài cốt lõi trước và tạo extraction matrix. Mỗi dòng có task, observation, labels, knowledge source, split, baseline, metric, source availability, license và failure mode. Phần related work nên so sánh theo trục đóng góp, không liệt kê một nghìn tên bài. Chỉ khi kiểm tra full text mới chép số liệu bảng, mô tả implementation hoặc kết luận hơn/kém của paper.
+Universe related-work được khóa ở core 45 mục trong `01_papers/core-literature.tsv`; extraction matrix vẫn là tập nhỏ 8–12 công trình đã đọc đúng depth. Đọc sâu 15–25 bài từ core trước khi mở rộng matrix. Mỗi dòng extraction có task, observation, labels, knowledge source, split, baseline, metric, source availability, license và failure mode. Phần related work nên so sánh theo trục đóng góp, không liệt kê một nghìn tên bài. Chỉ khi kiểm tra full text mới chép số liệu bảng, mô tả implementation hoặc kết luận hơn/kém của paper.
 
 Giữ một đoạn limitations: data công khai có thể khác production; fault injection không đại diện mọi sự cố; qrels hữu hạn có thể chưa phủ đủ bằng chứng; judge có bias; KB có ràng buộc version/time; phép đo trên một hệ thống chưa chứng minh generalization. Những giới hạn này giúp xác định phạm vi claim thay vì làm benchmark trông lớn hơn thực tế.

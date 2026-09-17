@@ -39,11 +39,14 @@ from src.annotations.llm_judge import (
 
 
 def load_corpus_chunks(path: Path):
-    chunks = []
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            if line.strip():
-                chunks.append(json.loads(line))
+    """Load only reviewed, allowlisted chunks through the shared input gate."""
+    from src.retrieval.inputs import load_config, load_corpus
+
+    config = load_config(BASE_DIR / "configs" / "retrieval.yaml")
+    expected = BASE_DIR / Path(config["corpus_manifest"]).parent / "chunks.jsonl"
+    if path.resolve() != expected.resolve():
+        raise ValueError("CORPUS_PATH_MISMATCH")
+    chunks, _ = load_corpus(config)
     return chunks
 
 
@@ -88,6 +91,8 @@ def compute_weighted_kappa(grades_a: list[int], grades_b: list[int], num_categor
 
 
 def run_pipeline():
+    load_corpus_chunks(BASE_DIR / "data" / "knowledge" / "chunks.jsonl")
+    raise RuntimeError("LEGACY_PROXY_PIPELINE_DISABLED: use the human union-pool protocol")
     print("=== Step 1: Loading test incidents ===")
     split_path = BASE_DIR / "data" / "private" / "split-map.tsv"
     with open(split_path, "r", encoding="utf-8") as f:
@@ -420,18 +425,17 @@ def run_pipeline():
     report_path = BASE_DIR / "reports" / "annotation-agreement-report.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     with open(report_path, "w", encoding="utf-8") as f:
-        f.write("# Báo Cáo Đo Lường Độ Đồng Thuận Chấm Nhãn (Plan 06 Hướng B)\n\n")
+        f.write("# RETRACTED as human agreement\n\n")
+        f.write("**RETRACTED.** Kappa below is an arithmetic property of `llm_lexical_proxy` with seeded A/B noise. It is not human inter-rater agreement and does not unlock Plan 06.\n\n")
         f.write("## 1. Phương pháp & Giao thức Thực hiện\n\n")
-        f.write("- **Phương pháp:** LLM-as-a-Judge với quy trình chấm đôi độc lập (Double Annotation) theo Rubric 3 mức (0: Không liên quan, 1: Liên quan một phần, 2: Xác đáng hỗ trợ chẩn đoán).\n")
-        f.write("- **Người chấm:**\n")
-        f.write("  - `Annotator A`: Persona SRE khắt khe, ưu tiên định danh chính xác mã dịch vụ và hành vi lỗi.\n")
-        f.write("  - `Annotator B`: Persona SRE mở rộng ngữ cảnh, đánh giá cao sự liên đới kiến trúc và phụ thuộc giữa các microservices.\n")
-        f.write("- **Phân xử bất đồng (Adjudication):** Áp dụng bộ phân xử tự động theo quy tắc hòa giải có bảo chứng.\n\n")
+        f.write("- **Phương pháp:** lexical proxy (`llm_judge.py`), not an LLM and not two human reviewers.\n")
+        f.write("- **Người chấm:** `LLM_Judge_Annotator_*` personas share one `base_grade` plus seeded noise.\n")
+        f.write("- **Phân xử:** automatic max/average over the same lexical grade. Pool-circular.\n\n")
         f.write("## 2. Bảng Thống Kê Độ Đồng Thuận Theo Từng Tập\n\n")
         f.write("| Phân Vùng (Split) | Số Cặp Đánh Giá (N) | Tỷ Lệ Nhất Trí Tuyệt Đối | Cohen's Kappa (Unweighted) | Cohen's Kappa (Quadratic Weighted) | Đánh Giá Ngưỡng |\n")
         f.write("| :--- | :---: | :---: | :---: | :---: | :---: |\n")
         for split, s in stats.items():
-            threshold_eval = "Đạt chuẩn xuất sắc (\\(\\kappa \\ge 0.70\\))" if s["quadratic_kappa"] >= 0.70 else "Đạt chuẩn thỏa đáng (\\(\\kappa \\ge 0.60\\))"
+            threshold_eval = "proxy arithmetic only; not a human gate"
             f.write(f"| `{split}` | {s['n_samples']} | {s['observed_agreement']:.2%} | {s['unweighted_kappa']:.4f} | **{s['quadratic_kappa']:.4f}** | {threshold_eval} |\n")
         f.write("\n## 3. Ma Trận Nhầm Lẫn (Confusion Matrices)\n\n")
         for split, s in stats.items():
@@ -443,7 +447,7 @@ def run_pipeline():
                 f.write(f"| **Điểm {i}** | {row[0]} | {row[1]} | {row[2]} |\n")
             f.write("\n")
         f.write("## 4. Kết luận\n\n")
-        f.write("Hệ thống chấm đôi tự động LLM-as-a-Judge đạt hệ số tương quan liên người chấm vững chắc (Quadratic Weighted Kappa > 0.70 trên cả 3 tập train, dev, test), đủ điều kiện giải phóng cổng kiểm soát Plan 06 và chuyển giao sang bước đóng băng F2.\n")
+        f.write("Do not treat this file as human gold. Headline nDCG on proxy qrels is invalid. Plan 06 stays blocked until human G2 exists.\n")
 
     print(f"Saved agreement report to {report_path}")
     print("\nPipeline completed successfully!")

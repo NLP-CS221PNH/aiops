@@ -32,7 +32,7 @@ Tài liệu hướng dẫn triển khai, vận hành và kiểm tra ứng dụng
 
 ## 2. Yêu cầu môi trường
 
-- **Hệ điều hành:** Windows 10/11, Linux, hoặc macOS.
+- **Hệ điều hành:** Windows 10/11 AMD64 (hash-locked). Linux/macOS are not supported until a matching lock exists.
 - **Python:** Python 3.10 trở lên (khuyến nghị Python 3.11).
 - **Thư viện phụ thuộc:**
   - Standard library (`http.server`, `urllib`, `json`, `hashlib`, `html`, `pathlib`, `argparse`).

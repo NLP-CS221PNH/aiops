@@ -1,32 +1,52 @@
-"""Package release artifacts, build evaluator-bundle, and generate final-manifest.json."""
+"""Release packaging into clean staging with a real git revision."""
+from __future__ import annotations
+
+import argparse
 import hashlib
 import json
 import shutil
-from datetime import datetime, timezone
+import subprocess
+import sys
+import tempfile
 from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+ROOT = BASE_DIR.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from publication_policy import git_dirty, git_head, sha256_file  # noqa: E402
 
-def sha256_file(path: Path) -> str:
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        while chunk := f.read(65536):
-            h.update(chunk)
-    return h.hexdigest()
+PLACEHOLDER_MARKERS = ("handoff", "ready", "placeholder", "dummy")
+SUPPORTED_PLATFORMS = ("win_amd64",)
 
 
-def main():
-    base_dir = Path(__file__).resolve().parent.parent
-    submission_dir = base_dir / "reports" / "submission-package"
-    evaluator_dir = submission_dir / "evaluator-bundle"
+def sha256_text(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
 
-    evaluator_dir.mkdir(parents=True, exist_ok=True)
 
-    # Key artifacts to include in release inventory
-    artifacts_to_inventory = [
+def require(condition: bool, code: str) -> None:
+    if not condition:
+        raise SystemExit(code)
+
+
+def load_lock_ref() -> dict:
+    lock = BASE_DIR / "configs" / "requirements-lock.txt"
+    require(lock.is_file(), "missing_dependency_lock")
+    return {
+        "os": "Windows AMD64",
+        "python": "3.11.9",
+        "supported_platforms": list(SUPPORTED_PLATFORMS),
+        "lock_file": "configs/requirements-lock.txt",
+        "lock_sha256": sha256_file(lock),
+        "install": "python -m pip install --require-hashes -r configs/requirements-lock.txt",
+        "linux_lock": None,
+        "note": "Windows hash lock only; this release does not claim Linux support.",
+    }
+
+
+def artifact_list() -> list[tuple[str, str, str]]:
+    return [
         ("reports/final-report.md", "report", "MIT"),
-        ("reports/final-report.pdf", "report_pdf", "MIT"),
         ("reports/slides.md", "slides", "MIT"),
-        ("reports/slides.pdf", "slides_pdf", "MIT"),
         ("reports/claim-evidence.tsv", "evidence_registry", "MIT"),
         ("reports/claim-audit.md", "claim_audit", "MIT"),
         ("reports/reproduction-receipts.md", "receipts", "MIT"),
@@ -45,96 +65,109 @@ def main():
         ("results/family-comparison.tsv", "family_results", "MIT"),
     ]
 
-    manifest_artifacts = []
+
+def reject_placeholder(path: Path) -> None:
+    if path.suffix.lower() in {".json", ".jsonl", ".tsv", ".txt", ".md"}:
+        text = path.read_text(encoding="utf-8", errors="replace").lower()
+        if path.name == "final-manifest.json" and '"handoff"' in text and "ready" in text and "artifacts" not in text:
+            raise SystemExit("placeholder_manifest")
+        if text.strip() in {"dummy_judgments", '{"status":"exported"}', '{"handoff": "ready"}', '{"handoff":"ready"}'}:
+            raise SystemExit(f"placeholder:{path}")
+
+
+def _safe_replace_output(final_dir: Path) -> None:
+    if not final_dir.exists():
+        return
+    marker = final_dir / "CHECKSUMS_SHA256.txt"
+    if final_dir.name != "submission-package" or not marker.is_file():
+        raise SystemExit("refuse_overwrite_output")
+    shutil.rmtree(final_dir)
+
+
+def package_release(output_dir: Path | None = None) -> dict:
+    require(not git_dirty(ROOT), "dirty_worktree")
+    revision = git_head(ROOT)
+    tag = subprocess.check_output(["git", "tag", "--points-at", "HEAD"], cwd=ROOT, text=True).strip().splitlines()
+    artifacts = []
     checksum_lines = []
-
-    for rel_path, kind, license_ref in artifacts_to_inventory:
-        file_path = base_dir / rel_path
-        if file_path.exists():
-            file_hash = sha256_file(file_path)
-            norm_path = rel_path.replace("\\", "/")
-            manifest_artifacts.append({
-                "path": norm_path,
-                "sha256": file_hash,
-                "kind": kind,
-                "license_ref": license_ref,
-                "size_bytes": file_path.stat().st_size
-            })
-            checksum_lines.append(f"{file_hash}  {norm_path}")
-
-    # Copy files into evaluator bundle
-    eval_copies = [
-        ("freezes/F1.json", evaluator_dir / "F1.json"),
-        ("freezes/F2.json", evaluator_dir / "F2.json"),
-        ("reports/final-tables/table1-retrieval-performance.tsv", evaluator_dir / "table1-retrieval-performance.tsv"),
-        ("reports/final-tables/table2-generation-performance.tsv", evaluator_dir / "table2-generation-performance.tsv"),
-        ("reports/final-tables/table3-six-family-diagnostics.tsv", evaluator_dir / "table3-six-family-diagnostics.tsv"),
-        ("reports/final-tables/table4-resource-accounting.tsv", evaluator_dir / "table4-resource-accounting.tsv"),
-        ("reports/demo/case-audit.tsv", evaluator_dir / "case-audit.tsv"),
-        ("results/per-incident.tsv", evaluator_dir / "per-incident.tsv"),
-        ("results/family-comparison.tsv", evaluator_dir / "family-comparison.tsv"),
-        ("docs/reproduce.md", evaluator_dir / "reproduce.md"),
-    ]
-
-    for src_rel, dest_path in eval_copies:
-        src_path = base_dir / src_rel
-        if src_path.exists():
-            dest_path.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src_path, dest_path)
-
-    # Copy docs and reports to submission package
-    sub_docs = submission_dir / "docs"
-    sub_reports = submission_dir / "reports"
-    sub_configs = submission_dir / "configs"
-    sub_docs.mkdir(parents=True, exist_ok=True)
-    sub_reports.mkdir(parents=True, exist_ok=True)
-    sub_configs.mkdir(parents=True, exist_ok=True)
-
-    shutil.copy2(base_dir / "reports" / "final-report.pdf", sub_reports / "final-report.pdf")
-    shutil.copy2(base_dir / "reports" / "final-report.md", sub_reports / "final-report.md")
-    shutil.copy2(base_dir / "reports" / "slides.pdf", sub_reports / "slides.pdf")
-    shutil.copy2(base_dir / "reports" / "slides.md", sub_reports / "slides.md")
-    shutil.copy2(base_dir / "docs" / "reproduce.md", sub_docs / "reproduce.md")
-    shutil.copy2(base_dir / "docs" / "data-and-model-card.md", sub_docs / "data-and-model-card.md")
-
-    # Write checksum file
-    checksum_file = submission_dir / "CHECKSUMS_SHA256.txt"
-    checksum_file.write_text("\n".join(checksum_lines) + "\n", encoding="utf-8")
-
-    f1_hash = sha256_file(base_dir / "freezes" / "F1.json") if (base_dir / "freezes" / "F1.json").exists() else "0" * 64
-    f2_hash = sha256_file(base_dir / "freezes" / "F2.json") if (base_dir / "freezes" / "F2.json").exists() else "0" * 64
-
-    final_manifest = {
-        "release_id": "cs221-aiops-rag-v1.0.0",
-        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+    for rel_path, kind, license_ref in artifact_list():
+        file_path = BASE_DIR / rel_path
+        require(file_path.is_file(), f"missing:{rel_path}")
+        reject_placeholder(file_path)
+        digest = sha256_file(file_path)
+        artifacts.append({
+            "path": rel_path.replace("\\", "/"),
+            "sha256": digest,
+            "kind": kind,
+            "license_ref": license_ref,
+            "size_bytes": file_path.stat().st_size,
+            "provenance": "implementation-working-tree",
+        })
+        checksum_lines.append(f"{digest}  {rel_path.replace(chr(92), '/')}")
+    f1 = BASE_DIR / "freezes" / "F1.json"
+    f2 = BASE_DIR / "freezes" / "F2.json"
+    env = load_lock_ref()
+    manifest = {
+        "release_id": "cs221-aiops-rag",
         "protocol_id": "cs221-aiops-rag-protocol-v1",
-        "F1_hash": f1_hash,
-        "F2_hash": f2_hash,
-        "code_revision": "rel-v1.0.0",
-        "environment_ref": {
-            "os": "Windows 11 AMD64 (build 26100) / Linux x86_64 compatible",
-            "python": "3.11.9",
-            "dependencies": {
-                "numpy": "2.3.3",
-                "pyarrow": "21.0.0",
-                "pydantic": "2.13.5",
-                "PyYAML": "6.0.3",
-                "pytest": "8.4.2"
-            }
-        },
-        "artifacts": manifest_artifacts,
+        "F1_hash": sha256_file(f1),
+        "F2_hash": sha256_file(f2),
+        "code_revision": revision,
+        "git_tags_at_head": tag,
+        "environment_ref": env,
+        "artifacts": artifacts,
         "evaluator_bundle_ref": "reports/submission-package/evaluator-bundle",
         "checksums_file": "reports/submission-package/CHECKSUMS_SHA256.txt",
-        "review_status": "G10-C / 10.release achieved",
-        "release_notes": "Full final submission package with reproducible evaluator bundle, clean PDFs, and audited claim-evidence registry."
+        "policy_version": "cs221-public-artifact-policy-v1",
+        "review_status": "packaged-from-clean-head",
     }
+    staging_parent = BASE_DIR / "reports"
+    staging_parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=".release-staging-", dir=staging_parent) as tmp:
+        staging = Path(tmp)
+        dest_root = staging / "submission-package"
+        evaluator = dest_root / "evaluator-bundle"
+        evaluator.mkdir(parents=True)
+        (dest_root / "docs").mkdir()
+        (dest_root / "reports").mkdir()
+        (dest_root / "configs").mkdir()
+        for item in artifacts:
+            src = BASE_DIR / item["path"]
+            copied = dest_root / item["path"]
+            copied.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, copied)
+            require(sha256_file(copied) == item["sha256"], f"dest_hash_mismatch:{item['path']}")
+        copies = [
+            "freezes/F1.json",
+            "freezes/F2.json",
+            "reports/final-tables/table1-retrieval-performance.tsv",
+            "reports/final-tables/table2-generation-performance.tsv",
+            "reports/final-tables/table3-six-family-diagnostics.tsv",
+            "reports/final-tables/table4-resource-accounting.tsv",
+            "reports/demo/case-audit.tsv",
+            "results/per-incident.tsv",
+            "results/family-comparison.tsv",
+            "docs/reproduce.md",
+        ]
+        for rel in copies:
+            shutil.copy2(BASE_DIR / rel, evaluator / Path(rel).name)
+            require(sha256_file(evaluator / Path(rel).name) == sha256_file(BASE_DIR / rel), f"bundle_mismatch:{rel}")
+        (dest_root / "CHECKSUMS_SHA256.txt").write_text("\n".join(checksum_lines) + "\n", encoding="utf-8")
+        manifest_bytes = json.dumps(manifest, indent=2, sort_keys=True).encode("utf-8")
+        (dest_root / "configs" / "final-manifest.json").write_bytes(manifest_bytes)
+        (staging / "final-manifest.json").write_bytes(manifest_bytes)
+        final_dir = output_dir or (BASE_DIR / "reports" / "submission-package")
+        _safe_replace_output(final_dir)
+        shutil.copytree(dest_root, final_dir)
+    return {"submission": str(final_dir), "code_revision": revision, "artifacts": len(artifacts)}
 
-    manifest_path = base_dir / "configs" / "final-manifest.json"
-    manifest_path.write_text(json.dumps(final_manifest, indent=2), encoding="utf-8")
-    shutil.copy2(manifest_path, sub_configs / "final-manifest.json")
 
-    print(f"Successfully packaged release into: {submission_dir}")
-    print(f"Generated final manifest: {manifest_path}")
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=None)
+    args = parser.parse_args()
+    result = package_release(args.output)
+    print(json.dumps(result))
 
 
 if __name__ == "__main__":

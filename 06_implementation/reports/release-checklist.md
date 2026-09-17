@@ -57,6 +57,6 @@ Tuân thủ quy định học thuật của Trường Đại học và Môn họ
 ## 5. Kết luận Nghiệm thu Bàn giao (Release Sign-off)
 
 - **Trạng thái Gói nộp:** Sẵn sàng tại `06_implementation/reports/submission-package/`.
-- **Tổng số tệp được kiểm tra băm:** 20 artifacts cốt lõi được niêm phong trong `CHECKSUMS_SHA256.txt` và `configs/final-manifest.json`.
+- **Tổng số tệp được kiểm tra băm:** 18 artifacts cốt lõi được niêm phong trong `CHECKSUMS_SHA256.txt` and the staged `reports/submission-package/configs/final-manifest.json`.
 - **Đánh giá Gate G10-C / 10.release:** **CHÍNH THỨC NGHIỆM THU HOÀN TẤT (ACHIEVED)**.
 - **Hành động tiếp theo:** Các thành viên nhóm tải gói nộp cục bộ và tự thực hiện thao tác gửi bài lên cổng nộp đồ án theo thời hạn quy định.

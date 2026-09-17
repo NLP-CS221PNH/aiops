@@ -1,0 +1,169 @@
+schema_version: cs221-methodology-lock-v1
+lock_id: METH-LOCK-20260917
+status: frozen
+note: Copy of pinned files. Changing a value requires a new lock_id. Do not overwrite F1 hashes.
+qrels_provenance: llm_judge_adjudicated
+qrels_on_disk_label: llm_lexical_proxy
+qrels_not_human_gold: true
+primary_endpoint: passage_ndcg_5
+tie_break: BM25
+representation: R2
+bootstrap:
+  unit: family
+  keep_pairing: true
+  seed: 221
+  resamples: 1000
+conditions:
+  primary_rq2:
+    - IR-B
+    - IR-D
+    - IR-H
+  generation:
+    - G0
+    - GB
+    - GD
+    - GH
+  controls:
+    - G-oracle
+    - G-random
+    - answerability-slice
+    - leakage-diagnostic
+  deferred:
+    - IR-R
+    - GraphRAG
+    - multi-agent
+    - iterative_retrieval
+    - R1-R2-R3-test-grid
+    - runbook-vs-history-corpus-grid
+    - second_generator
+    - Train_Ticket
+    - full_human_reannotation
+knobs:
+  - name: dense_model
+    value: intfloat/e5-small-v2
+    source_path: configs/retrieval.yaml
+    source_key: dense.model_id
+  - name: dense_revision
+    value: ffb93f3bd4047442299a41ebb6fa998a38507c52
+    source_path: configs/retrieval.yaml
+    source_key: dense.revision
+  - name: tokenizer_path
+    value: vendor/e5-small-v2/tokenizer.json
+    source_path: configs/representation.yaml
+    source_key: tokenizer.path
+  - name: tokenizer_sha256
+    value: d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66
+    source_path: configs/representation.yaml
+    source_key: tokenizer.sha256
+  - name: tokenizer_library_version
+    value: "0.21.4"
+    source_path: configs/representation.yaml
+    source_key: tokenizer.library_version
+  - name: embedding_normalize
+    value: true
+    source_path: configs/retrieval.yaml
+    source_key: dense.normalize_embeddings
+  - name: query_prefix
+    value: "query: "
+    source_path: configs/retrieval.yaml
+    source_key: dense.query_prefix
+  - name: passage_prefix
+    value: "passage: "
+    source_path: configs/retrieval.yaml
+    source_key: dense.passage_prefix
+  - name: bm25_k1
+    value: 1.2
+    source_path: configs/retrieval.yaml
+    source_key: bm25.k1
+  - name: bm25_b
+    value: 0.75
+    source_path: configs/retrieval.yaml
+    source_key: bm25.b
+  - name: bm25_tokenizer
+    value: technical-preview-v1-sorted-query-terms
+    source_path: configs/retrieval.yaml
+    source_key: bm25.tokenizer_version
+  - name: candidate_depth
+    value: 50
+    source_path: configs/retrieval.yaml
+    source_key: depth
+  - name: rrf_constant
+    value: 60
+    source_path: configs/retrieval.yaml
+    source_key: rrf.constant
+  - name: rrf_weights
+    value: [1.0, 1.0]
+    source_path: configs/retrieval.yaml
+    source_key: rrf.weights
+  - name: reranker_enabled
+    value: false
+    source_path: configs/retrieval.yaml
+    source_key: reranker.enabled
+  - name: context_top_k
+    value: 5
+    source_path: configs/protocol.yaml
+    source_key: retrieval.max_context_chunks
+  - name: budget_observations
+    value: 2048
+    source_path: configs/generation.yaml
+    source_key: budgets.observations
+  - name: budget_knowledge
+    value: 4096
+    source_path: configs/generation.yaml
+    source_key: budgets.knowledge
+  - name: budget_output
+    value: 768
+    source_path: configs/generation.yaml
+    source_key: budgets.output
+  - name: generator_provider
+    value: deepseek
+    source_path: configs/generation.yaml
+    source_key: provider.name
+  - name: generator_model
+    value: deepseek-flash
+    source_path: configs/generation.yaml
+    source_key: provider.model
+  - name: decoding_temperature
+    value: 0.1
+    source_path: configs/generation.yaml
+    source_key: provider.temperature
+  - name: thinking_type
+    value: disabled
+    source_path: configs/generation.yaml
+    source_key: provider.extra_body.thinking.type
+  - name: response_format
+    value: json_object
+    source_path: configs/generation.yaml
+    source_key: provider.response_format.type
+  - name: representation
+    value: R2
+    source_path: configs/retrieval.yaml
+    source_key: representation
+  - name: device
+    value: cpu
+    source_path: configs/retrieval.yaml
+    source_key: dense.device
+  - name: dtype
+    value: float32
+    source_path: configs/retrieval.yaml
+    source_key: dense.dtype
+  - name: historical_documents
+    value: 74
+    source_path: configs/protocol.yaml
+    source_key: corpus.source_documents
+  - name: historical_chunks
+    value: 580
+    source_path: configs/protocol.yaml
+    source_key: corpus.source_chunks
+  - name: f1_conditions
+    value: [IR-B, IR-D, IR-H, G0, GB, GD, GH]
+    source_path: freezes/F1.json
+    source_key: selected_conditions
+  - name: f1_primary_endpoint
+    value: passage_ndcg_5
+    source_path: freezes/F1.json
+    source_key: config.primary_endpoint
+  - name: f1_tie_break
+    value: BM25
+    source_path: freezes/F1.json
+    source_key: config.comparator_tie_break

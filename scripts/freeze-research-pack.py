@@ -1,38 +1,145 @@
-"""Write a streaming SHA-256 manifest only after artifact and handoff validation pass."""
+"""Freeze public-tracked files from git + the publication ledger."""
+from __future__ import annotations
+
+import argparse
 import csv
-import hashlib
 import json
-from pathlib import Path
+import os
+import sys
 from datetime import datetime, timezone
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {'.runtime-python', '__pycache__', '.git', '.agents', '.codex', 'node_modules'}
-MANIFEST = ROOT / 'MANIFEST_RESEARCH_SHA256.txt'
-INVENTORY = ROOT / '04_audit/research-file-inventory.tsv'
+sys.path.insert(0, str(ROOT / "scripts"))
+from publication_policy import (  # noqa: E402
+    LEDGER_PATH,
+    POLICY_VERSION,
+    classify_tracked,
+    git_head,
+    load_ledger,
+    matching_rule,
+    posix,
+    sha256_file,
+)
+
+PUBLIC_MANIFEST = ROOT / "04_audit" / "public-tracked-manifest.tsv"
+RECEIPT = ROOT / "04_audit" / "public-freeze-receipt.json"
+LEGACY_MANIFEST = ROOT / "MANIFEST_RESEARCH_SHA256.txt"
+LEGACY_INVENTORY = ROOT / "04_audit" / "research-file-inventory.tsv"
+FREEZE_SELF = {
+    "04_audit/public-tracked-manifest.tsv",
+    "04_audit/public-freeze-receipt.json",
+}
 
 
-def sha(path):
-    value = hashlib.sha256()
-    with path.open('rb') as file:
-        for block in iter(lambda: file.read(1024 * 1024), b''):
-            value.update(block)
-    return value.hexdigest()
+def public_rows(root: Path = ROOT) -> list[dict]:
+    if not LEDGER_PATH.is_file():
+        raise SystemExit("missing_ledger")
+    rules = load_ledger(LEDGER_PATH)
+    summary = classify_tracked(root, rules)
+    rows = []
+    for rel in summary["public"]:
+        if rel in FREEZE_SELF:
+            continue
+        path = root / rel
+        row = matching_rule(rel, rules)
+        rows.append({
+            "path": rel,
+            "bytes": path.stat().st_size if path.is_file() else 0,
+            "sha256": sha256_file(path) if path.is_file() else "",
+            "artifact_class": row.get("artifact_class", ""),
+            "redistribution_status": row.get("redistribution_status", ""),
+            "sensitive_data_status": row.get("sensitive_data_status", ""),
+            "disposition": row.get("disposition", ""),
+        })
+    return sorted(rows, key=lambda item: item["path"])
 
 
-def files():
-    return sorted(p for p in ROOT.rglob('*') if p.is_file() and p not in {MANIFEST, INVENTORY} and not any(x in EXCLUDED or x.startswith('annotation-protection-') for x in p.relative_to(ROOT).parts))
+def write_manifest(rows: list[dict], path: Path) -> str:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    staging = path.with_suffix(path.suffix + ".staging")
+    with staging.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["path", "bytes", "sha256", "artifact_class", "redistribution_status", "sensitive_data_status", "disposition"],
+            delimiter="\t",
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+    if path.exists():
+        path.unlink()
+    staging.replace(path)
+    return sha256_file(path)
 
 
-for name in ['04_audit/research-pack-validation.json', '04_audit/handoff-files-validation.json']:
-    result = json.loads((ROOT / name).read_text(encoding='utf-8'))
-    if not result['passed']:
-        raise SystemExit(f'Cannot freeze while validation fails: {name}')
+def receipt_payload(rows: list[dict], manifest_hash: str, revision: str) -> dict:
+    epoch = os.environ.get("SOURCE_DATE_EPOCH")
+    created = datetime.fromtimestamp(int(epoch), timezone.utc).isoformat() if epoch else datetime.now(timezone.utc).isoformat()
+    return {
+        "schema_version": "cs221-public-freeze-receipt-v1",
+        "policy_version": POLICY_VERSION,
+        "code_revision": revision,
+        "created_at_utc": created,
+        "file_count": len(rows),
+        "payload_bytes": sum(int(row["bytes"]) for row in rows),
+        "manifest_path": posix(PUBLIC_MANIFEST.relative_to(ROOT)),
+        "manifest_sha256": manifest_hash,
+        "legacy_snapshot_manifest": posix(LEGACY_MANIFEST.relative_to(ROOT)),
+        "legacy_snapshot_inventory": posix(LEGACY_INVENTORY.relative_to(ROOT)),
+        "note": "Legacy MANIFEST_RESEARCH_SHA256.txt is an audit snapshot, not the current public freeze. Freeze artifacts omit themselves from the path list so their hashes stay stable.",
+    }
 
-rows = [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size, 'sha256': sha(p)} for p in files()]
-with INVENTORY.open('w', encoding='utf-8', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=['path', 'bytes', 'sha256'], delimiter='\t')
-    writer.writeheader()
-    writer.writerows(rows)
-rows.append({'path': INVENTORY.relative_to(ROOT).as_posix(), 'bytes': INVENTORY.stat().st_size, 'sha256': sha(INVENTORY)})
-MANIFEST.write_text(''.join(f"{r['sha256']}  {r['path']}\n" for r in sorted(rows, key=lambda r: r['path'])), encoding='utf-8')
-print(json.dumps({'frozen_at': datetime.now(timezone.utc).isoformat(), 'payload_files': len(rows), 'payload_bytes': sum(r['bytes'] for r in rows), 'manifest': str(MANIFEST), 'excluded': sorted(EXCLUDED), 'note': 'Runtime package binaries are excluded; data-runtime.json records the tested interpreter and PyArrow versions.'}))
+
+def verify_rows(rows: list[dict]) -> list[str]:
+    errors = []
+    seen = set()
+    for row in rows:
+        rel = row["path"]
+        if rel in seen:
+            errors.append(f"duplicate:{rel}")
+        seen.add(rel)
+        path = ROOT / rel
+        if not path.is_file():
+            errors.append(f"missing:{rel}")
+            continue
+        if sha256_file(path) != row["sha256"] or str(path.stat().st_size) != str(row["bytes"]):
+            errors.append(f"mismatch:{rel}")
+    if PUBLIC_MANIFEST.is_file():
+        on_disk = list(csv.DictReader(PUBLIC_MANIFEST.open(encoding="utf-8-sig", newline=""), delimiter="\t"))
+        disk_paths = {item["path"] for item in on_disk}
+        live_paths = {item["path"] for item in rows}
+        for rel in sorted(live_paths - disk_paths):
+            errors.append(f"missing_from_manifest:{rel}")
+        for rel in sorted(disk_paths - live_paths):
+            errors.append(f"unexpected_in_manifest:{rel}")
+    return errors
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Read-only verification; never writes.")
+    parser.add_argument("--ledger", type=Path, default=LEDGER_PATH)
+    args = parser.parse_args()
+    revision = git_head(ROOT)
+    rows = public_rows(ROOT)
+    if args.check:
+        if not PUBLIC_MANIFEST.is_file() or not RECEIPT.is_file():
+            print(json.dumps({"passed": False, "error": "missing_freeze_artifacts"}))
+            raise SystemExit(1)
+        errors = verify_rows(rows)
+        receipt = json.loads(RECEIPT.read_text(encoding="utf-8"))
+        live_hash = sha256_file(PUBLIC_MANIFEST)
+        if receipt.get("manifest_sha256") != live_hash:
+            errors.append("stale_receipt")
+        if receipt.get("policy_version") != POLICY_VERSION:
+            errors.append("stale_policy")
+        print(json.dumps({"passed": not errors, "errors": errors, "files": len(rows), "revision": revision}))
+        raise SystemExit(0 if not errors else 1)
+    manifest_hash = write_manifest(rows, PUBLIC_MANIFEST)
+    payload = receipt_payload(rows, manifest_hash, revision)
+    RECEIPT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"passed": True, "files": len(rows), "manifest": posix(PUBLIC_MANIFEST.relative_to(ROOT)), "revision": revision}))
+
+
+if __name__ == "__main__":
+    main()

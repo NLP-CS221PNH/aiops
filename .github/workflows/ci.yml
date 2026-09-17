@@ -1,0 +1,32 @@
+name: pr-gates
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  offline-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@0b93645e9fea7318eca7822d2e43c183d8ef4fa8 # v5.3.0
+        with:
+          python-version: "3.11"
+      - name: Install PR test dependencies
+        run: python -m pip install pytest pyyaml numpy pydantic tokenizers==0.21.4
+      - name: Public artifact ledger
+        run: python scripts/validate-public-artifacts.py --ledger 04_audit/public-artifact-ledger.tsv --tracked-only
+      - name: Canonical identifiers
+        run: python scripts/canonical_identifiers.py
+      - name: Research pack PR checks
+        run: python scripts/validate-research-pack.py --check --mode pr
+      - name: Public freeze check
+        run: python scripts/freeze-research-pack.py --check
+      - name: Collect named evaluation suites
+        working-directory: 06_implementation
+        run: |
+          python -m pytest -o pythonpath=. --collect-only tests/test_evaluation_cli.py tests/test_release_integrity.py tests/test_evaluation_contract.py tests/test_public_artifact_policy.py
+      - name: Full implementation tests
+        working-directory: 06_implementation
+        run: python -m pytest -q -o pythonpath=.

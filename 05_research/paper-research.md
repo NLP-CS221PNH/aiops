@@ -35,6 +35,9 @@ Mốc đối chiếu: **13-09-2026, Asia/Saigon**. Danh mục đầu vào có 1.
 | Đã đọc một số sections trong full text | 25 |
 | Mức abstract-only | 24 |
 | Abstract và trang đầu primary PDF | 1 |
+| Publication overlay có evidence | 991 catalog rows + 5 gap rows |
+| SJR 2024 Q1 theo sidecar tracked | 24 catalog rows + 5 gap rows |
+| Core related-work đã chọn | 45 |
 <!-- coverage-end -->
 
 Các con số này được ghi máy đọc được trong [research-statistics.json](../01_papers/enriched/research-statistics.json). [Reading matrix](../01_papers/enriched/reading-extraction-matrix.tsv) và [50 notes](../01_papers/reading-notes/README.md) lưu task, observations/labels, phương pháp, evaluation, giới hạn và phần đã đọc cho từng paper. `full_text_read=false` được giữ vì không bài nào được tuyên bố là đã thực hiện systematic full-text review hoàn chỉnh.
@@ -42,6 +45,8 @@ Các con số này được ghi máy đọc được trong [research-statistics.
 Lớp phục hồi metadata bổ sung bằng chứng cho 151 records, giữ nguyên URL gốc và ghi DOI/reference URL mới riêng. Sáu mục chưa đủ bibliography là P0089, P0189, P0422, P0437, P0537 và P0810: P0089 có ứng viên dissertation trùng tên với record IEEE nên bị loại; P0422 có tác giả/DOI nhưng chưa xác minh năm; các mục còn lại thiếu identity hoặc có title mismatch. Không tìm thấy collision trong các DOI/arXiv đã biết sau merge; đây vẫn là kiểm tra identifier, không chứng minh 1.009 records tương ứng 1.009 tác phẩm độc lập.
 
 Nguồn metadata ưu tiên là arXiv-deposited DataCite, publisher-deposited Crossref, ACL Anthology và trang/paper gốc. Năm xuất hiện trên arXiv được lưu thành `preprint_year`; năm xuất bản và venue là các trường khác. Không suy peer review từ việc một bản thảo có DOI arXiv. Metadata chưa đủ hoặc title có nghi vấn được giữ trong hàng đợi unresolved, không điền tác giả/venue bằng trí nhớ.
+
+Audit publication quality dùng overlay thay vì sửa 1.009 catalog rows. Q1 ở đây chỉ là journal thật có SJR 2024 Q1 và evidence ID tracked; BibTeX `@article` không phải tín hiệu Q1. Conference-journal-series dù được Crossref deposit như journal article vẫn bị loại khỏi Q1. Core 45 mục và priority-reading 50 mục là hai tập phục vụ hai mục tiêu khác nhau; việc vào core không nâng read depth.
 
 ## Định nghĩa tác vụ và benchmark
 
@@ -140,6 +145,8 @@ PACE-LM sử dụng correctness pseudo-labels do GPT-4 sinh và threshold đư�
 
 Không thêm ứng viên mới vào 1.009 record gốc. [Freshness additions](../01_papers/enriched/freshness-additions.jsonl) lưu sáu arXiv IDs cùng overlap: TORAI `2604.13522` đã có P0767; KRCA `2607.01788`, hai GALA IDs `2508.12472`/`2608.08968`, trajectory-level RCA `2608.21310` và recovery-aware evaluation `2607.04623` được giữ riêng. Hai bài cùng dùng acronym GALA chưa được tự coi là cùng version.
 
+Năm gap DOI đã xác minh sống trong registry G0001–G0005 riêng và không tăng catalog. P0052 (`2406.11213`) vẫn là survey failure-management; G0005 (`10.1145/3746635`, arXiv `2507.12472`) là CSUR successor cùng nhóm tác giả. `2508.12472` là GALA khác work. Quan hệ P0052→G0005 được ghi `successor_same_authors`, không merge identifier.
+
 KRCA mô tả pipeline drilldown, graph prior và memory-augmented agents; trajectory-level RCA nhấn mạnh sự tách rời giữa endpoint correctness và diagnostic process; recovery-aware evaluation mở thêm trục diagnosis-to-action. Đây là các nguồn gần thời điểm hiện tại để rà novelty, chưa là cơ sở thay benchmark vì các kết quả mới chỉ được screening ở mức abstract/metadata.[^26][^27][^28]
 
 Hai quan hệ phiên bản đã được kiểm riêng: P0108 có title cũ trên metadata arXiv nhưng linked HTML v3 và DOI xuất bản xác nhận **DivLog: Log Parsing with Prompt Enhanced In-Context Learning**; P0740 đổi từ “for” thành “in” ở bản ACL, với cùng năm tác giả và abstract. Bibliography ưu tiên publication title, nhưng original title và arXiv ID vẫn giữ trong [alias-version-map.tsv](../01_papers/enriched/alias-version-map.tsv). Các candidates khác như survey title rút gọn, LogBatcher publication title hoặc ExaRanker cần bằng chứng quan hệ trước khi hợp nhất.
@@ -149,6 +156,8 @@ Hai quan hệ phiên bản đã được kiểm riêng: P0108 có title cũ trê
 ### Tài nguyên bàn giao
 
 - [Catalog JSONL](../01_papers/enriched/catalog-enriched.jsonl) và [TSV](../01_papers/enriched/catalog-enriched.tsv): bảo toàn 1.009 IDs, metadata, provenance và mức xác minh.
+- [Publication overlay](../01_papers/enriched/publication-class.tsv), [SJR recount](../01_papers/enriched/q1-recount.md), [rank evidence](../01_papers/enriched/rank-evidence.jsonl) và [ranking policy](../01_papers/publication-ranking-policy.md).
+- [Core 45](../01_papers/core-literature.md), [năm gap](../01_papers/enriched/gap-candidates.tsv) và [manual work relations](../01_papers/enriched/work-relations.tsv).
 - [Bibliography đã xác minh](../01_papers/enriched/references-verified.bib) và [bibliography riêng 50 priority](../01_papers/enriched/references-priority50.bib).
 - [50 reading notes](../01_papers/reading-notes/README.md), [extraction matrix](../01_papers/enriched/reading-extraction-matrix.tsv), [mức coverage](../01_papers/enriched/research-statistics.json).
 - [Unresolved bibliography](../01_papers/enriched/unresolved.tsv) và [priority publication metadata còn thiếu](../01_papers/enriched/priority-publication-unresolved.tsv).

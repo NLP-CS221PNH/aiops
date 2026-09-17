@@ -1,6 +1,8 @@
 # Kiểm tra chất lượng gói bàn giao
 
-Kiểm tra cấu trúc ngày 12/09/2026. Đây là QA file, không là một lượt xác minh web bổ sung.
+**Historical snapshot (12/09/2026), not the current public HEAD.** Current publication checks are `scripts/validate-public-artifacts.py` and `04_audit/public-artifact-ledger.tsv`.
+
+Kiểm tra cấu trúc ngày 12/09/2026. Đây là QA file của gói catalogs ban đầu, không là một lượt xác minh web bổ sung và không mô tả repository sau khi thu thập raw/full text.
 
 | Kiểm tra | Kết quả |
 |---|---|

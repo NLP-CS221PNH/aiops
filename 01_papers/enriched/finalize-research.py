@@ -1,8 +1,21 @@
 """Build usable bibliography and honest reading notes from cached primary evidence."""
-import csv,html,json,re,collections,hashlib
+import argparse,csv,html,json,os,re,collections,hashlib,sys
 from pathlib import Path
 from datetime import datetime,timezone
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parent.parent;NOTES=ROOT/'01_papers/reading-notes'
+from publication_overlay import bib_type_for,classify_record
+def deterministic_now():
+    epoch=os.environ.get('SOURCE_DATE_EPOCH')
+    if epoch:
+        return datetime.fromtimestamp(int(epoch), timezone.utc)
+    return datetime.now(timezone.utc)
+if '--check' in sys.argv:
+    sys.path.insert(0, str(ROOT/'scripts'))
+    from canonical_identifiers import CANONICAL_INPUTS, validate_catalog
+    errors=validate_catalog()
+    extra=sorted(set(CANONICAL_INPUTS) - {p.relative_to(ROOT).as_posix() for p in BASE.glob('*') if p.is_file()})
+    print(json.dumps({'passed': not errors, 'errors': errors, 'canonical_inputs': list(CANONICAL_INPUTS), 'missing_inputs': extra}))
+    raise SystemExit(0 if not errors else 1)
 def readjl(p):return [json.loads(x) for x in p.read_text(encoding='utf-8').splitlines()] if p.exists() else []
 def writejl(p,rs):p.write_text('\n'.join(json.dumps(x,ensure_ascii=False) for x in rs)+'\n',encoding='utf-8')
 def tsv(p,rows,cols):
@@ -68,15 +81,17 @@ for r in records:
  if pid in note_by_id:rr['read_depth']=note_by_id[pid]['depth'];rr['sections_read']=note_by_id[pid]['sections']
  r['full_text_read']=False # Selected sections do not imply complete full-text review.
  rr['fulltext_local_available']=(BASE/'primary-text'/(pid+'-fulltext.txt')).exists()
- rr['enrichment_finalized_at']=datetime.now(timezone.utc).isoformat()
+ rr['enrichment_finalized_at']=deterministic_now().isoformat()
  aliases.append({'paper_id':pid,'catalog_title':r['title'],'preprint_title':m.get('title'),'publication_title':pm.get('title') if pm else None,'arxiv_id':r.get('arxiv_id'),'arxiv_version':m.get('version'),'publication_doi':r.get('publication_doi'),'relation_status':'verified_primary_version_map' if pm else 'no_publication_relation_verified'})
  line={'paper_id':pid,'title':r['title'],'reference_title':r.get('reference_title'),'authors':'; '.join(r.get('authors') or []),'preprint_year':r.get('preprint_year'),'publication_year':r.get('publication_year'),'venue':r.get('venue'),'arxiv_id':r.get('arxiv_id') or r.get('discovered_arxiv_id'),'publication_doi':r.get('publication_doi'),'canonical_url':r['canonical_url'],'reference_url':r.get('reference_url'),'metadata_source_url':m.get('metadata_source_url'),'publication_metadata_url':pm.get('metadata_source_url') if pm else None,'identity_status':rr['identity_status'],'acquisition_status':rr['acquisition_status'],'read_depth':rr['read_depth'],'fulltext_local_available':rr['fulltext_local_available'],'priority_reading':rr['priority_reading']};flat.append(line)
  if not matched or not r.get('authors') or not r.get('reference_year'):missing.append(line)
  if rr['priority_reading'] and not r['authors_venue_year_verified']:pub_missing.append(line)
  if matched and r.get('authors') and r.get('reference_year'):
-  typ='inproceedings' if preferred.get('publication_type')=='proceedings-article' or (preferred.get('source_kind')=='primary_page_citation_tags' and preferred.get('citation_tags',{}).get('citation_conference_title')) else 'incollection' if preferred.get('publication_type')=='book-chapter' else 'article' if r.get('venue') else 'misc'
+  typ=bib_type_for(classify_record(r))
   fields={'title':'{'+esc(r['reference_title'])+'}','author':' and '.join(esc(a) for a in r['authors']),'year':r['reference_year'],'url':r['reference_url']}
-  if r.get('venue'):fields['booktitle' if typ in ('inproceedings','incollection') else 'journal']=esc(r['venue'])
+  if r.get('venue'):
+   venue_field='journal' if typ=='article' else 'booktitle' if typ in ('inproceedings','incollection') else 'howpublished'
+   fields[venue_field]=esc(r['venue'])
   if r.get('publication_doi'):fields['doi']=r['publication_doi']
   if r.get('arxiv_id') or r.get('discovered_arxiv_id'):fields.update(eprint=r.get('arxiv_id') or r['discovered_arxiv_id'],archivePrefix='arXiv')
   fields['note']='Verified descriptive metadata; '+('publication year' if r['publication_year'] else 'arXiv preprint year; publication venue not verified')+'; accessed 2026-09-13'

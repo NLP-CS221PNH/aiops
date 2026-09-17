@@ -49,7 +49,7 @@ RE2-TT được giữ như nguồn mở rộng theo plan: đã pin metadata, ch�
 
 ## Nghiên cứu tài liệu và thiết kế
 
-Bibliography được cập nhật từ metadata của nơi xuất bản/đăng ký định danh và trang nguồn: DataCite cho arXiv, Crossref cho DOI và các trang ACL/OpenReview/primary tương ứng. Bản gốc 1.009 IDs và audit cũ được bảo toàn. Dữ liệu bổ sung có source/cache, trạng thái khớp định danh và year basis; năm preprint không tự thành năm conference. Các mục không truy cập hoặc chưa khớp đủ vẫn để pending. [Tổng hợp và bibliographic limits](paper-research.md).
+Bibliography được cập nhật từ metadata của nơi xuất bản/đăng ký định danh và trang nguồn: DataCite cho arXiv, Crossref cho DOI và các trang ACL/OpenReview/primary tương ứng. Bản gốc 1.009 IDs được bảo toàn; năm gap DOI sống ở overlay riêng. Dữ liệu bổ sung có source/cache, trạng thái khớp định danh và year basis; năm preprint không tự thành năm conference. Publication overlay tách preprint, proceedings, journal thật và conference-journal-series; SJR 2024 Q1 chỉ được đếm khi có sidecar tracked, không suy từ `@article`. Core related-work có 45 mục, còn priority-reading giữ nguyên 50 mục. [Tổng hợp và bibliographic limits](paper-research.md).
 
 Nhóm tài liệu ưu tiên cần được đọc theo trục **task → observations → labels → knowledge → split → evaluation**, thay vì theo kích thước mô hình hoặc một score riêng trong abstract. Tài liệu cloud production có thể chứng minh một kiến trúc khả thi nhưng không cung cấp raw incident để tái lập. Bài log anomaly detection không cung cấp causal RCA gold; bài retrieval tổng quát có qrels tốt nhưng khác miền incident. Các ghi chú đọc giữ những khác biệt này để viết related work chính xác.
 

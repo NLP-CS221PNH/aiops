@@ -21,6 +21,21 @@ from src.annotations.common import (
 )
 
 
+def _limitations_for(provenance: str) -> List[str]:
+    if provenance == "human-double-adjudicated":
+        lead = "F2 freezes adjudicated human-double-adjudicated test qrels linked to F1 freeze."
+    else:
+        lead = (
+            f"F2 freezes {provenance} test qrels. These are not human gold and "
+            "must not be used for headline nDCG."
+        )
+    return [
+        lead,
+        "Qrels are restricted to evaluator use; runners must not mount qrels during generation.",
+        "Test labels cannot be used to fine-tune prompts, representations, or retrieval parameters.",
+    ]
+
+
 def build_f2_freeze(
     f1_path: Path,
     test_pool_manifest_path: Path,
@@ -30,8 +45,14 @@ def build_f2_freeze(
     annotation_version: str = "06.F2-v1",
     coverage_info: Optional[Dict[str, Any]] = None,
     out_f2_path: Optional[Path] = None,
+    provenance: str = "llm_lexical_proxy",
+    provenance_sidecar_path: Optional[Path] = None,
 ) -> Dict[str, Any]:
-    """Assembles and validates the F2 freeze record."""
+    """Assembles and validates the F2 freeze record.
+
+    Default provenance is llm_lexical_proxy. Human wording is emitted only when
+    provenance is exactly human-double-adjudicated.
+    """
     if not f1_path.exists():
         raise FileNotFoundError(f"F1 freeze file not found: {f1_path}")
     if not test_pool_manifest_path.exists():
@@ -63,16 +84,31 @@ def build_f2_freeze(
     qrels_rows = read_tsv(test_qrels_path)
     judged_test_pairs = {(r["incident_id"], r["chunk_id"]) for r in qrels_rows if (r.get("relevance_grade") or r.get("grade") or "").strip() != ""}
 
-    cov = coverage_info or {
-        "top5_coverage_ratio": 1.0,
-        "top10_coverage_ratio": 1.0,
-        "required_pairs_count": len(candidate_list),
-        "judged_pairs_count": len(judged_test_pairs),
-    }
+    if coverage_info is None:
+        raise CoverageError("coverage_info is required; refusing default 1.0")
+    cov = coverage_info
 
-    # Reviewer receipt hash
-    sidecar_path = test_qrels_path.parent / "qrels-sidecar.jsonl"
-    reviewer_receipt_hash = sha256_file(sidecar_path) if sidecar_path.exists() else "0" * 64
+    sidecar_path = provenance_sidecar_path or (test_qrels_path.parent / "qrels-sidecar.jsonl")
+    if not Path(sidecar_path).exists():
+        raise CoverageError("provenance sidecar is required; refusing zero reviewer_receipt_hash")
+    reviewer_receipt_hash = sha256_file(Path(sidecar_path))
+    receipt = read_json(Path(sidecar_path))
+    if receipt.get("qrels_provenance") != provenance:
+        raise CoverageError("provenance receipt mismatch")
+    bound_hash = receipt.get("current_qrels_hash", receipt.get("qrels_hash"))
+    if bound_hash != test_qrels_hash:
+        raise CoverageError("provenance receipt does not bind current qrels")
+    required = {"provenance", "annotator_id", "adjudication_state", "annotation_version"}
+    if not qrels_rows or any(not required.issubset(row) for row in qrels_rows):
+        raise CoverageError("qrels provenance columns are required")
+    if any(row["provenance"] != provenance for row in qrels_rows):
+        raise CoverageError("qrels provenance mismatch")
+    if provenance != "human-double-adjudicated" or receipt.get("human_gold") is not True:
+        raise CoverageError("proxy qrels cannot create an evaluation freeze")
+    for key in ("top5_coverage_ratio", "top10_coverage_ratio"):
+        value = cov.get(key)
+        if not isinstance(value, (int, float)) or isinstance(value, bool) or not 0 <= value <= 1:
+            raise CoverageError("measured coverage ratios are required")
 
     f2_data = {
         "schema_version": "cs221-annotation-freeze-f2-v1",
@@ -86,11 +122,8 @@ def build_f2_freeze(
         "incident_ids": incident_ids,
         "judged_coverage": cov,
         "reviewer_receipt_hash": reviewer_receipt_hash,
-        "limitations": [
-            "F2 freezes adjudicated human test qrels linked to F1 freeze.",
-            "Qrels are restricted to evaluator use; runners must not mount qrels during generation.",
-            "Test labels cannot be used to fine-tune prompts, representations, or retrieval parameters."
-        ],
+        "qrels_provenance": provenance,
+        "limitations": _limitations_for(provenance),
     }
 
     if out_f2_path:

@@ -1,6 +1,8 @@
 # 50 tài liệu ưu tiên và câu hỏi cần rút ra khi đọc
 Đây là lộ trình đọc đề xuất, không phải 50 bản tóm tắt toàn văn. Mỗi mục liên kết catalog và nêu sản phẩm nên tạo sau khi đọc. Không suy chất lượng khoa học từ số trích dẫn hay tên venue chưa kiểm chứng.
 
+Danh sách CORE 45 mục, gồm các gap đã xác minh và phân bổ theo vai trò, sống riêng trong [`core-literature.md`](core-literature.md). File hiện tại vẫn là workflow đọc 50 mục ban đầu; các mục retrieval nâng cao không được dùng để đệm CORE nếu implementation không sử dụng chúng.
+
 ## 01 · Chốt bài toán và benchmark
 ### 01. [P0052 — A Survey of AIOps for Failure Management in the Era of Large Language Models](https://arxiv.org/abs/2406.11213)
 

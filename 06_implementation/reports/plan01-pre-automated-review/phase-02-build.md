@@ -17,15 +17,15 @@ Owner điều phối C; task ghi người thực hiện và reviewer. Codex so�
 
 ## Bối cảnh và đầu vào
 
-Đọc [plan cha](plan.md), [hợp đồng chung](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-research.md).
+Đọc [plan cha](plan.md), [hợp đồng chung](plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](plans/reports/260913-independent-plans-research.md).
 Các đường dẫn trong `06_implementation` bên dưới là sản phẩm dự kiến; chưa tồn tại chỉ vì tài liệu kế hoạch đã viết.
 
 | Đầu vào | Đường dẫn tuyệt đối | Điều phải kiểm |
 |---|---|---|
-| Charter nháp | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/project-charter.md` | C xác nhận phạm vi |
-| Decision log | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/decision-log.md` | A/B kiểm các pending |
-| Tổng hợp học thuật | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/00_plan/literature_synthesis.md` | Mỗi người chọn bài liên quan phần mình |
-| Đánh giá gốc | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/00_plan/experiments_and_evaluation.md` | B kiểm baseline/metrics |
+| Charter nháp | `06_implementation/docs/project-charter.md` | C xác nhận phạm vi |
+| Decision log | `06_implementation/docs/decision-log.md` | A/B kiểm các pending |
+| Tổng hợp học thuật | `00_plan/literature_synthesis.md` | Mỗi người chọn bài liên quan phần mình |
+| Đánh giá gốc | `00_plan/experiments_and_evaluation.md` | B kiểm baseline/metrics |
 
 ## Yêu cầu
 
@@ -43,11 +43,11 @@ Không đưa root labels, qrels hay reference claims vào inference hoặc giao 
 
 ## Các file liên quan
 
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/research-protocol.md` — Thiết kế RQ, metric và điều kiện.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/configs/protocol.yaml` — Các lựa chọn có cấu trúc.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/team-working-agreement.md` — Owner/reviewer và lịch nhóm.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/literature-matrix.tsv` — 8–12 bài thực sự dùng.
-- **Sửa:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/decision-log.md` — Ghi đề xuất và các quyết định mới.
+- **Tạo:** `06_implementation/docs/research-protocol.md` — Thiết kế RQ, metric và điều kiện.
+- **Tạo:** `06_implementation/configs/protocol.yaml` — Các lựa chọn có cấu trúc.
+- **Tạo:** `06_implementation/docs/team-working-agreement.md` — Owner/reviewer và lịch nhóm.
+- **Tạo:** `06_implementation/docs/literature-matrix.tsv` — 8–12 bài thực sự dùng.
+- **Sửa:** `06_implementation/docs/decision-log.md` — Ghi đề xuất và các quyết định mới.
 - **Xóa:** không có; giữ bộ nghiên cứu gốc và artifacts đã khóa để đối chiếu.
 
 ## Schema và giao diện bàn giao

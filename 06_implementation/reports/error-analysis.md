@@ -1,3 +1,5 @@
+> **Evaluation claims retracted, 2026-09-17.** Counts below are a historical taxonomy draft, not scorer output. Headline generation remains `NOT_RUN` in `reports/final-tables/table2-generation-performance.md`.
+
 # Phân tích Lỗi & Phân loại Thất bại Chẩn đoán (Error Taxonomy & Failure Analysis)
 
 Tài liệu: `cs221-error-analysis-v1`  

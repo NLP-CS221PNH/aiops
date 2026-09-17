@@ -1,11 +1,11 @@
-"""Automated LLM-as-a-Judge annotation pipeline for CS221 AIOps RAG.
+"""Lexical proxy annotator. Not an LLM and not human G2 gold.
 
-Implements double-annotation by two independent personas (Annotator A and Annotator B)
-following annotations/rubric-v1.md, computes inter-rater agreement, adjudicates
-disagreements, and exports gold standard qrels (Plan 06 Hướng B).
+Two personas share one base_grade plus seeded noise. Exports are
+llm_lexical_proxy qrels. Do not score headline nDCG on those files.
 """
 import argparse
 import datetime
+import hashlib
 import json
 from pathlib import Path
 import random
@@ -77,7 +77,7 @@ def evaluate_pair(incident_id: str, chunk: Dict[str, Any], query: Dict[str, Any]
     kw_hits = sum(1 for kw in diagnostic_keywords if kw in full_content)
     
     chunk_id_val = chunk.get("chunk_id", "unknown_chunk")
-    rng = random.Random(hash(f"{incident_id}_{chunk_id_val}_{seed_salt}"))
+    rng = random.Random(hashlib.sha256(f"{incident_id}_{chunk_id_val}_{seed_salt}".encode()).digest())
     
     if service_match and kw_hits >= 2:
         # High relevance - root cause or direct diagnostic support
@@ -95,7 +95,7 @@ def evaluate_pair(incident_id: str, chunk: Dict[str, Any], query: Dict[str, Any]
         role = "context_only"
         claim = "General technical documentation with no direct relation to the incident symptoms."
         
-    # Introduce natural human variation between Annotator A (strict) and Annotator B (lenient)
+    # Synthetic persona noise is not independent human disagreement.
     grade_a = base_grade
     grade_b = base_grade
     
@@ -166,7 +166,10 @@ def annotate_blinded_form(form_path: Path, chunks_map: Dict[str, Any], queries_m
 
 
 def export_adjudicated_qrels(rows_a: List[Dict[str, str]], rows_b: List[Dict[str, str]], out_qrels_path: Path):
-    """Performs adjudication between A and B and exports final gold qrels."""
+    """Exports lexical proxy grades for forensics, never human gold."""
+    historical = Path(__file__).resolve().parents[2] / "annotations" / "qrels"
+    if out_qrels_path.resolve() in {(historical / split / "qrels.tsv").resolve() for split in ("train", "dev", "test")}:
+        raise ValueError("HISTORICAL_PROXY_IMMUTABLE")
     adjudicated = []
     disagreements = 0
     
@@ -200,15 +203,26 @@ def export_adjudicated_qrels(rows_a: List[Dict[str, str]], rows_b: List[Dict[str
         
     out_qrels_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_qrels_path, "w", encoding="utf-8") as f:
-        f.write("incident_id\tchunk_id\tdocument_id\trelevance_grade\tevidence_role\tapplicability\tadjudication_note\n")
+        f.write(
+            "incident_id\tchunk_id\tdocument_id\trelevance_grade\tevidence_role\t"
+            "applicability\tadjudication_note\tprovenance\tannotator_id\tadjudication_state\tannotation_version\n"
+        )
         for row in adjudicated:
-            f.write(f"{row['incident_id']}\t{row['chunk_id']}\t{row['document_id']}\t{row['relevance_grade']}\t{row['evidence_role']}\t{row['applicability']}\t{row['adjudication_note']}\n")
-            
-    print(f"Exported {len(adjudicated)} gold qrels to {out_qrels_path} (Disagreements resolved: {disagreements}).")
+            f.write(
+                f"{row['incident_id']}\t{row['chunk_id']}\t{row['document_id']}\t"
+                f"{row['relevance_grade']}\t{row['evidence_role']}\t{row['applicability']}\t"
+                f"{row['adjudication_note']}\tllm_lexical_proxy\tlexical-personas-A+B\tautomated_proxy\tlexical-proxy-v1\n"
+            )
+
+    print(
+        f"Exported {len(adjudicated)} llm_lexical_proxy qrels to {out_qrels_path} "
+        f"(Disagreements resolved: {disagreements}). Not human gold."
+    )
     return adjudicated
 
 
 if __name__ == "__main__":
+    raise SystemExit("HISTORICAL_PROXY_IMMUTABLE: lexical personas cannot replace human annotation")
     base = Path(__file__).resolve().parents[2]
     chunks_path = base / "data" / "knowledge" / "chunks.jsonl"
     queries_path = base / "queries" / "variants.train-dev.jsonl"

@@ -11,13 +11,13 @@
   },
   {
     "path": "01_papers/enriched/references-verified.bib",
-    "bytes": 567910,
-    "sha256": "9d085a592ec466d6bf4ac0477d5ef09d80aa59db7ca540f6b20ff93125dd8af8"
+    "bytes": 557024,
+    "sha256": "e3b358af0f4be58c39c974f04954862445b6321707f1800bd23a9671eb5eb52a"
   },
   {
     "path": "01_papers/enriched/references-priority50.bib",
-    "bytes": 31808,
-    "sha256": "8ef5adcf7c21eab9345c695c791f3c09358ec3c5f9218587b62b245d63050790"
+    "bytes": 31207,
+    "sha256": "5ee6302a14536c405c5dc030ec899168658b6e3b4175c9e66716c7cf4ad6e841"
   },
   {
     "path": "01_papers/enriched/reading-extraction-matrix.jsonl",

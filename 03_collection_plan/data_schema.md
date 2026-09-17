@@ -8,6 +8,14 @@ Không có dữ liệu thật hay crawler trong file này. Đây là đặc tả
 
 Trong gói hiện tại, null không phải lỗi parser. Nó biểu thị chưa thu thập hoặc chưa đủ bằng chứng. Không dùng `year_hint` hay năm nằm trong một danh mục awesome để lấp publication_year. Một preprint có thể được cập nhật tiêu đề hoặc có bản xuất bản khác; cần canonical-work ID khi nhập Zotero/BibTeX sau này.
 
+### Publication-quality overlay
+
+Catalog identity không mang nhãn chất lượng. Overlay `01_papers/enriched/publication-class.tsv` chỉ có hàng khi có bằng chứng type/preprint và gồm: `paper_id_or_gap_id`, `publication_type`, `peer_review_status`, `venue_exact`, optional `issn`, `venue_family`, `venue_rank_scheme`, `venue_rank_value`, `venue_rank_year`, `rank_evidence_id`, `crossref_type`, `notes`.
+
+`publication_type` ∈ `journal-article | proceedings-article | preprint | book-chapter | dissertation | posted-content | other | unknown`. `peer_review_status` ∈ `peer_reviewed | preprint | not_applicable | unknown`. `peer_reviewed` chỉ hợp lệ cho journal/proceedings/book chapter có venue và năm đã xác minh. arXiv-only luôn là `preprint`.
+
+SJR được join theo `venue_exact` và optional ISSN vào sidecar tracked. Q1 chỉ hợp lệ cho journal thật, năm rank 2024, quartile Q1 và evidence ID tồn tại. Conference cùng conference-journal-series không nhận SJR Q1 dù Crossref type là `journal-article`. Gap dùng registry G riêng; chúng không được thêm vào 1.009 `paper_id` hay canonical identifier inputs.
+
 ## Source registry
 
 Mỗi nguồn có `source_id`, `official_url`, `canonical_release_url`, `retrieved_at`, `license_data`, `license_code`, `license_evidence_url`, `license_snapshot_hash`, `scope_notes`, `access_state`, `upstream_source_ids`, `allowed_processing`. Scope uncertainty phải là trạng thái có thể lọc, không chỉ một câu nằm cuối README.
@@ -31,7 +39,7 @@ Mỗi nguồn có `source_id`, `official_url`, `canonical_release_url`, `retriev
 
 ## Knowledge document và chunk
 
-Mỗi tài liệu: `document_id`, `source_url`, `title`, `text_hash`, `published_at`, `updated_at`, `available_at`, `system/version_scope`, `license/source_id`, `document_kind`, `derived_from_incident_ids`. Mỗi chunk: `chunk_id`, `parent_document_id`, `start_offset`, `end_offset`, `section_heading`, `token_count`, `transform_version`.
+Mỗi tài liệu: `document_id`, `source_url`, `title`, `text_hash`, `published_at`, `updated_at`, `available_at`, `system/version_scope`, `license/source_id`, `document_kind`, `derived_from_incident_ids`. Mỗi chunk: `chunk_id`, `parent_document_id`, `start_offset`, `end_offset`, `section_heading`, `token_count`, `transform_version`. Derivative candidate uses `document_id` instead of `parent_document_id` and `chunking_version` instead of `transform_version`; see `06_implementation/docs/knowledge-corpus-schema.md`.
 
 Giữ nguyên citation IDs qua pipeline; generator không tự tạo URL. Retrieval result gồm rank, retriever, raw score, fusion rank, rerank score và evidence span. Raw scores của retriever khác nhau không so trực tiếp nếu không hiệu chỉnh.
 

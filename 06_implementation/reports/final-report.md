@@ -1,3 +1,5 @@
+> **Evaluation claims retracted, 2026-09-17.** All reported nDCG/MRR/Recall values, comparisons and winner claims below are historical proxy outputs, not accepted experimental results. Historical F1/F2 are invalid for evaluation; see `freezes/F2.provenance.json`. The plan completes readiness contracts only. Human G2 and evidence coverage remain unavailable.
+
 # Báo cáo Đồ án CS221: Phân loại sự cố và Hỗ trợ chẩn đoán nguyên nhân gốc cho Microservices bằng Hybrid RAG có Dẫn chứng
 
 **Tên đề tài tiếng Anh:** Evidence-Grounded Incident Triage and Root-Cause Diagnosis for Microservices using Hybrid Retrieval-Augmented Generation  
@@ -44,7 +46,7 @@ Nghiên cứu của chúng tôi kế thừa và so sánh có hệ thống với 
 
 | Nhóm nghiên cứu | Công trình tiêu biểu | Tác vụ & Đóng góp chính | So sánh với hướng tiếp cận của Đồ án |
 |---|---|---|---|
-| **AIOps Taxonomy & Benchmarking** | Chen et al. (2024) [P0052]; Wang et al. (2024) [P0757] | Khảo sát AIOps bằng LLM; công bố benchmark RCAEval với telemetry đa phương thức. | Đồ án kế thừa schema dữ liệu RE2 của RCAEval nhưng xây dựng mới toàn bộ tập passage qrels và quy trình đánh giá grounding. |
+| **AIOps Taxonomy & Benchmarking** | Zhang et al. (2024) [P0052]; Zhang et al. (2025) [G0005]; Wang et al. (2025) [P0757] | Hai khảo sát riêng biệt về failure management và LLM4AIOps; benchmark RCAEval với telemetry đa phương thức. | Đồ án dùng taxonomy để khóa task boundary và kế thừa schema dữ liệu RE2 của RCAEval, nhưng xây dựng mới passage qrels cùng quy trình đánh giá grounding. P0052 không được gộp với CSUR G0005. |
 | **Operational Copilots & TSG** | Ahmed et al. (2024) [P0003] (Nissist) | Tận dụng Troubleshooting Guides (TSG) làm bằng chứng chẩn đoán sự cố cloud. | Đồ án chuẩn hóa corpus runbook công khai và đánh giá khách quan trên môi trường microservice mở thay vì hạ tầng nội bộ. |
 | **Lexical, Dense & Hybrid Retrieval** | Robertson & Zaragoza (2009) [LIT-BM25]; Karpukhin et al. (2020) [P0245]; Cormack et al. (2009) [LIT-RRF] | Nền tảng xác suất BM25; Dense Passage Retrieval (DPR); Reciprocal Rank Fusion (RRF). | Đồ án áp dụng RRF để kết hợp BM25 và E5-small-v2 trên miền văn bản log/runbook với hằng số `rrf_constant = 60` đã khóa tại F1. |
 | **RAG Architecture & Re-ranking** | Lewis et al. (2020) [P0376]; Nogueira & Cho (2019) [P0325] | Kiến trúc RAG nền tảng; Cross-encoder re-ranking với BERT. | Đồ án áp dụng RAG tiền xử lý context (context-prepending) với ngân sách token nghiêm ngặt; coi re-ranking là điều kiện mở rộng có kiểm soát chi phí. |
@@ -68,9 +70,9 @@ Dữ liệu thực nghiệm được trích xuất từ hệ thống microservic
 - Mỗi chunk có tiêu đề mục (`section_heading`), nội dung văn bản chuẩn hóa (`text`) và mốc offset codepoint để xác minh vị trí trích dẫn.
 - Tuyệt đối không đưa tài liệu xuất bản sau thời điểm sự cố hoặc các nhãn chuẩn vào kho tri thức.
 
-### 3.3. Tập nhãn Chú thích Con người (Core Human Qrels)
-- Tập core gồm **56 incidents** (20 train đại diện cho 18 families, 18 dev, 18 test).
-- Toàn bộ các cặp (incident, passage) trong retrieval pool được chấm đôi độc lập bởi 2 người thẩm định theo thang điểm 0, 1, 2. Bất đồng ý kiến được giải quyết bởi người phân xử thứ ba (adjudication).
+### 3.3. Tập nhãn retrieval (RETRACTED as human qrels)
+- **RETRACTED 2026-09-17.** Files under `annotations/qrels/` are `llm_lexical_proxy` (lexical judge, pool-circular). They are not human G2 gold. Headline nDCG on those files is invalid. See `docs/gold-type-contract.md` and `freezes/F2.provenance.json`.
+- Human dual annotation for 56 core incidents remains pending (`annotation-kit/status.json`: 0 judgments).
 
 ---
 
@@ -114,7 +116,7 @@ Kiến trúc hệ thống bao gồm ba khối chức năng:
 Sự cố được biểu diễn qua cơ chế chuẩn hóa log: giữ nguyên tên dịch vụ, exception trace, HTTP status codes, đồng thời loại bỏ các chuỗi ngẫu nhiên không mang ý nghĩa ngữ nghĩa để vừa khớp ngân sách ngữ cảnh vừa tối ưu hóa chỉ mục từ khóa.
 
 ### 4.2. Bộ truy hồi Thông tin (Retrievers)
-- **IR-B (BM25):** Sử dụng hàm tính điểm Okapi BM25 chuẩn hóa độ dài, tham số $k_1 = 1.5, b = 0.75$.
+- **IR-B (BM25):** Okapi BM25 with locked $k_1 = 1.2, b = 0.75$. Older $k_1=1.5$ citations are defects.
 - **IR-D (Dense):** Sử dụng mô hình `intfloat/e5-small-v2` với tiền tố `query: ` cho sự cố và `passage: ` cho tài liệu tri thức; tính độ tương đồng qua chuẩn hóa vector L2 cosine.
 - **IR-H (Hybrid RRF):** Hợp nhất danh sách xếp hạng của BM25 và Dense bằng công thức Reciprocal Rank Fusion:
   $$RRF\_Score(d) = \sum_{m \in \{BM25, Dense\}} \frac{1}{60 + r_m(d)}$$
@@ -150,62 +152,25 @@ Do tập test chỉ có 6 họ lỗi độc lập, việc coi 18 incidents là c
 
 ## 6. Kết quả Thực nghiệm (Experimental Results)
 
-Toàn bộ kết quả dưới đây được tổng hợp trực tiếp từ các artifact đã khóa theo giao thức F1/F2 và kiểm toán tại `06_implementation/reports/final-tables/`.
+Headline retrieval and generation numbers below are **NOT_RUN**. Qrels are LLM-judge (`llm_lexical_proxy` on disk), not human gold. Frozen rankings for a live scorer pass are missing. The previous 0.671 vs 0.342 IR-H nDCG conflict is a defect, not a finding. Locked BM25 is k1=1.2; locked decoding is T=0.1 (T=0.0 in older slides is a defect). See `reports/methodology-lock.md` and `reports/final-tables/`.
 
 ### 6.1. Hiệu năng Truy hồi Thông tin (Retrieval Performance)
 
-Trên tập Dev, IR-B (BM25) đạt điểm `passage nDCG@5` là **0.642**, cao hơn IR-D (Dense E5: 0.618). Do đó, theo đúng quy định của protocol F1, **BM25 được chọn làm baseline đơn mạnh nhất (Stronger Dev Single)** để thiết lập đối chứng chính trên tập Test.
+Primary RQ2 comparators remain IR-B / IR-D / IR-H. Scorer output:
 
-| Bộ truy hồi (Retriever) | Tập đánh giá | Mẫu số hợp lệ ($n$) | passage nDCG@5 | MRR@10 | Recall@20 | Paired Delta ($\Delta$ vs BM25) | 95% Bootstrap CI |
-|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **IR-B (BM25)** | Dev | 18 | 0.642 | 0.725 | 0.820 | *Baseline* | — |
-| **IR-D (Dense E5)** | Dev | 18 | 0.618 | 0.684 | 0.785 | -0.024 | [-0.052, +0.004] |
-| **IR-H (Hybrid RRF)** | Dev | 18 | 0.684 | 0.769 | 0.871 | +0.042 | [+0.011, +0.073] |
-| **IR-B (BM25)** | Test | 18 | 0.628 | 0.714 | 0.812 | *Baseline* | — |
-| **IR-D (Dense E5)** | Test | 18 | 0.594 | 0.667 | 0.765 | -0.034 | [-0.068, +0.001] |
-| **IR-H (Hybrid RRF)** | Test | 18 | **0.671** | **0.758** | **0.864** | **+0.043** | **[+0.008, +0.078]** |
-
-> [!IMPORTANT]
-> **Trả lời lời khẳng định RQ2:** Cơ chế Hybrid RRF vượt trội hơn baseline đơn mạnh nhất (BM25) một khoảng statistically positive $\Delta = +0.043$ ($+4.3\%$, khoảng tin cậy 95% bootstrap theo cụm: $[+0.008, +0.078]$). Sự kết hợp giữa khả năng khớp chính xác token kỹ thuật của BM25 và độ phủ ngữ nghĩa của Dense E5 giúp tăng cả MRR@10 lẫn Recall@20.
+See `reports/final-tables/table1-retrieval-performance.md` (all cells `NOT_RUN`, captioned LLM-judge).
 
 ### 6.2. Hiệu năng Định vị Dịch vụ và Chất lượng Dẫn chứng (Grounded Generation Performance)
 
-Đánh giá trên toàn bộ 72 phản hồi ($18 \text{ incidents} \times 4 \text{ conditions}$) với mô hình sinh deterministic ($T = 0.0$):
-
-| Điều kiện Sinh | Mẫu số phản hồi | Top-1 Service Accuracy | Top-3 Service Accuracy | Citation Validity (%) | Claim Support Precision (%) | Tỉ lệ Từ chối (Abstain %) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **G0 (No-RAG)** | 18 | 38.9% (7/18) | 61.1% (11/18) | *N/A (Không có context)* | 41.2% (14/34 claims) | 22.2% (4/18) |
-| **GB (BM25 RAG)** | 18 | 61.1% (11/18) | 77.8% (14/18) | 94.4% (34/36 citations) | 78.6% (33/42 claims) | 11.1% (2/18) |
-| **GD (Dense RAG)** | 18 | 55.6% (10/18) | 72.2% (13/18) | 91.7% (33/36 citations) | 73.5% (25/34 claims) | 11.1% (2/18) |
-| **GH (Hybrid RAG)** | 18 | **72.2% (13/18)** | **88.9% (16/18)** | **97.2% (35/36 citations)** | **85.2% (46/54 claims)** | 5.6% (1/18) |
-
-> [!NOTE]
-> **Trả lời lời khẳng định RQ3:** Bổ sung ngữ cảnh Hybrid RAG giúp nâng Top-1 Service Accuracy từ 38.9% lên **72.2%** (+33.3% absolute gain). Quan trọng hơn, 97.2% mã trích dẫn là hợp lệ và 85.2% mệnh đề chẩn đoán được hỗ trợ bởi văn bản dẫn chứng, giảm thiểu ảo giác trầm trọng của điều kiện No-RAG (chỉ 41.2% claim support).
+Generator permission is pending. Mock provider success is not a result. See `reports/final-tables/table2-generation-performance.md` (`NOT_RUN`) and `reports/controls-mvp.md`.
 
 ### 6.3. Phân tích Chẩn đoán theo 6 Họ lỗi Kiểm thử (Six-Family Diagnostics & Sensitivity)
 
-Đánh giá chi tiết trên 6 cụm service×fault family và độ nhạy Leave-One-Family-Out (LOFO):
-
-| Family ID | Dịch vụ mục tiêu | Dạng lỗi tiêm | Số ca ($n$) | IR-B nDCG | IR-D nDCG | IR-H nDCG | Paired Delta ($\Delta$) | GH Top-1 Accuracy | LOFO Macro Delta |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| `FAM-TEST-01` | `cartservice` | CPU Throttle | 3 | 0.667 | 0.612 | 0.724 | +0.057 | 100% (3/3) | +0.040 |
-| `FAM-TEST-02` | `paymentservice` | Network Latency | 3 | 0.589 | 0.542 | 0.631 | +0.042 | 66.7% (2/3) | +0.043 |
-| `FAM-TEST-03` | `checkoutservice` | Pod Failure / Crash | 3 | 0.702 | 0.681 | 0.748 | +0.046 | 100% (3/3) | +0.042 |
-| `FAM-TEST-04` | `frontend` | HTTP 500 Generic Error | 3 | 0.543 | 0.518 | 0.569 | +0.026 | 33.3% (1/3) | +0.046 |
-| `FAM-TEST-05` | `emailservice` | Memory Pressure | 3 | 0.615 | 0.590 | 0.655 | +0.040 | 66.7% (2/3) | +0.044 |
-| `FAM-TEST-06` | `redis-cart` | Connection Timeout | 3 | 0.651 | 0.622 | 0.699 | +0.048 | 66.7% (2/3) | +0.042 |
-
-Khi loại bỏ bất kỳ family nào trong 6 cụm, hiệu số bắt cặp vĩ mô (LOFO Macro Delta) vẫn dao động ổn định trong khoảng hẹp $[+0.040, +0.046]$, chứng minh rằng kết quả vượt trội của Hybrid RAG có tính nhất quán trên toàn bộ các dạng lỗi.
+Family diagnostics remain `NOT_RUN` until the scorer has eligible human G2 labels. Historical LOFO numbers in older drafts are retracted with the 0.671/0.342 conflict.
 
 ### 6.4. Hạch toán Độ trễ, Tài nguyên và Chi phí (Latency & Resource Accounting)
 
-| Điều kiện Sinh | Mẫu số phản hồi | Số ca lỗi hệ thống | Độ trễ trung bình (giây) | Tổng Prompt Tokens | Tổng Output Tokens | Chi phí ước tính (USD) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **G0 (No-RAG)** | 18 | 0 | 1.12 s | 14,210 | 4,120 | \$0.014 |
-| **GB (BM25 RAG)** | 18 | 0 | 1.84 s | 32,450 | 5,890 | \$0.032 |
-| **GD (Dense RAG)** | 18 | 0 | 1.92 s | 33,180 | 5,740 | \$0.033 |
-| **GH (Hybrid RAG)** | 18 | 0 | 2.15 s | 34,920 | 6,210 | \$0.035 |
-| **Toàn bộ Workload** | **72** | **0** | **1.76 s** | **114,760** | **21,960** | **\$0.114** |
+Cost/latency cells are `NOT_RUN`. No GPU hours or API spend are invented while generator permission is pending.
 
 ---
 
@@ -252,7 +217,7 @@ Dựa trên dữ liệu kiểm toán từ công cụ Demo (`06_implementation/re
 
 ### 8.3. Khai báo Hỗ trợ của Trí tuệ Nhân tạo & Phương pháp Chấm nhãn Tự động (AI Assistance & LLM-as-a-Judge Disclosure)
 - **Công cụ hỗ trợ:** Các công cụ AI (Antigravity / Gemini / Claude) được sử dụng để hỗ trợ tạo mã khung tự động, kiểm tra cú pháp, tối ưu hóa các pipeline kiểm toán và tính toán mã băm mật mã toàn vẹn. Toàn bộ quyết định kiến trúc, thẩm định giao thức và phân tích khoa học do các tác giả chịu trách nhiệm.
-- **Quy trình Chấm nhãn Tự động (Plan 06 - Hướng B):** Nhằm giải phóng điểm nghẽn của quy mô 3.360 – 4.480 lượt chấm thủ công, đồ án đã triển khai quy trình chấm đôi tự động độc lập thông qua hai persona thẩm định SRE (`Annotator A` khắt khe theo mã lỗi và cấu hình; `Annotator B` mở rộng ngữ cảnh và chuỗi phụ thuộc) tuân thủ nghiêm ngặt Rubric 3 mức (`0/1/2`). Hệ số đồng thuận liên người chấm đạt Quadratic Weighted Cohen's Kappa \(\kappa \ge 0.85\) trên cả 3 tập (`train`: 0.8542, `dev`: 0.8524, `test`: 0.8936) trước khi hòa giải (adjudication) tự động và xuất tập nhãn vàng F2. Toàn bộ nhật ký kiểm toán được lưu tại `reports/annotation-agreement-report.md`.
+- **Quy trình Chấm nhãn (RETRACTED as human gold):** The lexical proxy described in older drafts is `llm_lexical_proxy`, not human dual annotation. Reported kappa does not authorize F2 as human gold. See `freezes/F2.provenance.json`.
 
 ---
 

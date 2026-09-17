@@ -81,7 +81,7 @@ representation:
   - R1
   - R2
   - R3
-  selected: null
+  selected: R2
   r1_r2_shared_evidence_after_budgeting: true
   r2_saved_tokens_add_evidence: false
   test_inputs_created_after_F1: true
@@ -89,14 +89,16 @@ representation:
 retrieval:
   pilot_only: true
   dense_candidate: intfloat/e5-small-v2
-  dense_revision: null
-  tokenizer_revision: null
+  dense_revision: ffb93f3bd4047442299a41ebb6fa998a38507c52
+  tokenizer_revision: ffb93f3bd4047442299a41ebb6fa998a38507c52
   candidate_depth: 50
   rrf_constant: 60
   max_context_chunks: 5
   pad_short_rankings: false
   reranker_selected: null
 annotation:
+  qrels_provenance: llm_judge_adjudicated
+  qrels_on_disk_label: llm_lexical_proxy
   grade_values:
   - 0
   - 1
@@ -143,13 +145,18 @@ metrics:
   bootstrap:
     unit: family
     keep_pairing: true
-    seed: null
-    resamples: null
+    seed: 221
+    resamples: 1000
 generation:
-  model: null
+  model: deepseek-flash
   revision: null
   prompt_hash: null
-  decoding: null
+  decoding:
+    temperature: 0.1
+    thinking:
+      type: disabled
+    response_format:
+      type: json_object
   same_generator_context_policy: true
   no_rag_keeps_observations: true
   citations_must_be_in_actual_context: true

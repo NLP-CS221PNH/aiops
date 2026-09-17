@@ -17,15 +17,15 @@ Owner điều phối C; task ghi người thực hiện và reviewer. Codex so�
 
 ## Bối cảnh và đầu vào
 
-Đọc [plan cha](plan.md), [hợp đồng chung](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/plans/reports/260913-independent-plans-research.md).
+Đọc [plan cha](plan.md), [hợp đồng chung](plans/reports/260913-independent-plans-contracts.md) và [nghiên cứu](plans/reports/260913-independent-plans-research.md).
 Các đường dẫn trong `06_implementation` bên dưới là sản phẩm dự kiến; chưa tồn tại chỉ vì tài liệu kế hoạch đã viết.
 
 | Đầu vào | Đường dẫn tuyệt đối | Điều phải kiểm |
 |---|---|---|
-| Protocol | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/research-protocol.md` | B kiểm primary và chống test tuning |
-| Config | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/configs/protocol.yaml` | Codex so trường với văn bản |
-| Phân công | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/team-working-agreement.md` | Nhóm xác nhận trách nhiệm |
-| Quyết định | `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/decision-log.md` | C đối chiếu chứng cứ phản hồi |
+| Protocol | `06_implementation/docs/research-protocol.md` | B kiểm primary và chống test tuning |
+| Config | `06_implementation/configs/protocol.yaml` | Codex so trường với văn bản |
+| Phân công | `06_implementation/docs/team-working-agreement.md` | Nhóm xác nhận trách nhiệm |
+| Quyết định | `06_implementation/docs/decision-log.md` | C đối chiếu chứng cứ phản hồi |
 
 ## Yêu cầu
 
@@ -42,11 +42,11 @@ Không đưa root labels, qrels hay reference claims vào inference hoặc giao 
 
 ## Các file liên quan
 
-- **Sửa:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/project-charter.md` — Bản đã review.
-- **Sửa:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/research-protocol.md` — Giải quyết mâu thuẫn.
-- **Sửa:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/decision-log.md` — Nguồn quyết định và pending.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/docs/protocol-review.md` — Issue và disposition.
-- **Tạo:** `C:/Users/Siinn/Downloads/CS221_AIOps_RAG_Research_Pack/06_implementation/freezes/G0/manifest.json` — Hashes cùng quyền chưa chốt.
+- **Sửa:** `06_implementation/docs/project-charter.md` — Bản đã review.
+- **Sửa:** `06_implementation/docs/research-protocol.md` — Giải quyết mâu thuẫn.
+- **Sửa:** `06_implementation/docs/decision-log.md` — Nguồn quyết định và pending.
+- **Tạo:** `06_implementation/docs/protocol-review.md` — Issue và disposition.
+- **Tạo:** `06_implementation/freezes/G0/manifest.json` — Hashes cùng quyền chưa chốt.
 - **Xóa:** không có; giữ bộ nghiên cứu gốc và artifacts đã khóa để đối chiếu.
 
 ## Schema và giao diện bàn giao

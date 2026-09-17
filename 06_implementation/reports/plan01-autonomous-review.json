@@ -15,7 +15,7 @@
   "checked_artifacts": [
     {
       "path": "06_implementation/configs/protocol.yaml",
-      "sha256": "5c9a4149b90557e1d97f364cf7c8749f826ee3fbd5dbd47c8493dabf7e446d36"
+      "sha256": "288015e3173e9df2042a8b4088564d59548dd34698d06b27ae3def108612d511"
     },
     {
       "path": "06_implementation/configs/decisions.json",
@@ -23,7 +23,7 @@
     },
     {
       "path": "06_implementation/docs/research-protocol.md",
-      "sha256": "0607e2c8a4a64d175f09ea1be902f9c6a75fe64596833b6b2c784b1c665cb840"
+      "sha256": "5c100043357750eb212fdd8a3546881ebcf121c41d1cb4c8e768860c6a8cd725"
     },
     {
       "path": "06_implementation/docs/project-charter.md",

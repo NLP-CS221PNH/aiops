@@ -8,6 +8,9 @@ from src.evaluation.metrics import (
     CalculationResult,
     Status
 )
+from pathlib import Path
+
+IMPL = Path(__file__).resolve().parents[1]
 
 def test_ndcg_calculation():
     # qrels: doc1->2, doc2->1, doc3->0
@@ -80,3 +83,10 @@ def test_document_collapse():
     ]
     collapsed = collapse_to_documents(ranking)
     assert collapsed == ["d1", "d2"]
+
+
+def test_execute_evaluation_has_no_pasted_ci_literals():
+    text = (IMPL / "scripts" / "execute_evaluation.py").read_text(encoding="utf-8")
+    for token in ("0.642", "0.671", "[+0.009, +0.075]"):
+        assert token not in text
+

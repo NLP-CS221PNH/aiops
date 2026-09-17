@@ -1,3 +1,5 @@
+> **Readiness correction, 2026-09-17:** Evaluation acceptance in this historical audit is retracted. F1 used an empty released whitelist; F2 bound lexical-proxy qrels. Reported retrieval scores and resulting winner claims are not valid evidence. `results/per-incident.tsv` now marks every historical row ineligible and identifies proxy provenance. The historical F2 qrels hash and all updated TSV hashes are recorded in `freezes/F2.provenance.json`. Human annotation and real model execution have not been established by this audit.
+
 # Báo cáo Kiểm toán Lập luận Khoa học và Bằng chứng (Claim–Evidence Audit)
 
 Artifact ID: `cs221-claim-audit-v1`  
@@ -26,15 +28,15 @@ Quy tắc bất biến:
 | **CLM-DATA-001** | Quy mô 90 sự cố, 30 families, 3 repetitions/family. | `reports/data-handoff.md` (`manifest-v1`) | 90 | **PASS** | Đã kiểm toán qua test suite `test_data_provenance.py` (31 tests passed). Giới hạn ở tập RE2-Online Boutique. |
 | **CLM-DATA-002** | Phân chia cụm 54 train / 18 dev / 18 test theo family. | `reports/data-handoff.md` (`split-map.tsv`) | 30 families | **PASS** | Đã xác minh không có hiện tượng rò rỉ phân phối giữa các repetitions cùng họ lỗi. |
 | **CLM-DATA-003** | Kho tri thức lịch sử: 74 tài liệu, 580 chunks. | `reports/corpus-handoff.md` (`chunks.jsonl`) | 580 chunks | **PASS** | Đã kiểm tra qua `test_corpus_integrity.py`. Giới hạn ở tài liệu công khai tiền 2024. |
-| **CLM-ANNO-001** | Tập core 56 incidents được chấm đôi và phân xử độc lập. | `annotations/rubric-v1.md`, `assignments.tsv` | 56 incidents | **PASS** | Đã kiểm toán độ bao phủ qua `test_annotation_integrity.py`. 34 train còn lại không có qrels core. |
-| **CLM-METH-001** | Khóa toàn bộ tham số tại F1 trước khi truy cập test. | `freezes/F1.json` | 1 config lock | **PASS** | Khóa BM25 $k_1=1.5, b=0.75$, RRF $c=60$, Dense E5-small-v2. Không có hành vi test tuning. |
-| **CLM-METH-002** | 4 điều kiện đối chứng bắt buộc: G0, GB, GD, GH. | `freezes/F1.json` | 4 conditions | **PASS** | Đảm bảo mọi điều kiện nhận cùng common observation bundle và decoding temperature $T = 0.0$. |
-| **CLM-RES-001** | IR-H vượt BM25 trên test: nDCG@5 = 0.671 vs 0.628 ($\Delta = +0.043$). | `reports/final-tables/table1-retrieval-performance.tsv` | 18 test incidents | **PASS** | Paired delta dương nhất quán; khoảng tin cậy 95% bootstrap: $[+0.008, +0.078]$. |
-| **CLM-RES-002** | Top-1 service accuracy đạt 72.2% ở GH vs 38.9% ở G0. | `reports/final-tables/table2-generation-performance.tsv` | 18 test incidents | **PASS** | Định vị dịch vụ bị tiêm lỗi chính xác; không suy diễn thành chữa lỗi tự động. |
-| **CLM-RES-003** | 97.2% citation validity và 85.2% claim support ở GH. | `reports/final-tables/table2-generation-performance.tsv` | 72 responses | **PASS** | Đã kiểm toán phân tách rạch ròi giữa việc trích dẫn hợp lệ và nội dung có hỗ trợ claim. |
-| **CLM-RES-004** | Tỉ lệ từ chối trả lời (abstention) đạt 22.2% ở G0 và 5.6% ở GH. | `reports/demo/case-audit.tsv` | 18 test incidents | **PASS** | Đã thẩm định hành vi an toàn qua ca kiểm thử `case_03_missing_evidence`. |
-| **CLM-LIM-001** | Độ bất định hạch toán theo 6 cụm family qua LOFO. | `reports/final-tables/table3-six-family-diagnostics.tsv` | 6 families | **PASS** | LOFO macro delta dao động hẹp $[+0.040, +0.046]$; thừa nhận kích thước cụm nhỏ. |
-| **CLM-LIM-002** | Tái lập API đảm bảo qua replay cache có mã băm SHA256. | `reports/final-tables/table4-resource-accounting.tsv` | 72 cache records | **PASS** | Phân biệt minh bạch giữa kết quả replay cache và fresh generation không bất biến. |
+| **CLM-ANNO-001** | Tập core 56 incidents được chấm đôi và phân xử độc lập. | `annotations/qrels/*/qrels.tsv`, blinded `LLM_Judge_*`, `freezes/F2.provenance.json` | 56 incidents | **RETRACTED** | Qrels hiện tại là `llm_lexical_proxy`, không phải human double annotation. |
+| **CLM-METH-001** | Khóa toàn bộ tham số tại F1 trước khi truy cập test. | `configs/methodology-lock.yaml`, `freezes/F1.json` | 1 config lock | **FAIL (lock wins)** | Locked BM25 is $k_1=1.2$, not $k_1=1.5$. RRF $c=60$, Dense E5-small-v2. Reports citing 1.5 without calling it a defect are wrong. |
+| **CLM-METH-002** | 4 điều kiện đối chứng bắt buộc: G0, GB, GD, GH. | `freezes/F1.json`, `generation.yaml` | 4 conditions | **FAIL (lock wins)** | Conditions exist. Decoding is $T = 0.1$. Citing $T = 0.0$ without calling it a defect is wrong. |
+| **CLM-RES-001** | IR-H vượt BM25 trên test: nDCG@5 = 0.671 vs 0.628 ($\Delta = +0.043$). | `reports/final-tables/table1-retrieval-performance.tsv` | 18 test incidents | **RETRACTED** | 0.671 and table1 0.342 cannot both be true. Headline IR is `NOT_RUN` (LLM-judge qrels, missing frozen rankings). |
+| **CLM-RES-002** | Top-1 service accuracy đạt 72.2% ở GH vs 38.9% ở G0. | `reports/final-tables/table2-generation-performance.tsv` | 18 test incidents | **RETRACTED** | Table2 generation cells are `NOT_RUN`. Past 72.2%/38.9% figures are not scorer output. |
+| **CLM-RES-003** | 97.2% citation validity và 85.2% claim support ở GH. | `reports/final-tables/table2-generation-performance.tsv` | 72 responses | **RETRACTED** | Table2 generation cells are `NOT_RUN`. Citation/support percentages are not live results. |
+| **CLM-RES-004** | Tỉ lệ từ chối trả lời (abstention) đạt 22.2% ở G0 và 5.6% ở GH. | `reports/demo/case-audit.tsv` | 18 test incidents | **RETRACTED** | Generator permission pending; mock success is not a result. Abstention rates stay `NOT_RUN`. |
+| **CLM-LIM-001** | Độ bất định hạch toán theo 6 cụm family qua LOFO. | `reports/final-tables/table3-six-family-diagnostics.tsv` | 6 families | **RETRACTED** | LOFO macro delta dao động hẹp $[+0.040, +0.046]$; thừa nhận kích thước cụm nhỏ. |
+| **CLM-LIM-002** | Tái lập API đảm bảo qua replay cache có mã băm SHA256. | `reports/final-tables/table4-resource-accounting.tsv` | 72 cache records | **RETRACTED** | Table4 resource cells are `NOT_RUN`. Generator permission pending; no live replay-cache spend. |
 
 ---
 
@@ -59,4 +61,4 @@ Quy tắc bất biến:
 ---
 
 ## 4. Kết luận Nghiệm thu Kiểm toán
-Báo cáo Đồ án và Ma trận Bằng chứng đạt chuẩn nghiệm thu khoa học **G10-B**. Mọi số liệu báo cáo đều có nguồn gốc rõ ràng, kiểm chứng được bằng mã nguồn và dữ liệu lưu vết thực tế.
+**RETRACTED:** Không có nghiệm thu khoa học G10-B từ các artifacts này. Cần corpus đã được duyệt, nhãn G2 do người chấm và bằng chứng chạy mô hình thật trước khi đánh giá lại.
