@@ -1,9 +1,0 @@
-{
-  "current_documents": 73,
-  "historical_documents": 74,
-  "ir_h_ndcg5_delta": "NOT_RUN",
-  "note": "Sensitivity only. Historical F1 corpus is unchanged. IR delta is NOT_RUN without a separate current index.",
-  "shared_document_ids": 0,
-  "shared_source_paths": 73,
-  "status": "diagnostic_only"
-}

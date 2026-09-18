@@ -1,0 +1,56 @@
+{
+  "schema_version": "cs221-report-contract-v1",
+  "title": {
+    "vi": "Định vị dịch vụ sự cố với Hybrid RAG và LoRA G1 trên RCAEval RE2-Online Boutique",
+    "en": "Service localization with Hybrid RAG and G1 LoRA on RCAEval RE2-Online Boutique"
+  },
+  "blank_results": true,
+  "blank_results_sentence": {
+    "vi": "Chưa thực hiện/điền kết quả thực nghiệm trong phiên bản này.",
+    "en": "Empirical results are not filled in this version."
+  },
+  "team": [
+    {"name": "Nguyễn Văn Nam", "student_id": "24521120"},
+    {"name": "Nguyễn Đình Phát", "student_id": "23521144"},
+    {"name": "Lê Vũ Thiêm Hoàng", "student_id": "25520584"},
+    {"name": "Bùi Đặng Nhật Nguyên", "student_id": "23521037"}
+  ],
+  "roles_abc_retired": true,
+  "deadline": "2026-09-30T12:00:00+07:00",
+  "timezone": "Asia/Saigon",
+  "dataset": {
+    "id": "RCAEval-RE2-OB",
+    "incidents": 90,
+    "families": 30,
+    "split": {"train": 54, "dev": 18, "test": 18},
+    "source_revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
+    "split_sha256": "d7941d1487d4ec7e3943692b2911ea422bf6b14d620fd8e150324161fc17b8c7",
+    "ground_truth_sha256": "bd02f4e8393e9ccfab3dd8b9bb1e016abee79bacb58aa9a8888c05240b8ee893"
+  },
+  "method_ids": {
+    "representation": "R2",
+    "retrievers": ["IR-B", "IR-D", "IR-H"],
+    "generation_conditions": ["G0", "GB", "GD", "GH"],
+    "controls": ["G-oracle", "G-random"],
+    "golds": ["G1", "G2", "G3"]
+  },
+  "model": {
+    "generator": "Qwen/Qwen2.5-1.5B-Instruct",
+    "generator_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "lora": "r=8 alpha=16 dropout=0.05 q_proj,v_proj",
+    "e5": "intfloat/e5-small-v2@ffb93f3bd4047442299a41ebb6fa998a38507c52",
+    "e5_pretrained": true
+  },
+  "result_tables": [
+    {"id": "T1", "metrics": ["nDCG@5", "MRR@10", "coverage"], "rows": ["IR-B", "IR-D", "IR-H"]},
+    {"id": "T2", "metrics": ["Top-1", "Top-3", "invalid", "error", "abstain", "coverage"], "rows": ["base×G0", "base×GB", "base×GD", "base×GH", "lora×G0", "lora×GB", "lora×GD", "lora×GH"]},
+    {"id": "T3", "metrics": ["claim-support", "citation", "zero-claim-coverage"]},
+    {"id": "T4", "metrics": ["control", "paired-family-delta", "uncertainty"]},
+    {"id": "T5", "metrics": ["latency", "tokens", "peak-memory"]}
+  ],
+  "fill_policy": {
+    "numeric_cells": "empty",
+    "forbidden_placeholders": ["0", "-", "100%", "NOT_RUN"],
+    "empirical_conclusions": "blank"
+  }
+}

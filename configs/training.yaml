@@ -1,0 +1,64 @@
+{
+  "schema_version": "cs221-training-config-v1",
+  "target_kind": "g1_service",
+  "examples_per_incident": 1,
+  "condition": "G0",
+  "representation": "R2",
+  "base_model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "local_files_only": true,
+    "trust_remote_code": false
+  },
+  "lora": {
+    "task_type": "CAUSAL_LM",
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "bias": "none",
+    "target_modules": ["q_proj", "v_proj"],
+    "base_frozen": true
+  },
+  "sequence": {
+    "max_train_tokens": 3072,
+    "prompt_cap": 2944,
+    "target_reserve": 128,
+    "r2_observation_cap_qwen_tokens": 2048
+  },
+  "batching": {
+    "microbatch": 1,
+    "accumulation": 8,
+    "eval_batch": 1,
+    "dataloader_workers": 0,
+    "packing": false
+  },
+  "optimizer": {
+    "name": "adamw_torch",
+    "lr": 0.0001,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0
+  },
+  "schedule": {
+    "type": "linear",
+    "warmup_ratio": 0.1,
+    "max_epochs": 3,
+    "seed": 221,
+    "data_seed": 221
+  },
+  "checkpoint": {
+    "selection": "lowest_dev_masked_loss",
+    "tie_break": "earliest_epoch",
+    "save_only_model": false,
+    "early_stopping": false
+  },
+  "namespaces": {
+    "smoke": "runs/training/smoke",
+    "research": "runs/training/research"
+  },
+  "smoke": {
+    "max_steps": 2,
+    "run_kind": "smoke"
+  }
+}

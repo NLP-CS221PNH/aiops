@@ -1,9 +1,0 @@
-{
-  "python": "3.11.9",
-  "pyarrow": "21.0.0",
-  "wheel_abi": "cp311-cp311-win_amd64",
-  "data_preparation_dependencies": [
-    "pyarrow==21.0.0"
-  ],
-  "model_experiments_installed": false
-}

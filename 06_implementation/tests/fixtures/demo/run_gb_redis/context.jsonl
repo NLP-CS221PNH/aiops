@@ -1,1 +1,0 @@
-{"evidence_id": "know_redis_bm25_generic", "source_kind": "doc", "document_id": "KBH-D057-generic", "chunk_id": "KBC-D057-redis-bm25", "text": "Redis cache container deployment notes: Redis is used as in-memory data store for cart items.", "start_codepoint": 0, "end_codepoint": 95, "source_revision": "80bea9bfd97bec107361d4663e207aa8d3f312c6", "rank": 1}

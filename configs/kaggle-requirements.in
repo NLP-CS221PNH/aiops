@@ -1,0 +1,12 @@
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+tokenizers==0.21.4
+safetensors
+huggingface-hub
+pyyaml
+pydantic
+jsonschema
+numpy
+pyarrow
+pytest

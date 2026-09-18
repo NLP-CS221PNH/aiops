@@ -1,1 +1,0 @@
-{"evidence_id": "know_valid_checkout_01", "source_kind": "doc", "document_id": "KBH-D057-checkout", "chunk_id": "KBC-D057-chk01", "text": "Checkoutservice interacts with paymentservice, emailservice, and cartservice to complete purchase orders.", "start_codepoint": 0, "end_codepoint": 110, "source_revision": "80bea9bfd97bec107361d4663e207aa8d3f312c6", "rank": 1}

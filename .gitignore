@@ -6,12 +6,8 @@
 .agents/
 engineer/
 
-# AgentKit operational plans stay local. One G0 freeze snapshot remains public.
-plans/*
-!plans/reports/
-plans/reports/*
-!plans/reports/260913-independent-plans-contracts.md
-plans/.agentkit-runtime/
+# AgentKit operational plans stay local. Untrack is not a history purge.
+plans/
 
 # Python
 __pycache__/
@@ -85,10 +81,28 @@ Desktop.ini
 03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*/*
 !03_collection_plan/knowledge-corpus-historical/raw/source-snapshots/*/LICENSE
 05_research/source-snapshots/
+# Nested and flattened private/runtime trees. Ignore before any add.
+data/training-inputs/
+data/private/
+data/candidate-*/
+artifacts/
+**/private-test/
+configs/final-manifest.json
+configs/kaggle.resolved.json
+06_implementation/data/training-inputs/
 06_implementation/data/private/
 06_implementation/data/candidate-inference/
 06_implementation/data/candidate-pre-review/
 06_implementation/data/imputed/
+06_implementation/artifacts/
+06_implementation/configs/final-manifest.json
+06_implementation/configs/kaggle.resolved.json
+00_plan/
+01_papers/
+02_datasets/
+03_collection_plan/
+04_audit/
+05_research/
 06_implementation/reports/**/*.pdf
 06_implementation/reports/submission-package/
 06_implementation/reports/data-test-results.json
@@ -96,7 +110,39 @@ Desktop.ini
 06_implementation/reports/data-test-results.json
 06_implementation/reports/environment-check.json
 START-HERE.html
-06_implementation/configs/final-manifest.json
 
 # Local scratch (do not commit)
 _remote_check/
+
+# Leftover nested implementation tree (local research pack)
+06_implementation/
+
+# Leftover research-pack files remaining on disk after untrack
+START-HERE.md
+docs/kaggle-reports/
+docs/journals/
+docs/public-release-runbook.md
+docs/repository-publication-policy.md
+scripts/acquire-datasets.py
+scripts/acquire-knowledge-historical.py
+scripts/acquire-knowledge.py
+scripts/acquire-research-support.py
+scripts/audit-dataset-catalog.py
+scripts/build-handoff.py
+scripts/build-resource-index.py
+scripts/canonical_identifiers.py
+scripts/check-handoff-files.py
+scripts/discover-knowledge.py
+scripts/freeze-research-pack.py
+scripts/prepare-annotation-kit.py
+scripts/prepare-experiment-resources.py
+scripts/prepare-incidents.py
+scripts/preview-retrieval.py
+scripts/publication_policy.py
+scripts/requirements-data.txt
+scripts/validate-public-artifacts.py
+scripts/validate-research-pack.py
+MANIFEST_SHA256.txt
+MANIFEST_RESEARCH_SHA256.txt
+tests/test_knowledge_provision.py
+

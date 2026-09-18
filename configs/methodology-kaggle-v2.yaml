@@ -1,0 +1,50 @@
+schema_version: cs221-methodology-lock-v2
+lock_id: METH-LOCK-KAGGLE-20260918
+status: overlay
+predecessor_lock_id: METH-LOCK-20260917
+predecessor_sha256: f4453cdbf4388b131c9426efe368dbba8a9681c5e59e4b17dd963f0c96e12adb
+note: New lock for Kaggle LoRA G1 trainer. Do not overwrite METH-LOCK-20260917 or F1/F2 bytes.
+qrels_provenance: local-model-automated-v1
+qrels_on_disk_label: pending_new_freeze
+qrels_not_human_gold: true
+lexical_proxy_rejected: true
+primary_endpoint: passage_ndcg_5
+tie_break: BM25
+representation: R2
+e5_trainable: false
+generator:
+  base: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  adapter: lora-g1-service
+  train_labels: train_only
+  dev_labels: checkpoint_selection_only
+  test_labels: evaluator_after_freeze
+conditions:
+  primary_rq2:
+    - IR-B
+    - IR-D
+    - IR-H
+  generation:
+    - G0
+    - GB
+    - GD
+    - GH
+  controls:
+    - G-oracle
+    - G-random
+    - answerability-slice
+    - leakage-diagnostic
+  deferred:
+    - IR-R
+    - GraphRAG
+    - multi-agent
+    - iterative_retrieval
+    - second_generator
+    - full_human_reannotation
+no_startup_gate: true
+baseline_condition_g0_retained: true
+bootstrap:
+  unit: family
+  keep_pairing: true
+  seed: 221
+  resamples: 1000

@@ -1,4 +1,0 @@
-# Corpus-only offline tokenizer runtime for Windows AMD64, Python 3.9+ abi3.
-# Install with --no-deps --require-hashes --no-index --find-links 06_implementation/.corpus-wheelhouse --target 06_implementation/.corpus-deps.
-# Tokenizer.from_file is used; no Hugging Face client or model weights are required.
-tokenizers==0.21.4 --hash=sha256:475d807a5c3eb72c59ad9b5fcdb254f6e17f53dfcbb9903233b0dfa9c943b597
