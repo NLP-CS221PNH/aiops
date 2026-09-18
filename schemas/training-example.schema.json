@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TrainingExampleV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "example_id",
+    "incident_id",
+    "input_messages",
+    "target_text",
+    "safe_input_sha256",
+    "g1_source_sha256",
+    "split_sha256",
+    "label_revision",
+    "target_kind"
+  ],
+  "properties": {
+    "example_id": {
+      "type": "string",
+      "pattern": "^ex_[0-9a-f]{16}_g1_service_g0_r2$"
+    },
+    "incident_id": {
+      "type": "string",
+      "pattern": "^inc_[0-9a-f]{16}$"
+    },
+    "input_messages": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "content"],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": ["system", "user"]
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "target_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "safe_input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "g1_source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "split_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "label_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_kind": {
+      "type": "string",
+      "const": "g1_service"
+    }
+  }
+}

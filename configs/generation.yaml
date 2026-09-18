@@ -1,0 +1,39 @@
+provider:
+  name: deepseek
+  model: deepseek-flash
+  base_url: https://api.deepseek.com/v1
+  extra_body:
+    thinking:
+      type: disabled
+  response_format:
+    type: json_object
+  temperature: 0.1
+
+local_qwen:
+  name: local-qwen
+  model: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  assets: null
+  local_files_only: true
+  trust_remote_code: false
+
+budgets:
+  observations: 2048
+  knowledge: 4096
+  output: 768
+
+retries:
+  max_attempts: 2
+  retryable_errors:
+    - invalid_response
+
+decoding:
+  temperature: 0.1
+  top_p: 1.0
+  top_k: 0
+  seed: 221
+
+approved_cap_usd: null
+permissions:
+  api: pending
+  local: approved

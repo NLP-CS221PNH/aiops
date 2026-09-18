@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AutomatedCorpusReviewV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "doc_id",
+    "source_revision",
+    "evidence_span",
+    "target_system_scope",
+    "preconditions",
+    "rule_result",
+    "model_revision",
+    "prompt_hash",
+    "raw_response",
+    "validator_status",
+    "reason",
+    "applicability"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "cs221-automated-review-v2"
+    },
+    "doc_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_codepoint", "end_codepoint", "text_sha256"],
+      "properties": {
+        "start_codepoint": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_codepoint": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "target_system_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_result": {
+      "type": "string",
+      "enum": ["pass", "reject", "unknown"]
+    },
+    "model_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "raw_response": {
+      "type": "string"
+    },
+    "validator_status": {
+      "type": "string",
+      "enum": ["pass", "reject", "not_run"]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "applicability": {
+      "type": "string",
+      "enum": ["eligible", "conditional", "excluded", "unknown"]
+    }
+  }
+}

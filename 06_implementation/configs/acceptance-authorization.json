@@ -1,9 +1,0 @@
-{
-  "authorization_id": "plan01-self-review-20260913",
-  "source_kind": "user_message",
-  "instruction": "tự check mọi thứ, không cần human input",
-  "recorded_at_utc": "2026-09-13T02:47:46.906082Z",
-  "scope": "plan01_g0_self_review",
-  "human_review_required": false,
-  "permissions_unchanged": true
-}

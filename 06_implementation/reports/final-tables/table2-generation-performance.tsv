@@ -1,5 +1,0 @@
-condition	responses_n	top1_service_acc	top3_service_acc	citation_validity	claim_support_precision	abstention_rate	qrels_provenance	status
-G0 (No-RAG)	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	llm_judge_adjudicated	NOT_RUN
-GB (BM25 RAG)	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	llm_judge_adjudicated	NOT_RUN
-GD (Dense RAG)	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	llm_judge_adjudicated	NOT_RUN
-GH (Hybrid RAG)	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	NOT_RUN	llm_judge_adjudicated	NOT_RUN

@@ -1,8 +1,0 @@
-{
-  "qrels_version": "06.F2-v1",
-  "qrels_provenance": "llm_lexical_proxy",
-  "headline_ndcg_eligible": false,
-  "file": "06_implementation\\results\\per-incident.tsv",
-  "sha256": "f419f0f0debd1d3e60d1fd55673c1d280b33700692229af39facbdbe66f52fbe",
-  "rows": 450
-}

@@ -1,9 +1,0 @@
-{
-  "mode": "full",
-  "downloaded_case_count": 90,
-  "downloaded_file_count": 360,
-  "complete_RE2_OB": true,
-  "revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
-  "bytes": 922484805,
-  "parquet_upstream_sha256_verified": 270
-}
