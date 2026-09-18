@@ -1,11 +1,8 @@
 # CS221 · AIOps / RCA / Hybrid RAG — Kaggle source
 
 **Nguyễn Văn Nam - 24521120**
-
 **Nguyễn Đình Phát - 23521144**
-
 **Lê Vũ Thiêm Hoàng - 25520584**
-
 **Bùi Đặng Nhật Nguyên - 23521037**
 
 
