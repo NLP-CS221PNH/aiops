@@ -1,9 +1,9 @@
 # CS221 · AIOps / RCA / Hybrid RAG — Kaggle source
 
-**Nguyễn Văn Nam - 24521120**
-**Nguyễn Đình Phát - 23521144**
-**Lê Vũ Thiêm Hoàng - 25520584**
-**Bùi Đặng Nhật Nguyên - 23521037**
+- Nguyễn Văn Nam - 24521120
+- Nguyễn Đình Phát - 23521144
+- Lê Vũ Thiêm Hoàng - 25520584
+- Bùi Đặng Nhật Nguyên - 23521037
 
 
 This Git **tip** is Kaggle-runnable source at the repository root, plus one reading folder: [`docs/`](docs/README.md). Do not `cd 06_implementation`.
